@@ -25,41 +25,21 @@ body {
 }
 
 /* Add neon title */
-  #loader-title {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100px; /* Adjust the width of the image */
-            height: 100px; /* Adjust the height if needed */
-            background-image: url('logo.png'); /* Replace with the path to your image */
-            background-size: contain; /* Fit the image within the div */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
-            background-position: center; /* Center the image */
-            /* Adjust the font size as needed */
-            color: rgba(128, 64, 255, .66);
-            /* Initial neon green color */
-            text-shadow: colorChange 5s infinite;
-            /* Neon text shadow effect */
-            animation: colorChange 5s infinite;
-            /* Color change animation */
-        }
-
-        /* Neon glow animation */
-        @keyframes glow {
-            0% {
-                box-shadow: 0 0 5px rgba(128, 64, 255, .66),
-                            0 0 10px rgba(128, 64, 255, .66),
-                            0 0 20px rgba(128, 64, 255, .66),
-                            0 0 40px rgba(128, 64, 255, .66);
-            }
-            100% {
-                box-shadow: 0 0 20px rgba(128, 64, 255, 1),
-                            0 0 30px rgba(128, 64, 255, 1),
-                            0 0 40px rgba(128, 64, 255, 1),
-                            0 0 60px rgba(128, 64, 255, 1);
-            }
-        }
+#loader-title {
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 200px; /* Adjust the width of the image */
+       height: 100px; /* Adjust the height if needed */
+       background-image: url('logo.png'); /* Replace with the path to your image */
+       background-size: contain; /* Fit the image within the div */
+       background-repeat: no-repeat; /* Prevent the image from repeating */
+       background-position: center; /* Center the image */
+       animation: glow 1.5s infinite alternate; /* Glow effect */
+    animation: colorChange 5s infinite;
+    /* Color change animation */
+}
 
 #eclipse:before,
 #eclipse:after {
