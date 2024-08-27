@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="loader.css">
+  <!--  -->
+  <title>Mahmoud Shaker | Flutter Developer</title>
+  <!--  -->
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+  <meta name="keywords"
+    content="Mahmoud Shaker, Flutter Developer, Mobile App Developer, Software Engineer, User Interface, User Experience, UI/UX, Freelancer, Flutter Employee, Mobile Apps, App Development, Android, iOS, 3 Years Experience, Innovation" />
+  <meta name="image" itemprop="image" content="seo_image.png" />
+  <meta name="title" content="Mahmoud Shaker | Flutter Developer" />
+  <meta name="description"
+    content="Experienced Flutter Developer with 2 years of expertise, crafting outstanding mobile applications with precision and innovation. Your go-to choice for seamless, user-friendly, and visually stunning app solutions.">
+
+  <!--  -->
+
+
+
+  <meta property="og:title" content="Mahmoud Shaker | Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Flutter Web Portfolio">
+  <meta property="og:description"
+    content="Experienced Flutter Developer with 2 years of expertise, crafting outstanding mobile applications with precision and innovation. Your go-to choice for seamless, user-friendly, and visually stunning app solutions.">
+  <meta property="og:image" content="seo_image.png" />
+  <meta property="og:url" content="https://portfolio-elfeki.web.app/">
+  <!-- <meta name="og:card" content="summary_large_image"> -->
+  <meta property="og:image:width" content="526" />
+  <meta property="og:image:height" content="275" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <!--  -->
+  <!--  -->
+  <meta name="twitter:title" content="Mahmoud Shaker | Flutter Developer">
+  <meta name="twitter:description"
+    content="Experienced Flutter Developer with 2 years of expertise, crafting outstanding mobile applications with precision and innovation. Your go-to choice for seamless, user-friendly, and visually stunning app solutions.">
+  <meta name="twitter:image" content="seo_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!--  -->
+
+
+  <script type="application/ld+json">
+      {
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "name": "Mahmoud Shaker",
+          "jobTitle": "Mobile Developer",
+          "url": "https://myportfolio2.web.app/",
+          "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "UAE",
+              "addressRegion": "Damascus",
+              "addressCountry": "Egypt"
+          }
+      }
+  </script>
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Mahmoud Shaker | Mobile Developer">
+  <link rel="apple-touch-icon" href="logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "326638224";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+
+  <script src="flutter.js" defer></script>
+</head>
+
+<body>
+
+  <div id="loader">
+    <div id="cloud"></div>
+    <div id="eclipse"></div>
+    <div id="loader-title"></div>
+  </div>
+  <!-- <div id="floader-title">Loading</div> -->
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCIkVshZ7HGPOmzgaBc9sJeZlzyTEEBBXQ",
+    authDomain: "portfolio-elfeki.firebaseapp.com",
+    projectId: "portfolio-elfeki",
+    storageBucket: "portfolio-elfeki.appspot.com",
+    messagingSenderId: "695442385716",
+    appId: "1:695442385716:web:5612d78effd716e79c5361",
+    measurementId: "G-HVJ148YN5Z"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  </script>
+  <script>
+    import("./scripts/botd-1.1.0.js")
+      .then((botd) => botd.load())
+      .then((botd) => botd.detect())
+      .then(function (result) {
+        if (result.bot) {
+          window.flutterWebRenderer = "canvaskit";
+        }
+      });
+  </script>
+  <script>
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
+            appRunner.runApp();
+            document.getElementById('loader').remove();
+          });
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
