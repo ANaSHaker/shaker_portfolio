@@ -1,12 +1,12 @@
 {
   "slug": "delivery-iq",
-  "order": 13,
-  "featured": false,
+  "order": 6,
+  "featured": true,
   "name": {
     "en": "Delivery IQ · Al Barq",
     "ar": "Delivery IQ · البرق"
   },
-  "kind": "case-study",
+  "kind": "client",
   "categories": [
     "commerce"
   ],
@@ -35,7 +35,7 @@
     ],
     "ar": [
       "توصل شركة البرق طرود المتاجر الإلكترونية إلى كل محافظات العراق خلال 24 ساعة من الاستلام.",
-      "وDelivery IQ هو التطبيق الذي تقدمه الشركة لتجّارها: يضيف المتجر طلباته، ويتابعها حتى التسليم، ويعرف مستحقاته، ويتواصل مع الشركة، بدل الاتصالات وإرسال جداول البيانات عبر WhatsApp."
+      "و Delivery IQ هو التطبيق الذي تقدمه الشركة لتجّارها: يضيف المتجر طلباته، ويتابعها حتى التسليم، ويعرف مستحقاته، ويتواصل مع الشركة، بدل الاتصالات وإرسال جداول البيانات عبر WhatsApp."
     ]
   },
   "role": {
@@ -49,7 +49,7 @@
       "مطوّر Flutter لتطبيق التجّار",
       "مسؤول عن معمارية التطبيق ودورة الطلبات",
       "بناء شاشات الإحصائيات والتحديثات اللحظية",
-      "نشر الإصدارات على Google Play وApp Store"
+      "نشر الإصدارات على Google Play و App Store"
     ]
   },
   "challenge": {
@@ -141,7 +141,7 @@
       "ar": [
         "الإنشاء: يملأ التاجر نموذجًا، أو يرفع قالب Excel يُحلَّل على الجهاز ويُطابَق مع مناطق التوصيل ويُعرض للمعاينة ثم يُرسل دفعة واحدة.",
         "المتابعة: ينتقل كل طلب بين حالات الشركة، مع عدّاد لكل حالة في لوحة التحكم وخط زمني لتاريخ كل طلب.",
-        "تحديثات لحظية: يستقبل اتصال Socket.IO أحداث `newUpdate` و`newMessage`، فتتحدث العدادات والمحادثات فور تحديث الشركة لأي طلب.",
+        "تحديثات لحظية: يستقبل اتصال Socket.IO أحداث `newUpdate` و `newMessage`، فتتحدث العدادات والمحادثات فور تحديث الشركة لأي طلب.",
         "التسوية: تتجمع الطلبات المسلّمة في كشوفات حساب، ويؤكد التاجر الاستلام من داخل التطبيق."
       ]
     },
@@ -175,7 +175,7 @@
       },
       "body": {
         "en": "One socket manager handles `chatMessages`, `newMessage` and `newUpdate` events and feeds them into the cubits, keeping chat and order counters current.",
-        "ar": "يدير مدير Socket واحد أحداث `chatMessages` و`newMessage` و`newUpdate` ويمررها إلى الـ cubits، فتبقى المحادثات وعدادات الطلبات محدّثة."
+        "ar": "يدير مدير Socket واحد أحداث `chatMessages` و `newMessage` و `newUpdate` ويمررها إلى الـ cubits، فتبقى المحادثات وعدادات الطلبات محدّثة."
       }
     },
     {
@@ -205,7 +205,7 @@
       },
       "body": {
         "en": "An internal dashboard tab shows Crashlytics and Performance views, helping the team watch stability release by release.",
-        "ar": "يعرض تبويب داخلي بيانات Crashlytics وPerformance، ما ساعد الفريق على متابعة الاستقرار إصدارًا بعد إصدار."
+        "ar": "يعرض تبويب داخلي بيانات Crashlytics و Performance، ما ساعد الفريق على متابعة الاستقرار إصدارًا بعد إصدار."
       }
     }
   ],
@@ -342,5 +342,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/delivery-iq.webp"
 }

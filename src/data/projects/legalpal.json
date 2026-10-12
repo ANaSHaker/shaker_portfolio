@@ -1,15 +1,14 @@
 {
   "slug": "legalpal",
-  "order": 11,
+  "order": 15,
   "featured": false,
   "name": {
     "en": "LegalPal",
     "ar": "LegalPal"
   },
-  "kind": "case-study",
+  "kind": "client",
   "categories": [
-    "legaltech",
-    "ai"
+    "legaltech"
   ],
   "accent": "#1E6BFF",
   "region": {
@@ -38,7 +37,7 @@
     ],
     "ar": [
       "LegalPal منصة قانونية مبنية لمحامي فلسطين. في تطبيق واحد يسأل المحامي مساعدًا قانونيًا بالذكاء الاصطناعي، ويدير قضاياه وجدول أعماله، ويبحث في القوانين والقرارات التمييزية، وينشئ العقود، ويتابع الأخبار القانونية، ويتواصل مع زملائه والدعم.",
-      "تعمل المنصة على Android وiOS والويب من كود Flutter واحد. وعلى الويب تتحول إلى تطبيق سطح مكتب حقيقي بشريط تنقل علوي ونوافذ محادثة عائمة وصفحة تعريفية مدمجة، مع مشاركة منطق العمل كله مع تطبيق الجوال.",
+      "تعمل المنصة على Android و iOS والويب من كود Flutter واحد. وعلى الويب تتحول إلى تطبيق سطح مكتب حقيقي بشريط تنقل علوي ونوافذ محادثة عائمة وصفحة تعريفية مدمجة، مع مشاركة منطق العمل كله مع تطبيق الجوال.",
       "وصل الإصدار 1.0 إلى App Store في مايو 2026، والخادم مبني بـ Laravel 12 API مع لوحة تحكم إدارية."
     ]
   },
@@ -54,7 +53,7 @@
       "مطوّر Flutter لتطبيقات الجوال ومنصة الويب",
       "مسؤول عن معمارية التطبيق وكل الشاشات وميزات الذكاء الاصطناعي والمحادثة الفورية",
       "بناء واجهة الويب المخصصة لسطح المكتب (`WebHomeScreen`) والصفحة التعريفية المدمجة",
-      "نشر الإصدارات على Google Play وApp Store",
+      "نشر الإصدارات على Google Play و App Store",
       "الـ Laravel 12 API ولوحة التحكم من جهة الخادم، وليست ضمن نطاق عملي"
     ]
   },
@@ -187,7 +186,7 @@
       },
       "body": {
         "en": "`AppRouter` serves the phone bottom-navigation layout on Android, iOS and iPad, and a separate `WebHomeScreen` on desktop browsers. The same `AppCubit`, `AuthCubit`, `DioHelper` and models drive both, so a data-layer fix ships everywhere.",
-        "ar": "يقدّم `AppRouter` واجهة الهاتف بالتنقل السفلي على Android وiOS وiPad، وواجهة `WebHomeScreen` مستقلة على متصفحات سطح المكتب. ويحرّك الاثنتين نفسُ `AppCubit` و`AuthCubit` و`DioHelper` والنماذج، فأي إصلاح في طبقة البيانات يصل إلى كل المنصات."
+        "ar": "يقدّم `AppRouter` واجهة الهاتف بالتنقل السفلي على Android و iOS و iPad، وواجهة `WebHomeScreen` مستقلة على متصفحات سطح المكتب. ويحرّك الاثنتين نفسُ `AppCubit` و `AuthCubit` و `DioHelper` والنماذج، فأي إصلاح في طبقة البيانات يصل إلى كل المنصات."
       }
     },
     {
@@ -203,7 +202,7 @@
     {
       "title": {
         "en": "Iframe and Flutter handshake",
-        "ar": "تواصل بين الـ iframe وFlutter"
+        "ar": "تواصل بين الـ iframe و Flutter"
       },
       "body": {
         "en": "The static landing page is mounted in an `HtmlElementView` iframe and sends `postMessage('legalpal-login')`. Flutter listens and routes a new visitor in as a guest, or a returning one straight into the app.",
@@ -217,7 +216,7 @@
       },
       "body": {
         "en": "Web-only screens have `_stub` twins selected with `if (dart.library.io)`, so the Android and iOS builds never import `dart:html` or `dart:ui_web`. Messaging, Crashlytics and the Analytics observer start only when `!kIsWeb`.",
-        "ar": "لشاشات الويب نسخ `_stub` تُختار عبر `if (dart.library.io)`، فلا تستورد نسختا Android وiOS مكتبتي `dart:html` أو `dart:ui_web` أبدًا. ولا تبدأ خدمات الإشعارات وCrashlytics ومراقب Analytics إلا عند `!kIsWeb`."
+        "ar": "لشاشات الويب نسخ `_stub` تُختار عبر `if (dart.library.io)`، فلا تستورد نسختا Android و iOS مكتبتي `dart:html` أو `dart:ui_web` أبدًا. ولا تبدأ خدمات الإشعارات و Crashlytics ومراقب Analytics إلا عند `!kIsWeb`."
       }
     },
     {
@@ -237,7 +236,7 @@
       },
       "body": {
         "en": "Crashlytics, Performance and Analytics are wired in at startup, with custom traces in `FirebaseMonitoringService`. Every layout is RTL by default, with Arabic fonts, Arabic dates and a guest mode.",
-        "ar": "تُفعَّل خدمات Crashlytics وPerformance وAnalytics عند الإقلاع، مع تتبعات مخصصة في `FirebaseMonitoringService`. وكل الواجهات من اليمين لليسار افتراضيًا، بخطوط وتواريخ عربية ووضع للزائر."
+        "ar": "تُفعَّل خدمات Crashlytics و Performance و Analytics عند الإقلاع، مع تتبعات مخصصة في `FirebaseMonitoringService`. وكل الواجهات من اليمين لليسار افتراضيًا، بخطوط وتواريخ عربية ووضع للزائر."
       }
     }
   ],
@@ -300,7 +299,7 @@
       },
       "summary": {
         "en": "Android and iOS app with the AI legal assistant, case management, laws, contracts, maps and realtime chat. Live on Google Play and the App Store.",
-        "ar": "تطبيق Android وiOS يضم المساعد القانوني الذكي، وإدارة القضايا، والقوانين، والعقود، والخرائط، والمحادثة الفورية. متاح على Google Play وApp Store."
+        "ar": "تطبيق Android و iOS يضم المساعد القانوني الذكي، وإدارة القضايا، والقوانين، والعقود، والخرائط، والمحادثة الفورية. متاح على Google Play و App Store."
       },
       "repo": "legalpal-app-case-study"
     },
@@ -321,16 +320,16 @@
     {
       "type": "github",
       "label": {
-        "en": "App case study",
-        "ar": "دراسة حالة التطبيق"
+        "en": "App repo on GitHub",
+        "ar": "مستودع التطبيق على GitHub"
       },
       "url": "https://github.com/ANaSHaker/legalpal-app-case-study"
     },
     {
       "type": "github",
       "label": {
-        "en": "Web case study",
-        "ar": "دراسة حالة الويب"
+        "en": "Web repo on GitHub",
+        "ar": "مستودع الويب على GitHub"
       },
       "url": "https://github.com/ANaSHaker/legalpal-web-case-study"
     },
@@ -469,5 +468,6 @@
       "role": "gallery",
       "part": "web"
     }
-  ]
+  ],
+  "logo": "img/logos/legalpal.webp"
 }

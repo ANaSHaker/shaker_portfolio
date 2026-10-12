@@ -1,6 +1,6 @@
 # Mahmoud Shaker — Portfolio
 
-Bilingual (English / العربية) portfolio for **Mahmoud Shaker**, Senior Flutter Engineer in Cairo.
+Bilingual (English / العربية) portfolio for **Mahmoud Shaker**, Senior Flutter & Android Engineer in Cairo.
 Static site built with **Astro 5 + Tailwind CSS 4**, deployed to GitHub Pages at
 `https://anashaker.github.io/shaker_portfolio/`.
 
@@ -9,12 +9,16 @@ Static site built with **Astro 5 + Tailwind CSS 4**, deployed to GitHub Pages at
 - Separate `/en/` and `/ar/` routes with full RTL, `hreflang` alternates and a persisted language choice
   (the root `/` redirects using the saved choice or the browser language).
 - Dark and light themes: follows the system preference until the visitor picks one, then the choice is saved. No flash on load.
-- 22 projects, each with its own case-study page in both languages: banner, overview, role, challenge, highlights,
+- 23 projects, each with its own page in both languages: banner, overview, role, challenge, highlights,
   signature feature, screen gallery with a keyboard and swipe lightbox, engineering notes, results, stack and links.
-- Filterable project grid (Delivery & commerce, LegalTech, EdTech, Health, AI, Open source, Own products), with the filter kept in the URL (`?filter=ai`).
-- Scroll reveals, a cursor spotlight on cards, count-up stats and a marquee. All of them turn off under `prefers-reduced-motion`.
+- Project cards with the app icon, country flag and Google Play / App Store / GitHub buttons, in a featured section
+  and a filterable grid (Delivery & commerce, LegalTech, EdTech, Health, Finance & insurance, Open source, Own products),
+  with the filter kept in the URL (`?filter=edtech`).
+- App-like on phones and tablets: compact top bar, bottom tab bar, safe-area insets, 44px touch targets, swipeable
+  rows and screenshot galleries, and a sticky "get the app" bar on project pages.
+- Scroll reveals, a cursor spotlight on cards, and count-up stats. All of them turn off under `prefers-reduced-motion`.
 - SEO: canonical URLs, Open Graph and Twitter cards (a 1200×630 image per page), JSON-LD `Person`, `sitemap.xml` and `robots.txt`.
-- Self-hosted variable fonts: Bricolage Grotesque (display), Inter (body) and Readex Pro (Arabic).
+- Self-hosted fonts: Bricolage Grotesque (display), Inter (body) and Tajawal (Arabic).
 
 ## Project structure
 
@@ -32,7 +36,8 @@ src/
     [lang]/index.astro  home
     [lang]/projects/[slug].astro
 public/img/             pre-optimised WebP images (committed)
-scripts/build-images.mjs
+scripts/build-images.mjs  project images + Open Graph images
+scripts/build-logos.mjs   app icons for the project cards (public/img/logos)
 ```
 
 ## Content
@@ -49,6 +54,9 @@ The source images live in the showcase repos, outside this repo. `npm run images
 ```bash
 REPOS_DIR=../repos npm run images   # REPOS_DIR defaults to ../repos
 ```
+
+`npm run logos` builds the 192 px app icons shown on the cards from the store icons in `../_store` (and brand files
+in `../_work` / `../repos`); each project points at its icon with `"logo": "img/logos/<slug>.webp"`.
 
 Commit the output in `public/img/` and `src/data/images.json`. CI only runs `astro build`.
 

@@ -1,12 +1,12 @@
 {
   "slug": "midgram",
-  "order": 16,
+  "order": 18,
   "featured": false,
   "name": {
     "en": "MidGram",
     "ar": "MidGram"
   },
-  "kind": "case-study",
+  "kind": "client",
   "categories": [
     "health",
     "commerce"
@@ -156,7 +156,7 @@
         "A visit appointment is a typed chat message that also writes an appointment document, shown in both users' Reminders; cancelling updates both sides in real time."
       ],
       "ar": [
-        "عند أول تشغيل يختار المستخدم صيدلية أو مندوب. تحفظ `UserRoleService` هذا الاختيار وتُحدَّد منه كل المسارات اللاحقة، ولكل دور Bindings وControllers وشريط تنقل خاص به في GetX.",
+        "عند أول تشغيل يختار المستخدم صيدلية أو مندوب. تحفظ `UserRoleService` هذا الاختيار وتُحدَّد منه كل المسارات اللاحقة، ولكل دور Bindings و Controllers وشريط تنقل خاص به في GetX.",
         "ينشر المندوبون المنتجات وتنشر الصيدليات الطلبات، بحد أقصى 5 صور في Firebase Storage، ويرى كل طرف محتوى الآخر في صفحته الرئيسية.",
         "يفتح أي طرف المحادثة، وتعيد `createOrGetChat` استخدام المحادثة الموجودة وتعيد تفعيلها إن كان أحد الطرفين قد حذفها.",
         "موعد الزيارة رسالة من نوع خاص تُنشئ أيضًا مستند موعد يظهر في تذكيرات الطرفين، وإلغاؤه يُحدّث الجهتين لحظيًا."
@@ -234,7 +234,7 @@
     ],
     "ar": [
       "تطبيق Flutter واحد يخدم دورين، الصيدليات والمندوبين الطبيين، مع محادثة ومواعيد لحظية مشتركة.",
-      "بلا خوادم بالكامل على Firebase (Auth وFirestore وStorage وFCM)، مع تحكم عن بُعد في إجبار التحديث والصيانة.",
+      "بلا خوادم بالكامل على Firebase (Auth و Firestore و Storage و FCM)، مع تحكم عن بُعد في إجبار التحديث والصيانة.",
       "سُلِّم للعميل، ولا يوجد رابط متجر عام."
     ]
   },
@@ -319,5 +319,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/midgram.webp"
 }

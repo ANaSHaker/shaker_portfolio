@@ -1,6 +1,6 @@
 {
   "slug": "visit-egypt",
-  "order": 20,
+  "order": 21,
   "featured": false,
   "name": {
     "en": "Visit Egypt",
@@ -177,7 +177,7 @@
       },
       "body": {
         "en": "Each content type has `/en` and `/ar` endpoints. Cubits pick the endpoint from the current GetX locale while UI strings come from GetX `Translations`, so content and chrome switch language together.",
-        "ar": "لكل نوع محتوى نقطتا `/en` و`/ar`. تختار الـ Cubits النقطة حسب لغة GetX الحالية، بينما تأتي نصوص الواجهة من `Translations` في GetX، فيتبدّل المحتوى والواجهة معًا."
+        "ar": "لكل نوع محتوى نقطتا `/en` و `/ar`. تختار الـ Cubits النقطة حسب لغة GetX الحالية، بينما تأتي نصوص الواجهة من `Translations` في GetX، فيتبدّل المحتوى والواجهة معًا."
       }
     },
     {
@@ -329,5 +329,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/visit-egypt.webp"
 }

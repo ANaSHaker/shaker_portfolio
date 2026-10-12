@@ -11,14 +11,14 @@ const s = t(lang);
 const num = (i: number) => String(i + 1).padStart(2, '0');
 ---
 
-<section id="process" class="relative py-24 sm:py-32" aria-labelledby="process-title">
+<section id="process" class="section relative" aria-labelledby="process-title">
   <div class="container-x">
     <SectionHead kicker={s.process.kicker} title={s.process.title} id="process-title" />
-    <div class="relative mt-14">
-      <ol class="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+    <div class="relative mt-8 sm:mt-14">
+      <ol class="scroll-row -mx-[var(--gutter)] gap-4 px-[var(--gutter)] pb-2 md:mx-0 md:grid md:grid-cols-2 md:gap-5 md:overflow-visible md:px-0 lg:grid-cols-5">
       {
         processSteps.map((st, i) => (
-          <li class="card relative p-6" style={`--d:${i}`} data-reveal>
+          <li class="card relative w-[78%] p-6 sm:w-[46%] md:w-auto" style={`--d:${i}`} data-reveal>
             <span class="relative z-10 grid size-11 place-items-center rounded-full border border-line bg-bg-2 font-display text-sm font-bold text-brand-ink shadow-[0_0_0_6px_var(--bg)]">
               {num(i)}
             </span>

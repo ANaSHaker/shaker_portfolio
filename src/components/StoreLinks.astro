@@ -1,0 +1,93 @@
+---
+import Icon from './Icon.astro';
+import type { LinkType, Project } from '../data/types';
+import { cardLinks } from '../data/projects';
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  p: Project;
+  lang: Lang;
+  class?: string;
+  /** Limit to these link types (e.g. only the stores for the sticky bar). */
+  only?: LinkType[];
+}
+const { p, lang, class: cls = '', only } = Astro.props;
+const s = t(lang);
+const items = cardLinks(p).filter((l) => !only || only.includes(l.type));
+const icon: Partial<Record<LinkType, string>> = { play: 'googleplay', appstore: 'appstore', github: 'github', web: 'globe', pubdev: 'package' };
+const label = (type: LinkType) => (s.stores as Record<string, unknown>)[type] as string;
+// Next to store buttons, GitHub shrinks to an icon so the store names never truncate.
+const compact = (type: LinkType) => type === 'github' && items.some((l) => l.type === 'play' || l.type === 'appstore');
+---
+
+{
+  items.length > 0 && (
+    <ul class:list={['store-links relative z-10 flex gap-2', cls]}>
+      {items.map((l) => (
+        <li class:list={[compact(l.type) ? 'shrink-0' : 'min-w-0 flex-1']}>
+          <a
+            href={l.url}
+            target="_blank"
+            rel="noopener"
+            class:list={['store-btn', compact(l.type) && 'is-icon']}
+            title={l.label[lang]}
+            data-store={l.type}
+            aria-label={s.stores.openOn(p.name[lang], l.label[lang])}
+          >
+            <Icon name={icon[l.type] ?? 'arrow-up-right'} size={17} class="store-ic shrink-0" />
+            <span class:list={['truncate', compact(l.type) && 'sr-only']}>{label(l.type)}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+<style>
+  .store-btn {
+    display: flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    border-radius: 0.9rem;
+    border: 1px solid var(--line);
+    background: var(--glass-2);
+    padding-inline: 0.6rem;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--ink-2);
+    transition:
+      border-color 0.25s,
+      background-color 0.25s,
+      color 0.25s,
+      transform 0.2s;
+  }
+  .store-btn.is-icon {
+    width: 2.75rem;
+    padding-inline: 0;
+  }
+  .store-btn :global(.store-ic) {
+    color: var(--tint, var(--ink));
+  }
+  .store-btn[data-store='play'] {
+    --tint: #01875f;
+  }
+  .store-btn[data-store='appstore'] {
+    --tint: #0d96f6;
+  }
+  :global([data-theme='dark']) .store-btn[data-store='play'] {
+    --tint: #34c38f;
+  }
+  :global([data-theme='dark']) .store-btn[data-store='appstore'] {
+    --tint: #3fb0ff;
+  }
+  .store-btn:hover {
+    color: var(--ink);
+    border-color: color-mix(in oklab, var(--tint, var(--accent, var(--brand))) 50%, var(--line));
+    background: color-mix(in oklab, var(--tint, var(--accent, var(--brand))) 10%, var(--glass-2));
+  }
+  .store-btn:active {
+    transform: scale(0.97);
+  }
+</style>

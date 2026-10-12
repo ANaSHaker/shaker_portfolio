@@ -62,22 +62,33 @@
   --color-brand-ink: var(--brand-ink);
   --font-sans: var(--font-body);
   --font-display: var(--font-head);
+  /* Nothing on the site goes below 13px. */
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.4;
 }
 
 html {
+  --gutter: clamp(1.15rem, 4vw, 2.5rem);
   --font-body: 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-head: 'Bricolage Grotesque Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
   background: var(--bg);
   color: var(--ink);
   scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  scroll-padding-top: 5rem;
   overflow-x: clip;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
 html[lang='ar'] {
-  --font-body: 'Readex Pro Variable', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
-  --font-head: 'Readex Pro Variable', 'Bricolage Grotesque Variable', ui-sans-serif, sans-serif;
+  --font-body: 'Tajawal', 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-head: 'Tajawal', 'Bricolage Grotesque Variable', ui-sans-serif, sans-serif;
+}
+/* Tajawal runs small and light next to Inter: a touch larger, medium body, bold headings. */
+html[lang='ar'] {
+  font-size: 106.25%;
+}
+html[lang='ar'] body {
+  font-weight: 500;
 }
 
 body {
@@ -142,7 +153,29 @@ body {
     width: 100%;
     max-width: 80rem;
     margin-inline: auto;
-    padding-inline: clamp(1.15rem, 4vw, 2.5rem);
+    padding-inline: var(--gutter);
+  }
+
+  .section {
+    padding-block: clamp(3rem, 6vw, 5.5rem);
+  }
+
+  /* Horizontally swipeable row (filters, cards, screenshots). */
+  .scroll-row {
+    display: flex;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--gutter);
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .scroll-row::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-row > * {
+    scroll-snap-align: start;
+    flex-shrink: 0;
   }
 
   .glass {
@@ -157,7 +190,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    font-size: 0.78rem;
+    font-size: 0.8125rem;
     font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
@@ -189,7 +222,7 @@ body {
   html[lang='ar'] .h-section {
     letter-spacing: 0;
     line-height: 1.25;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   .text-gradient {
@@ -207,7 +240,7 @@ body {
     border: 1px solid var(--line);
     background: var(--glass-2);
     padding: 0.32rem 0.75rem;
-    font-size: 0.8rem;
+    font-size: 0.8125rem;
     font-weight: 500;
     color: var(--ink-2);
     white-space: nowrap;
@@ -362,32 +395,6 @@ body {
   }
 }
 
-/* ---------- Marquee ---------- */
-.marquee {
-  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
-}
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marquee 48s linear infinite;
-}
-html[dir='rtl'] .marquee-track {
-  animation-name: marquee-rtl;
-}
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
-}
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
-}
-@keyframes marquee-rtl {
-  to {
-    transform: translateX(50%);
-  }
-}
-
 /* ---------- Reveal on scroll ---------- */
 html.js [data-reveal] {
   opacity: 0;
@@ -452,6 +459,13 @@ html.js [data-reveal].is-in {
   animation: pulse-dot 1.8s ease-out infinite;
 }
 
+/* Room for the sticky store bar on project pages (phones / tablets) */
+@media (max-width: 1023.98px) {
+  body:has([data-store-bar]) > footer {
+    padding-bottom: calc(8.8rem + env(safe-area-inset-bottom));
+  }
+}
+
 /* Cross-document view transitions (progressive enhancement) */
 @view-transition {
   navigation: auto;
@@ -472,9 +486,6 @@ html.js [data-reveal].is-in {
     opacity: 1;
     transform: none;
     filter: none;
-  }
-  .marquee-track {
-    animation: none;
   }
   @view-transition {
     navigation: none;

@@ -20,19 +20,23 @@ const nav = [
 ];
 ---
 
-<header class="fixed inset-x-0 top-0 z-50 pt-3 sm:pt-4" data-header>
-  <div class="container-x">
+<!--
+  Phones and tablets: a compact, full-bleed app bar (navigation lives in the bottom bar).
+  Desktop: the floating glass pill with the full menu.
+-->
+<header class="app-bar fixed inset-x-0 top-0 z-50 lg:pt-4" data-header>
+  <div class="mx-auto lg:max-w-[80rem] lg:px-[var(--gutter)]">
     <nav
-      class="glass flex items-center justify-between gap-3 rounded-full py-2 ps-2 pe-2 transition-[background-color,box-shadow] duration-300 sm:ps-3"
+      class="bar glass flex items-center justify-between gap-3 max-lg:px-[var(--gutter)] lg:rounded-full lg:py-2 lg:ps-3 lg:pe-2"
       aria-label="Primary"
     >
-      <a href={home} class="group flex items-center gap-2.5 rounded-full pe-2" aria-label={profile.name[lang]}>
+      <a href={home} class="flex min-h-11 min-w-0 items-center gap-2.5 rounded-full pe-2" aria-label={profile.name[lang]}>
         <span
-          class="relative grid size-9 place-items-center overflow-hidden rounded-full bg-[conic-gradient(from_200deg,#2563eb,#7c3aed,#06b6d4,#2563eb)] font-display text-[0.8rem] font-bold text-white shadow-[0_6px_20px_-6px_rgb(79_70_229/.8)]"
+          class="relative grid size-9 shrink-0 place-items-center overflow-hidden rounded-full bg-[conic-gradient(from_200deg,#2563eb,#7c3aed,#06b6d4,#2563eb)] font-display text-[0.8125rem] font-bold text-white shadow-[0_6px_20px_-6px_rgb(79_70_229/.8)]"
         >
           <span class="relative z-10" dir="ltr">MS</span>
         </span>
-        <span class="hidden font-display text-[0.95rem] font-semibold tracking-tight sm:inline">{profile.name[lang]}</span>
+        <span class="truncate font-display text-[1rem] font-semibold tracking-tight">{profile.name[lang]}</span>
       </a>
 
       <ul class="hidden items-center gap-1 lg:flex">
@@ -50,71 +54,47 @@ const nav = [
         }
       </ul>
 
-      <div class="flex items-center gap-1.5">
+      <div class="flex shrink-0 items-center gap-1">
         <a
           href={url(`${other}/${path}`)}
           hreflang={other}
           lang={other}
           data-lang-switch={other}
-          class="inline-flex h-10 items-center gap-1.5 rounded-full px-3 text-[0.85rem] font-semibold text-ink-2 transition-colors hover:bg-glass-2 hover:text-ink"
+          class="inline-flex h-11 items-center gap-1.5 rounded-full px-3 text-[0.9rem] font-semibold text-ink-2 transition-colors hover:bg-glass-2 hover:text-ink"
           title={s.langSwitchLabel}
+          aria-label={s.langSwitchLabel}
         >
-          <Icon name="globe" size={17} />
-          <span>{s.langSwitch}</span>
+          <Icon name="globe" size={18} />
+          <span class="max-[380px]:hidden">{s.langSwitch}</span>
         </a>
         <button
           type="button"
           data-theme-toggle
-          class="grid size-10 place-items-center rounded-full text-ink-2 transition-colors hover:bg-glass-2 hover:text-ink"
+          class="grid size-11 place-items-center rounded-full text-ink-2 transition-colors hover:bg-glass-2 hover:text-ink"
           aria-label={s.themeToggle}
           title={s.themeToggle}
         >
-          <Icon name="sun" size={18} class="hidden dark:block" />
-          <Icon name="moon" size={18} class="block dark:hidden" />
+          <Icon name="sun" size={19} class="hidden dark:block" />
+          <Icon name="moon" size={19} class="block dark:hidden" />
         </button>
-        <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary hidden !px-4 !py-2.5 text-sm sm:inline-flex">
+        <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary hidden !px-4 !py-2.5 text-sm lg:inline-flex">
           <Icon name="whatsapp" size={16} />
           <span>{s.hero.ctaPrimary}</span>
         </a>
-        <details class="relative lg:hidden" data-menu>
-          <summary
-            class="grid size-10 cursor-pointer list-none place-items-center rounded-full text-ink-2 hover:bg-glass-2 [&::-webkit-details-marker]:hidden"
-            aria-label={s.menu}
-          >
-            <Icon name="menu" size={20} />
-          </summary>
-          <div class="glass absolute end-0 top-[calc(100%+0.6rem)] w-56 rounded-3xl !bg-bg-2/95 p-2">
-            <ul>
-              {
-                nav.map((n) => (
-                  <li>
-                    <a href={n.href} class="block rounded-2xl px-4 py-3 font-medium text-ink-2 hover:bg-glass-2 hover:text-ink">
-                      {n.label}
-                    </a>
-                  </li>
-                ))
-              }
-              <li class="sm:hidden">
-                <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary mt-1 w-full">
-                  <Icon name="whatsapp" size={16} />
-                  {s.hero.ctaPrimary}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </details>
       </div>
     </nav>
   </div>
 </header>
 
-<script>
-  const menu = document.querySelector<HTMLDetailsElement>('[data-menu]');
-  menu?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => (menu.open = false)));
-  document.addEventListener('click', (e) => {
-    if (menu?.open && !menu.contains(e.target as Node)) menu.open = false;
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && menu?.open) menu.open = false;
-  });
-</script>
+<style>
+  @media (max-width: 1023.98px) {
+    .bar {
+      min-height: calc(3.5rem + env(safe-area-inset-top));
+      padding-top: env(safe-area-inset-top);
+      border-width: 0 0 1px;
+      border-radius: 0;
+      box-shadow: none;
+      background: color-mix(in oklab, var(--bg) 72%, transparent);
+    }
+  }
+</style>

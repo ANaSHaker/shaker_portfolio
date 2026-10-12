@@ -1,19 +1,19 @@
 {
   "slug": "hamilguide",
-  "order": 10,
+  "order": 14,
   "featured": false,
   "name": {
     "en": "HamilGuide",
     "ar": "دليل الحوامل"
   },
-  "kind": "case-study",
+  "kind": "client",
   "categories": [
     "health"
   ],
   "accent": "#EC4899",
   "region": {
-    "en": "Egypt, the Gulf & MENA",
-    "ar": "مصر والخليج والمنطقة العربية"
+    "en": "Egypt",
+    "ar": "مصر"
   },
   "period": "2022–present",
   "platforms": [
@@ -36,7 +36,7 @@
     ],
     "ar": [
       "يساعد دليل الحوامل الأم الحامل على متابعة حملها يومًا بيوم: متى موعد الولادة، وما الذي يحدث هذا الأسبوع، وكيف تسير قراءات الضغط والسكر والوزن، وكم مرة يركل الجنين.",
-      "وبعد الولادة يستمر التطبيق معها بمتابعة الطفل في الرضاعة والنوم والنمو. يعمل من كود Flutter واحد على Android وiPhone وiPad، بالعربية والإنجليزية والفرنسية والإسبانية والألمانية."
+      "وبعد الولادة يستمر التطبيق معها بمتابعة الطفل في الرضاعة والنوم والنمو. يعمل من كود Flutter واحد على Android و iPhone و iPad، بالعربية والإنجليزية والفرنسية والإسبانية والألمانية."
     ]
   },
   "role": {
@@ -49,8 +49,8 @@
     "ar": [
       "مطوّر Flutter مسؤول عن تسليم تطبيق الجوال بالكامل",
       "بناء الميزات: الحاسبة، ودليل الأسابيع، ومتابعة الصحة، وأدوات الطفل، والملاحظات، ودردشة المجتمع",
-      "تكامل Firebase: المصادقة وFirestore والتخزين وFCM وCrashlytics",
-      "نشر الإصدارات وصيانتها على Google Play وApp Store"
+      "تكامل Firebase: المصادقة و Firestore والتخزين و FCM و Crashlytics",
+      "نشر الإصدارات وصيانتها على Google Play و App Store"
     ]
   },
   "challenge": {
@@ -138,8 +138,8 @@
         ],
         "ar": [
           "غرف دردشة للمجتمع مبنية على Cloud Firestore",
-          "خمس لغات عبر `easy_localization` باتجاهي RTL وLTR",
-          "تصميمات للهاتف والجهاز اللوحي وiPad مع زر للوضع الداكن",
+          "خمس لغات عبر `easy_localization` باتجاهي RTL و LTR",
+          "تصميمات للهاتف والجهاز اللوحي و iPad مع زر للوضع الداكن",
           "طلب التقييم داخل التطبيق، والمشاركة، والإشعارات، وتحقيق الدخل من الإعلانات"
         ]
       }
@@ -210,11 +210,11 @@
     {
       "title": {
         "en": "Phone, tablet and iPad",
-        "ar": "هاتف وجهاز لوحي وiPad"
+        "ar": "هاتف وجهاز لوحي و iPad"
       },
       "body": {
         "en": "Relative sizing with `sizer` and `screenutil` lets the same build ship iPad screenshots on the App Store.",
-        "ar": "المقاسات النسبية عبر `sizer` و`screenutil` تتيح للإصدار نفسه أن يُنشر بلقطات iPad على App Store."
+        "ar": "المقاسات النسبية عبر `sizer` و `screenutil` تتيح للإصدار نفسه أن يُنشر بلقطات iPad على App Store."
       }
     },
     {
@@ -360,5 +360,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/hamilguide.webp"
 }

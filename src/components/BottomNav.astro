@@ -1,0 +1,108 @@
+---
+import Icon from './Icon.astro';
+import { t, url, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+  /** Which tab is active when the page is not the home page (e.g. a project page). */
+  current?: 'home' | 'work' | 'stack' | 'contact';
+}
+const { lang, current } = Astro.props;
+const s = t(lang);
+const home = url(`${lang}/`);
+const tabs = [
+  { key: 'home', href: `${home}#top`, icon: 'home', label: s.nav.home },
+  { key: 'work', href: `${home}#work`, icon: 'grid', label: s.nav.projects },
+  { key: 'stack', href: `${home}#stack`, icon: 'layers', label: s.nav.stack },
+  { key: 'contact', href: `${home}#contact`, icon: 'chat', label: s.nav.contact },
+];
+---
+
+<!-- Mobile and tablet tab bar. Desktop uses the header menu. -->
+<nav class="tabbar fixed inset-x-0 bottom-0 z-50 lg:hidden" aria-label={s.menu} data-tabbar data-current={current}>
+  <ul class="mx-auto grid max-w-xl grid-cols-4 px-2">
+    {
+      tabs.map((tab) => (
+        <li>
+          <a href={tab.href} class="tab" data-tab={tab.key} aria-current={current === tab.key ? 'page' : undefined}>
+            <span class="tab-ic">
+              <Icon name={tab.icon} size={21} />
+            </span>
+            <span class="tab-label">{tab.label}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  .tabbar {
+    padding-bottom: env(safe-area-inset-bottom);
+    border-top: 1px solid var(--line);
+    background: color-mix(in oklab, var(--bg) 78%, transparent);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+  }
+  .tab {
+    display: flex;
+    min-height: 3.6rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--muted);
+    -webkit-tap-highlight-color: transparent;
+    transition: color 0.25s;
+  }
+  .tab-ic {
+    display: grid;
+    place-items: center;
+    width: 3.6rem;
+    height: 1.9rem;
+    border-radius: 999px;
+    transition:
+      background-color 0.3s,
+      transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .tab:active .tab-ic {
+    transform: scale(0.9);
+  }
+  .tab[aria-current] {
+    color: var(--ink);
+  }
+  .tab[aria-current] .tab-ic {
+    color: var(--brand-ink);
+    background: color-mix(in oklab, var(--brand) 18%, transparent);
+  }
+</style>
+
+<script>
+  // On the home page, highlight the tab of the section in view.
+  const bar = document.querySelector<HTMLElement>('[data-tabbar]');
+  const sections = ['work', 'projects', 'services', 'stack', 'process', 'contact']
+    .map((id) => document.getElementById(id))
+    .filter((el): el is HTMLElement => !!el);
+  if (bar && !bar.dataset.current && sections.length) {
+    const tabFor: Record<string, string> = { work: 'work', projects: 'work', services: 'home', stack: 'stack', process: 'stack', contact: 'contact' };
+    const set = (key: string) =>
+      bar.querySelectorAll<HTMLAnchorElement>('[data-tab]').forEach((a) => {
+        if (a.dataset.tab === key) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
+    const update = () => {
+      const line = innerHeight * 0.4;
+      let key = 'home';
+      for (const el of sections) if (el.getBoundingClientRect().top < line) key = tabFor[el.id];
+      set(key);
+    };
+    let raf = 0;
+    addEventListener('scroll', () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(update);
+    }, { passive: true });
+    update();
+  }
+</script>

@@ -1,10 +1,15 @@
 ---
 import '@fontsource-variable/inter';
 import '@fontsource-variable/bricolage-grotesque';
-import '@fontsource-variable/readex-pro';
+// Arabic: Tajawal (regular, medium, bold, extra-bold).
+import '@fontsource/tajawal/400.css';
+import '@fontsource/tajawal/500.css';
+import '@fontsource/tajawal/700.css';
+import '@fontsource/tajawal/800.css';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import BottomNav from '../components/BottomNav.astro';
 import { dir, t, url, type Lang } from '../i18n';
 import { links, profile } from '../data/site';
 
@@ -16,8 +21,10 @@ interface Props {
   path: string;
   ogImage?: string;
   accent?: string;
+  /** Active bottom-bar tab on pages other than home. */
+  tab?: 'home' | 'work' | 'stack' | 'contact';
 }
-const { lang, title, description, path, ogImage = 'img/og/home.jpg', accent } = Astro.props;
+const { lang, title, description, path, ogImage = 'img/og/home.jpg', accent, tab } = Astro.props;
 const s = t(lang);
 const pageTitle = title ? `${title} · ${profile.name[lang]}` : s.meta.title;
 const desc = description ?? s.meta.description;
@@ -36,7 +43,7 @@ const personLd = {
   url: abs(''),
   image: abs('img/profile/photo-460.webp'),
   sameAs: [links.linkedin, links.github, links.khamsat, links.mostaql],
-  knowsAbout: ['Flutter', 'Dart', 'Android', 'Kotlin', 'Laravel', 'Next.js', 'Python', 'AI'],
+  knowsAbout: ['Flutter', 'Dart', 'Android', 'Kotlin', 'Java', 'Jetpack Compose', 'Firebase', 'Supabase', 'iOS'],
 };
 ---
 
@@ -102,6 +109,7 @@ const personLd = {
       <slot />
     </main>
     <Footer lang={lang} />
+    <BottomNav lang={lang} current={tab} />
 
     <script>
       // Scroll reveal

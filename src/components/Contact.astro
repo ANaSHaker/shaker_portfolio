@@ -21,9 +21,9 @@ const items = [
 ];
 ---
 
-<section id={compact ? undefined : 'contact'} class="relative py-24 sm:py-32" aria-labelledby={compact ? undefined : 'contact-title'}>
+<section id={compact ? undefined : 'contact'} class="section relative" aria-labelledby={compact ? undefined : 'contact-title'}>
   <div class="container-x">
-    <div class="glass relative overflow-hidden rounded-[2.25rem] p-7 sm:p-12 lg:p-16" data-reveal>
+    <div class="glass relative overflow-hidden rounded-[1.75rem] p-5 sm:rounded-[2.25rem] sm:p-12 lg:p-16" data-reveal>
       <div
         class="pointer-events-none absolute -top-32 end-[-10%] size-[34rem] rounded-full bg-[radial-gradient(closest-side,rgb(124_58_237/.35),transparent)] blur-2xl"
         aria-hidden="true"
@@ -34,17 +34,17 @@ const items = [
         aria-hidden="true"
       >
       </div>
-      <div class="relative grid gap-12 lg:grid-cols-12">
+      <div class="relative grid gap-8 sm:gap-12 lg:grid-cols-12">
         <div class="lg:col-span-5">
           <p class="kicker">{s.contact.kicker}</p>
           <h2 id={compact ? undefined : 'contact-title'} class="h-section mt-5">{title ?? s.contact.title}</h2>
-          <p class="mt-6 max-w-md text-lg leading-relaxed text-ink-2">{body ?? s.contact.body}</p>
-          <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary mt-9">
+          <p class="mt-5 max-w-md text-[1.05rem] leading-relaxed text-ink-2 sm:mt-6 sm:text-lg">{body ?? s.contact.body}</p>
+          <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary mt-7 min-h-12 w-full sm:mt-9 sm:w-auto">
             <Icon name="whatsapp" size={18} />
             {s.hero.ctaPrimary}
           </a>
         </div>
-        <ul class="grid gap-3 sm:grid-cols-2 lg:col-span-7">
+        <ul class="grid gap-2.5 sm:grid-cols-2 sm:gap-3 lg:col-span-7">
           {
             items.map((x) => (
               <li>
@@ -52,7 +52,7 @@ const items = [
                   href={x.href}
                   target={x.href.startsWith('http') ? '_blank' : undefined}
                   rel="noopener"
-                  class="contact-tile group flex h-full items-center gap-4 rounded-2xl border border-line bg-glass-2 p-4 transition-all duration-300 hover:-translate-y-0.5"
+                  class="contact-tile group flex h-full items-center gap-4 rounded-2xl border border-line bg-glass-2 p-3.5 sm:p-4 transition-all duration-300 hover:-translate-y-0.5"
                   style={`--c:${x.color}`}
                 >
                   <span class="ic grid size-12 shrink-0 place-items-center rounded-xl border border-line text-ink-2 transition-all duration-300">

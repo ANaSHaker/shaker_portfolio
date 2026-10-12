@@ -1,6 +1,6 @@
 {
   "slug": "muslim",
-  "order": 22,
+  "order": 23,
   "featured": false,
   "name": {
     "en": "Muslim",
@@ -12,7 +12,10 @@
     "own"
   ],
   "accent": "#E3B64C",
-  "region": null,
+  "region": {
+    "en": "Egypt",
+    "ar": "مصر"
+  },
   "period": "2020",
   "platforms": [
     "Android",
@@ -256,5 +259,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/muslim.webp"
 }

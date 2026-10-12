@@ -1,13 +1,15 @@
 {
   "slug": "insurify",
-  "order": 14,
-  "featured": false,
+  "order": 5,
+  "featured": true,
   "name": {
     "en": "BFI Insurify",
     "ar": "BFI Insurify"
   },
-  "kind": "case-study",
-  "categories": [],
+  "kind": "client",
+  "categories": [
+    "fintech"
+  ],
   "accent": "#2FD6B3",
   "region": {
     "en": "Egypt",
@@ -254,6 +256,22 @@
   ],
   "links": [
     {
+      "type": "play",
+      "label": {
+        "en": "Google Play",
+        "ar": "Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.insurify.bfp"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store",
+        "ar": "App Store"
+      },
+      "url": "https://apps.apple.com/sa/app/bfi-insurify/id6761320120"
+    },
+    {
       "type": "github",
       "label": {
         "en": "GitHub repo",
@@ -311,5 +329,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/insurify.webp"
 }

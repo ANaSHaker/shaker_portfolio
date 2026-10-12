@@ -1,18 +1,21 @@
 {
   "slug": "vendora",
-  "order": 3,
-  "featured": true,
+  "order": 10,
+  "featured": false,
   "name": {
     "en": "Vendora",
     "ar": "Vendora"
   },
-  "kind": "code-case-study",
+  "kind": "source",
   "categories": [
     "commerce",
     "opensource"
   ],
   "accent": "#3B7BFF",
-  "region": null,
+  "region": {
+    "en": "Egypt",
+    "ar": "مصر"
+  },
   "period": null,
   "platforms": [
     "Windows",
@@ -63,7 +66,7 @@
       "منتج واحد وثلاثة أشكال: نقطة بيع ديسكتوب كثيفة باختصارات وقارئ باركود، وتطبيق جوال للمالك، ورابط للزبائن بلا تسجيل دخول، وكلها تشترك في كتالوج واحد وتدفق طلبات واحد.",
       "مخزون متعدد الفروع: كل عملية بيع يجب أن تخصم من المخزن الصحيح، وكل تحويل وجرد وتسوية واستلام بضاعة يجب أن يكون قابلًا للتدقيق.",
       "هوية خاصة لكل تاجر: لكل تاجر ألوانه وشعاره وتصميم منيو وثيم متجر.",
-      "سوق عربي أولًا: RTL كامل، وأرقام وتواريخ عربية، وتنسيق عملات EGP وSAR دون كسر تخطيطات LTR."
+      "سوق عربي أولًا: RTL كامل، وأرقام وتواريخ عربية، وتنسيق عملات EGP و SAR دون كسر تخطيطات LTR."
     ]
   },
   "highlights": [
@@ -83,7 +86,7 @@
         "ar": [
           "نقطة بيع ديسكتوب بجلسات فرع ومخزن، وتبويبات فئات بـ F1–F5، وإدخال الباركود، والخصومات، والتراجع بـ Ctrl+Z، وحساب الباقي.",
           "دفع نقدي أو بالبطاقة أو بالتحويل، مع إيصالات PDF وطباعة تلقائية وتنبيه صوتي.",
-          "نقطة بيع للجوال بسلة في لوحة سفلية تعمل بـ `PosCubit` و`CartCubit` نفسيهما.",
+          "نقطة بيع للجوال بسلة في لوحة سفلية تعمل بـ `PosCubit` و `CartCubit` نفسيهما.",
           "طلبات من نقطة البيع والمتجر والمنيو، مع الاسترجاع وحالة التنفيذ وتتبّع عام للطلب.",
           "حجوزات بصفحة حجز عامة، ومواعيد، وفترات زمنية، وأيام إغلاق."
         ]
@@ -107,7 +110,7 @@
           "التحويلات (اعتماد وترحيل واستلام)، والجرد، والتسويات، واستلام البضاعة.",
           "الموردون مع كشف حساب وتقرير أعمار الديون.",
           "لوحة مؤشرات أداء مع رسم مبيعات لآخر 30 يومًا وأفضل المنتجات والعملاء.",
-          "تقارير الأرباح والخسائر والمبيعات وتقييم المخزون وأرباح FIFO، مع التصدير إلى Excel وPDF."
+          "تقارير الأرباح والخسائر والمبيعات وتقييم المخزون وأرباح FIFO، مع التصدير إلى Excel و PDF."
         ]
       }
     },
@@ -145,7 +148,7 @@
         "The builder generates a QR code with `qr_flutter` and a printable PDF for the tables."
       ],
       "ar": [
-        "يختار التاجر واحدًا من 8 تصميمات (Modern Grid وClassic List وDark Luxury وMinimal وMagazine وPromo Flyer وBillboard وElegant Cards)، ويحدد اللون الأساسي ولون الخلفية ويرفع شعاره. تأتي المنتجات والأسعار والظهور من الكتالوج مباشرة، ويمكن لسعر خاص بالمنيو أن يتجاوز سعر نقطة البيع.",
+        "يختار التاجر واحدًا من 8 تصميمات (Modern Grid و Classic List و Dark Luxury و Minimal و Magazine و Promo Flyer و Billboard و Elegant Cards)، ويحدد اللون الأساسي ولون الخلفية ويرفع شعاره. تأتي المنتجات والأسعار والظهور من الكتالوج مباشرة، ويمكن لسعر خاص بالمنيو أن يتجاوز سعر نقطة البيع.",
         "عند الحفظ تُكتب الإعدادات في Cloud Firestore تحت `menus/{vendorId}`، ويربط مستند `slugIndex/{slug}` الرابط العام بالتاجر، ويُرفع الشعار إلى Firebase Storage.",
         "يتجاوز المسار العام `/menu/:slug` حارس تسجيل الدخول، فيحدد التاجر ويعرض الثيم المختار. كل ما يحتاجه الزبون متصفح على هاتفه.",
         "يولّد المحرر رمز QR عبر `qr_flutter` وملف PDF قابلًا للطباعة للطاولات."
@@ -171,7 +174,7 @@
       },
       "body": {
         "en": "A `HardwareKeyboard` handler buffers fast key bursts to tell a barcode scanner from typing, and maps F1–F5 to categories, Enter to charge, D to discount, / to search and Ctrl+Z to undo.",
-        "ar": "يجمّع معالج `HardwareKeyboard` نقرات المفاتيح السريعة ليميّز قارئ الباركود عن الكتابة، ويربط F1–F5 بالفئات، وEnter بالدفع، وD بالخصم، و/ بالبحث، وCtrl+Z بالتراجع."
+        "ar": "يجمّع معالج `HardwareKeyboard` نقرات المفاتيح السريعة ليميّز قارئ الباركود عن الكتابة، ويربط F1–F5 بالفئات، و Enter بالدفع، و D بالخصم، و/ بالبحث، و Ctrl+Z بالتراجع."
       }
     },
     {
@@ -181,7 +184,7 @@
       },
       "body": {
         "en": "Cubits call use cases only, and repositories return `Either<Failure, T>`, so the UI never sees an exception. Dependencies are wired with `get_it` and `injectable`.",
-        "ar": "لا تستدعي الـ Cubits إلا حالات الاستخدام، وتعيد المستودعات `Either<Failure, T>`، فلا ترى الواجهة أي استثناء. والاعتماديات مربوطة عبر `get_it` و`injectable`."
+        "ar": "لا تستدعي الـ Cubits إلا حالات الاستخدام، وتعيد المستودعات `Either<Failure, T>`، فلا ترى الواجهة أي استثناء. والاعتماديات مربوطة عبر `get_it` و `injectable`."
       }
     },
     {
@@ -191,7 +194,7 @@
       },
       "body": {
         "en": "`/menu/:slug`, `/track/:token` and `/book/:slug` are whitelisted in the router's redirect, so customers use them without an account while the staff app and admin-only `/admin/*` stay guarded.",
-        "ar": "المسارات `/menu/:slug` و`/track/:token` و`/book/:slug` مستثناة في إعادة التوجيه، فيستخدمها الزبائن بلا حساب، بينما يبقى تطبيق الموظفين ومسارات `/admin/*` الخاصة بالإدارة محميّة."
+        "ar": "المسارات `/menu/:slug` و `/track/:token` و `/book/:slug` مستثناة في إعادة التوجيه، فيستخدمها الزبائن بلا حساب، بينما يبقى تطبيق الموظفين ومسارات `/admin/*` الخاصة بالإدارة محميّة."
       }
     },
     {
@@ -223,8 +226,8 @@
       "Released as open source under the MIT license."
     ],
     "ar": [
-      "نحو 123 ألف سطر Dart في 29 وحدة ميزات و100 صفحة و45 Cubit و68 مسارًا.",
-      "كود واحد متكيّف مع العرض يعمل على Windows وAndroid وiOS والويب.",
+      "نحو 123 ألف سطر Dart في 29 وحدة ميزات و 100 صفحة و 45 Cubit و 68 مسارًا.",
+      "كود واحد متكيّف مع العرض يعمل على Windows و Android و iOS والويب.",
       "خمس لغات منها العربية بـ RTL كامل، بنحو 1,700 مفتاح لكل لغة.",
       "منشور كمصدر مفتوح بترخيص MIT."
     ]
@@ -429,5 +432,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/vendora.webp"
 }

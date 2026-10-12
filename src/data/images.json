@@ -1385,21 +1385,21 @@
    }
   ]
  },
- "riza-ai-visual-search/assets/banner.png": {
+ "riza-ai-visual-search/assets/banner-store.png": {
   "w": 1280,
   "h": 640,
   "variants": [
    {
     "w": 640,
-    "src": "img/riza/banner-640.webp"
+    "src": "img/riza/banner-store-640.webp"
    },
    {
     "w": 1024,
-    "src": "img/riza/banner-1024.webp"
+    "src": "img/riza/banner-store-1024.webp"
    },
    {
     "w": 1280,
-    "src": "img/riza/banner-1280.webp"
+    "src": "img/riza/banner-store-1280.webp"
    }
   ]
  },
@@ -1940,6 +1940,96 @@
    {
     "w": 1600,
     "src": "img/talabatek/store-listing-1600.webp"
+   }
+  ]
+ },
+ "vanilla-cosmetics/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vanilla/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vanilla/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/vanilla/banner-1280.webp"
+   }
+  ]
+ },
+ "vanilla-cosmetics/assets/feature-arabic-first.png": {
+  "w": 1359,
+  "h": 764,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vanilla/feature-arabic-first-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vanilla/feature-arabic-first-1024.webp"
+   },
+   {
+    "w": 1359,
+    "src": "img/vanilla/feature-arabic-first-1359.webp"
+   }
+  ]
+ },
+ "vanilla-cosmetics/assets/screens-app.png": {
+  "w": 1279,
+  "h": 799,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vanilla/screens-app-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vanilla/screens-app-1024.webp"
+   },
+   {
+    "w": 1279,
+    "src": "img/vanilla/screens-app-1279.webp"
+   }
+  ]
+ },
+ "vanilla-cosmetics/assets/screens-ipad.png": {
+  "w": 1359,
+  "h": 731,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vanilla/screens-ipad-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vanilla/screens-ipad-1024.webp"
+   },
+   {
+    "w": 1359,
+    "src": "img/vanilla/screens-ipad-1359.webp"
+   }
+  ]
+ },
+ "vanilla-cosmetics/assets/store-listing.png": {
+  "w": 1600,
+  "h": 613,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vanilla/store-listing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vanilla/store-listing-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vanilla/store-listing-1600.webp"
    }
   ]
  },

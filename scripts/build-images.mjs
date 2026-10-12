@@ -66,7 +66,7 @@ await convert('ANaSHaker/assets/_src/photo.jpg', 'profile/photo', [240, 460]);
 // Open Graph images (JPEG, 1200x630)
 fs.mkdirSync(path.join(outDir, 'og'), { recursive: true });
 const navy = { r: 8, g: 12, b: 26, alpha: 1 };
-const header = await sharp(path.join(reposDir, 'ANaSHaker/assets/header.png')).resize({ width: 1200 }).toBuffer();
+const header = await sharp(path.join(reposDir, 'ANaSHaker/assets/header-v2.png')).resize({ width: 1200 }).toBuffer();
 await sharp({ create: { width: 1200, height: 630, channels: 4, background: navy } })
   .composite([{ input: header, top: 90, left: 0 }])
   .jpeg({ quality: 82, mozjpeg: true })

@@ -1,17 +1,20 @@
 {
   "slug": "oneway",
-  "order": 8,
+  "order": 12,
   "featured": false,
   "name": {
     "en": "OneWay Fast Food",
     "ar": "ون واي فاست فود"
   },
-  "kind": "case-study",
+  "kind": "client",
   "categories": [
     "commerce"
   ],
   "accent": "#7B4BF0",
-  "region": null,
+  "region": {
+    "en": "Saudi Arabia",
+    "ar": "السعودية"
+  },
   "period": "2026",
   "platforms": [
     "Android",
@@ -221,7 +224,7 @@
     ],
     "ar": [
       "3 تطبيقات Flutter أُعيدت هويتها ونُقلت إلى مستودعات ومعرّفات تطبيقات مستقلة، تتشارك هوية بصرية واحدة",
-      "نحو 62 اختبار golden و62 لقطة مرجعية تحمي واجهة تطبيق المطعم على الهاتف والتابلت بالوضعين الفاتح والداكن",
+      "نحو 62 اختبار golden و 62 لقطة مرجعية تحمي واجهة تطبيق المطعم على الهاتف والتابلت بالوضعين الفاتح والداكن",
       "قدرات جديدة للمنصة بُنيت لهذا الإطلاق: تتبّع متكيّف للموقع، وتتبّع المندوب، ونطاقات تغطية بالمضلّعات، وذاكرة للطلب"
     ]
   },
@@ -293,7 +296,7 @@
       },
       "caption": {
         "en": "Automatic Arabic receipt printing through a Sunmi, LocalSocket and Bluetooth printer cascade.",
-        "ar": "طباعة تلقائية للفواتير العربية عبر تسلسل طابعات Sunmi وLocalSocket وBluetooth."
+        "ar": "طباعة تلقائية للفواتير العربية عبر تسلسل طابعات Sunmi و LocalSocket و Bluetooth."
       },
       "role": "feature"
     },
@@ -333,5 +336,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/oneway.webp"
 }

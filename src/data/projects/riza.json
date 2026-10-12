@@ -1,39 +1,44 @@
 {
   "slug": "riza",
-  "order": 5,
+  "order": 2,
   "featured": true,
   "name": {
-    "en": "RIZA AI Visual Search",
-    "ar": "RIZA AI Visual Search"
+    "en": "RIZA",
+    "ar": "RIZA"
   },
   "kind": "source",
   "categories": [
-    "ai",
+    "commerce",
     "opensource"
   ],
   "accent": "#D9B36C",
-  "region": null,
+  "region": {
+    "en": "Saudi Arabia",
+    "ar": "السعودية"
+  },
   "period": "2026",
   "platforms": [
+    "Android",
+    "iOS",
     "API",
     "WordPress"
   ],
   "tagline": {
-    "en": "Search a fashion store by photo",
-    "ar": "ابحث في متجر الأزياء بصورة"
+    "en": "Fashion shopping, searchable by photo",
+    "ar": "تسوّق الأزياء، والبحث بالصورة"
   },
   "summary": {
-    "en": "Photo search for a WooCommerce fashion store: OWLv2 detects each garment, FashionCLIP and FAISS find the closest products. Source included.",
-    "ar": "بحث بالصورة لمتجر أزياء على WooCommerce: يكتشف OWLv2 كل قطعة، ويعثر FashionCLIP وFAISS على أقرب المنتجات إليها. الكود المصدري متاح."
+    "en": "Riza | Fashion & Shopping, a Saudi fashion store on Google Play and the App Store, and the photo search behind it: OWLv2 finds each garment, FashionCLIP and FAISS match the closest products.",
+    "ar": "Riza | Fashion & Shopping، متجر أزياء سعودي على Google Play و App Store، ومعه البحث بالصورة: يكتشف OWLv2 كل قطعة، ويطابق FashionCLIP و FAISS أقرب المنتجات إليها."
   },
   "overview": {
     "en": [
-      "RIZA is a fashion and lifestyle brand running on WordPress and WooCommerce, with a companion mobile app. Shoppers often arrive with a picture of something they like, a social media screenshot or a street photo, and no idea what it is called in the catalogue.",
+      "RIZA is a Saudi fashion and lifestyle brand running on WordPress and WooCommerce, with its store app, Riza | Fashion & Shopping, live on Google Play and the App Store. Shoppers often arrive with a picture of something they like, a social media screenshot or a street photo, and no idea what it is called in the catalogue.",
       "Mahmoud designed and built the feature that answers \"show me products that look like this\": garment detection, region-level similarity search, \"similar items\" on product pages, and REST endpoints shared by the web storefront and the app.",
       "This repository is a clean, store-agnostic rewrite of that production work: a Python FastAPI service and a WordPress/WooCommerce plugin that can drop into any store. It keeps the production algorithms and tuning, with no store data or credentials."
     ],
     "ar": [
-      "RIZA علامة أزياء ونمط حياة تعمل على WordPress وWooCommerce، ولها تطبيق جوال مرافق. كثيراً ما يصل المتسوّق ومعه صورة لشيء أعجبه، لقطة من وسائل التواصل أو صورة من الشارع، دون أن يعرف اسمه في الكتالوج.",
+      "RIZA علامة أزياء ونمط حياة سعودية تعمل على WordPress و WooCommerce، ولها تطبيق المتجر Riza | Fashion & Shopping المنشور على Google Play و App Store. كثيراً ما يصل المتسوّق ومعه صورة لشيء أعجبه، لقطة من وسائل التواصل أو صورة من الشارع، دون أن يعرف اسمه في الكتالوج.",
       "صمّم محمود وبنى الميزة التي تجيب عن طلب \"أرني منتجات تشبه هذه\": اكتشاف القطع في الصورة، والبحث بالتشابه داخل منطقة محددة، وقسم \"منتجات مشابهة\" في صفحات المنتجات، وواجهات REST يتشاركها الموقع والتطبيق.",
       "هذا المستودع إعادة كتابة نظيفة وعامة لذلك العمل الإنتاجي: خدمة Python مبنية على FastAPI وإضافة WordPress/WooCommerce تصلح لأي متجر. يحتفظ بخوارزميات الإنتاج وضبطها، دون أي بيانات أو مفاتيح خاصة بالمتجر."
     ]
@@ -49,7 +54,7 @@
       "تولّيتُ الميزة كاملة: اختيار النماذج، وخدمة Python، وخط الفهرسة",
       "بنيتُ التكامل مع WordPress/WooCommerce وواجهات REST التي يستخدمها تطبيق الجوال",
       "تولّيتُ النشر والضبط على استضافة بلا GPU، بما في ذلك إصدار تحسين استهلاك الذاكرة",
-      "أعدتُ كتابة العمل في حزمتين قابلتين لإعادة الاستخدام: `api/` بلغة Python و`wordpress-plugin/` بلغة PHP"
+      "أعدتُ كتابة العمل في حزمتين قابلتين لإعادة الاستخدام: `api/` بلغة Python و `wordpress-plugin/` بلغة PHP"
     ]
   },
   "challenge": {
@@ -177,7 +182,7 @@
       },
       "body": {
         "en": "The first release loaded OWLv2, FashionCLIP and a general-purpose CLIP. Measurements showed FashionCLIP handled beauty, fragrance and toys well enough, so the general model was dropped, saving about 1.8 GB of RAM.",
-        "ar": "حمّل الإصدار الأول OWLv2 وFashionCLIP ونموذج CLIP عاماً. أظهرت القياسات أن FashionCLIP يتعامل جيداً بما يكفي مع منتجات التجميل والعطور والألعاب، فأُزيل النموذج العام ووفّر نحو 1.8 جيجابايت من الذاكرة."
+        "ar": "حمّل الإصدار الأول OWLv2 و FashionCLIP ونموذج CLIP عاماً. أظهرت القياسات أن FashionCLIP يتعامل جيداً بما يكفي مع منتجات التجميل والعطور والألعاب، فأُزيل النموذج العام ووفّر نحو 1.8 جيجابايت من الذاكرة."
       }
     },
     {
@@ -242,7 +247,7 @@
       "فهرسة 11,934 صورة لـ 2,697 منتجاً وإتاحتها للبحث في الإنتاج",
       "خفض استهلاك الذاكرة من نحو 6 إلى نحو 2 جيجابايت بدمج نموذجَي CLIP والتحميل الكسول لنموذج الاكتشاف، على معالج فقط بلا GPU",
       "خدمت واجهات REST نفسها كلاً من الموقع وتطبيق الجوال",
-      "42 اختبار pytest تغطي واجهتَي FAISS وNumPy"
+      "42 اختبار pytest تغطي واجهتَي FAISS و NumPy"
     ]
   },
   "metrics": [
@@ -285,6 +290,22 @@
   ],
   "links": [
     {
+      "type": "play",
+      "label": {
+        "en": "Google Play",
+        "ar": "Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.riza.store"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store",
+        "ar": "App Store"
+      },
+      "url": "https://apps.apple.com/sa/app/riza-fashion-shopping/id6758075701"
+    },
+    {
       "type": "github",
       "label": {
         "en": "GitHub repo",
@@ -295,14 +316,14 @@
   ],
   "images": [
     {
-      "src": "riza-ai-visual-search/assets/banner.png",
+      "src": "riza-ai-visual-search/assets/banner-store.png",
       "alt": {
         "en": "RIZA AI Visual Search",
         "ar": "RIZA AI Visual Search"
       },
       "caption": {
         "en": "Search a fashion store by photo: a FashionCLIP + FAISS search API and a WooCommerce plugin.",
-        "ar": "ابحث في متجر الأزياء بصورة: واجهة بحث مبنية على FashionCLIP وFAISS وإضافة WooCommerce."
+        "ar": "ابحث في متجر الأزياء بصورة: واجهة بحث مبنية على FashionCLIP و FAISS وإضافة WooCommerce."
       },
       "role": "banner"
     },
@@ -330,5 +351,6 @@
       },
       "role": "feature"
     }
-  ]
+  ],
+  "logo": "img/logos/riza.webp"
 }

@@ -1,6 +1,6 @@
 {
   "slug": "elmwafer",
-  "order": 21,
+  "order": 22,
   "featured": false,
   "name": {
     "en": "ElMwafer",
@@ -13,8 +13,8 @@
   ],
   "accent": "#02AB94",
   "region": {
-    "en": "Saudi Arabia and the Gulf",
-    "ar": "السعودية والخليج"
+    "en": "Saudi Arabia",
+    "ar": "السعودية"
   },
   "period": "2021",
   "platforms": [
@@ -27,7 +27,7 @@
   },
   "summary": {
     "en": "An Arabic coupon and deals app on Flutter and Firebase: copy a discount code in one tap, open the store, browse offers, and get new deals by push.",
-    "ar": "تطبيق كوبونات وعروض عربي مبني بـ Flutter وFirebase: انسخ كود الخصم بلمسة، وافتح المتجر، وتصفّح العروض، واستقبل الصفقات الجديدة بالإشعارات."
+    "ar": "تطبيق كوبونات وعروض عربي مبني بـ Flutter و Firebase: انسخ كود الخصم بلمسة، وافتح المتجر، وتصفّح العروض، واستقبل الصفقات الجديدة بالإشعارات."
   },
   "overview": {
     "en": [
@@ -47,7 +47,7 @@
       "Adapted the admin app for coupons, stores, articles and push notifications; the admin app itself is based on another developer's open-source template and is not included."
     ],
     "ar": [
-      "بنيت تطبيق المستخدم بـ Flutter ونشرته على Android وiOS.",
+      "بنيت تطبيق المستخدم بـ Flutter ونشرته على Android و iOS.",
       "صمّمت مسارات الكوبونات والعروض والأقسام المعتمدة على Firestore مع البحث الفوري.",
       "ربطت إشعارات FCM عبر topic لتصل الصفقات الجديدة إلى كل المستخدمين فورًا.",
       "كيّفت تطبيق الإدارة للكوبونات والمتاجر والمقالات والإشعارات، وهو مبني على قالب مفتوح المصدر لمطوّر آخر ولذلك غير مُضمَّن."
@@ -101,7 +101,7 @@
           "Vibration feedback when a push arrives in the foreground."
         ],
         "ar": [
-          "عروض متاجر مثل Amazon وH&M وAliExpress تُحمَّل من Firestore مع بحث خاص بها.",
+          "عروض متاجر مثل Amazon و H&M و AliExpress تُحمَّل من Firestore مع بحث خاص بها.",
           "كل عرض يفتح صفحة المتجر في المتصفح.",
           "كل جهاز مشترك في topic باسم `all` على FCM ليرسل المشرف الصفقات الجديدة للجميع.",
           "اهتزاز عند وصول إشعار والتطبيق مفتوح."
@@ -274,5 +274,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/elmwafer.webp"
 }

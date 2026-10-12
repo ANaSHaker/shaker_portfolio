@@ -1,9 +1,8 @@
 ---
 import Icon from './Icon.astro';
 import Img from './Img.astro';
-import { t, url, type Lang } from '../i18n';
+import { t, type Lang } from '../i18n';
 import { links, profile, stats } from '../data/site';
-import { projects } from '../data/projects';
 
 interface Props {
   lang: Lang;
@@ -12,56 +11,71 @@ const { lang } = Astro.props;
 const s = t(lang);
 const [first, ...rest] = profile.name[lang].split(' ');
 const fmt = (n: number) => String(n);
-const marquee = projects.map((p) => ({ name: p.name[lang], accent: p.accent, slug: p.slug }));
 ---
 
-<section class="relative overflow-x-clip pt-28 sm:pt-36" aria-labelledby="hero-title">
+<section id="top" class="relative overflow-x-clip pt-[calc(4.5rem+env(safe-area-inset-top))] lg:pt-36" aria-labelledby="hero-title">
   <div class="container-x grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
     <div class="lg:col-span-7">
-      <p class="rise kicker" style="--d:0">
+      <!-- Phones / tablets: compact profile header, like an app's account screen -->
+      <div class="rise flex items-center gap-4 lg:hidden" style="--d:0">
+        <div class="relative size-[5.75rem] shrink-0 sm:size-28">
+          <div class="ring-spin absolute -inset-[2px] rounded-[1.7rem]" aria-hidden="true"></div>
+          <div class="relative size-full overflow-hidden rounded-[1.6rem] border border-white/10 bg-bg-2">
+            <Img src="ANaSHaker/assets/_src/photo.jpg" alt={s.hero.photoAlt} sizes="120px" eager class="size-full scale-[1.12] object-cover object-[50%_25%]" />
+          </div>
+          <span class="absolute -bottom-1 -end-1 grid size-6 place-items-center rounded-full border-[3px] border-bg bg-emerald-500" aria-hidden="true">
+            <span class="pulse-dot size-2 rounded-full bg-white"></span>
+          </span>
+        </div>
+        <div class="min-w-0">
+          <p class="font-display text-[0.95rem] font-semibold text-brand-ink">{profile.role[lang]}</p>
+          <p class="mt-1 flex items-center gap-1.5 text-[0.9rem] text-muted">
+            <Icon name="map" size={15} />
+            {profile.city[lang]}
+          </p>
+        </div>
+      </div>
+
+      <p class="rise kicker hidden lg:inline-flex" style="--d:0">
         <span class="relative inline-flex size-2 rounded-full bg-emerald-500 pulse-dot" aria-hidden="true"></span>
         {s.hero.eyebrow}
       </p>
       <h1
         id="hero-title"
         class:list={[
-          'rise mt-6 font-display font-bold text-ink',
+          'rise mt-5 font-display font-bold text-ink lg:mt-6',
           lang === 'ar'
-            ? 'text-[clamp(3rem,10vw,6.5rem)] leading-[1.1]'
-            : 'text-[clamp(3.4rem,10.5vw,7.6rem)] leading-[0.92] tracking-[-0.045em]',
+            ? 'text-[clamp(2.7rem,10vw,6.5rem)] leading-[1.15]'
+            : 'text-[clamp(2.9rem,10.5vw,7.6rem)] leading-[0.95] tracking-[-0.045em]',
         ]}
         style="--d:1"
       >
         <span class="block">{first}</span>
-        <span class="text-gradient block pb-2">{rest.join(' ')}</span>
+        <span class="text-gradient block pb-1">{rest.join(' ')}</span>
       </h1>
-      <p class="rise mt-6 max-w-xl text-lg leading-relaxed text-ink-2 sm:text-xl" style="--d:2">
+      <p class="rise mt-4 max-w-xl text-[1.05rem] leading-relaxed text-ink-2 sm:mt-6 sm:text-xl" style="--d:2">
         {profile.tagline[lang]}
       </p>
-      <div class="rise mt-9 flex flex-wrap items-center gap-3" style="--d:3">
-        <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary">
+      <div class="rise mt-6 flex items-center gap-2.5 sm:mt-9 sm:flex-wrap sm:gap-3" style="--d:3">
+        <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary min-h-12 flex-1 sm:flex-none">
           <Icon name="whatsapp" size={18} />
           {s.hero.ctaPrimary}
         </a>
-        <a href={links.linkedin} target="_blank" rel="noopener" class="btn btn-ghost">
-          <Icon name="linkedin" size={16} />
-          {s.hero.ctaSecondary}
+        <a href={links.linkedin} target="_blank" rel="noopener" class="btn btn-ghost min-h-12 max-sm:!px-4" aria-label={s.hero.ctaSecondary}>
+          <Icon name="linkedin" size={17} />
+          <span class="max-sm:sr-only">{s.hero.ctaSecondary}</span>
         </a>
-        <a href="#work" class="link-arrow inline-flex items-center gap-2 px-3 py-3 font-semibold text-ink-2 hover:text-ink">
+        <a href="#work" class="link-arrow hidden items-center gap-2 px-3 py-3 font-semibold text-ink-2 hover:text-ink sm:inline-flex">
           {s.hero.ctaWork}
           <Icon name="arrow" size={18} class="flip-rtl" />
         </a>
       </div>
     </div>
 
-    <div class="rise relative mx-auto w-full max-w-[22rem] sm:max-w-[26rem] lg:col-span-5 lg:max-w-none" style="--d:2">
+    <!-- Desktop portrait -->
+    <div class="rise relative hidden w-full lg:col-span-5 lg:block" style="--d:2">
       <div class="relative mx-auto aspect-[4/5] w-full max-w-[25rem]">
-        <!-- glow ring -->
-        <div
-          class="ring-spin absolute -inset-[2px] rounded-[2.6rem] opacity-90"
-          aria-hidden="true"
-        >
-        </div>
+        <div class="ring-spin absolute -inset-[2px] rounded-[2.6rem] opacity-90" aria-hidden="true"></div>
         <div
           class="absolute -inset-10 -z-10 rounded-full bg-[radial-gradient(closest-side,rgb(79_70_229/.45),transparent)] blur-2xl"
           aria-hidden="true"
@@ -71,86 +85,56 @@ const marquee = projects.map((p) => ({ name: p.name[lang], accent: p.accent, slu
           <Img
             src="ANaSHaker/assets/_src/photo.jpg"
             alt={s.hero.photoAlt}
-            sizes="(min-width: 1024px) 420px, 80vw"
-            eager
+            sizes="420px"
             class="h-full w-full scale-[1.12] object-cover object-[50%_30%]"
           />
-          <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#05070f]/85 to-transparent" aria-hidden="true">
-          </div>
+          <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#05070f]/85 to-transparent" aria-hidden="true"></div>
           <div class="absolute inset-x-5 bottom-5 flex items-center gap-2 text-sm font-medium text-white/90">
             <Icon name="map" size={16} />
             <span>{s.hero.basedIn}</span>
           </div>
         </div>
 
-        <!-- floating chips -->
-        <div
-          class="floaty glass absolute -start-3 top-10 flex items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5 sm:-start-12"
-          style="--d:0"
-        >
+        <div class="floaty glass absolute -start-12 top-10 flex items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5" style="--d:0">
           <span class="grid size-8 place-items-center rounded-xl bg-[#02569B]/15 text-[#42A5F5]"><Icon name="flutter" size={17} /></span>
           <span class="text-sm font-semibold" dir="ltr">Flutter · Dart</span>
         </div>
-        <div
-          class="floaty glass absolute -end-3 top-[44%] flex items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5 sm:-end-10"
-          style="--d:1"
-        >
+        <div class="floaty glass absolute -end-10 top-[44%] flex items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5" style="--d:1">
           <span class="grid size-8 place-items-center rounded-xl bg-emerald-500/15 text-emerald-500"><Icon name="googleplay" size={15} /></span>
           <span class="text-sm leading-tight">
             <b class="block font-display text-base" dir="ltr">100K+</b>
             <span class="text-muted">{stats[2].label[lang]}</span>
           </span>
         </div>
-        <div
-          class="floaty glass absolute -start-3 bottom-20 hidden items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5 sm:flex sm:-start-10"
-          style="--d:2"
-        >
-          <span class="grid size-8 place-items-center rounded-xl bg-violet-500/15 text-violet-400"><Icon name="sparkles" size={16} /></span>
-          <span class="text-sm font-semibold">{lang === 'ar' ? 'ذكاء اصطناعي في الإنتاج' : 'AI in production'}</span>
+        <div class="floaty glass absolute -start-10 bottom-20 flex items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5" style="--d:2">
+          <span class="grid size-8 place-items-center rounded-xl bg-[#3DDC84]/15 text-[#3DDC84]"><Icon name="siAndroid" size={17} /></span>
+          <span class="text-sm font-semibold" dir="ltr">Kotlin · Java</span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Stats -->
-  <div class="container-x mt-20 sm:mt-24">
-    <dl class="glass grid grid-cols-2 overflow-hidden rounded-[2rem] md:grid-cols-4" data-reveal>
+  <!-- Stats: 2 x 2 on phones, one row from tablets up -->
+  <div class="container-x mt-7 sm:mt-14 lg:mt-24">
+    <dl class="rise glass grid grid-cols-2 overflow-hidden rounded-[1.6rem] sm:rounded-[2rem] md:grid-cols-4" style="--d:4">
       {
         stats.map((st, i) => (
           <div
             class:list={[
-              'relative flex flex-col px-6 py-7 sm:px-8 sm:py-9',
+              'relative flex flex-col px-5 py-4 sm:px-8 sm:py-8',
               i % 2 === 1 && 'border-s border-line',
               i >= 2 && 'border-t border-line md:border-t-0',
               i === 2 && 'md:border-s',
             ]}
           >
-            <dt class="order-2 mt-1 text-sm text-muted sm:text-base">{st.label[lang]}</dt>
-            <dd class="font-display text-[clamp(2.4rem,6vw,3.6rem)] font-bold leading-none tracking-tight">
+            <dt class="order-2 mt-1 text-[0.85rem] leading-snug text-muted sm:text-base">{st.label[lang]}</dt>
+            <dd class="font-display text-[clamp(1.9rem,6vw,3.6rem)] font-bold leading-none tracking-tight">
               <bdi dir="ltr"><span data-count={st.value} data-locale="en">{fmt(st.value)}</span><span class="text-gradient">{st.suffix}</span></bdi>
             </dd>
           </div>
         ))
       }
     </dl>
-  </div>
-
-  <!-- Marquee of work -->
-  <div class="marquee mt-14 overflow-hidden py-2" aria-hidden="true">
-    <div class="marquee-track gap-3">
-      {
-        [...marquee, ...marquee].map((m) => (
-          <a
-            href={url(`${lang}/projects/${m.slug}/`)}
-            tabindex="-1"
-            class="me-3 inline-flex items-center gap-2.5 rounded-full border border-line bg-glass px-5 py-2.5 font-display text-lg font-semibold text-ink-2 transition-colors hover:text-ink"
-          >
-            <span class="size-2 rounded-full" style={`background:${m.accent};box-shadow:0 0 14px ${m.accent}`} />
-            {m.name}
-          </a>
-        ))
-      }
-    </div>
   </div>
 </section>
 

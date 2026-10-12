@@ -1,0 +1,354 @@
+{
+  "slug": "vanilla",
+  "order": 3,
+  "featured": true,
+  "name": {
+    "en": "Vanilla",
+    "ar": "ڤانيلا"
+  },
+  "kind": "client",
+  "categories": [
+    "commerce"
+  ],
+  "accent": "#AD2A89",
+  "region": {
+    "en": "Iraq",
+    "ar": "العراق"
+  },
+  "period": null,
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Arabic-first beauty shopping for Iraq",
+    "ar": "تسوّق مستحضرات التجميل بالعربية أولًا في العراق"
+  },
+  "summary": {
+    "en": "A cosmetics and beauty shopping app for Iraq, built with Flutter on the client's WooCommerce store. 100K+ installs on Google Play, rated 4.4.",
+    "ar": "تطبيق لتسوّق مستحضرات التجميل والعناية في العراق، مبني بـ Flutter على متجر WooCommerce الخاص بالعميل، وتجاوز 100 ألف تثبيت على Google Play بتقييم 4.4."
+  },
+  "overview": {
+    "en": [
+      "Vanilla (ڤانيلا) is an online cosmetics and beauty store for customers in Iraq. Shoppers browse makeup, skincare, haircare, perfumes, body care and gift boxes, filter by category or brand, follow offers and best sellers, and order from inside the app. Prices are in Iraqi dinar and Arabic is the default language.",
+      "I handled the full mobile delivery: brand customization, an Arabic-first experience for the Iraqi market, WooCommerce integration, push notifications, and releases on Google Play and the App Store for iPhone and iPad. The iOS app has been on the App Store since March 2023."
+    ],
+    "ar": [
+      "ڤانيلا متجر إلكتروني لمستحضرات التجميل والعناية يخدم العملاء في العراق. يتصفّح المستخدم المكياج والعناية بالبشرة والشعر والعطور والعناية بالجسم وصناديق الهدايا، ويصفّي حسب القسم أو الماركة، ويتابع العروض والأكثر مبيعًا، ثم يطلب من داخل التطبيق. الأسعار بالدينار العراقي، والعربية هي اللغة الافتراضية.",
+      "تولّيت تسليم التطبيق كاملًا: تخصيص الهوية البصرية، وتجربة عربية أولًا تناسب السوق العراقي، والربط مع WooCommerce، والإشعارات، والنشر على Google Play و App Store لأجهزة iPhone و iPad. التطبيق متاح على App Store منذ مارس 2023."
+    ]
+  },
+  "role": {
+    "en": [
+      "Full mobile delivery for Android, iPhone and iPad.",
+      "Brand customization of the storefront: colors, typography, home sections, category icons, banners and splash.",
+      "Arabic-first, right-to-left UX tuned for Iraq, with English available and prices in Iraqi dinar.",
+      "Integration with the client's WooCommerce store for products, cart, checkout, coupons, orders and addresses.",
+      "OneSignal push notifications, Firebase Analytics and Remote Config, store releases and Shorebird over-the-air updates."
+    ],
+    "ar": [
+      "تسليم كامل للتطبيق على Android و iPhone و iPad.",
+      "تخصيص هوية المتجر: الألوان والخطوط وأقسام الرئيسية وأيقونات الأقسام والبانرات وشاشة البداية.",
+      "تجربة عربية أولًا من اليمين إلى اليسار تناسب العراق، مع دعم الإنجليزية وعرض الأسعار بالدينار العراقي.",
+      "الربط مع متجر WooCommerce الخاص بالعميل للمنتجات والسلة والدفع والكوبونات والطلبات والعناوين.",
+      "إشعارات OneSignal، و Firebase Analytics و Remote Config، والنشر على المتاجر، والتحديثات الفورية عبر Shorebird."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "A big catalogue on a small screen: thousands of products across many categories and brands must be easy to find in Arabic.",
+      "One source of truth: products, stock, prices, coupons and orders must stay in sync with the client's WooCommerce store, with no second admin panel.",
+      "Arabic-first for Iraq: RTL layouts, Arabic copy and dinar prices are the default, while English still works.",
+      "A real brand: the app has to look like Vanilla, with its own colors, banners, category art and home sections.",
+      "Frequent campaigns: offers and seasonal gift boxes change often, and fixes must reach users without waiting for store review."
+    ],
+    "ar": [
+      "كتالوج كبير على شاشة صغيرة: آلاف المنتجات في أقسام وماركات كثيرة، ويجب أن يسهل الوصول إليها بالعربية.",
+      "مصدر واحد للبيانات: يجب أن تبقى المنتجات والمخزون والأسعار والكوبونات والطلبات متزامنة مع متجر WooCommerce دون لوحة تحكم ثانية.",
+      "العربية أولًا في العراق: الواجهات من اليمين إلى اليسار والنصوص العربية والأسعار بالدينار هي الأساس، مع بقاء الإنجليزية متاحة.",
+      "هوية حقيقية: يجب أن يعبّر التطبيق عن ڤانيلا بألوانها وبانراتها وتصاميم أقسامها وأقسام صفحتها الرئيسية.",
+      "حملات متكررة: العروض وصناديق الهدايا الموسمية تتغير كثيرًا، ويجب أن تصل الإصلاحات للمستخدمين دون انتظار مراجعة المتجر."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Shopping",
+        "ar": "التسوّق"
+      },
+      "items": {
+        "en": [
+          "A home built from brand sections: hero banners, new arrivals, best sellers, celebrity favourites, gift boxes and offers.",
+          "Category browsing (makeup, skincare, haircare, perfumes, body care and more) and a brands page.",
+          "Fast search with filters and sorting, and detailed product pages with image galleries and stock status."
+        ],
+        "ar": [
+          "صفحة رئيسية مبنية من أقسام العلامة: بانرات رئيسية، ووصل حديثًا، والأكثر مبيعًا، ومفضلات المشاهير، وصناديق الهدايا، والعروض.",
+          "تصفّح حسب الأقسام (المكياج، والعناية بالبشرة، والعناية بالشعر، والعطور، والعناية بالجسم وغيرها) وصفحة للماركات.",
+          "بحث سريع مع التصفية والترتيب، وصفحات منتجات مفصّلة بمعرض صور وحالة التوفّر."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Cart and orders",
+        "ar": "السلة والطلبات"
+      },
+      "items": {
+        "en": [
+          "Cart with quantity controls, coupon codes and a clear order summary.",
+          "Wishlist, saved addresses and order history with order status.",
+          "Gift cards sold through the store."
+        ],
+        "ar": [
+          "سلة بأزرار للكمية وأكواد خصم وملخص واضح للطلب.",
+          "قائمة المفضلة، والعناوين المحفوظة، وسجل الطلبات مع حالة كل طلب.",
+          "بطاقات هدايا تُباع عبر المتجر."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Arabic-first UX",
+        "ar": "تجربة عربية أولًا"
+      },
+      "items": {
+        "en": [
+          "Right-to-left UI with Arabic as the default language and English available.",
+          "Prices shown in Iraqi dinar (IQD).",
+          "Layouts that adapt from phones to iPad."
+        ],
+        "ar": [
+          "واجهة من اليمين إلى اليسار، والعربية هي اللغة الافتراضية مع توفّر الإنجليزية.",
+          "الأسعار معروضة بالدينار العراقي.",
+          "تصاميم تتكيّف من الهاتف إلى iPad."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Engagement and delivery",
+        "ar": "التفاعل والإطلاق"
+      },
+      "items": {
+        "en": [
+          "Push notifications for offers and order updates through OneSignal.",
+          "Firebase Analytics and Remote Config, campaign deep links, and in-app rating and update prompts.",
+          "Over-the-air patches with Shorebird between store releases."
+        ],
+        "ar": [
+          "إشعارات للعروض وتحديثات الطلبات عبر OneSignal.",
+          "Firebase Analytics و Remote Config، وروابط عميقة للحملات، وطلبات التقييم والتحديث داخل التطبيق.",
+          "تحديثات فورية عبر Shorebird بين إصدارات المتاجر."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Arabic-first beauty shopping for Iraq",
+      "ar": "تسوّق التجميل بالعربية أولًا في العراق"
+    },
+    "body": {
+      "en": [
+        "Arabic by default: the app opens in Arabic with a full right-to-left layout, and navigation, product cards, cart and checkout all mirror correctly. English is one tap away in settings.",
+        "Local pricing: every price, discount and order total is shown in Iraqi dinar.",
+        "Shop the way people browse: the home screen is built from the brand's own sections (new arrivals, best sellers, celebrity favourites, gift boxes), each category has its own artwork, and customers can also start from a brand.",
+        "Always in sync with the store: products, stock, prices and coupons come live from the client's WooCommerce shop, so changes in the shop's admin show up in the app."
+      ],
+      "ar": [
+        "العربية افتراضيًا: يفتح التطبيق بالعربية بتخطيط كامل من اليمين إلى اليسار، وتنعكس التنقلات وبطاقات المنتجات والسلة والدفع بشكل صحيح، والإنجليزية متاحة من الإعدادات.",
+        "تسعير محلي: كل سعر وخصم وإجمالي طلب يظهر بالدينار العراقي.",
+        "تسوّق كما يتصفّح الناس: الرئيسية مبنية من أقسام العلامة نفسها (وصل حديثًا، والأكثر مبيعًا، ومفضلات المشاهير، وصناديق الهدايا)، ولكل قسم تصميمه الخاص، ويمكن البدء من الماركة أيضًا.",
+        "تزامن دائم مع المتجر: المنتجات والمخزون والأسعار والكوبونات تأتي مباشرة من متجر WooCommerce، فتظهر تعديلات لوحة المتجر في التطبيق."
+      ]
+    },
+    "image": "vanilla-cosmetics/assets/feature-arabic-first.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Brand customization that stays upgradeable",
+        "ar": "تخصيص الهوية مع الحفاظ على قابلية التحديث"
+      },
+      "body": {
+        "en": "The Vanilla look (theme, fonts, home sections, category icons, banners and splash) lives in configuration and assets, so the core app stays easy to update while the brand stays consistent.",
+        "ar": "هوية ڤانيلا (السمة والخطوط وأقسام الرئيسية وأيقونات الأقسام والبانرات وشاشة البداية) محفوظة في الإعدادات والأصول، فيبقى تحديث التطبيق سهلًا وتبقى الهوية متّسقة."
+      }
+    },
+    {
+      "title": {
+        "en": "RTL done properly",
+        "ar": "دعم صحيح للكتابة من اليمين"
+      },
+      "body": {
+        "en": "Lists, sliders, product cards, badges and price rows were checked in both directions. Arabic is the default, and mixed Arabic and English product names render cleanly.",
+        "ar": "رُوجعت القوائم والسلايدرات وبطاقات المنتجات والشارات وأسطر الأسعار في الاتجاهين. العربية هي الافتراضية، وتظهر أسماء المنتجات المختلطة بين العربية والإنجليزية بشكل سليم."
+      }
+    },
+    {
+      "title": {
+        "en": "Store sync",
+        "ar": "التزامن مع المتجر"
+      },
+      "body": {
+        "en": "The app reads products, stock and coupons from WooCommerce on demand and caches what it can locally, while the shop team keeps working in the admin they already know.",
+        "ar": "يقرأ التطبيق المنتجات والمخزون والكوبونات من WooCommerce عند الحاجة ويخزّن ما يمكن محليًا، بينما يواصل فريق المتجر العمل من لوحة التحكم التي يعرفها."
+      }
+    },
+    {
+      "title": {
+        "en": "Push that reaches users",
+        "ar": "إشعارات تصل للمستخدمين"
+      },
+      "body": {
+        "en": "OneSignal is wired for offer campaigns and order updates on Android and iOS, including the iOS notification permission flow.",
+        "ar": "رُبط OneSignal لحملات العروض وتحديثات الطلبات على Android و iOS، بما في ذلك خطوات إذن الإشعارات في iOS."
+      }
+    },
+    {
+      "title": {
+        "en": "Shipping fast",
+        "ar": "إطلاق سريع"
+      },
+      "body": {
+        "en": "Releases go out through Google Play and the App Store, and small fixes ship as Shorebird patches so a campaign does not wait on store review.",
+        "ar": "تُنشر الإصدارات عبر Google Play و App Store، وتصل الإصلاحات الصغيرة كتحديثات Shorebird، فلا تنتظر الحملات مراجعة المتجر."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Google Play: 100K+ installs, rated 4.4.",
+      "App Store: rated 4.3 from 83 ratings, available on iPhone and iPad, listed since March 2023."
+    ],
+    "ar": [
+      "Google Play: أكثر من 100 ألف تثبيت بتقييم 4.4.",
+      "App Store: تقييم 4.3 من 83 تقييمًا، ومتاح على iPhone و iPad منذ مارس 2023."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "100K+",
+      "label": {
+        "en": "installs on Google Play",
+        "ar": "تثبيت على Google Play"
+      }
+    },
+    {
+      "value": "4.4",
+      "label": {
+        "en": "rating on Google Play",
+        "ar": "تقييم على Google Play"
+      }
+    },
+    {
+      "value": "4.3",
+      "label": {
+        "en": "rating on the App Store",
+        "ar": "تقييم على App Store"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Provider",
+    "get_it",
+    "WooCommerce",
+    "Dio",
+    "Hive",
+    "OneSignal",
+    "Firebase Analytics",
+    "Remote Config",
+    "Shorebird"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/vanilla-cosmetics"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play",
+        "ar": "Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.vanilia.vanilia"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store",
+        "ar": "App Store"
+      },
+      "url": "https://apps.apple.com/sa/app/vanilla-cosmetics-%DA%A4%D8%A7%D9%86%D9%8A%D9%84%D8%A7/id6446440910"
+    }
+  ],
+  "images": [
+    {
+      "src": "vanilla-cosmetics/assets/banner.png",
+      "alt": {
+        "en": "Vanilla banner",
+        "ar": "الصورة الرئيسية لڤانيلا"
+      },
+      "caption": {
+        "en": "Vanilla: Arabic-first beauty shopping for Iraq.",
+        "ar": "ڤانيلا: تسوّق التجميل بالعربية أولًا في العراق."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "vanilla-cosmetics/assets/feature-arabic-first.png",
+      "alt": {
+        "en": "Arabic-first beauty shopping",
+        "ar": "تسوّق التجميل بالعربية أولًا"
+      },
+      "caption": {
+        "en": "Arabic by default, prices in Iraqi dinar, and shopping by category, brand and offers.",
+        "ar": "العربية افتراضيًا، والأسعار بالدينار العراقي، والتسوّق حسب القسم والماركة والعروض."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "vanilla-cosmetics/assets/screens-app.png",
+      "alt": {
+        "en": "Vanilla on Android and iPhone",
+        "ar": "ڤانيلا على Android و iPhone"
+      },
+      "caption": {
+        "en": "Splash, home, categories and search on Android and iPhone.",
+        "ar": "شاشة البداية والرئيسية والأقسام والبحث على Android و iPhone."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vanilla-cosmetics/assets/screens-ipad.png",
+      "alt": {
+        "en": "Vanilla on iPad",
+        "ar": "ڤانيلا على iPad"
+      },
+      "caption": {
+        "en": "iPad layout: category list, home and a product page.",
+        "ar": "تصميم iPad: قائمة الأقسام والرئيسية وصفحة منتج."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vanilla-cosmetics/assets/store-listing.png",
+      "alt": {
+        "en": "Google Play listing",
+        "ar": "صفحة التطبيق على Google Play"
+      },
+      "caption": {
+        "en": "The app's Google Play listing.",
+        "ar": "صفحة التطبيق على Google Play."
+      },
+      "role": "gallery"
+    }
+  ],
+  "logo": "img/logos/vanilla.webp"
+}

@@ -8,11 +8,12 @@ export type CategoryKey =
   | 'legaltech'
   | 'edtech'
   | 'health'
-  | 'ai'
+  | 'fintech'
   | 'opensource'
   | 'own'; // Own products
 
-export type ProjectKind = 'case-study' | 'source' | 'code-case-study';
+/** client = client work (code belongs to the client), own = own product, source = source code is public. */
+export type ProjectKind = 'client' | 'own' | 'source';
 
 export type LinkType = 'github' | 'play' | 'appstore' | 'web' | 'pubdev' | 'video' | 'other';
 
@@ -35,7 +36,9 @@ export interface Project {
   categories: CategoryKey[];
   /** Hex accent colour matching the project's banner / brand. */
   accent: string;
-  /** Market / country, only if stated in the README. */
+  /** Square app icon under public/, e.g. "img/logos/talabatek.webp" (built by `npm run logos`). */
+  logo?: string;
+  /** Country the product serves. */
   region: L | null;
   /** Years, only if stated in the README. */
   period: string | null;

@@ -1,12 +1,12 @@
 {
   "slug": "malazmna",
-  "order": 19,
+  "order": 20,
   "featured": false,
   "name": {
     "en": "Malazmna",
     "ar": "ملازمنا"
   },
-  "kind": "case-study",
+  "kind": "client",
   "categories": [
     "edtech"
   ],
@@ -30,11 +30,11 @@
   "overview": {
     "en": [
       "Malazmna, meaning our study booklets, is an Arabic education app for intermediate and preparatory school students in Iraq. It gathers what students hunt for all year in one place: official textbooks, teacher-written booklets, ministerial past papers, schedules, holiday dates and exam results.",
-      "Mahmoud built the Android app end to end as a freelance Flutter developer, and it was released in 2022 with a public demo video. The source is not in his archive, so this case study documents only what the released app shows."
+      "Mahmoud built the Android app end to end as a freelance Flutter developer, and it was released in 2022 with a public demo video. The source is not in his archive, so this page documents only what the released app shows."
     ],
     "ar": [
       "ملازمنا تطبيق تعليمي عربي لطلاب المرحلتين المتوسطة والإعدادية في العراق. يجمع في مكان واحد ما يبحث عنه الطلاب طوال العام: الكتب المنهجية، والملازم التي يكتبها المدرسون، والأسئلة الوزارية السابقة، والجداول، ومواعيد العطل، ونتائج الامتحانات.",
-      "بنى محمود تطبيق Android من أوله لآخره بصفته مطوّر Flutter مستقلًا، وأُطلق في 2022 مع فيديو عرض منشور. الكود المصدري غير موجود في أرشيفه، لذلك تعرض دراسة الحالة هذه ما يظهر في التطبيق المنشور فقط."
+      "بنى محمود تطبيق Android من أوله لآخره بصفته مطوّر Flutter مستقلًا، وأُطلق في 2022 مع فيديو عرض منشور. الكود المصدري غير موجود في أرشيفه، لذلك تعرض هذه الصفحة ما يظهر في التطبيق المنشور فقط."
     ]
   },
   "role": {
@@ -47,7 +47,7 @@
     "ar": [
       "مطوّر Flutter مستقل بنى تطبيق Android من البداية إلى النهاية.",
       "قدّمت واجهة عربية كاملة RTL مع شريط تنقل سفلي وقائمة جانبية.",
-      "بنيت مسار المحتوى حسب الصف والمادة مع مصدرين للتحميل: مباشر وTelegram.",
+      "بنيت مسار المحتوى حسب الصف والمادة مع مصدرين للتحميل: مباشر و Telegram.",
       "نفّذت الوضعين الفاتح والداكن والعدّاد التنازلي للعطل ومركز النتائج."
     ]
   },
@@ -307,5 +307,6 @@
       },
       "role": "gallery"
     }
-  ]
+  ],
+  "logo": "img/logos/malazmna.webp"
 }

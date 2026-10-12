@@ -1,0 +1,32 @@
+---
+import type { Project } from '../data/types';
+import { countryOf } from '../data/projects';
+import { url, type Lang } from '../i18n';
+
+interface Props {
+  p: Project;
+  lang: Lang;
+  class?: string;
+}
+const { p, lang, class: cls = '' } = Astro.props;
+const code = countryOf(p);
+---
+
+{
+  p.region && (
+    <span class:list={['inline-flex min-w-0 items-center gap-1.5', cls]}>
+      {code && (
+        <img
+          src={url(`img/flags/${code}.svg`)}
+          alt=""
+          width="20"
+          height="15"
+          loading="lazy"
+          decoding="async"
+          class="h-[0.9rem] w-[1.2rem] shrink-0 rounded-[3px] object-cover shadow-[0_0_0_1px_var(--line-strong)]"
+        />
+      )}
+      <span class="truncate">{p.region[lang]}</span>
+    </span>
+  )
+}
