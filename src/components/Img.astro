@@ -1,0 +1,37 @@
+---
+import { imageInfo } from '../data/projects';
+import { url } from '../i18n';
+
+interface Props {
+  src: string; // key in images manifest (path relative to the showcase repos)
+  alt: string;
+  sizes?: string;
+  class?: string;
+  eager?: boolean;
+  [key: string]: any;
+}
+const { src, alt, sizes = '(min-width: 1280px) 1200px, 100vw', class: cls = '', eager = false, ...rest } = Astro.props;
+const info = imageInfo(src);
+const largest = info?.variants.at(-1);
+const srcset = info?.variants.map((v) => `${url(v.src)} ${v.w}w`).join(', ');
+---
+
+{
+  info && largest ? (
+    <img
+      src={url(largest.src)}
+      srcset={srcset}
+      sizes={sizes}
+      width={info.w}
+      height={info.h}
+      alt={alt}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding={eager ? 'sync' : 'async'}
+      fetchpriority={eager ? 'high' : undefined}
+      class={cls}
+      {...rest}
+    />
+  ) : (
+    <div class={`bg-glass-2 ${cls}`} role="img" aria-label={alt} />
+  )
+}

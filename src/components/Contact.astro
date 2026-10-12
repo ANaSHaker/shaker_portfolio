@@ -1,0 +1,88 @@
+---
+import Icon from './Icon.astro';
+import { t, type Lang } from '../i18n';
+import { links } from '../data/site';
+
+interface Props {
+  lang: Lang;
+  compact?: boolean;
+  title?: string;
+  body?: string;
+}
+const { lang, compact = false, title, body } = Astro.props;
+const s = t(lang);
+const items = [
+  { href: links.whatsapp, icon: 'whatsapp', label: s.contact.whatsapp, hint: s.contact.whatsappHint, value: '+20 114 027 9111', color: '#25D366' },
+  { href: links.linkedin, icon: 'linkedin', label: s.contact.linkedin, hint: s.contact.linkedinHint, value: 'in/anashaker', color: '#0A66C2' },
+  { href: links.email, icon: 'mail', label: s.contact.email, hint: s.contact.emailHint, value: links.emailText, color: '#EA4335' },
+  { href: links.github, icon: 'github', label: s.contact.github, hint: s.contact.githubHint, value: 'ANaSHaker', color: '#8b949e' },
+  { href: links.khamsat, icon: 'briefcase', label: s.contact.khamsat, hint: s.contact.khamsatHint, value: 'sheko201566', color: '#F39C12' },
+  { href: links.mostaql, icon: 'briefcase', label: s.contact.mostaql, hint: s.contact.mostaqlHint, value: 'ShekoShaker', color: '#2386C8' },
+];
+---
+
+<section id={compact ? undefined : 'contact'} class="relative py-24 sm:py-32" aria-labelledby={compact ? undefined : 'contact-title'}>
+  <div class="container-x">
+    <div class="glass relative overflow-hidden rounded-[2.25rem] p-7 sm:p-12 lg:p-16" data-reveal>
+      <div
+        class="pointer-events-none absolute -top-32 end-[-10%] size-[34rem] rounded-full bg-[radial-gradient(closest-side,rgb(124_58_237/.35),transparent)] blur-2xl"
+        aria-hidden="true"
+      >
+      </div>
+      <div
+        class="pointer-events-none absolute -bottom-40 start-[-10%] size-[30rem] rounded-full bg-[radial-gradient(closest-side,rgb(37_99_235/.3),transparent)] blur-2xl"
+        aria-hidden="true"
+      >
+      </div>
+      <div class="relative grid gap-12 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <p class="kicker">{s.contact.kicker}</p>
+          <h2 id={compact ? undefined : 'contact-title'} class="h-section mt-5">{title ?? s.contact.title}</h2>
+          <p class="mt-6 max-w-md text-lg leading-relaxed text-ink-2">{body ?? s.contact.body}</p>
+          <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary mt-9">
+            <Icon name="whatsapp" size={18} />
+            {s.hero.ctaPrimary}
+          </a>
+        </div>
+        <ul class="grid gap-3 sm:grid-cols-2 lg:col-span-7">
+          {
+            items.map((x) => (
+              <li>
+                <a
+                  href={x.href}
+                  target={x.href.startsWith('http') ? '_blank' : undefined}
+                  rel="noopener"
+                  class="contact-tile group flex h-full items-center gap-4 rounded-2xl border border-line bg-glass-2 p-4 transition-all duration-300 hover:-translate-y-0.5"
+                  style={`--c:${x.color}`}
+                >
+                  <span class="ic grid size-12 shrink-0 place-items-center rounded-xl border border-line text-ink-2 transition-all duration-300">
+                    <Icon name={x.icon} size={20} />
+                  </span>
+                  <span class="min-w-0 flex-1">
+                    <span class="block font-semibold">{x.label}</span>
+                    <span class="block break-all text-sm text-muted">
+                      <bdi>{x.value}</bdi>
+                    </span>
+                  </span>
+                  <Icon name="arrow-up-right" size={18} class="flip-rtl shrink-0 text-muted transition-transform group-hover:text-ink" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-tile:hover {
+    border-color: color-mix(in oklab, var(--c) 50%, var(--line));
+  }
+  .contact-tile:hover .ic {
+    background: var(--c);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 10px 24px -10px var(--c);
+  }
+</style>

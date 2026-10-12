@@ -1,0 +1,300 @@
+{
+  "slug": "video-walkthrough",
+  "order": 18,
+  "featured": false,
+  "name": {
+    "en": "video_walkthrough",
+    "ar": "video_walkthrough"
+  },
+  "kind": "code-case-study",
+  "categories": [
+    "opensource",
+    "own"
+  ],
+  "accent": "#A855F7",
+  "region": null,
+  "period": "2022–2026",
+  "platforms": [
+    "Android",
+    "iOS",
+    "Web"
+  ],
+  "tagline": {
+    "en": "Onboarding that moves, in one Flutter widget",
+    "ar": "شاشات تعريف متحركة في ويدجت Flutter واحدة"
+  },
+  "summary": {
+    "en": "A Flutter package for video-backed onboarding: looping background video, animated pages, dots and Skip, Continue, Start in one widget. Rewritten as 2.0.0 for Dart 3.",
+    "ar": "باكدج Flutter لشاشات تعريف فوق فيديو خلفية: فيديو متكرر وصفحات متحركة ونقاط مؤشر وأزرار تخطي ومتابعة وابدأ في ويدجت واحدة. أُعيدت كتابتها في الإصدار 2.0.0 لـ Dart 3."
+  },
+  "overview": {
+    "en": [
+      "`video_walkthrough` turns an onboarding flow into a single widget. Give it an asset video and a list of pages: it plays the video full-screen on a loop, lays the pages over it in a swipeable `PageView`, and handles the dots, Skip, Continue and the final Start action.",
+      "First built for the onboarding of the Visit Egypt tourism app and published on pub.dev in 2022, the package now has a 2.0.0 rewrite for Flutter 3 and Dart 3 with a typed API, dartdoc and 11 widget tests. pub.dev still serves 1.0.1 until 2.0.0 is published."
+    ],
+    "ar": [
+      "تحوّل `video_walkthrough` مسار التعريف بالتطبيق إلى ويدجت واحدة. تعطيها فيديو من الأصول وقائمة صفحات، فتشغّل الفيديو بملء الشاشة بشكل متكرر وتعرض الصفحات فوقه في `PageView` قابلة للسحب، وتتولى نقاط المؤشر وأزرار التخطي والمتابعة وزر البدء الأخير.",
+      "بُنيت أولًا لشاشات التعريف في تطبيق السياحة Visit Egypt ونُشرت على pub.dev في 2022، ولها الآن إعادة كتابة في الإصدار 2.0.0 لـ Flutter 3 وDart 3 بواجهة برمجية مُنمّطة وتوثيق dartdoc و11 اختبار ويدجت. وما زال pub.dev يقدّم الإصدار 1.0.1 حتى نشر 2.0.0."
+    ]
+  },
+  "role": {
+    "en": [
+      "Author and maintainer of the package.",
+      "Designed the API and implemented the widget, background video layer and animated pages.",
+      "Published the package on pub.dev in 2022.",
+      "Led the 2.0.0 rewrite: bug fixes, typed API, dartdoc and a widget test suite."
+    ],
+    "ar": [
+      "مؤلف الباكدج والمسؤول عن صيانتها.",
+      "صمّمت الواجهة البرمجية ونفّذت الويدجت وطبقة الفيديو والصفحات المتحركة.",
+      "نشرت الباكدج على pub.dev في 2022.",
+      "قدت إعادة الكتابة في 2.0.0: إصلاح الأخطاء، وواجهة مُنمّطة، وتوثيق dartdoc، ومجموعة اختبارات ويدجت."
+    ]
+  },
+  "challenge": {
+    "en": [],
+    "ar": []
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "In one widget",
+        "ar": "في ويدجت واحدة"
+      },
+      "items": {
+        "en": [
+          "Background video: any asset video, looping and cover-fitted, with volume and zoom controls.",
+          "Animated pages: `Walkthrough` pages slide and fade in, or pass any widgets you like.",
+          "Skip jumps to the last page, Continue animates forward, Start finishes the flow.",
+          "Fully themable texts, styles, button colours, dots and an optional tinted logo."
+        ],
+        "ar": [
+          "فيديو خلفية: أي فيديو من الأصول، متكرر ومضبوط على ملء الشاشة، مع التحكم في الصوت والتكبير.",
+          "صفحات متحركة: صفحات `Walkthrough` تنزلق وتظهر تدريجيًا، أو مرّر أي ويدجت تريدها.",
+          "التخطي ينقل إلى الصفحة الأخيرة، والمتابعة تتقدم بحركة، والبدء ينهي المسار.",
+          "تخصيص كامل للنصوص والأنماط وألوان الأزرار والنقاط مع شعار اختياري قابل للتلوين."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Safe and flexible",
+        "ar": "آمنة ومرنة"
+      },
+      "items": {
+        "en": [
+          "Finish with an `onFinish` callback, or a `pageRoute` that is pushed or replaces the walkthrough.",
+          "Missing videos fall back to a solid colour.",
+          "System bars are restored on dispose, and nothing force-unwraps."
+        ],
+        "ar": [
+          "إنهاء المسار عبر `onFinish` أو عبر `pageRoute` يُفتح فوق شاشة التعريف أو يحل محلها.",
+          "عند غياب الفيديو تظهر خلفية بلون ثابت.",
+          "تُستعاد أشرطة النظام عند التخلص من الويدجت، ولا يوجد أي force-unwrap."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "What's new in 2.0.0",
+        "ar": "الجديد في 2.0.0"
+      },
+      "items": {
+        "en": [
+          "Inactive dots now use `indicatorInActiveColor`, covered by a test.",
+          "Start without a `pageRoute` no longer crashes: `onFinish`, then `pageRoute`, then no-op.",
+          "Removed `FlatButton` in favour of Flutter 3 buttons.",
+          "The page animation that was built but never applied now runs.",
+          "Typed API, dartdoc everywhere and 11 widget tests."
+        ],
+        "ar": [
+          "النقاط غير النشطة تستخدم الآن `indicatorInActiveColor` مع اختبار يغطيها.",
+          "زر البدء دون `pageRoute` لم يعد يسبب انهيارًا: `onFinish` ثم `pageRoute` ثم لا شيء.",
+          "استُبدل `FlatButton` بأزرار Flutter 3.",
+          "حركة الصفحات التي بُنيت ولم تُطبَّق تعمل الآن.",
+          "واجهة برمجية مُنمّطة وتوثيق dartdoc كامل و11 اختبار ويدجت."
+        ]
+      }
+    }
+  ],
+  "signature": null,
+  "engineering": [
+    {
+      "title": {
+        "en": "Testing a video widget without a device",
+        "ar": "اختبار ويدجت فيديو بلا جهاز"
+      },
+      "body": {
+        "en": "Widget tests swap `VideoPlayerPlatform.instance` for an in-memory fake that reports an initialized 1080×1920 video, so tests assert the asset is created, looped, played at the right volume and disposed, with no platform channels.",
+        "ar": "تستبدل الاختبارات `VideoPlayerPlatform.instance` بنسخة وهمية في الذاكرة تُبلغ عن فيديو 1080×1920 جاهز، فتتحقق من إنشاء الأصل وتكراره وتشغيله بالصوت المطلوب والتخلص منه، دون أي platform channels."
+      }
+    },
+    {
+      "title": {
+        "en": "Dot-colour regression locked down",
+        "ar": "تثبيت إصلاح ألوان النقاط"
+      },
+      "body": {
+        "en": "Each dot carries a stable key, and a test checks active and inactive colours before and after paging.",
+        "ar": "لكل نقطة مفتاح ثابت، ويتحقق اختبار من ألوان النقاط النشطة وغير النشطة قبل التنقل بين الصفحات وبعده."
+      }
+    },
+    {
+      "title": {
+        "en": "Null-safety without surprises",
+        "ar": "Null-safety بلا مفاجآت"
+      },
+      "body": {
+        "en": "`pageRoute!` was replaced by an explicit order: `onFinish`, then `pageRoute`, then no-op.",
+        "ar": "استُبدل `pageRoute!` بترتيب صريح: `onFinish` ثم `pageRoute` ثم لا شيء."
+      }
+    },
+    {
+      "title": {
+        "en": "Quiet for users, loud for developers",
+        "ar": "هادئة للمستخدم وواضحة للمطوّر"
+      },
+      "body": {
+        "en": "If the video cannot load, the walkthrough still works over `backgroundColor`, and the error is reported with `debugPrint`.",
+        "ar": "إذا تعذّر تحميل الفيديو تستمر شاشات التعريف فوق `backgroundColor`، ويُسجَّل الخطأ عبر `debugPrint`."
+      }
+    },
+    {
+      "title": {
+        "en": "Real screenshots, not mockups",
+        "ar": "لقطات حقيقية لا تصاميم وهمية"
+      },
+      "body": {
+        "en": "The example screens come from a `flutter build web` of the example app, driven in headless Chrome over the DevTools protocol.",
+        "ar": "لقطات المثال مأخوذة من `flutter build web` لتطبيق المثال، مُشغَّلًا في Chrome بلا واجهة عبر بروتوكول DevTools."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Published on pub.dev in 2022 and used in production for the Visit Egypt onboarding.",
+      "2.0.0 rewrite for Flutter 3 and Dart 3 with 11 passing widget tests and a clean `flutter analyze`.",
+      "Open source under the MIT license, with a runnable example app for Android, iOS and Web."
+    ],
+    "ar": [
+      "نُشرت على pub.dev في 2022 واستُخدمت فعليًا في شاشات التعريف بتطبيق Visit Egypt.",
+      "إعادة كتابة 2.0.0 لـ Flutter 3 وDart 3 مع 11 اختبار ويدجت ناجحًا و`flutter analyze` بلا مشكلات.",
+      "مفتوحة المصدر برخصة MIT، مع تطبيق مثال قابل للتشغيل على Android وiOS والويب."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "2.0.0",
+      "label": {
+        "en": "Dart 3 rewrite",
+        "ar": "إعادة كتابة لـ Dart 3"
+      }
+    },
+    {
+      "value": "11",
+      "label": {
+        "en": "widget tests passing",
+        "ar": "اختبار ويدجت ناجح"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Dart 3",
+    "video_player",
+    "PageView",
+    "AnimationController",
+    "Material 3",
+    "flutter_test",
+    "flutter_lints",
+    "pub.dev"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/video_walkthrough"
+    },
+    {
+      "type": "pubdev",
+      "label": {
+        "en": "Package on pub.dev",
+        "ar": "الباكدج على pub.dev"
+      },
+      "url": "https://pub.dev/packages/video_walkthrough"
+    },
+    {
+      "type": "github",
+      "label": {
+        "en": "Original 1.x repository",
+        "ar": "المستودع الأصلي للإصدار 1.x"
+      },
+      "url": "https://github.com/ANaSHaKerr/video_walkthrough"
+    }
+  ],
+  "images": [
+    {
+      "src": "video_walkthrough/assets/banner.png",
+      "alt": {
+        "en": "video_walkthrough banner",
+        "ar": "بانر video_walkthrough"
+      },
+      "caption": {
+        "en": "Looping background video, animated pages, dots and Skip, Continue, Start in one widget",
+        "ar": "فيديو خلفية متكرر وصفحات متحركة ونقاط مؤشر وأزرار تخطي ومتابعة وابدأ في ويدجت واحدة"
+      },
+      "role": "banner"
+    },
+    {
+      "src": "video_walkthrough/assets/feature-v2.png",
+      "alt": {
+        "en": "What's new in 2.0.0",
+        "ar": "الجديد في الإصدار 2.0.0"
+      },
+      "caption": {
+        "en": "The 2.0.0 rewrite: fixes, typed API, dartdoc and tests",
+        "ar": "إعادة كتابة 2.0.0: إصلاحات وواجهة مُنمّطة وتوثيق واختبارات"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "video_walkthrough/assets/example-app.png",
+      "alt": {
+        "en": "Example app screens",
+        "ar": "شاشات تطبيق المثال"
+      },
+      "caption": {
+        "en": "The 2.0.0 example app, captured from a Flutter web build",
+        "ar": "تطبيق المثال للإصدار 2.0.0، ملتقط من نسخة Flutter للويب"
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "video_walkthrough/assets/in-production.png",
+      "alt": {
+        "en": "Visit Egypt onboarding built with video_walkthrough",
+        "ar": "شاشات تعريف Visit Egypt المبنية بـ video_walkthrough"
+      },
+      "caption": {
+        "en": "Production use: the Visit Egypt onboarding",
+        "ar": "استخدام فعلي: شاشات التعريف في Visit Egypt"
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "video_walkthrough/assets/demo.gif",
+      "alt": {
+        "en": "Original demo recording",
+        "ar": "تسجيل العرض الأصلي"
+      },
+      "caption": {
+        "en": "The original 2022 demo recording",
+        "ar": "تسجيل العرض الأصلي من 2022"
+      },
+      "role": "gallery"
+    }
+  ]
+}

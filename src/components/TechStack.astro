@@ -1,0 +1,71 @@
+---
+import * as si from 'simple-icons';
+import SectionHead from './SectionHead.astro';
+import { stack } from '../data/site';
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const s = t(lang);
+const icon = (key?: string) => (key ? (si as Record<string, any>)[key] : undefined);
+// Brand colours that disappear on dark backgrounds get a lighter stand-in.
+const tone = (hex: string) => {
+  const n = parseInt(hex, 16);
+  const lum = 0.2126 * ((n >> 16) & 255) + 0.7152 * ((n >> 8) & 255) + 0.0722 * (n & 255);
+  return lum < 60 ? null : `#${hex}`;
+};
+---
+
+<section id="stack" class="relative py-24 sm:py-32" aria-labelledby="stack-title">
+  <div class="container-x">
+    <SectionHead kicker={s.stack.kicker} title={s.stack.title} id="stack-title" />
+    <div class="mt-14 grid gap-4">
+      {
+        stack.map((g, gi) => (
+          <div class="glass grid items-center gap-5 rounded-[1.75rem] p-5 sm:p-6 lg:grid-cols-[13rem_1fr] lg:gap-8 lg:ps-9" data-reveal style={`--d:${gi}`}>
+            <h3 class="font-display text-lg font-semibold">{g.group[lang]}</h3>
+            <ul class="grid grid-cols-3 gap-2.5 sm:grid-cols-4 md:grid-cols-7">
+              {g.items.map((it) => {
+                const ic = icon(it.icon);
+                const c = ic ? tone(ic.hex) : null;
+                return (
+                  <li
+                    class="tile group flex flex-col items-center justify-center gap-2.5 rounded-2xl border border-line bg-glass-2 px-2 py-4 text-center transition-all duration-300 hover:-translate-y-1"
+                    style={c ? `--c:${c}` : '--c:var(--ink)'}
+                  >
+                    {ic && (
+                      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" class="icon" aria-hidden="true">
+                        <path d={ic.path} />
+                      </svg>
+                    )}
+                    <span class="whitespace-nowrap text-[0.8rem] font-medium text-ink-2" dir="ltr">
+                      {it.name}
+                    </span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .tile .icon {
+    color: var(--muted);
+    transition:
+      color 0.3s,
+      filter 0.3s;
+  }
+  .tile:hover {
+    border-color: color-mix(in oklab, var(--c) 45%, var(--line));
+  }
+  .tile:hover .icon {
+    color: var(--c);
+    filter: drop-shadow(0 0 10px color-mix(in oklab, var(--c) 60%, transparent));
+  }
+</style>

@@ -1,0 +1,364 @@
+{
+  "slug": "hamilguide",
+  "order": 10,
+  "featured": false,
+  "name": {
+    "en": "HamilGuide",
+    "ar": "دليل الحوامل"
+  },
+  "kind": "case-study",
+  "categories": [
+    "health"
+  ],
+  "accent": "#EC4899",
+  "region": {
+    "en": "Egypt, the Gulf & MENA",
+    "ar": "مصر والخليج والمنطقة العربية"
+  },
+  "period": "2022–present",
+  "platforms": [
+    "Android",
+    "iOS",
+    "iPad"
+  ],
+  "tagline": {
+    "en": "A pregnancy companion for Arabic-speaking mothers",
+    "ar": "رفيق الحمل للأم العربية"
+  },
+  "summary": {
+    "en": "A Flutter pregnancy tracker with 100K+ installs: Gregorian and Hijri due-date calculator, kick counter, health logs and baby tools in 5 languages.",
+    "ar": "تطبيق Flutter لمتابعة الحمل تخطّى 100 ألف تثبيت: حاسبة موعد الولادة بالتقويمين الميلادي والهجري، وعداد ركلات، وسجلات صحية، وأدوات للطفل بخمس لغات."
+  },
+  "overview": {
+    "en": [
+      "HamilGuide helps expecting mothers follow their pregnancy day by day: when the baby is due, what is happening this week, how blood pressure, sugar and weight are trending, and how often the baby kicks.",
+      "After birth, it keeps going with a baby tracker for feeding, sleep and development. One Flutter codebase ships to Android, iPhone and iPad, in Arabic, English, French, Spanish and German."
+    ],
+    "ar": [
+      "يساعد دليل الحوامل الأم الحامل على متابعة حملها يومًا بيوم: متى موعد الولادة، وما الذي يحدث هذا الأسبوع، وكيف تسير قراءات الضغط والسكر والوزن، وكم مرة يركل الجنين.",
+      "وبعد الولادة يستمر التطبيق معها بمتابعة الطفل في الرضاعة والنوم والنمو. يعمل من كود Flutter واحد على Android وiPhone وiPad، بالعربية والإنجليزية والفرنسية والإسبانية والألمانية."
+    ]
+  },
+  "role": {
+    "en": [
+      "Flutter developer owning the full mobile delivery",
+      "Built the features: calculator, week-by-week guide, health trackers, baby tools, notes and community chat",
+      "Integrated Firebase: Auth, Firestore, Storage, FCM and Crashlytics",
+      "Shipped and maintained releases on Google Play and the App Store"
+    ],
+    "ar": [
+      "مطوّر Flutter مسؤول عن تسليم تطبيق الجوال بالكامل",
+      "بناء الميزات: الحاسبة، ودليل الأسابيع، ومتابعة الصحة، وأدوات الطفل، والملاحظات، ودردشة المجتمع",
+      "تكامل Firebase: المصادقة وFirestore والتخزين وFCM وCrashlytics",
+      "نشر الإصدارات وصيانتها على Google Play وApp Store"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Medical dates are easy to get wrong: mothers need a due date calculated the way doctors do it, and many track dates in the Hijri calendar.",
+      "Too many apps for one journey: a calculator, a notes app, reminders and forums had to become one place.",
+      "Health data must be quick to log. A kick session or a sugar reading should take seconds and be ready for the next doctor visit.",
+      "The app is free and ad-supported, so ads had to fit in without breaking the experience."
+    ],
+    "ar": [
+      "التواريخ الطبية سهلة الخطأ: تحتاج الأم موعد ولادة محسوبًا بطريقة الأطباء، وكثيرات يتابعن التواريخ بالتقويم الهجري.",
+      "تطبيقات كثيرة لرحلة واحدة: حاسبة وتطبيق ملاحظات ومنبهات ومنتديات، وكان لا بد أن تجتمع في مكان واحد.",
+      "تسجيل البيانات الصحية يجب أن يكون سريعًا؛ جلسة ركلات أو قراءة سكر تستغرق ثوانيَ وتكون جاهزة لزيارة الطبيب التالية.",
+      "التطبيق مجاني ويعتمد على الإعلانات، فكان لا بد أن تندمج الإعلانات دون أن تفسد التجربة."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Pregnancy",
+        "ar": "الحمل"
+      },
+      "items": {
+        "en": [
+          "Due-date calculator from the first day of the last period, in Gregorian or Hijri",
+          "Current week, month and day, days remaining and trimester progress",
+          "Week-by-week guide (weeks 1–40) for mother and baby",
+          "Tips, warning signs, common myths and a curated YouTube video library"
+        ],
+        "ar": [
+          "حاسبة موعد الولادة من أول يوم في آخر دورة، بالميلادي أو الهجري",
+          "الأسبوع والشهر واليوم الحالي، والأيام المتبقية، وتقدّم الثلث الحالي من الحمل",
+          "دليل أسبوعي (من الأسبوع 1 إلى 40) عن الأم والجنين",
+          "نصائح وعلامات تحذيرية وخرافات شائعة، ومكتبة فيديو مختارة من YouTube"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Health trackers",
+        "ar": "متابعة الصحة"
+      },
+      "items": {
+        "en": [
+          "Kick counter with timed sessions and averages",
+          "Blood pressure, blood sugar and weight logs with charts and status labels",
+          "Reminders for doctor visits, vitamins and medication via local notifications"
+        ],
+        "ar": [
+          "عداد ركلات الجنين بجلسات مؤقتة ومتوسطات",
+          "سجلات الضغط والسكر والوزن مع رسوم بيانية وتصنيف للحالة",
+          "منبهات لمواعيد الطبيب والفيتامينات والأدوية عبر الإشعارات المحلية"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Baby and family",
+        "ar": "الطفل والأسرة"
+      },
+      "items": {
+        "en": [
+          "Baby-names explorer for boys and girls, with meanings and favourites",
+          "Baby tracker after birth: feeding, health, language and social development, notes",
+          "Notes and to-dos with new, done and archived tabs"
+        ],
+        "ar": [
+          "مستكشف أسماء المواليد للذكور والإناث مع المعاني والمفضلة",
+          "متابعة الطفل بعد الولادة: الرضاعة والصحة والنمو اللغوي والاجتماعي والملاحظات",
+          "ملاحظات ومهام بتبويبات: جديدة ومنجزة ومؤرشفة"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Community and product",
+        "ar": "المجتمع والمنتج"
+      },
+      "items": {
+        "en": [
+          "Community chat rooms backed by Cloud Firestore",
+          "5 languages with `easy_localization`, RTL and LTR",
+          "Phone, tablet and iPad layouts with a dark-mode toggle",
+          "In-app review prompts, sharing, push notifications and ad monetisation"
+        ],
+        "ar": [
+          "غرف دردشة للمجتمع مبنية على Cloud Firestore",
+          "خمس لغات عبر `easy_localization` باتجاهي RTL وLTR",
+          "تصميمات للهاتف والجهاز اللوحي وiPad مع زر للوضع الداكن",
+          "طلب التقييم داخل التطبيق، والمشاركة، والإشعارات، وتحقيق الدخل من الإعلانات"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Pregnancy calculator and daily trackers",
+      "ar": "حاسبة الحمل والمتابعة اليومية"
+    },
+    "body": {
+      "en": [
+        "The mother picks Gregorian or Hijri and enters the first day of her last period with year, month and day pickers; Hijri months use `hijri_picker`.",
+        "The app computes the due date, current week and day, time remaining and trimester, and shows them as a progress ring.",
+        "Kicks, pressure, sugar and weight are posted to the HamilGuide REST API through Dio and listed back as a history with averages and normal, high or low labels.",
+        "Reminders are scheduled as local notifications, so they fire even without a network connection."
+      ],
+      "ar": [
+        "تختار الأم التقويم الميلادي أو الهجري، وتُدخل أول يوم في آخر دورة باختيار السنة والشهر واليوم؛ والأشهر الهجرية عبر `hijri_picker`.",
+        "يحسب التطبيق موعد الولادة المتوقع، والأسبوع واليوم الحاليين، والمدة المتبقية، والثلث الحالي، ويعرضها في حلقة تقدّم.",
+        "تُرسَل قراءات الركلات والضغط والسكر والوزن إلى REST API الخاص بالتطبيق عبر Dio، وتعود سجلًا بالمتوسطات وتصنيف طبيعي أو مرتفع أو منخفض.",
+        "تُجدوَل التذكيرات إشعاراتٍ محلية، فتعمل حتى دون اتصال بالإنترنت."
+      ]
+    },
+    "image": "hamilguide-case-study/assets/feature-tracking.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Two calendars, one result",
+        "ar": "تقويمان ونتيجة واحدة"
+      },
+      "body": {
+        "en": "The calculator accepts Gregorian or Hijri input with localised month lists for both. The result always shows the due date, elapsed weeks and days, and what is left.",
+        "ar": "تقبل الحاسبة الإدخال بالميلادي أو الهجري مع قوائم أشهر مترجمة للتقويمين، وتعرض النتيجة دائمًا موعد الولادة والأسابيع والأيام المنقضية والمتبقي."
+      }
+    },
+    {
+      "title": {
+        "en": "Server-backed trackers, local notes",
+        "ar": "متابعة على الخادم وملاحظات محلية"
+      },
+      "body": {
+        "en": "Kicks, pressure, sugar and weight go to the backend so history follows the user across devices. Personal notes and to-dos stay in on-device SQLite, and weekly content is fetched in the user's language.",
+        "ar": "تُحفظ الركلات والضغط والسكر والوزن على الخادم ليتبع السجل المستخدمة على أي جهاز، بينما تبقى الملاحظات والمهام الشخصية في SQLite على الجهاز، ويُجلب محتوى الأسابيع بلغة المستخدمة."
+      }
+    },
+    {
+      "title": {
+        "en": "Reliable reminders",
+        "ar": "تذكيرات موثوقة"
+      },
+      "body": {
+        "en": "Doctor visits, vitamins and medication are scheduled as local notifications through a dedicated Alarm cubit, independent of the backend.",
+        "ar": "تُجدوَل مواعيد الطبيب والفيتامينات والأدوية إشعاراتٍ محلية عبر Alarm cubit مخصص، بمعزل عن الخادم."
+      }
+    },
+    {
+      "title": {
+        "en": "Five languages, RTL and LTR",
+        "ar": "خمس لغات باتجاهين"
+      },
+      "body": {
+        "en": "Around 350 string keys go through `easy_localization`, and layouts switch direction with the locale.",
+        "ar": "تمر قرابة 350 عبارة عبر `easy_localization`، وتنقلب اتجاهات الواجهة تلقائيًا مع اللغة."
+      }
+    },
+    {
+      "title": {
+        "en": "Phone, tablet and iPad",
+        "ar": "هاتف وجهاز لوحي وiPad"
+      },
+      "body": {
+        "en": "Relative sizing with `sizer` and `screenutil` lets the same build ship iPad screenshots on the App Store.",
+        "ar": "المقاسات النسبية عبر `sizer` و`screenutil` تتيح للإصدار نفسه أن يُنشر بلقطات iPad على App Store."
+      }
+    },
+    {
+      "title": {
+        "en": "Shipping fast at scale",
+        "ar": "إصلاحات سريعة على نطاق واسع"
+      },
+      "body": {
+        "en": "Crashlytics monitors crashes and Shorebird code push lets fixes reach a 100K+ user base without waiting for a full store review.",
+        "ar": "يراقب Crashlytics الأعطال، ويتيح Shorebird إيصال الإصلاحات لأكثر من 100 ألف مستخدم دون انتظار مراجعة كاملة من المتجر."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "100K+ installs on Google Play, rated 4.2.",
+      "4.3 from 88 ratings on the App Store (Health & Fitness, Medical).",
+      "Live on both stores since 2022 and still maintained (App Store version 28.2.1)."
+    ],
+    "ar": [
+      "أكثر من 100 ألف تثبيت على Google Play بتقييم 4.2.",
+      "تقييم 4.3 من 88 مراجعة على App Store (الصحة واللياقة، والطب).",
+      "متاح على المتجرين منذ 2022 ولا يزال قيد الصيانة (الإصدار 28.2.1 على App Store)."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "100K+",
+      "label": {
+        "en": "installs on Google Play",
+        "ar": "تثبيت على Google Play"
+      }
+    },
+    {
+      "value": "4.2",
+      "label": {
+        "en": "rating on Google Play",
+        "ar": "تقييم على Google Play"
+      }
+    },
+    {
+      "value": "4.3",
+      "label": {
+        "en": "rating on the App Store (88 ratings)",
+        "ar": "تقييم على App Store (88 مراجعة)"
+      }
+    },
+    {
+      "value": "5",
+      "label": {
+        "en": "languages",
+        "ar": "لغات"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Bloc / Cubit",
+    "Dio",
+    "REST API",
+    "Firebase Auth",
+    "Cloud Firestore",
+    "FCM",
+    "Crashlytics",
+    "sqflite",
+    "hijri_picker",
+    "easy_localization",
+    "Local notifications",
+    "Shorebird"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/hamilguide-case-study"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play",
+        "ar": "Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.dalil.elhwamelss"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store",
+        "ar": "App Store"
+      },
+      "url": "https://apps.apple.com/app/id6443834135"
+    }
+  ],
+  "images": [
+    {
+      "src": "hamilguide-case-study/assets/banner.png",
+      "alt": {
+        "en": "HamilGuide pregnancy tracker",
+        "ar": "دليل الحوامل لمتابعة الحمل"
+      },
+      "caption": {
+        "en": "Pregnancy tracker for Arabic-speaking mothers, 100K+ installs on Google Play.",
+        "ar": "تطبيق متابعة الحمل للأم العربية، أكثر من 100 ألف تثبيت على Google Play."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "hamilguide-case-study/assets/feature-tracking.png",
+      "alt": {
+        "en": "Pregnancy calculator and kick counter",
+        "ar": "حاسبة الحمل وعداد الركلات"
+      },
+      "caption": {
+        "en": "Gregorian or Hijri due-date calculator alongside the daily trackers.",
+        "ar": "حاسبة موعد الولادة بالميلادي أو الهجري إلى جانب المتابعة اليومية."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "hamilguide-case-study/assets/screens-play.png",
+      "alt": {
+        "en": "Google Play screenshots",
+        "ar": "لقطات من Google Play"
+      },
+      "caption": {
+        "en": "Current Google Play release: home, pregnancy calculator, health follow-up, kick counter, baby tracker, baby names, notes and reminders, community.",
+        "ar": "الإصدار الحالي على Google Play: الرئيسية، وحاسبة الحمل، ومتابعة الصحة، وعداد الركلات، ومتابعة الطفل، وأسماء المواليد، والملاحظات والتذكيرات، والمجتمع."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "hamilguide-case-study/assets/screens-ios.png",
+      "alt": {
+        "en": "iOS build screenshots",
+        "ar": "لقطات من نسخة iOS"
+      },
+      "caption": {
+        "en": "iOS build from the App Store listing: calculator input, result, follow-up tools, weeks guide, baby names and articles.",
+        "ar": "نسخة iOS من صفحة App Store: إدخال الحاسبة، والنتيجة، وأدوات المتابعة، ودليل الأسابيع، وأسماء المواليد، والمقالات."
+      },
+      "role": "gallery"
+    }
+  ]
+}

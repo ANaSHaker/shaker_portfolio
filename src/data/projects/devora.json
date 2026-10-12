@@ -1,0 +1,378 @@
+{
+  "slug": "devora",
+  "order": 9,
+  "featured": false,
+  "name": {
+    "en": "DevOra E-commerce Suite",
+    "ar": "DevOra E-commerce Suite"
+  },
+  "kind": "case-study",
+  "categories": [
+    "commerce"
+  ],
+  "accent": "#6D6BF5",
+  "region": {
+    "en": "Iraq",
+    "ar": "العراق"
+  },
+  "period": "2025",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "One codebase, many brands",
+    "ar": "كود واحد، علامات تجارية كثيرة"
+  },
+  "summary": {
+    "en": "One white-label Flutter codebase shipped as Aleefie, Deno Store, StarMart and Irtaah, plus a store-owner admin app.",
+    "ar": "كود Flutter واحد بنظام white-label صدر منه أليفي ودينو ستور وستار مارت وارتاح، إلى جانب تطبيق إدارة لصاحب المتجر."
+  },
+  "overview": {
+    "en": [
+      "DevOra sells ready-made, branded mobile stores to merchants, mainly in Iraq. Instead of building every store from scratch, Mahmoud built one Flutter customer app and one admin app that are re-branded per client and shipped to Google Play and the App Store as independent apps.",
+      "Name, logo, colours, copy, package ID, Firebase project and feature flags all change per brand. The same core runs a pet shop, a toy store, a fashion brand and a home-services company, while store owners run their storefront from the admin app on their phone.",
+      "Aleefie reached the App Store in October 2025."
+    ],
+    "ar": [
+      "تبيع DevOra متاجر إلكترونية جاهزة بهوية خاصة للتجار، في العراق بشكل أساسي. وبدلاً من بناء كل متجر من الصفر، بنى محمود تطبيق عميل واحداً وتطبيق إدارة واحداً بـ Flutter، يُعاد تخصيصهما لكل عميل ويُنشران على Google Play وApp Store كتطبيقات مستقلة.",
+      "يتغيّر لكل علامة الاسم والشعار والألوان والنصوص ومعرّف الحزمة ومشروع Firebase ومفاتيح الميزات. والنواة نفسها تشغّل متجراً للحيوانات الأليفة ومتجر ألعاب وعلامة أزياء وشركة خدمات منزلية، بينما يدير أصحاب المتاجر واجهاتهم من تطبيق الإدارة على هواتفهم.",
+      "وصل تطبيق أليفي إلى App Store في أكتوبر 2025."
+    ]
+  },
+  "role": {
+    "en": [
+      "Lead Flutter developer across the suite",
+      "Built the shared core used by every brand",
+      "Designed the white-label workflow and its rebrand checklist",
+      "Built the store-owner admin app",
+      "Shipped the store releases on Google Play and the App Store"
+    ],
+    "ar": [
+      "قائد تطوير Flutter في المنظومة كاملة",
+      "بنيتُ النواة المشتركة التي تستخدمها كل العلامات",
+      "صمّمتُ آلية الـ white-label وقائمة خطوات إعادة الهوية",
+      "بنيتُ تطبيق الإدارة لأصحاب المتاجر",
+      "تولّيتُ النشر على Google Play وApp Store"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Many clients, a small team: every merchant wanted their own app in weeks, and a codebase per store would multiply bugs and maintenance",
+      "Different verticals, same plumbing: pets, toys, fashion and home services all need catalog, cart, checkout, orders, coupons, notifications and an owner dashboard",
+      "Store owners are not technical and manage products, orders, banners, coupons and shipping fees from their phone",
+      "Arabic-first UX: RTL layouts, Arabic copy, Iraqi phone numbers and IQD prices across every brand"
+    ],
+    "ar": [
+      "عملاء كثيرون وفريق صغير: كل تاجر يريد تطبيقه الخاص خلال أسابيع، وكود منفصل لكل متجر كان سيضاعف الأخطاء والصيانة",
+      "قطاعات مختلفة وبنية واحدة: الحيوانات الأليفة والألعاب والأزياء والخدمات المنزلية كلها تحتاج كتالوجاً وسلة ودفعاً وطلبات وكوبونات وإشعارات ولوحة للمالك",
+      "أصحاب المتاجر غير تقنيين ويديرون المنتجات والطلبات والإعلانات والكوبونات ورسوم الشحن من هواتفهم",
+      "تجربة عربية أولاً: واجهات من اليمين لليسار ونصوص عربية وأرقام هواتف عراقية وأسعار بالدينار العراقي في كل العلامات"
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Customer app",
+        "ar": "تطبيق العميل"
+      },
+      "items": {
+        "en": [
+          "Home with promo banners, categories, sub-categories, and new and featured product rails",
+          "Favourites and a guest cart stored locally in Hive that survives until sign-in",
+          "Checkout with coupons, shipping fees by area and order history",
+          "Phone OTP, email, Google and Facebook sign-in, plus biometric unlock",
+          "FCM push, an in-app notifications centre, Arabic and English, light and dark"
+        ],
+        "ar": [
+          "شاشة رئيسية بإعلانات ترويجية وفئات وفئات فرعية وشرائط للمنتجات الجديدة والمميزة",
+          "مفضلة وسلة للزوار محفوظة محلياً في Hive تبقى حتى تسجيل الدخول",
+          "دفع مع كوبونات ورسوم شحن حسب المنطقة وسجل للطلبات",
+          "تسجيل دخول برقم الهاتف وOTP والبريد الإلكتروني وGoogle وFacebook، مع فتح بالبصمة",
+          "إشعارات FCM ومركز إشعارات داخل التطبيق، بالعربية والإنجليزية، وبوضع فاتح وداكن"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Store-owner admin",
+        "ar": "تطبيق إدارة المتجر"
+      },
+      "items": {
+        "en": [
+          "Dashboard with charts built on `fl_chart` and Syncfusion",
+          "Orders board with status chips, date filters, bulk selection and status updates",
+          "PDF export of orders and customer lists straight from the phone",
+          "Products, categories, banners, coupons, shipping zones, reviews moderation, customer chat and a QR scanner",
+          "Permission-based access so staff only see what their role allows"
+        ],
+        "ar": [
+          "لوحة تحكم برسوم بيانية مبنية على `fl_chart` وSyncfusion",
+          "لوحة طلبات بشارات للحالة وتصفية بالتاريخ وتحديد جماعي وتحديث للحالات",
+          "تصدير الطلبات وقوائم العملاء بصيغة PDF مباشرة من الهاتف",
+          "المنتجات والفئات والإعلانات والكوبونات ومناطق الشحن ومراجعة التقييمات ومحادثة العملاء وماسح QR",
+          "صلاحيات حسب الدور بحيث لا يرى الموظف إلا ما يسمح به دوره"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "White-label tooling",
+        "ar": "أدوات الـ white-label"
+      },
+      "items": {
+        "en": [
+          "A single `AppConstants` file plus brand assets define each store",
+          "A documented 9-step rebrand checklist: name, icon, package ID, Firebase project, colours, fonts, copy and signing keys",
+          "Server-driven banners, categories, products, coupons and shipping, so owners change the storefront without a release"
+        ],
+        "ar": [
+          "ملف `AppConstants` واحد مع أصول العلامة يحدّد كل متجر",
+          "قائمة موثّقة من 9 خطوات لإعادة الهوية: الاسم والأيقونة ومعرّف الحزمة ومشروع Firebase والألوان والخطوط والنصوص ومفاتيح التوقيع",
+          "إعلانات وفئات ومنتجات وكوبونات وشحن يتحكم بها الخادم، فيغيّر المالك واجهة متجره دون إصدار جديد"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "One codebase, many brands",
+      "ar": "كود واحد، علامات تجارية كثيرة"
+    },
+    "body": {
+      "en": [
+        "Every store runs the same Flutter code; only configuration changes.",
+        "Brand config: `AppConstants` holds the app name, logo, colours, onboarding content, allowed phone-auth countries and content flags.",
+        "Brand assets and identity: icons, splash, onboarding images and translations are swapped per brand, `change_app_package_name` sets the package ID, and each brand gets its own Firebase project.",
+        "Server-driven content lets the store owner control the storefront from the admin app. A new brand is a configuration task, and a fix in the core ships to every store."
+      ],
+      "ar": [
+        "كل متجر يعمل بكود Flutter نفسه، والذي يتغيّر هو الإعدادات فقط.",
+        "إعدادات العلامة: يحتفظ `AppConstants` باسم التطبيق والشعار والألوان ومحتوى الشاشات التعريفية والدول المسموح بها لتسجيل الدخول بالهاتف ومفاتيح المحتوى.",
+        "الأصول والهوية: تُستبدل الأيقونات وشاشات البداية وصور التعريف وملفات الترجمة لكل علامة، ويحدّد `change_app_package_name` معرّف الحزمة، ولكل علامة مشروع Firebase خاص.",
+        "المحتوى الذي يتحكم به الخادم يتيح لصاحب المتجر إدارة واجهته من تطبيق الإدارة. العلامة الجديدة مهمة إعدادات، وأي إصلاح في النواة يصل إلى كل المتاجر."
+      ]
+    },
+    "image": "devora-ecommerce-suite/assets/brands.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Brand isolation without forks",
+        "ar": "عزل العلامات دون تفريع"
+      },
+      "body": {
+        "en": "All brand-specific values live in one constants file and the assets folder; the rest of the code reads from them. A checklist at the top of the file turns a new brand into a repeatable routine.",
+        "ar": "كل القيم الخاصة بالعلامة في ملف ثوابت واحد ومجلد الأصول، وبقية الكود تقرأ منها. وقائمة خطوات في أعلى الملف تجعل إضافة علامة جديدة روتيناً قابلاً للتكرار."
+      }
+    },
+    {
+      "title": {
+        "en": "Guest-first shopping",
+        "ar": "تسوّق يبدأ بالزائر"
+      },
+      "body": {
+        "en": "Shoppers browse, favourite and fill a cart before signing up. After sign-in, the Hive cart is pushed to the server once per session and only accepted items are removed locally, so nothing is lost on a weak connection.",
+        "ar": "يتصفّح المتسوّق ويضيف للمفضلة ويملأ السلة قبل التسجيل. وبعد تسجيل الدخول تُرسَل سلة Hive إلى الخادم مرة واحدة في الجلسة، ولا يُحذف محلياً إلا ما قبله الخادم، فلا يضيع شيء مع اتصال ضعيف."
+      }
+    },
+    {
+      "title": {
+        "en": "Live storefront updates",
+        "ar": "تحديث لحظي للمتجر"
+      },
+      "body": {
+        "en": "A Socket.IO connection joins a `users` room. When the owner changes something in the admin app, a `general` event tells the customer app to refresh, with no polling.",
+        "ar": "ينضم اتصال Socket.IO إلى غرفة `users`، وحين يغيّر المالك شيئاً في تطبيق الإدارة يُبلغ حدث `general` تطبيقَ العميل بالتحديث، دون استعلام دوري."
+      }
+    },
+    {
+      "title": {
+        "en": "Role- and permission-based admin",
+        "ar": "إدارة حسب الدور والصلاحيات"
+      },
+      "body": {
+        "en": "Login stores the user's role and permissions, and admin screens check `hasPerm(...)`, so one admin build serves owners and staff with different rights.",
+        "ar": "يحفظ تسجيل الدخول دور المستخدم وصلاحياته، وتفحص شاشات الإدارة `hasPerm(...)`، فيخدم إصدار إدارة واحد المالكين والموظفين بصلاحيات مختلفة."
+      }
+    },
+    {
+      "title": {
+        "en": "Production monitoring per brand",
+        "ar": "مراقبة الإنتاج لكل علامة"
+      },
+      "body": {
+        "en": "Crashlytics, Performance and Analytics start at launch, Remote Config drives runtime switches, and App Check protects the Firebase backend for every brand.",
+        "ar": "تبدأ Crashlytics وPerformance وAnalytics عند التشغيل، وتتحكم Remote Config بالمفاتيح وقت التشغيل، ويحمي App Check واجهة Firebase لكل علامة."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "4 brands live on Google Play from one codebase: Aleefie, Deno Store, StarMart and Irtaah",
+      "Aleefie also live on the App Store in the Shopping category, released October 2025",
+      "10 app builds (customer and admin) maintained from the same core, including the Pets, Grocery, OCA View and Al-Wathiq storefronts"
+    ],
+    "ar": [
+      "4 علامات منشورة على Google Play من كود واحد: أليفي ودينو ستور وستار مارت وارتاح",
+      "أليفي منشور أيضاً على App Store ضمن فئة التسوّق منذ أكتوبر 2025",
+      "10 إصدارات تطبيقات (عميل وإدارة) تُدار من النواة نفسها، منها متاجر Pets وGrocery وOCA View والواثق"
+    ]
+  },
+  "metrics": [
+    {
+      "value": "4",
+      "label": {
+        "en": "live brands from one codebase",
+        "ar": "علامات منشورة من كود واحد"
+      }
+    },
+    {
+      "value": "10",
+      "label": {
+        "en": "app builds from the same core",
+        "ar": "إصدارات تطبيقات من النواة نفسها"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Bloc / Cubit",
+    "Dio",
+    "Socket.IO",
+    "Hive",
+    "FCM",
+    "Crashlytics",
+    "Remote Config",
+    "App Check",
+    "Google Maps",
+    "easy_localization",
+    "fl_chart",
+    "pdf + printing",
+    "local_auth"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/devora-ecommerce-suite"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · Aleefie",
+        "ar": "Google Play · أليفي"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.devora.alife"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store · Aleefie",
+        "ar": "App Store · أليفي"
+      },
+      "url": "https://apps.apple.com/sa/app/id6753914523"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · Deno Store",
+        "ar": "Google Play · دينو ستور"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.devora.dinotoys"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · StarMart",
+        "ar": "Google Play · ستار مارت"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.devora.starmart"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · Irtaah",
+        "ar": "Google Play · ارتاح"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.irtaah.devora"
+    }
+  ],
+  "images": [
+    {
+      "src": "devora-ecommerce-suite/assets/banner.png",
+      "alt": {
+        "en": "DevOra E-commerce Suite",
+        "ar": "DevOra E-commerce Suite"
+      },
+      "caption": {
+        "en": "One Flutter codebase, many branded stores, plus a store-owner admin app.",
+        "ar": "كود Flutter واحد، ومتاجر كثيرة بهويات مختلفة، وتطبيق إدارة لصاحب المتجر."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "devora-ecommerce-suite/assets/brands.png",
+      "alt": {
+        "en": "One codebase, many brands",
+        "ar": "كود واحد، علامات تجارية كثيرة"
+      },
+      "caption": {
+        "en": "Every store runs the same Flutter code; only the configuration changes.",
+        "ar": "كل متجر يعمل بكود Flutter نفسه، والذي يتغيّر هو الإعدادات فقط."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "devora-ecommerce-suite/assets/white-label.png",
+      "alt": {
+        "en": "White-label pipeline",
+        "ar": "آلية الـ white-label"
+      },
+      "caption": {
+        "en": "The white-label pipeline: brand config, brand assets, identity and server-driven content.",
+        "ar": "آلية الـ white-label: إعدادات العلامة، والأصول، والهوية، والمحتوى الذي يتحكم به الخادم."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "devora-ecommerce-suite/assets/customer-flows.png",
+      "alt": {
+        "en": "Customer flows",
+        "ar": "مسارات العميل"
+      },
+      "caption": {
+        "en": "StarMart (Android) and Aleefie (iOS): welcome, sign-in, onboarding, empty states and home. Same screens, different brand.",
+        "ar": "ستار مارت (Android) وأليفي (iOS): الترحيب وتسجيل الدخول والتعريف والحالات الفارغة والرئيسية. الشاشات نفسها بهوية مختلفة."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "devora-ecommerce-suite/assets/store-listings.png",
+      "alt": {
+        "en": "Store listings for Aleefie and Deno Store",
+        "ar": "صفحات أليفي ودينو ستور في المتجر"
+      },
+      "caption": {
+        "en": "Official store screenshots for Aleefie (pets) and Deno Store (toys).",
+        "ar": "لقطات المتجر الرسمية لأليفي (مستلزمات الحيوانات الأليفة) ودينو ستور (ألعاب الأطفال)."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "devora-ecommerce-suite/assets/irtaah-screens.png",
+      "alt": {
+        "en": "Irtaah home services",
+        "ar": "ارتاح للخدمات المنزلية"
+      },
+      "caption": {
+        "en": "Irtaah: the same core configured as a home-services marketplace, with booking and call, WhatsApp and map actions.",
+        "ar": "ارتاح: النواة نفسها مهيّأة كسوق للخدمات المنزلية، مع الحجز وأزرار الاتصال وواتساب والخريطة."
+      },
+      "role": "gallery"
+    }
+  ]
+}

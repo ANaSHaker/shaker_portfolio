@@ -1,0 +1,315 @@
+{
+  "slug": "insurify",
+  "order": 14,
+  "featured": false,
+  "name": {
+    "en": "BFI Insurify",
+    "ar": "BFI Insurify"
+  },
+  "kind": "case-study",
+  "categories": [],
+  "accent": "#2FD6B3",
+  "region": {
+    "en": "Egypt",
+    "ar": "مصر"
+  },
+  "period": null,
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Insurance at your finger click",
+    "ar": "التأمين بلمسة إصبع"
+  },
+  "summary": {
+    "en": "A bilingual Flutter insurance app for car, health and life cover: compare packages, buy, track policies, file claims and renew.",
+    "ar": "تطبيق تأمين بـ Flutter باللغتين لتأمين السيارات والصحة والحياة: مقارنة الباقات، والشراء، ومتابعة الوثائق، وتقديم المطالبات، والتجديد."
+  },
+  "overview": {
+    "en": [
+      "BFI Insurify is the customer app of an Egyptian insurance brokerage. Customers browse products as guests, compare packages from partner insurers and submit a full insurance request with their documents.",
+      "The same app then handles the whole policy lifecycle: activation, payment status, claims and refunds, renewals and a medical discount card, in Arabic and English with a full RTL layout."
+    ],
+    "ar": [
+      "BFI Insurify تطبيق العملاء لوسيط تأمين مصري. يتصفح العميل المنتجات كضيف، ويقارن باقات شركات التأمين الشريكة، ثم يقدّم طلب تأمين كاملًا مع مستنداته.",
+      "ثم يتولى التطبيق نفسه دورة حياة الوثيقة كاملة: التفعيل، وحالة الدفع، والمطالبات والاستردادات، والتجديد، وبطاقة الخصم الطبي، بالعربية والإنجليزية مع دعم كامل للاتجاه من اليمين لليسار."
+    ]
+  },
+  "role": {
+    "en": [
+      "Flutter developer for the mobile app",
+      "Built the UI, state management and API integration",
+      "Wired up push notifications with FCM and local notifications",
+      "Set up the release pipeline, including Shorebird code push"
+    ],
+    "ar": [
+      "مطوّر Flutter لتطبيق الجوال",
+      "بناء الواجهات وإدارة الحالة والتكامل مع الـ API",
+      "ربط الإشعارات عبر FCM والإشعارات المحلية",
+      "إعداد مسار النشر، بما فيه التحديثات الفورية عبر Shorebird"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Insurance is form-heavy. Car, individual, family and corporate health, and life each need different data and documents, yet all had to feel like one simple flow.",
+      "Customers should explore offers without an account and only log in when they commit to a package.",
+      "A policy moves through pending payment, pending activation, active and expired, plus claims and renewals. Customers need to see clearly where each one stands.",
+      "Fixes had to reach users quickly without waiting for store review."
+    ],
+    "ar": [
+      "التأمين مليء بالنماذج؛ تأمين السيارات، والتأمين الصحي للأفراد والعائلات والشركات، وتأمين الحياة، لكلٍّ منها بيانات ومستندات مختلفة، ومع ذلك كان لا بد أن تبدو كلها مسارًا واحدًا بسيطًا.",
+      "يجب أن يستكشف العميل العروض دون حساب، ولا يُطلب منه الدخول إلا عند اختيار باقة.",
+      "تمر الوثيقة بحالات: بانتظار الدفع، وبانتظار التفعيل، وسارية، ومنتهية، إضافة إلى المطالبات والتجديد، والعميل يحتاج أن يرى بوضوح أين تقف كل وثيقة.",
+      "كان لا بد أن تصل الإصلاحات إلى المستخدمين بسرعة دون انتظار مراجعة المتجر."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Products and offers",
+        "ar": "المنتجات والعروض"
+      },
+      "items": {
+        "en": [
+          "Car insurance with a make, model and year catalog, car value and coverage percentage",
+          "Health cover for individuals, families and corporates (minimum 10 employees), plus life insurance with insured amount and duration",
+          "Server-driven packages with coverage bullets and Recommended or Best value badges",
+          "Bundle discounts when subscribing to more than one line, such as car plus health"
+        ],
+        "ar": [
+          "تأمين السيارات بكتالوج للماركة والطراز وسنة الصنع، مع قيمة السيارة ونسبة التغطية",
+          "تأمين صحي للأفراد والعائلات والشركات (10 موظفين على الأقل)، وتأمين حياة بمبلغ التأمين والمدة",
+          "باقات يحددها الخادم، بنقاط التغطية وشارات الأكثر توصية أو الأفضل قيمة",
+          "خصم الباقات المجمّعة عند الاشتراك في أكثر من نوع، مثل السيارة مع الصحي"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Policy lifecycle",
+        "ar": "دورة حياة الوثيقة"
+      },
+      "items": {
+        "en": [
+          "My Policies with status chips: Active, Pending payment, Pending activation, Expired",
+          "Policy activation with a payment key, payment-status updates and tracked renewal requests",
+          "Claims and refunds with document uploads, moving from Submitted to Review to Completed or Rejected",
+          "Medical discount card: choose a plan, request a card and activate it with a key"
+        ],
+        "ar": [
+          "وثائقي مع شارات الحالة: سارية، وبانتظار الدفع، وبانتظار التفعيل، ومنتهية",
+          "تفعيل الوثيقة بمفتاح دفع، وتحديثات حالة الدفع، وطلبات تجديد قابلة للتتبع",
+          "المطالبات والاستردادات مع رفع المستندات، وتنتقل من مقدَّمة إلى قيد المراجعة إلى مكتملة أو مرفوضة",
+          "بطاقة الخصم الطبي: اختيار الخطة، وطلب البطاقة، وتفعيلها بمفتاح"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Account and UX",
+        "ar": "الحساب وتجربة الاستخدام"
+      },
+      "items": {
+        "en": [
+          "Phone and password login, OTP verification, password reset, profile completion and account deletion",
+          "Guest mode with a friendly Login required gate; Client or Associate account types",
+          "Notifications centre with mark-as-seen and FCM push",
+          "Light and dark themes, adjustable font scale and a runtime language switch"
+        ],
+        "ar": [
+          "الدخول بالهاتف وكلمة المرور، والتحقق بـ OTP، واستعادة كلمة المرور، واستكمال الملف الشخصي، وحذف الحساب",
+          "وضع الضيف مع نافذة لطيفة تطلب تسجيل الدخول، ونوعا حساب: عميل أو شريك",
+          "مركز إشعارات مع تعليم المقروء، وإشعارات FCM",
+          "وضعان فاتح وداكن، وتكبير الخط، وتبديل اللغة أثناء التشغيل"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Compare, choose, then request",
+      "ar": "قارِن، اختر، ثم قدّم الطلب"
+    },
+    "body": {
+      "en": [
+        "Each service card (car, medical, life) opens its packages. Names, coverage bullets and the recommended badge come from the API, so the business can change offers without an app release.",
+        "Guests browse everything; login is requested only when a package is picked.",
+        "The guided request collects product data (car catalog, health members or life amount), then personal data and documents uploaded as multipart form data.",
+        "On submit, a success screen gives the expected processing time, and the request appears under My Policies to be tracked through activation and payment.",
+        "With a bundle offer active, the plans for each line stay together so the discount applies across car and health in a single request."
+      ],
+      "ar": [
+        "تفتح كل بطاقة خدمة (سيارات، طبي، حياة) باقاتها. وتأتي الأسماء ونقاط التغطية وشارة التوصية من الـ API، فتغيّر الشركة عروضها دون إصدار جديد للتطبيق.",
+        "يتصفح الضيف كل شيء، ولا يُطلب الدخول إلا عند اختيار باقة.",
+        "يجمع الطلب الموجَّه بيانات المنتج (كتالوج السيارات، أو أفراد التأمين الصحي، أو مبلغ تأمين الحياة)، ثم البيانات الشخصية والمستندات المرفوعة بصيغة multipart.",
+        "عند الإرسال تعرض شاشة النجاح مدة المعالجة المتوقعة، ويظهر الطلب في وثائقي لمتابعته حتى التفعيل والدفع.",
+        "وعند تفعيل عرض الباقات المجمّعة تبقى خطط كل نوع معًا، فيُطبَّق الخصم على السيارة والصحي في طلب واحد."
+      ]
+    },
+    "image": "insurify-case-study/assets/feature-packages.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Session committed only after OTP",
+        "ar": "حفظ الجلسة بعد OTP فقط"
+      },
+      "body": {
+        "en": "Tokens are held as pending on login and written to storage only after OTP succeeds, so a half-verified user never gets a persisted session. On launch the splash silently refreshes the token, falling back to guest mode on failure.",
+        "ar": "تُحتجز التوكنات معلّقة عند الدخول ولا تُحفظ إلا بعد نجاح OTP، فلا يحصل مستخدم غير مكتمل التحقق على جلسة محفوظة. وعند الإقلاع تجدد شاشة البداية التوكن بصمت، وتعود إلى وضع الضيف إن فشل التجديد."
+      }
+    },
+    {
+      "title": {
+        "en": "FCM token before the first screen",
+        "ar": "توكن FCM قبل الشاشة الأولى"
+      },
+      "body": {
+        "en": "Notification setup runs before `runApp` inside a try/catch, so the device token is ready to send with login, and the app still starts if Firebase isn't configured. On iOS the APNs token is awaited first.",
+        "ar": "يجري إعداد الإشعارات قبل `runApp` داخل try/catch، فيكون توكن الجهاز جاهزًا ليُرسل مع تسجيل الدخول، ويعمل التطبيق حتى لو لم يُهيأ Firebase. وعلى iOS يُنتظر توكن APNs أولًا."
+      }
+    },
+    {
+      "title": {
+        "en": "Guest-first navigation",
+        "ar": "تنقل يبدأ بالضيف"
+      },
+      "body": {
+        "en": "Home, services and packages work without auth. A reusable `LoginRequiredDialog` guards only the actions that need an account, keeping the entry funnel short.",
+        "ar": "تعمل الرئيسية والخدمات والباقات دون تسجيل دخول، ولا يحرس `LoginRequiredDialog` القابل لإعادة الاستخدام إلا الإجراءات التي تتطلب حسابًا، فيبقى مسار الدخول قصيرًا."
+      }
+    },
+    {
+      "title": {
+        "en": "One request model for many products",
+        "ar": "نموذج طلب واحد لمنتجات كثيرة"
+      },
+      "body": {
+        "en": "An `InsuranceRequestContext` carries the selected line, package and bundle plan through the multi-step forms, so car, health and life documents share one submission pipeline.",
+        "ar": "يحمل `InsuranceRequestContext` النوع والباقة وخطة الباقة المجمّعة عبر النماذج متعددة الخطوات، فتتشارك مستندات السيارات والصحي والحياة مسار إرسال واحدًا."
+      }
+    },
+    {
+      "title": {
+        "en": "Tablet-safe layout",
+        "ar": "تصميم آمن على الأجهزة اللوحية"
+      },
+      "body": {
+        "en": "On tablets, a `MediaQuery` override pins a phone-sized logical canvas and a fixed text scale, so forms and cards never stretch or break.",
+        "ar": "على الأجهزة اللوحية يثبّت تجاوز لـ `MediaQuery` مساحة منطقية بحجم الهاتف ومقياس نص ثابتًا، فلا تتمدد النماذج والبطاقات ولا تنكسر."
+      }
+    },
+    {
+      "title": {
+        "en": "OTA hotfixes",
+        "ar": "إصلاحات فورية عبر الهواء"
+      },
+      "body": {
+        "en": "Shorebird is integrated, so Dart-level fixes ship as patches without a new store build.",
+        "ar": "Shorebird مدمج في التطبيق، فتُنشر إصلاحات Dart على هيئة تحديثات دون إصدار جديد في المتجر."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "One app covering 3 insurance lines (car, health, life) and the full policy lifecycle: purchase, activation, claims, renewal and discount cards.",
+      "Fully bilingual, Arabic RTL and English, with light and dark themes.",
+      "Delivered to the client; not on a public store listing."
+    ],
+    "ar": [
+      "تطبيق واحد يغطي 3 أنواع تأمين (سيارات، صحي، حياة) ودورة حياة الوثيقة كاملة: الشراء والتفعيل والمطالبات والتجديد وبطاقات الخصم.",
+      "ثنائي اللغة بالكامل، العربية من اليمين لليسار والإنجليزية، مع وضعين فاتح وداكن.",
+      "سُلِّم إلى العميل، وليس منشورًا في المتاجر العامة."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "3",
+      "label": {
+        "en": "insurance lines in one app",
+        "ar": "أنواع تأمين في تطبيق واحد"
+      }
+    },
+    {
+      "value": "2",
+      "label": {
+        "en": "languages, Arabic RTL and English",
+        "ar": "لغتان، العربية والإنجليزية"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Bloc / Cubit",
+    "Dio",
+    "REST API",
+    "cookie_jar",
+    "SharedPreferences",
+    "easy_localization",
+    "Firebase Messaging",
+    "Local notifications",
+    "image_picker",
+    "Shorebird"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/insurify-case-study"
+    }
+  ],
+  "images": [
+    {
+      "src": "insurify-case-study/assets/banner.png",
+      "alt": {
+        "en": "BFI Insurify",
+        "ar": "BFI Insurify"
+      },
+      "caption": {
+        "en": "Car, health and life insurance in one bilingual app: packages, claims, renewals.",
+        "ar": "تأمين السيارات والصحة والحياة في تطبيق واحد ثنائي اللغة: الباقات والمطالبات والتجديد."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "insurify-case-study/assets/feature-packages.png",
+      "alt": {
+        "en": "Package comparison",
+        "ar": "مقارنة الباقات"
+      },
+      "caption": {
+        "en": "Compare, choose, then request: server-driven packages with coverage bullets and badges.",
+        "ar": "قارِن واختر ثم قدّم الطلب: باقات يحددها الخادم بنقاط التغطية والشارات."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "insurify-case-study/assets/screens-onboarding.png",
+      "alt": {
+        "en": "Splash, onboarding, home and drawer",
+        "ar": "شاشة البداية والتعريف والرئيسية والقائمة الجانبية"
+      },
+      "caption": {
+        "en": "Brand splash, onboarding (health, car), guest home with bundle offer and services, navigation drawer.",
+        "ar": "شاشة البداية، والتعريف بالتطبيق (صحي، سيارات)، والرئيسية للضيف مع عرض الباقات المجمّعة والخدمات، والقائمة الجانبية."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "insurify-case-study/assets/screens-flows.png",
+      "alt": {
+        "en": "Packages, login gate, sign-up and Arabic RTL",
+        "ar": "الباقات وبوابة الدخول والتسجيل والواجهة العربية"
+      },
+      "caption": {
+        "en": "Package comparison, login-required gate, sign in and account type, home and packages in Arabic (RTL).",
+        "ar": "مقارنة الباقات، ونافذة طلب الدخول، وتسجيل الدخول ونوع الحساب، والرئيسية والباقات بالعربية."
+      },
+      "role": "gallery"
+    }
+  ]
+}

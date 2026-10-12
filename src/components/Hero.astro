@@ -1,0 +1,181 @@
+---
+import Icon from './Icon.astro';
+import Img from './Img.astro';
+import { t, url, type Lang } from '../i18n';
+import { links, profile, stats } from '../data/site';
+import { projects } from '../data/projects';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const s = t(lang);
+const [first, ...rest] = profile.name[lang].split(' ');
+const fmt = (n: number) => String(n);
+const marquee = projects.map((p) => ({ name: p.name[lang], accent: p.accent, slug: p.slug }));
+---
+
+<section class="relative overflow-x-clip pt-28 sm:pt-36" aria-labelledby="hero-title">
+  <div class="container-x grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
+    <div class="lg:col-span-7">
+      <p class="rise kicker" style="--d:0">
+        <span class="relative inline-flex size-2 rounded-full bg-emerald-500 pulse-dot" aria-hidden="true"></span>
+        {s.hero.eyebrow}
+      </p>
+      <h1
+        id="hero-title"
+        class:list={[
+          'rise mt-6 font-display font-bold text-ink',
+          lang === 'ar'
+            ? 'text-[clamp(3rem,10vw,6.5rem)] leading-[1.1]'
+            : 'text-[clamp(3.4rem,10.5vw,7.6rem)] leading-[0.92] tracking-[-0.045em]',
+        ]}
+        style="--d:1"
+      >
+        <span class="block">{first}</span>
+        <span class="text-gradient block pb-2">{rest.join(' ')}</span>
+      </h1>
+      <p class="rise mt-6 max-w-xl text-lg leading-relaxed text-ink-2 sm:text-xl" style="--d:2">
+        {profile.tagline[lang]}
+      </p>
+      <div class="rise mt-9 flex flex-wrap items-center gap-3" style="--d:3">
+        <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary">
+          <Icon name="whatsapp" size={18} />
+          {s.hero.ctaPrimary}
+        </a>
+        <a href={links.linkedin} target="_blank" rel="noopener" class="btn btn-ghost">
+          <Icon name="linkedin" size={16} />
+          {s.hero.ctaSecondary}
+        </a>
+        <a href="#work" class="link-arrow inline-flex items-center gap-2 px-3 py-3 font-semibold text-ink-2 hover:text-ink">
+          {s.hero.ctaWork}
+          <Icon name="arrow" size={18} class="flip-rtl" />
+        </a>
+      </div>
+    </div>
+
+    <div class="rise relative mx-auto w-full max-w-[22rem] sm:max-w-[26rem] lg:col-span-5 lg:max-w-none" style="--d:2">
+      <div class="relative mx-auto aspect-[4/5] w-full max-w-[25rem]">
+        <!-- glow ring -->
+        <div
+          class="ring-spin absolute -inset-[2px] rounded-[2.6rem] opacity-90"
+          aria-hidden="true"
+        >
+        </div>
+        <div
+          class="absolute -inset-10 -z-10 rounded-full bg-[radial-gradient(closest-side,rgb(79_70_229/.45),transparent)] blur-2xl"
+          aria-hidden="true"
+        >
+        </div>
+        <div class="relative h-full overflow-hidden rounded-[2.5rem] border border-white/10 bg-bg-2">
+          <Img
+            src="ANaSHaker/assets/_src/photo.jpg"
+            alt={s.hero.photoAlt}
+            sizes="(min-width: 1024px) 420px, 80vw"
+            eager
+            class="h-full w-full scale-[1.12] object-cover object-[50%_30%]"
+          />
+          <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#05070f]/85 to-transparent" aria-hidden="true">
+          </div>
+          <div class="absolute inset-x-5 bottom-5 flex items-center gap-2 text-sm font-medium text-white/90">
+            <Icon name="map" size={16} />
+            <span>{s.hero.basedIn}</span>
+          </div>
+        </div>
+
+        <!-- floating chips -->
+        <div
+          class="floaty glass absolute -start-3 top-10 flex items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5 sm:-start-12"
+          style="--d:0"
+        >
+          <span class="grid size-8 place-items-center rounded-xl bg-[#02569B]/15 text-[#42A5F5]"><Icon name="flutter" size={17} /></span>
+          <span class="text-sm font-semibold" dir="ltr">Flutter · Dart</span>
+        </div>
+        <div
+          class="floaty glass absolute -end-3 top-[44%] flex items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5 sm:-end-10"
+          style="--d:1"
+        >
+          <span class="grid size-8 place-items-center rounded-xl bg-emerald-500/15 text-emerald-500"><Icon name="googleplay" size={15} /></span>
+          <span class="text-sm leading-tight">
+            <b class="block font-display text-base" dir="ltr">100K+</b>
+            <span class="text-muted">{stats[2].label[lang]}</span>
+          </span>
+        </div>
+        <div
+          class="floaty glass absolute -start-3 bottom-20 hidden items-center gap-2.5 rounded-2xl !bg-bg-2/80 px-3.5 py-2.5 sm:flex sm:-start-10"
+          style="--d:2"
+        >
+          <span class="grid size-8 place-items-center rounded-xl bg-violet-500/15 text-violet-400"><Icon name="sparkles" size={16} /></span>
+          <span class="text-sm font-semibold">{lang === 'ar' ? 'ذكاء اصطناعي في الإنتاج' : 'AI in production'}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="container-x mt-20 sm:mt-24">
+    <dl class="glass grid grid-cols-2 overflow-hidden rounded-[2rem] md:grid-cols-4" data-reveal>
+      {
+        stats.map((st, i) => (
+          <div
+            class:list={[
+              'relative flex flex-col px-6 py-7 sm:px-8 sm:py-9',
+              i % 2 === 1 && 'border-s border-line',
+              i >= 2 && 'border-t border-line md:border-t-0',
+              i === 2 && 'md:border-s',
+            ]}
+          >
+            <dt class="order-2 mt-1 text-sm text-muted sm:text-base">{st.label[lang]}</dt>
+            <dd class="font-display text-[clamp(2.4rem,6vw,3.6rem)] font-bold leading-none tracking-tight">
+              <bdi dir="ltr"><span data-count={st.value} data-locale="en">{fmt(st.value)}</span><span class="text-gradient">{st.suffix}</span></bdi>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+
+  <!-- Marquee of work -->
+  <div class="marquee mt-14 overflow-hidden py-2" aria-hidden="true">
+    <div class="marquee-track gap-3">
+      {
+        [...marquee, ...marquee].map((m) => (
+          <a
+            href={url(`${lang}/projects/${m.slug}/`)}
+            tabindex="-1"
+            class="me-3 inline-flex items-center gap-2.5 rounded-full border border-line bg-glass px-5 py-2.5 font-display text-lg font-semibold text-ink-2 transition-colors hover:text-ink"
+          >
+            <span class="size-2 rounded-full" style={`background:${m.accent};box-shadow:0 0 14px ${m.accent}`} />
+            {m.name}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const nums = document.querySelectorAll<HTMLElement>('[data-count]');
+  if (!reduce && !document.documentElement.classList.contains('shot') && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        io.unobserve(e.target);
+        const el = e.target as HTMLElement;
+        const target = Number(el.dataset.count);
+        const fmt = new Intl.NumberFormat(el.dataset.locale);
+        const t0 = performance.now();
+        const dur = 1400;
+        const tick = (now: number) => {
+          const p = Math.min(1, (now - t0) / dur);
+          const eased = 1 - Math.pow(1 - p, 4);
+          el.textContent = fmt.format(Math.round(target * eased));
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      }
+    }, { threshold: 0.6 });
+    nums.forEach((n) => io.observe(n));
+  }
+</script>

@@ -1,0 +1,334 @@
+{
+  "slug": "riza",
+  "order": 5,
+  "featured": true,
+  "name": {
+    "en": "RIZA AI Visual Search",
+    "ar": "RIZA AI Visual Search"
+  },
+  "kind": "source",
+  "categories": [
+    "ai",
+    "opensource"
+  ],
+  "accent": "#D9B36C",
+  "region": null,
+  "period": "2026",
+  "platforms": [
+    "API",
+    "WordPress"
+  ],
+  "tagline": {
+    "en": "Search a fashion store by photo",
+    "ar": "ابحث في متجر الأزياء بصورة"
+  },
+  "summary": {
+    "en": "Photo search for a WooCommerce fashion store: OWLv2 detects each garment, FashionCLIP and FAISS find the closest products. Source included.",
+    "ar": "بحث بالصورة لمتجر أزياء على WooCommerce: يكتشف OWLv2 كل قطعة، ويعثر FashionCLIP وFAISS على أقرب المنتجات إليها. الكود المصدري متاح."
+  },
+  "overview": {
+    "en": [
+      "RIZA is a fashion and lifestyle brand running on WordPress and WooCommerce, with a companion mobile app. Shoppers often arrive with a picture of something they like, a social media screenshot or a street photo, and no idea what it is called in the catalogue.",
+      "Mahmoud designed and built the feature that answers \"show me products that look like this\": garment detection, region-level similarity search, \"similar items\" on product pages, and REST endpoints shared by the web storefront and the app.",
+      "This repository is a clean, store-agnostic rewrite of that production work: a Python FastAPI service and a WordPress/WooCommerce plugin that can drop into any store. It keeps the production algorithms and tuning, with no store data or credentials."
+    ],
+    "ar": [
+      "RIZA علامة أزياء ونمط حياة تعمل على WordPress وWooCommerce، ولها تطبيق جوال مرافق. كثيراً ما يصل المتسوّق ومعه صورة لشيء أعجبه، لقطة من وسائل التواصل أو صورة من الشارع، دون أن يعرف اسمه في الكتالوج.",
+      "صمّم محمود وبنى الميزة التي تجيب عن طلب \"أرني منتجات تشبه هذه\": اكتشاف القطع في الصورة، والبحث بالتشابه داخل منطقة محددة، وقسم \"منتجات مشابهة\" في صفحات المنتجات، وواجهات REST يتشاركها الموقع والتطبيق.",
+      "هذا المستودع إعادة كتابة نظيفة وعامة لذلك العمل الإنتاجي: خدمة Python مبنية على FastAPI وإضافة WordPress/WooCommerce تصلح لأي متجر. يحتفظ بخوارزميات الإنتاج وضبطها، دون أي بيانات أو مفاتيح خاصة بالمتجر."
+    ]
+  },
+  "role": {
+    "en": [
+      "Owned the feature end to end: model selection, the Python service and the indexing pipeline",
+      "Built the WordPress/WooCommerce integration and the REST endpoints used by the mobile app",
+      "Handled deployment and tuning on CPU-only hosting, including the memory-optimisation release",
+      "Rewrote the work as two reusable packages: `api/` (Python) and `wordpress-plugin/` (PHP)"
+    ],
+    "ar": [
+      "تولّيتُ الميزة كاملة: اختيار النماذج، وخدمة Python، وخط الفهرسة",
+      "بنيتُ التكامل مع WordPress/WooCommerce وواجهات REST التي يستخدمها تطبيق الجوال",
+      "تولّيتُ النشر والضبط على استضافة بلا GPU، بما في ذلك إصدار تحسين استهلاك الذاكرة",
+      "أعدتُ كتابة العمل في حزمتين قابلتين لإعادة الاستخدام: `api/` بلغة Python و`wordpress-plugin/` بلغة PHP"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Text search fails for fashion: shoppers cannot type \"beige wrap midi dress with puff sleeves\", but they can show it",
+      "One outfit photo holds several products, so searching the whole image returns a mix",
+      "CPU-only server shared with the shop itself, so every model had to justify its RAM",
+      "The catalogue changes daily, so the index must update on save without blocking the admin",
+      "A public, anonymous upload endpoint needs hard limits on uploads, rate and response data"
+    ],
+    "ar": [
+      "البحث النصي لا ينفع في الأزياء: لا يستطيع المتسوّق كتابة \"فستان ميدي بيج ملفوف بأكمام منفوخة\"، لكنه يستطيع أن يريه",
+      "صورة الإطلالة الواحدة تضم عدة منتجات، فالبحث بالصورة كاملة يعيد نتائج مختلطة",
+      "سيرفر بلا GPU يشاركه المتجر نفسه، فكان على كل نموذج أن يبرّر استهلاكه للذاكرة",
+      "الكتالوج يتغيّر يومياً، فيجب أن يتحدّث الفهرس عند الحفظ دون تعطيل لوحة الإدارة",
+      "نقطة رفع عامة ومجهولة الهوية تحتاج إلى حدود صارمة على الرفع والمعدّل والبيانات المُعادة"
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Search",
+        "ar": "البحث"
+      },
+      "items": {
+        "en": [
+          "Garment detection with OWLv2 across 36 descriptive prompts, each item shown as a tappable chip with its bounding box",
+          "Region search: the selected box is cropped with 10% padding and embedded with FashionCLIP",
+          "Quick search endpoint that skips detection for an instant whole-image search",
+          "\"Similar items\" for any product, built from the mean of its image embeddings"
+        ],
+        "ar": [
+          "اكتشاف القطع بنموذج OWLv2 عبر 36 وصفاً نصياً، وتظهر كل قطعة كزر قابل للنقر مع إطارها",
+          "البحث بالمنطقة: يُقصّ الإطار المختار بهامش 10% ويُحوَّل إلى متجه بنموذج FashionCLIP",
+          "نقطة بحث سريع تتخطّى الاكتشاف لتبحث بالصورة كاملة فوراً",
+          "قسم \"منتجات مشابهة\" لأي منتج، مبني على متوسط متجهات صوره"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Ranking quality",
+        "ar": "جودة الترتيب"
+      },
+      "items": {
+        "en": [
+          "Exact cosine search with FAISS `IndexFlatIP` on L2-normalised vectors",
+          "Per-product de-duplication: fetch `top_k × 6` neighbours and keep the best image per product",
+          "Two thresholds: a loose one in the API for recall, a stricter cut-off in the store for precision",
+          "Category boost moves products matching the detected item (\"Dress\" / \"فستان\") to the top"
+        ],
+        "ar": [
+          "بحث دقيق بتشابه جيب التمام عبر FAISS `IndexFlatIP` على متجهات مُطبَّعة بـ L2",
+          "إزالة التكرار لكل منتج: جلب `top_k × 6` جاراً والإبقاء على أفضل صورة لكل منتج",
+          "عتبتان: واحدة متساهلة في الـ API لزيادة الاستدعاء، وأخرى أشد في المتجر لرفع الدقة",
+          "تعزيز الفئة يرفع المنتجات المطابقة للقطعة المكتشفة (\"Dress\" / \"فستان\") إلى القمة"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Integration",
+        "ar": "التكامل"
+      },
+      "items": {
+        "en": [
+          "WordPress plugin with a settings page, batch indexer, auto-indexing on save and trash, shortcodes and theme-overridable templates",
+          "Public REST routes (`/wp-json/vsw/v1/*`) shared by the web widget and the mobile app",
+          "Catalogue indexer CLI for CSV, JSON or the WooCommerce REST API"
+        ],
+        "ar": [
+          "إضافة WordPress بصفحة إعدادات، ومُفهرس دفعي، وفهرسة تلقائية عند الحفظ والحذف، وأكواد مختصرة، وقوالب قابلة للتخصيص من الثيم",
+          "مسارات REST عامة (`/wp-json/vsw/v1/*`) يتشاركها مكوّن الموقع وتطبيق الجوال",
+          "أداة سطر أوامر لفهرسة الكتالوج من CSV أو JSON أو WooCommerce REST API"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Safety",
+        "ar": "الأمان"
+      },
+      "items": {
+        "en": [
+          "API-key auth compared in constant time",
+          "Upload size and pixel limits, real MIME sniffing and private uploads deleted after 30 minutes",
+          "Per-visitor rate limiting on anonymous routes",
+          "SSRF-guarded image fetcher: no redirects, public hosts or an explicit allow-list only"
+        ],
+        "ar": [
+          "مصادقة بمفتاح API تُقارَن في زمن ثابت",
+          "حدود لحجم الرفع وعدد البكسلات، وفحص فعلي لنوع الملف، ورفع خاص يُحذف بعد 30 دقيقة",
+          "تحديد معدّل الطلبات لكل زائر على المسارات العامة",
+          "جلب صور محمي من SSRF: بلا تحويلات، ومضيفات عامة أو قائمة سماح صريحة فقط"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Search by photo",
+      "ar": "البحث بالصورة"
+    },
+    "body": {
+      "en": [
+        "The shopper uploads a photo. WordPress sniffs the MIME type, caps the size and stores it privately for 30 minutes.",
+        "The API detects shoppable items and returns labelled boxes in English and Arabic, shown as chips over the photo.",
+        "The shopper picks an item. The API crops it with 10% padding, embeds it with FashionCLIP and queries FAISS for `top_k × 6` neighbours.",
+        "Results are de-duplicated to the best image per product, thresholded and category-boosted, then the store returns only published, visible products above its cut-off."
+      ],
+      "ar": [
+        "يرفع المتسوّق صورة، فيفحص WordPress نوعها ويحدّ حجمها ويحفظها بشكل خاص لمدة 30 دقيقة.",
+        "يكتشف الـ API القطع القابلة للشراء ويعيد إطاراتها بتسميات عربية وإنجليزية، تظهر كأزرار فوق الصورة.",
+        "يختار المتسوّق قطعة، فيقصّها الـ API بهامش 10% ويحوّلها إلى متجه بنموذج FashionCLIP ويستعلم FAISS عن `top_k × 6` جاراً.",
+        "تُصفّى النتائج إلى أفضل صورة لكل منتج، وتُطبَّق العتبات وتعزيز الفئة، ثم يعيد المتجر المنتجات المنشورة والظاهرة فقط التي تتجاوز حدّه الأدنى."
+      ]
+    },
+    "image": "riza-ai-visual-search/assets/how-visual-search-works.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Three models on a CPU box, then two",
+        "ar": "ثلاثة نماذج على سيرفر بلا GPU، ثم اثنان"
+      },
+      "body": {
+        "en": "The first release loaded OWLv2, FashionCLIP and a general-purpose CLIP. Measurements showed FashionCLIP handled beauty, fragrance and toys well enough, so the general model was dropped, saving about 1.8 GB of RAM.",
+        "ar": "حمّل الإصدار الأول OWLv2 وFashionCLIP ونموذج CLIP عاماً. أظهرت القياسات أن FashionCLIP يتعامل جيداً بما يكفي مع منتجات التجميل والعطور والألعاب، فأُزيل النموذج العام ووفّر نحو 1.8 جيجابايت من الذاكرة."
+      }
+    },
+    {
+      "title": {
+        "en": "Lazy detector",
+        "ar": "تحميل كسول لنموذج الاكتشاف"
+      },
+      "body": {
+        "en": "OWLv2 is the heaviest model, about 2.5 GB in RAM, and only `/detect` needs it. It loads behind a double-checked lock on first use or warms up in a background thread, so `/search` is ready immediately.",
+        "ar": "OWLv2 هو النموذج الأثقل بنحو 2.5 جيجابايت في الذاكرة، ولا يحتاجه سوى `/detect`. يُحمَّل خلف قفل مزدوج الفحص عند أول استخدام أو يُسخَّن في خيط خلفي، فيكون `/search` جاهزاً فوراً."
+      }
+    },
+    {
+      "title": {
+        "en": "One hit per product",
+        "ar": "نتيجة واحدة لكل منتج"
+      },
+      "body": {
+        "en": "Products have several gallery images, so raw neighbours are dominated by a few products. The index oversamples, keeps the best image per product, then applies `top_k`.",
+        "ar": "لكل منتج عدة صور، فتهيمن بضعة منتجات على أقرب الجيران. لذلك يجلب الفهرس عدداً أكبر، ويُبقي أفضل صورة لكل منتج، ثم يطبّق `top_k`."
+      }
+    },
+    {
+      "title": {
+        "en": "Category-aware re-ranking",
+        "ar": "إعادة ترتيب واعية بالفئة"
+      },
+      "body": {
+        "en": "A beige bag can look closer to a beige dress than another dress does. A stable partition, matching category first and score order inside each group, fixed this without retraining, including for Arabic category names.",
+        "ar": "قد تبدو حقيبة بيج أقرب إلى فستان بيج من فستان آخر. حلّ ذلك تقسيمٌ مستقر يضع الفئة المطابقة أولاً ويرتّب بالدرجة داخل كل مجموعة، دون إعادة تدريب، ويعمل مع أسماء الفئات العربية أيضاً."
+      }
+    },
+    {
+      "title": {
+        "en": "Correct boxes on non-square photos",
+        "ar": "إطارات دقيقة على الصور غير المربعة"
+      },
+      "body": {
+        "en": "OWLv2 pads inputs to a square, so the rewrite post-processes against the padded size. Boxes line up with the original pixels and the storefront draws them in percentages over a responsive image.",
+        "ar": "يحشو OWLv2 الصور لتصبح مربعة، فتعالج إعادة الكتابة النتائج وفق الحجم المحشو. تتطابق الإطارات مع بكسلات الصورة الأصلية، ويرسمها المتجر بالنسب المئوية فوق صورة متجاوبة."
+      }
+    },
+    {
+      "title": {
+        "en": "SQLite as source of truth",
+        "ar": "SQLite مصدراً للحقيقة"
+      },
+      "body": {
+        "en": "Vectors are upserted per product image and the in-memory FAISS index is rebuilt at startup and after deletes. Re-indexing is idempotent and a restart never loses the index.",
+        "ar": "تُحدَّث المتجهات أو تُدرج لكل صورة منتج، ويُعاد بناء فهرس FAISS في الذاكرة عند التشغيل وبعد الحذف. إعادة الفهرسة آمنة التكرار، وإعادة التشغيل لا تُفقد الفهرس أبداً."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "11,934 product images from 2,697 products indexed and searchable in production",
+      "Resident memory cut from about 6 GB to about 2 GB by merging the two CLIP models and lazy-loading the detector, on CPU only",
+      "The same REST endpoints served both the web storefront and the mobile app",
+      "42 pytest tests covering both the FAISS and NumPy backends"
+    ],
+    "ar": [
+      "فهرسة 11,934 صورة لـ 2,697 منتجاً وإتاحتها للبحث في الإنتاج",
+      "خفض استهلاك الذاكرة من نحو 6 إلى نحو 2 جيجابايت بدمج نموذجَي CLIP والتحميل الكسول لنموذج الاكتشاف، على معالج فقط بلا GPU",
+      "خدمت واجهات REST نفسها كلاً من الموقع وتطبيق الجوال",
+      "42 اختبار pytest تغطي واجهتَي FAISS وNumPy"
+    ]
+  },
+  "metrics": [
+    {
+      "value": "11,934",
+      "label": {
+        "en": "product images indexed",
+        "ar": "صورة منتج مفهرسة"
+      }
+    },
+    {
+      "value": "2,697",
+      "label": {
+        "en": "products searchable by photo",
+        "ar": "منتج قابل للبحث بالصورة"
+      }
+    },
+    {
+      "value": "6 GB → 2 GB",
+      "label": {
+        "en": "service memory, CPU only",
+        "ar": "ذاكرة الخدمة، بلا GPU"
+      }
+    }
+  ],
+  "stack": [
+    "Python",
+    "FastAPI",
+    "Pydantic v2",
+    "FashionCLIP",
+    "OWLv2",
+    "FAISS",
+    "SQLite",
+    "WordPress",
+    "WooCommerce",
+    "PHP",
+    "Vanilla JS",
+    "pytest",
+    "Docker"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/riza-ai-visual-search"
+    }
+  ],
+  "images": [
+    {
+      "src": "riza-ai-visual-search/assets/banner.png",
+      "alt": {
+        "en": "RIZA AI Visual Search",
+        "ar": "RIZA AI Visual Search"
+      },
+      "caption": {
+        "en": "Search a fashion store by photo: a FashionCLIP + FAISS search API and a WooCommerce plugin.",
+        "ar": "ابحث في متجر الأزياء بصورة: واجهة بحث مبنية على FashionCLIP وFAISS وإضافة WooCommerce."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "riza-ai-visual-search/assets/architecture.png",
+      "alt": {
+        "en": "Architecture: shopper, WordPress plugin, visual search API, storage",
+        "ar": "البنية: المتسوّق، إضافة WordPress، واجهة البحث المرئي، التخزين"
+      },
+      "caption": {
+        "en": "The shopper only ever talks to WordPress. The model service lives on a private network behind an API key.",
+        "ar": "لا يتعامل المتسوّق إلا مع WordPress، بينما تعمل خدمة النماذج على شبكة خاصة خلف مفتاح API."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "riza-ai-visual-search/assets/how-visual-search-works.png",
+      "alt": {
+        "en": "How search by photo works, in six steps",
+        "ar": "كيف يعمل البحث بالصورة في ست خطوات"
+      },
+      "caption": {
+        "en": "Search by photo: detect, pick an item, embed, search, de-duplicate and re-rank.",
+        "ar": "البحث بالصورة: اكتشاف، ثم اختيار قطعة، ثم تحويلها إلى متجه، ثم البحث وإزالة التكرار وإعادة الترتيب."
+      },
+      "role": "feature"
+    }
+  ]
+}

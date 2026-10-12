@@ -1,0 +1,440 @@
+{
+  "slug": "sawah",
+  "order": 2,
+  "featured": true,
+  "name": {
+    "en": "Sawah",
+    "ar": "سوّاح"
+  },
+  "kind": "case-study",
+  "categories": [
+    "own",
+    "edtech"
+  ],
+  "accent": "#C9A04A",
+  "region": null,
+  "period": "2026",
+  "platforms": [
+    "Web"
+  ],
+  "tagline": {
+    "en": "Seven thousand years of Egypt in one place",
+    "ar": "سبعة آلاف عام من مصر في مكان واحد"
+  },
+  "summary": {
+    "en": "My own digital encyclopedia of Egypt: sourced history, a hieroglyph name writer, playable senet and a live Egyptian calendar, in five languages.",
+    "ar": "موسوعة مصر الرقمية، منتجي الخاص: تاريخ موثّق بالمصادر، وكتابة الأسماء بالهيروغليفية، ولعبة سنت، والتقويم المصري محسوبًا لحظيًا، بخمس لغات."
+  },
+  "overview": {
+    "en": [
+      "Sawah (Arabic for 'traveller') is a free, ad-free digital encyclopedia of Egypt. Not a site about Egypt, but Egypt arranged so you can know it and live it: seven thousand years of sourced history, the hieroglyphic script, literature, art, mythology, Egyptology, almost two thousand places, and a games arena with playable senet and the Royal Game of Twenty Squares.",
+      "It is my own product. I am the founder, product owner and sole engineer, and took it from first commit on 16 Aug 2026 to a public preview in late September: about six weeks and 177 commits. It is Arabic-first, with English, French, German and Italian routed from day one."
+    ],
+    "ar": [
+      "سوّاح موسوعة مصر الرقمية، مجانية وبلا إعلانات. ليست موقعًا عن مصر، بل مصر مرتّبة لتعرفها وتعيشها: سبعة آلاف عام من التاريخ بمصادر حقيقية، والخط الهيروغليفي، والأدب والفن والأساطير وعلم المصريات، وقرابة ألفي مكان، وساحة ألعاب فيها سنت ولعبة العشرين مربعًا الملكية.",
+      "سوّاح منتجي الخاص؛ أنا المؤسس ومالك المنتج والمهندس الوحيد. من أول commit في 16 أغسطس 2026 حتى إطلاق النسخة التجريبية العامة أواخر سبتمبر: نحو ستة أسابيع و177 commit. الموقع عربي أولًا، مع الإنجليزية والفرنسية والألمانية والإيطالية مجهّزة من اليوم الأول."
+    ]
+  },
+  "role": {
+    "en": [
+      "Founder, product owner and sole engineer.",
+      "Made the product decisions and kept a numbered decision log of 215 entries.",
+      "Designed the architecture, the 50-model data model and the editorial pipeline.",
+      "Built the front end, the admin panel and the CI pipeline."
+    ],
+    "ar": [
+      "المؤسس ومالك المنتج والمهندس الوحيد.",
+      "اتخذت قرارات المنتج ووثّقتها في سجل قرارات مرقّم من 215 قرارًا.",
+      "صمّمت المعمارية ونموذج البيانات المكوّن من 50 نموذجًا ومسار التحرير.",
+      "بنيت الواجهة الأمامية ولوحة التحكم ومسار الـ CI."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Credibility is the product: every historical claim must carry a real source and a confidence level (`consensus`, `disputed`, `popular_myth`), and the code must make that easier than skipping it.",
+      "Your name in hieroglyphs is usually a gimmick. Sawah had to be fun and honest: a phonetic approximation, sign by sign, with the reasons.",
+      "Arabic-first, not Arabic-also: full RTL and LTR, five locales and SEO-friendly URLs, with no duplicate content and no English-only screen.",
+      "SEO is the acquisition channel, so anything that hurts indexing, such as a client-only SPA, was ruled out up front.",
+      "One engineer, a huge surface: the codebase needed hard rules enforced by a linter, not good intentions."
+    ],
+    "ar": [
+      "المصداقية هي المنتج: كل معلومة تاريخية يجب أن تحمل مصدرًا حقيقيًا ومستوى يقين (`consensus` أو `disputed` أو `popular_myth`)، وعلى الكود أن يجعل ذلك أسهل من تجاوزه.",
+      "«اسمك بالهيروغليفية» غالبًا مجرد خدعة. كان على سوّاح أن يكون ممتعًا وصادقًا: تقريب صوتي، علامة بعلامة، مع شرح الأسباب.",
+      "عربي أولًا لا عربي أيضًا: RTL وLTR كاملان، وخمس لغات، وروابط صديقة لمحركات البحث، دون محتوى مكرر ودون شاشة إنجليزية فقط.",
+      "محركات البحث هي قناة الوصول، لذلك استُبعد من البداية كل ما يضر الفهرسة، مثل تطبيق SPA يعمل على المتصفح فقط.",
+      "مهندس واحد ومساحة ضخمة: احتاج الكود إلى قواعد صارمة يفرضها الـ linter، لا إلى نوايا حسنة."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Encyclopedia",
+        "ar": "الموسوعة"
+      },
+      "items": {
+        "en": [
+          "Egyptian history in 7 eras and 26 periods, with 400+ chapters, ~5,000 sources and ~95,000 citations.",
+          "A catalogue of 8,500+ entries across literature, art and cinema, mythology and Egyptology.",
+          "1,959 places, including museums, temples and sites across the governorates.",
+          "Every claim linked to a source with its confidence level; user corrections kept apart from official content."
+        ],
+        "ar": [
+          "تاريخ مصر في 7 عصور و26 حقبة، بأكثر من 400 فصل ونحو 5,000 مصدر ونحو 95,000 استشهاد.",
+          "فهرس يضم أكثر من 8,500 مدخل في الأدب والفن والسينما والأساطير وعلم المصريات.",
+          "1,959 مكانًا بين متاحف ومعابد ومواقع في المحافظات.",
+          "كل معلومة مرتبطة بمصدرها ومستوى يقينها، وتصحيحات المستخدمين منفصلة عن المحتوى الرسمي."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Hieroglyphs",
+        "ar": "الهيروغليفية"
+      },
+      "items": {
+        "en": [
+          "A 1,072-sign catalogue indexed by Gardiner code and machine-verified against the Unicode database.",
+          "The cartouche writer: your name in hieroglyphs, sign by sign, in four styles, exportable as PNG and shareable.",
+          "Hieroglyph Academy with alphabet cards and SM-2 spaced repetition."
+        ],
+        "ar": [
+          "فهرس من 1,072 علامة مرتّبة بترميز Gardiner ومتحقَّق منها آليًا مقابل قاعدة بيانات Unicode.",
+          "كاتب الخرطوش: اسمك بالهيروغليفية علامة بعلامة، بأربعة أنماط، مع التصدير بصيغة PNG والمشاركة.",
+          "أكاديمية الهيروغليفية ببطاقات الأبجدية والتكرار المتباعد بخوارزمية SM-2."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Arena and culture",
+        "ar": "الساحة والثقافة"
+      },
+      "items": {
+        "en": [
+          "Senet and Twenty Squares against the computer at three levels, against a friend, or online, with replays, a lesson and a daily puzzle.",
+          "A daily challenge with streaks and quiz games over 7,500 questions.",
+          "The Egyptian calendar computed live: today in the Coptic year and the ancient civil year, side by side.",
+          "'Which ancient Egyptian are you?', hieroglyph wallpapers and an embeddable sign-of-the-day widget."
+        ],
+        "ar": [
+          "سنت والعشرين مربعًا ضد الكمبيوتر بثلاثة مستويات أو ضد صديق أو أونلاين، مع الإعادة ودرس تفاعلي ولغز يومي.",
+          "تحدٍّ يومي بسلاسل متتالية وألعاب أسئلة تضم 7,500 سؤال.",
+          "التقويم المصري محسوبًا لحظيًا: اليوم في السنة القبطية والسنة المدنية القديمة جنبًا إلى جنب.",
+          "اختبار «أي مصري قديم أنت؟»، وخلفيات هيروغليفية، وأداة «علامة اليوم» قابلة للتضمين."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Platform",
+        "ar": "المنصة"
+      },
+      "items": {
+        "en": [
+          "45 feature flags (locked, internal, beta, open) flipped live from the admin panel.",
+          "A full admin panel for flags, catalogue, history, news, games, notices, pages and members.",
+          "'Ask Sawah', a grounded Q&A assistant that may only answer from Sawah's own published passages."
+        ],
+        "ar": [
+          "45 مفتاح ميزات (مغلق، داخلي، تجريبي، مفتوح) تُبدَّل لحظيًا من لوحة التحكم.",
+          "لوحة تحكم كاملة للمفاتيح والفهرس والتاريخ والأخبار والألعاب والتنبيهات والصفحات والأعضاء.",
+          "«اسأل سوّاح»: مساعد أسئلة وأجوبة لا يجيب إلا من نصوص سوّاح المنشورة."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Your name in hieroglyphs",
+      "ar": "اسمك بالهيروغليفية"
+    },
+    "body": {
+      "en": [
+        "The name, in Arabic or Latin script, goes to `transliterateName()` in the pure `@sawah/hieroglyphs` package.",
+        "Each sound maps to a one-sound sign from the verified catalogue, and a gender determinative closes the name, as Egyptian scribes did.",
+        "Sounds Egyptian lacked, such as a separate l and r, are flagged as approximations and explained sign by sign: Gardiner code, what the sign depicts, and the caveat.",
+        "The result is presented as a phonetic approximation, never a translation, and notes that ancient pronunciation is a scholarly reconstruction.",
+        "The cartouche renders in four styles (papyrus, carved stone, gold, modern) and exports to PNG or a share link."
+      ],
+      "ar": [
+        "يُمرَّر الاسم، بالحروف العربية أو اللاتينية، إلى `transliterateName()` في الحزمة الخالصة `@sawah/hieroglyphs`.",
+        "يُقابَل كل صوت بعلامة أحادية الصوت من الفهرس الموثّق، ويُختم الاسم بمخصِّص للجنس كما كان يفعل الكتبة المصريون.",
+        "الأصوات التي لم تعرفها المصرية، كالتفريق بين اللام والراء، تُعلَّم كتقريب وتُشرح علامة بعلامة: ترميز Gardiner، وما تصوّره العلامة، والتحفّظ.",
+        "تُعرض النتيجة كتقريب صوتي لا كترجمة أبدًا، مع التنبيه إلى أن النطق القديم إعادة بناء علمية.",
+        "يُرسم الخرطوش بأربعة أنماط (بردي، حجر منحوت، ذهب، حديث) ويُصدَّر بصيغة PNG أو كرابط مشاركة."
+      ]
+    },
+    "image": "sawah-case-study/assets/feature-cartouche.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "A constitution enforced by the linter",
+        "ar": "دستور يفرضه الـ linter"
+      },
+      "body": {
+        "en": "The key rules are ESLint errors, not guidelines: 300 lines per file, 40 per function, at most 3 parameters, nesting depth 3, complexity 10, no `any`, no circular imports. `pnpm check` runs exactly what CI runs.",
+        "ar": "القواعد الأساسية أخطاء ESLint لا توصيات: 300 سطر للملف، و40 للدالة، و3 معاملات كحد أقصى، وعمق تداخل 3، وتعقيد 10، وبلا `any` وبلا استيراد دائري. ويشغّل `pnpm check` تمامًا ما يشغّله الـ CI."
+      }
+    },
+    {
+      "title": {
+        "en": "Pure logic, isolated I/O",
+        "ar": "منطق خالص ومدخلات ومخرجات معزولة"
+      },
+      "body": {
+        "en": "The hieroglyph engine, calendar, spaced repetition and both board games are side-effect-free packages with no database, clock or randomness of their own. The same code runs on the server, in the browser and in tests.",
+        "ar": "محرك الهيروغليفية والتقويم والتكرار المتباعد ولعبتا اللوحة حزم بلا آثار جانبية: لا قاعدة بيانات ولا ساعة ولا عشوائية خاصة بها. والكود نفسه يعمل على السيرفر وفي المتصفح وفي الاختبارات."
+      }
+    },
+    {
+      "title": {
+        "en": "Sources as data, not decoration",
+        "ar": "المصادر بيانات لا زينة"
+      },
+      "body": {
+        "en": "Chapters, catalogue entries and places link to records in a `sources` table with a confidence level. Images follow the same rule: only open licences, each logged with photographer, licence and origin; NC and ND licences are rejected automatically.",
+        "ar": "ترتبط الفصول ومداخل الفهرس والأماكن بسجلات في جدول `sources` مع مستوى اليقين. والصور تتبع القاعدة نفسها: تراخيص مفتوحة فقط، ولكل صورة المصوّر والترخيص والمصدر، وتُرفض تراخيص NC وND تلقائيًا."
+      }
+    },
+    {
+      "title": {
+        "en": "An AI assistant that can't make things up",
+        "ar": "مساعد ذكي لا يختلق"
+      },
+      "body": {
+        "en": "'Ask Sawah' retrieves Sawah's own published passages, and the model may answer only from them or decline. Providers (Groq, Gemini and a premium fallback) sit behind one seam with shared rules, so switching provider changes the prose, never the editorial constraints.",
+        "ar": "يسترجع «اسأل سوّاح» نصوص سوّاح المنشورة، ولا يجيب النموذج إلا منها أو يعتذر. يقف المزوّدون (Groq وGemini ونموذج احتياطي متقدم) خلف واجهة واحدة بقواعد مشتركة، فتغيير المزوّد يغيّر الصياغة لا القيود التحريرية."
+      }
+    },
+    {
+      "title": {
+        "en": "Five languages, no duplicate content",
+        "ar": "خمس لغات بلا محتوى مكرر"
+      },
+      "body": {
+        "en": "Every locale has one canonical prefixed URL, strings exist only as i18n keys with a parity test, and each language opens behind its own flag, so unfinished translations live on the site without being indexed.",
+        "ar": "لكل لغة رابط أساسي واحد ببادئة، والنصوص موجودة كمفاتيح ترجمة فقط مع اختبار لتطابقها، وكل لغة تُفتح بمفتاحها الخاص، فتعيش الترجمات غير المكتملة على الموقع دون أن تُفهرس."
+      }
+    },
+    {
+      "title": {
+        "en": "Ship dark, open on purpose",
+        "ar": "إطلاق مخفي وفتح مقصود"
+      },
+      "body": {
+        "en": "Every pillar, page, locale and tool sits behind one of 45 four-state flags. Unfinished work lives on production without being exposed, and nothing goes public without a decision.",
+        "ar": "كل ركن وصفحة ولغة وأداة يقف خلف واحد من 45 مفتاحًا بأربع حالات. يعيش العمل غير المكتمل على الإنتاج دون أن يظهر، ولا يُفتح شيء للعامة إلا بقرار."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Public preview live at sawah-egypt.vercel.app.",
+      "Content measured on 26 Sep 2026: 400+ history chapters, ~5,000 sources, ~95,000 citations, 8,500+ catalogue entries, 1,959 places, 7,500 game questions and 1,072 verified signs.",
+      "A 9-package monorepo with 913 passing tests, zero lint and type errors, about 250 statically generated pages, and CI on every push."
+    ],
+    "ar": [
+      "النسخة التجريبية العامة متاحة على sawah-egypt.vercel.app.",
+      "المحتوى كما قيس في 26 سبتمبر 2026: أكثر من 400 فصل تاريخي، ونحو 5,000 مصدر، ونحو 95,000 استشهاد، وأكثر من 8,500 مدخل، و1,959 مكانًا، و7,500 سؤال، و1,072 علامة موثّقة.",
+      "Monorepo من 9 حزم، و913 اختبارًا ناجحًا، وصفر أخطاء lint أو أنواع، ونحو 250 صفحة مولّدة مسبقًا، وCI مع كل push."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "913",
+      "label": {
+        "en": "passing tests",
+        "ar": "اختبارًا ناجحًا"
+      }
+    },
+    {
+      "value": "1,072",
+      "label": {
+        "en": "verified hieroglyphic signs",
+        "ar": "علامة هيروغليفية موثّقة"
+      }
+    },
+    {
+      "value": "~95,000",
+      "label": {
+        "en": "recorded citations",
+        "ar": "استشهاد موثّق"
+      }
+    },
+    {
+      "value": "5",
+      "label": {
+        "en": "languages",
+        "ar": "لغات"
+      }
+    }
+  ],
+  "stack": [
+    "Next.js 15",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS 4",
+    "next-intl",
+    "Zod",
+    "Prisma",
+    "MySQL 8",
+    "Turborepo",
+    "pnpm",
+    "Vitest",
+    "GitHub Actions",
+    "Vercel"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/sawah-case-study"
+    },
+    {
+      "type": "web",
+      "label": {
+        "en": "Live preview",
+        "ar": "النسخة التجريبية المباشرة"
+      },
+      "url": "https://sawah-egypt.vercel.app"
+    }
+  ],
+  "images": [
+    {
+      "src": "sawah-case-study/assets/banner.png",
+      "alt": {
+        "en": "Sawah, the digital encyclopedia of Egypt",
+        "ar": "سوّاح، موسوعة مصر الرقمية"
+      },
+      "caption": {
+        "en": "Sawah: the digital encyclopedia of Egypt.",
+        "ar": "سوّاح: موسوعة مصر الرقمية."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "sawah-case-study/assets/web-arabic.png",
+      "alt": {
+        "en": "Sawah home page in Arabic with the mobile layout",
+        "ar": "الصفحة الرئيسية لسوّاح بالعربية مع تخطيط الجوال"
+      },
+      "caption": {
+        "en": "The home page in Arabic (RTL) with the mobile layout of a history period.",
+        "ar": "الصفحة الرئيسية بالعربية (RTL) مع تخطيط الجوال لإحدى الحقب التاريخية."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "sawah-case-study/assets/screens-web.png",
+      "alt": {
+        "en": "History, hieroglyphs, places, literature, Egyptology and mythology pages",
+        "ar": "صفحات التاريخ والهيروغليفية والأماكن والأدب وعلم المصريات والأساطير"
+      },
+      "caption": {
+        "en": "Six of the doors in: history, the script, places, literature, Egyptology and mythology.",
+        "ar": "ستة أبواب للدخول: التاريخ، والخط، والأماكن، والأدب، وعلم المصريات، والأساطير."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "sawah-case-study/assets/screens-mobile.png",
+      "alt": {
+        "en": "Five mobile screens",
+        "ar": "خمس شاشات على الجوال"
+      },
+      "caption": {
+        "en": "Every page is responsive: home, a history period, places, senet and the 'Which ancient Egyptian are you?' quiz.",
+        "ar": "كل صفحة متجاوبة: الرئيسية، وحقبة تاريخية، والأماكن، وسنت، واختبار «أي مصري قديم أنت؟»."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "sawah-case-study/assets/feature-cartouche.png",
+      "alt": {
+        "en": "The cartouche writer and its engine output",
+        "ar": "كاتب الخرطوش ومخرجات محرّكه"
+      },
+      "caption": {
+        "en": "Your name in hieroglyphs, sign by sign, with the reasons.",
+        "ar": "اسمك بالهيروغليفية، علامة بعلامة، مع الأسباب."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "sawah-case-study/assets/feature-calendar.png",
+      "alt": {
+        "en": "The Coptic and ancient civil calendars for the same day",
+        "ar": "التقويمان القبطي والمدني القديم لليوم نفسه"
+      },
+      "caption": {
+        "en": "The Egyptian calendar, still running: real engine output laid out for the case study.",
+        "ar": "التقويم المصري ما زال يعمل: مخرجات حقيقية من المحرك منسّقة لدراسة الحالة."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "sawah-case-study/assets/feature-games.png",
+      "alt": {
+        "en": "Senet against the computer on desktop and mobile",
+        "ar": "سنت ضد الكمبيوتر على سطح المكتب والجوال"
+      },
+      "caption": {
+        "en": "Senet and Twenty Squares: pure rules engines with an expectiminimax opponent.",
+        "ar": "سنت والعشرين مربعًا: محركا قواعد خالصان مع خصم يعمل بخوارزمية expectiminimax."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "sawah-case-study/assets/feature-learn.png",
+      "alt": {
+        "en": "The learning hub and a quiz result",
+        "ar": "مركز التعلّم ونتيجة أحد الاختبارات"
+      },
+      "caption": {
+        "en": "Learn, then keep it: SM-2 spaced repetition and quiz results backed by real sources.",
+        "ar": "تعلّم ثم احفظ: تكرار متباعد بخوارزمية SM-2 ونتائج اختبارات مدعومة بمصادر حقيقية."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "sawah-case-study/assets/feature-flags.png",
+      "alt": {
+        "en": "The admin feature-flag panel",
+        "ar": "لوحة مفاتيح الميزات في لوحة التحكم"
+      },
+      "caption": {
+        "en": "Ship dark, open on purpose: 45 flags with four states.",
+        "ar": "إطلاق مخفي وفتح مقصود: 45 مفتاحًا بأربع حالات."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "sawah-case-study/assets/architecture.png",
+      "alt": {
+        "en": "Sawah architecture",
+        "ar": "معمارية سوّاح"
+      },
+      "caption": {
+        "en": "Next.js app, pure domain packages, shared contracts and a single database package.",
+        "ar": "تطبيق Next.js، وحزم منطق خالصة، وعقود مشتركة، وحزمة وحيدة للوصول إلى قاعدة البيانات."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "sawah-case-study/assets/engineering-principles.png",
+      "alt": {
+        "en": "Engineering principles enforced by ESLint",
+        "ar": "مبادئ هندسية يفرضها ESLint"
+      },
+      "caption": {
+        "en": "A code constitution enforced by the linter.",
+        "ar": "دستور للكود يفرضه الـ linter."
+      },
+      "role": "feature"
+    }
+  ]
+}

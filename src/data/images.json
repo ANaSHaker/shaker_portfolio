@@ -1,0 +1,2348 @@
+{
+ "delivery-iq-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/delivery-iq/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/delivery-iq/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/delivery-iq/banner-1280.webp"
+   }
+  ]
+ },
+ "delivery-iq-case-study/assets/feature-orders.png": {
+  "w": 1394,
+  "h": 697,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/delivery-iq/feature-orders-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/delivery-iq/feature-orders-1024.webp"
+   },
+   {
+    "w": 1394,
+    "src": "img/delivery-iq/feature-orders-1394.webp"
+   }
+  ]
+ },
+ "delivery-iq-case-study/assets/screens-play.png": {
+  "w": 1472,
+  "h": 740,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/delivery-iq/screens-play-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/delivery-iq/screens-play-1024.webp"
+   },
+   {
+    "w": 1472,
+    "src": "img/delivery-iq/screens-play-1472.webp"
+   }
+  ]
+ },
+ "delivery-iq-case-study/assets/screens-ios.png": {
+  "w": 1400,
+  "h": 860,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/delivery-iq/screens-ios-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/delivery-iq/screens-ios-1024.webp"
+   },
+   {
+    "w": 1400,
+    "src": "img/delivery-iq/screens-ios-1400.webp"
+   }
+  ]
+ },
+ "devora-ecommerce-suite/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/devora/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/devora/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/devora/banner-1280.webp"
+   }
+  ]
+ },
+ "devora-ecommerce-suite/assets/brands.png": {
+  "w": 1360,
+  "h": 918,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/devora/brands-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/devora/brands-1024.webp"
+   },
+   {
+    "w": 1360,
+    "src": "img/devora/brands-1360.webp"
+   }
+  ]
+ },
+ "devora-ecommerce-suite/assets/white-label.png": {
+  "w": 1472,
+  "h": 718,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/devora/white-label-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/devora/white-label-1024.webp"
+   },
+   {
+    "w": 1472,
+    "src": "img/devora/white-label-1472.webp"
+   }
+  ]
+ },
+ "devora-ecommerce-suite/assets/customer-flows.png": {
+  "w": 1472,
+  "h": 740,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/devora/customer-flows-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/devora/customer-flows-1024.webp"
+   },
+   {
+    "w": 1472,
+    "src": "img/devora/customer-flows-1472.webp"
+   }
+  ]
+ },
+ "devora-ecommerce-suite/assets/store-listings.png": {
+  "w": 1600,
+  "h": 693,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/devora/store-listings-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/devora/store-listings-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/devora/store-listings-1600.webp"
+   }
+  ]
+ },
+ "devora-ecommerce-suite/assets/irtaah-screens.png": {
+  "w": 1472,
+  "h": 740,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/devora/irtaah-screens-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/devora/irtaah-screens-1024.webp"
+   },
+   {
+    "w": 1472,
+    "src": "img/devora/irtaah-screens-1472.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/duat/banner-1280.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/feature-heka-ai.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/feature-heka-ai-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/feature-heka-ai-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/duat/feature-heka-ai-1600.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/architecture.png": {
+  "w": 1600,
+  "h": 790,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/architecture-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/architecture-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/duat/architecture-1600.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/web-landing.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/web-landing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/web-landing-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/duat/web-landing-1600.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/web-tour.png": {
+  "w": 1600,
+  "h": 1230,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/web-tour-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/web-tour-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/duat/web-tour-1600.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/mobile.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/mobile-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/mobile-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/duat/mobile-1600.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/play-senet.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/play-senet-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/play-senet-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/duat/play-senet-1600.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/play-tjau.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/play-tjau-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/play-tjau-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/duat/play-tjau-1600.webp"
+   }
+  ]
+ },
+ "duat-case-study/assets/product.png": {
+  "w": 1600,
+  "h": 980,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/duat/product-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/duat/product-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/duat/product-1600.webp"
+   }
+  ]
+ },
+ "elmwafer/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/elmwafer/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/elmwafer/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/elmwafer/banner-1280.webp"
+   }
+  ]
+ },
+ "elmwafer/assets/feature-coupons.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/elmwafer/feature-coupons-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/elmwafer/feature-coupons-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/elmwafer/feature-coupons-1600.webp"
+   }
+  ]
+ },
+ "elmwafer/assets/screens.png": {
+  "w": 1600,
+  "h": 693,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/elmwafer/screens-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/elmwafer/screens-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/elmwafer/screens-1600.webp"
+   }
+  ]
+ },
+ "hamilguide-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/hamilguide/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/hamilguide/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/hamilguide/banner-1280.webp"
+   }
+  ]
+ },
+ "hamilguide-case-study/assets/feature-tracking.png": {
+  "w": 1394,
+  "h": 697,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/hamilguide/feature-tracking-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/hamilguide/feature-tracking-1024.webp"
+   },
+   {
+    "w": 1394,
+    "src": "img/hamilguide/feature-tracking-1394.webp"
+   }
+  ]
+ },
+ "hamilguide-case-study/assets/screens-play.png": {
+  "w": 1120,
+  "h": 1027,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/hamilguide/screens-play-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/hamilguide/screens-play-1024.webp"
+   },
+   {
+    "w": 1120,
+    "src": "img/hamilguide/screens-play-1120.webp"
+   }
+  ]
+ },
+ "hamilguide-case-study/assets/screens-ios.png": {
+  "w": 1600,
+  "h": 693,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/hamilguide/screens-ios-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/hamilguide/screens-ios-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/hamilguide/screens-ios-1600.webp"
+   }
+  ]
+ },
+ "insurify-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/insurify/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/insurify/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/insurify/banner-1280.webp"
+   }
+  ]
+ },
+ "insurify-case-study/assets/feature-packages.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/insurify/feature-packages-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/insurify/feature-packages-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/insurify/feature-packages-1600.webp"
+   }
+  ]
+ },
+ "insurify-case-study/assets/screens-onboarding.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/insurify/screens-onboarding-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/insurify/screens-onboarding-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/insurify/screens-onboarding-1600.webp"
+   }
+  ]
+ },
+ "insurify-case-study/assets/screens-flows.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/insurify/screens-flows-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/insurify/screens-flows-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/insurify/screens-flows-1600.webp"
+   }
+  ]
+ },
+ "gahez-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/jahiz/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/jahiz/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/jahiz/banner-1280.webp"
+   }
+  ]
+ },
+ "gahez-case-study/assets/feature-offers.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/jahiz/feature-offers-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/jahiz/feature-offers-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/jahiz/feature-offers-1600.webp"
+   }
+  ]
+ },
+ "gahez-case-study/assets/screens-customer.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/jahiz/screens-customer-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/jahiz/screens-customer-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/jahiz/screens-customer-1600.webp"
+   }
+  ]
+ },
+ "gahez-case-study/assets/screens-worker.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/jahiz/screens-worker-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/jahiz/screens-worker-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/jahiz/screens-worker-1600.webp"
+   }
+  ]
+ },
+ "gahez-case-study/assets/store-listing.png": {
+  "w": 1600,
+  "h": 773,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/jahiz/store-listing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/jahiz/store-listing-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/jahiz/store-listing-1600.webp"
+   }
+  ]
+ },
+ "legalpal-app-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/app-banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/app-banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/legalpal/app-banner-1280.webp"
+   }
+  ]
+ },
+ "legalpal-app-case-study/assets/feature-ai-assistant.png": {
+  "w": 1440,
+  "h": 810,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/app-feature-ai-assistant-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/app-feature-ai-assistant-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/legalpal/app-feature-ai-assistant-1440.webp"
+   }
+  ]
+ },
+ "legalpal-app-case-study/assets/screens-ios.png": {
+  "w": 1445,
+  "h": 833,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/app-screens-ios-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/app-screens-ios-1024.webp"
+   },
+   {
+    "w": 1445,
+    "src": "img/legalpal/app-screens-ios-1445.webp"
+   }
+  ]
+ },
+ "legalpal-app-case-study/assets/screens-play.png": {
+  "w": 1520,
+  "h": 722,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/app-screens-play-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/app-screens-play-1024.webp"
+   },
+   {
+    "w": 1520,
+    "src": "img/legalpal/app-screens-play-1520.webp"
+   }
+  ]
+ },
+ "legalpal-web-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/web-banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/web-banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/legalpal/web-banner-1280.webp"
+   }
+  ]
+ },
+ "legalpal-web-case-study/assets/web-platform.png": {
+  "w": 1440,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/web-web-platform-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/web-web-platform-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/legalpal/web-web-platform-1440.webp"
+   }
+  ]
+ },
+ "legalpal-web-case-study/assets/web-platform-screens.png": {
+  "w": 1440,
+  "h": 972,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/web-web-platform-screens-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/web-web-platform-screens-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/legalpal/web-web-platform-screens-1440.webp"
+   }
+  ]
+ },
+ "legalpal-web-case-study/assets/web-landing.png": {
+  "w": 1360,
+  "h": 850,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/web-web-landing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/web-web-landing-1024.webp"
+   },
+   {
+    "w": 1360,
+    "src": "img/legalpal/web-web-landing-1360.webp"
+   }
+  ]
+ },
+ "legalpal-web-case-study/assets/web-landing-sections.png": {
+  "w": 1440,
+  "h": 972,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/legalpal/web-web-landing-sections-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/legalpal/web-web-landing-sections-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/legalpal/web-web-landing-sections-1440.webp"
+   }
+  ]
+ },
+ "malazmna/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/malazmna/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/malazmna/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/malazmna/banner-1280.webp"
+   }
+  ]
+ },
+ "malazmna/assets/feature-downloads.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/malazmna/feature-downloads-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/malazmna/feature-downloads-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/malazmna/feature-downloads-1600.webp"
+   }
+  ]
+ },
+ "malazmna/assets/feature-calendar.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/malazmna/feature-calendar-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/malazmna/feature-calendar-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/malazmna/feature-calendar-1600.webp"
+   }
+  ]
+ },
+ "malazmna/assets/screens-study.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/malazmna/screens-study-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/malazmna/screens-study-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/malazmna/screens-study-1600.webp"
+   }
+  ]
+ },
+ "malazmna/assets/screens-dark.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/malazmna/screens-dark-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/malazmna/screens-dark-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/malazmna/screens-dark-1600.webp"
+   }
+  ]
+ },
+ "malazmna/assets/demo-video.png": {
+  "w": 1600,
+  "h": 760,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/malazmna/demo-video-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/malazmna/demo-video-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/malazmna/demo-video-1600.webp"
+   }
+  ]
+ },
+ "midgram-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/midgram/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/midgram/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/midgram/banner-1280.webp"
+   }
+  ]
+ },
+ "midgram-case-study/assets/feature-two-sided.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/midgram/feature-two-sided-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/midgram/feature-two-sided-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/midgram/feature-two-sided-1600.webp"
+   }
+  ]
+ },
+ "midgram-case-study/assets/screens-onboarding.png": {
+  "w": 1600,
+  "h": 969,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/midgram/screens-onboarding-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/midgram/screens-onboarding-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/midgram/screens-onboarding-1600.webp"
+   }
+  ]
+ },
+ "midgram-case-study/assets/screens-modules.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/midgram/screens-modules-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/midgram/screens-modules-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/midgram/screens-modules-1600.webp"
+   }
+  ]
+ },
+ "mohami-plus-app-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/app-banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/app-banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/mohami-plus/app-banner-1280.webp"
+   }
+  ]
+ },
+ "mohami-plus-app-case-study/assets/feature-ai-assistant.png": {
+  "w": 1360,
+  "h": 765,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/app-feature-ai-assistant-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/app-feature-ai-assistant-1024.webp"
+   },
+   {
+    "w": 1360,
+    "src": "img/mohami-plus/app-feature-ai-assistant-1360.webp"
+   }
+  ]
+ },
+ "mohami-plus-app-case-study/assets/feature-emergency.png": {
+  "w": 1360,
+  "h": 765,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/app-feature-emergency-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/app-feature-emergency-1024.webp"
+   },
+   {
+    "w": 1360,
+    "src": "img/mohami-plus/app-feature-emergency-1360.webp"
+   }
+  ]
+ },
+ "mohami-plus-app-case-study/assets/screens-legal-tools.png": {
+  "w": 1520,
+  "h": 764,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/app-screens-legal-tools-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/app-screens-legal-tools-1024.webp"
+   },
+   {
+    "w": 1520,
+    "src": "img/mohami-plus/app-screens-legal-tools-1520.webp"
+   }
+  ]
+ },
+ "mohami-plus-app-case-study/assets/screens-services.png": {
+  "w": 1445,
+  "h": 833,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/app-screens-services-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/app-screens-services-1024.webp"
+   },
+   {
+    "w": 1445,
+    "src": "img/mohami-plus/app-screens-services-1445.webp"
+   }
+  ]
+ },
+ "mohami-plus-web-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/web-banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/web-banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/mohami-plus/web-banner-1280.webp"
+   }
+  ]
+ },
+ "mohami-plus-web-case-study/assets/web-platform.png": {
+  "w": 1440,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/web-web-platform-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/web-web-platform-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/mohami-plus/web-web-platform-1440.webp"
+   }
+  ]
+ },
+ "mohami-plus-web-case-study/assets/web-landing.png": {
+  "w": 1440,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/web-web-landing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/web-web-landing-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/mohami-plus/web-web-landing-1440.webp"
+   }
+  ]
+ },
+ "mohami-plus-web-case-study/assets/web-landing-sections.png": {
+  "w": 1520,
+  "h": 1026,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/web-web-landing-sections-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/web-web-landing-sections-1024.webp"
+   },
+   {
+    "w": 1520,
+    "src": "img/mohami-plus/web-web-landing-sections-1520.webp"
+   }
+  ]
+ },
+ "mohami-plus-web-case-study/assets/web-mobile.png": {
+  "w": 1520,
+  "h": 764,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/web-web-mobile-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/web-web-mobile-1024.webp"
+   },
+   {
+    "w": 1520,
+    "src": "img/mohami-plus/web-web-mobile-1520.webp"
+   }
+  ]
+ },
+ "mohami-plus-web-case-study/assets/web-platform-screens.png": {
+  "w": 1360,
+  "h": 918,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/mohami-plus/web-web-platform-screens-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/mohami-plus/web-web-platform-screens-1024.webp"
+   },
+   {
+    "w": 1360,
+    "src": "img/mohami-plus/web-web-platform-screens-1360.webp"
+   }
+  ]
+ },
+ "muslim-app/docs/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/muslim/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/muslim/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/muslim/banner-1280.webp"
+   }
+  ]
+ },
+ "muslim-app/docs/assets/feature-offline.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/muslim/feature-offline-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/muslim/feature-offline-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/muslim/feature-offline-1600.webp"
+   }
+  ]
+ },
+ "muslim-app/docs/assets/screens.png": {
+  "w": 1600,
+  "h": 693,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/muslim/screens-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/muslim/screens-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/muslim/screens-1600.webp"
+   }
+  ]
+ },
+ "oneway-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/oneway/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/oneway/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/oneway/banner-1280.webp"
+   }
+  ]
+ },
+ "oneway-case-study/assets/feature-printing.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/oneway/feature-printing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/oneway/feature-printing-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/oneway/feature-printing-1600.webp"
+   }
+  ]
+ },
+ "oneway-case-study/assets/brand-kit.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/oneway/brand-kit-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/oneway/brand-kit-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/oneway/brand-kit-1600.webp"
+   }
+  ]
+ },
+ "oneway-case-study/assets/screens-restaurant.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/oneway/screens-restaurant-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/oneway/screens-restaurant-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/oneway/screens-restaurant-1600.webp"
+   }
+  ]
+ },
+ "oneway-case-study/assets/tablet-board.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/oneway/tablet-board-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/oneway/tablet-board-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/oneway/tablet-board-1600.webp"
+   }
+  ]
+ },
+ "riftech-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/riftech/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/riftech/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/riftech/banner-1280.webp"
+   }
+  ]
+ },
+ "riftech-case-study/assets/feature-calculator.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/riftech/feature-calculator-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/riftech/feature-calculator-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/riftech/feature-calculator-1600.webp"
+   }
+  ]
+ },
+ "riftech-case-study/assets/screens-journey.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/riftech/screens-journey-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/riftech/screens-journey-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/riftech/screens-journey-1600.webp"
+   }
+  ]
+ },
+ "riftech-case-study/assets/screens-app.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/riftech/screens-app-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/riftech/screens-app-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/riftech/screens-app-1600.webp"
+   }
+  ]
+ },
+ "riza-ai-visual-search/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/riza/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/riza/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/riza/banner-1280.webp"
+   }
+  ]
+ },
+ "riza-ai-visual-search/assets/architecture.png": {
+  "w": 1600,
+  "h": 820,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/riza/architecture-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/riza/architecture-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/riza/architecture-1600.webp"
+   }
+  ]
+ },
+ "riza-ai-visual-search/assets/how-visual-search-works.png": {
+  "w": 1600,
+  "h": 700,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/riza/how-visual-search-works-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/riza/how-visual-search-works-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/riza/how-visual-search-works-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/sawah/banner-1280.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/web-arabic.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/web-arabic-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/web-arabic-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/web-arabic-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/screens-web.png": {
+  "w": 1600,
+  "h": 960,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/screens-web-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/screens-web-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/screens-web-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/screens-mobile.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/screens-mobile-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/screens-mobile-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/screens-mobile-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/feature-cartouche.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/feature-cartouche-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/feature-cartouche-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/feature-cartouche-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/feature-calendar.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/feature-calendar-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/feature-calendar-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/feature-calendar-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/feature-games.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/feature-games-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/feature-games-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/feature-games-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/feature-learn.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/feature-learn-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/feature-learn-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/feature-learn-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/feature-flags.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/feature-flags-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/feature-flags-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/feature-flags-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/architecture.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/architecture-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/architecture-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/architecture-1600.webp"
+   }
+  ]
+ },
+ "sawah-case-study/assets/engineering-principles.png": {
+  "w": 1600,
+  "h": 760,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sawah/engineering-principles-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sawah/engineering-principles-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/sawah/engineering-principles-1600.webp"
+   }
+  ]
+ },
+ "sim-2022-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sim-2022/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sim-2022/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/sim-2022/banner-1280.webp"
+   }
+  ]
+ },
+ "sim-2022-case-study/assets/feature-hub.png": {
+  "w": 1394,
+  "h": 697,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sim-2022/feature-hub-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sim-2022/feature-hub-1024.webp"
+   },
+   {
+    "w": 1394,
+    "src": "img/sim-2022/feature-hub-1394.webp"
+   }
+  ]
+ },
+ "sim-2022-case-study/assets/screens-1.png": {
+  "w": 1360,
+  "h": 683,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sim-2022/screens-1-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sim-2022/screens-1-1024.webp"
+   },
+   {
+    "w": 1360,
+    "src": "img/sim-2022/screens-1-1360.webp"
+   }
+  ]
+ },
+ "sim-2022-case-study/assets/screens-2.png": {
+  "w": 1360,
+  "h": 683,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/sim-2022/screens-2-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/sim-2022/screens-2-1024.webp"
+   },
+   {
+    "w": 1360,
+    "src": "img/sim-2022/screens-2-1360.webp"
+   }
+  ]
+ },
+ "studygo-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/studygo/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/studygo/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/studygo/banner-1280.webp"
+   }
+  ]
+ },
+ "studygo-case-study/assets/feature-ai-tutor.png": {
+  "w": 1440,
+  "h": 810,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/studygo/feature-ai-tutor-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/studygo/feature-ai-tutor-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/studygo/feature-ai-tutor-1440.webp"
+   }
+  ]
+ },
+ "studygo-case-study/assets/feature-checkout.png": {
+  "w": 1440,
+  "h": 810,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/studygo/feature-checkout-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/studygo/feature-checkout-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/studygo/feature-checkout-1440.webp"
+   }
+  ]
+ },
+ "studygo-case-study/assets/screens-app.png": {
+  "w": 1440,
+  "h": 882,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/studygo/screens-app-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/studygo/screens-app-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/studygo/screens-app-1440.webp"
+   }
+  ]
+ },
+ "studygo-case-study/assets/screens-store.png": {
+  "w": 1520,
+  "h": 551,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/studygo/screens-store-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/studygo/screens-store-1024.webp"
+   },
+   {
+    "w": 1520,
+    "src": "img/studygo/screens-store-1520.webp"
+   }
+  ]
+ },
+ "studygo-case-study/assets/screens-ipad.png": {
+  "w": 1600,
+  "h": 861,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/studygo/screens-ipad-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/studygo/screens-ipad-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/studygo/screens-ipad-1600.webp"
+   }
+  ]
+ },
+ "talabatek-case-study/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/talabatek/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/talabatek/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/talabatek/banner-1280.webp"
+   }
+  ]
+ },
+ "talabatek-case-study/assets/feature-printing.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/talabatek/feature-printing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/talabatek/feature-printing-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/talabatek/feature-printing-1600.webp"
+   }
+  ]
+ },
+ "talabatek-case-study/assets/screens-customer.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/talabatek/screens-customer-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/talabatek/screens-customer-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/talabatek/screens-customer-1600.webp"
+   }
+  ]
+ },
+ "talabatek-case-study/assets/screens-driver.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/talabatek/screens-driver-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/talabatek/screens-driver-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/talabatek/screens-driver-1600.webp"
+   }
+  ]
+ },
+ "talabatek-case-study/assets/screens-restaurant.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/talabatek/screens-restaurant-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/talabatek/screens-restaurant-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/talabatek/screens-restaurant-1600.webp"
+   }
+  ]
+ },
+ "talabatek-case-study/assets/web.png": {
+  "w": 1600,
+  "h": 960,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/talabatek/web-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/talabatek/web-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/talabatek/web-1600.webp"
+   }
+  ]
+ },
+ "talabatek-case-study/assets/store-listing.png": {
+  "w": 1600,
+  "h": 709,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/talabatek/store-listing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/talabatek/store-listing-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/talabatek/store-listing-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/vendora/banner-1280.webp"
+   }
+  ]
+ },
+ "vendora/assets/feature-digital-menu.png": {
+  "w": 1440,
+  "h": 810,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/feature-digital-menu-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/feature-digital-menu-1024.webp"
+   },
+   {
+    "w": 1440,
+    "src": "img/vendora/feature-digital-menu-1440.webp"
+   }
+  ]
+ },
+ "vendora/assets/menu-themes.png": {
+  "w": 1600,
+  "h": 693,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/menu-themes-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/menu-themes-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/menu-themes-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/pos-desktop.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/pos-desktop-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/pos-desktop-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/pos-desktop-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/dashboard-desktop.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/dashboard-desktop-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/dashboard-desktop-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/dashboard-desktop-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/mobile-screens.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/mobile-screens-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/mobile-screens-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/mobile-screens-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/orders-desktop.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/orders-desktop-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/orders-desktop-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/orders-desktop-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/products-desktop.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/products-desktop-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/products-desktop-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/products-desktop-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/payment-desktop.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/payment-desktop-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/payment-desktop-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/payment-desktop-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/dashboard-dark-blue.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/dashboard-dark-blue-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/dashboard-dark-blue-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/dashboard-dark-blue-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/dashboard-rtl.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/dashboard-rtl-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/dashboard-rtl-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/dashboard-rtl-1600.webp"
+   }
+  ]
+ },
+ "vendora/assets/menu-builder-desktop.png": {
+  "w": 1600,
+  "h": 1000,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/vendora/menu-builder-desktop-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/vendora/menu-builder-desktop-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/vendora/menu-builder-desktop-1600.webp"
+   }
+  ]
+ },
+ "video_walkthrough/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/video-walkthrough/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/video-walkthrough/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/video-walkthrough/banner-1280.webp"
+   }
+  ]
+ },
+ "video_walkthrough/assets/feature-v2.png": {
+  "w": 1400,
+  "h": 788,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/video-walkthrough/feature-v2-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/video-walkthrough/feature-v2-1024.webp"
+   },
+   {
+    "w": 1400,
+    "src": "img/video-walkthrough/feature-v2-1400.webp"
+   }
+  ]
+ },
+ "video_walkthrough/assets/example-app.png": {
+  "w": 1400,
+  "h": 840,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/video-walkthrough/example-app-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/video-walkthrough/example-app-1024.webp"
+   },
+   {
+    "w": 1400,
+    "src": "img/video-walkthrough/example-app-1400.webp"
+   }
+  ]
+ },
+ "video_walkthrough/assets/in-production.png": {
+  "w": 1280,
+  "h": 768,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/video-walkthrough/in-production-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/video-walkthrough/in-production-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/video-walkthrough/in-production-1280.webp"
+   }
+  ]
+ },
+ "video_walkthrough/assets/demo.gif": {
+  "w": 192,
+  "h": 427,
+  "variants": [
+   {
+    "w": 192,
+    "src": "img/video-walkthrough/demo-192.webp"
+   }
+  ]
+ },
+ "visit-egypt/docs/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/visit-egypt/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/visit-egypt/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/visit-egypt/banner-1280.webp"
+   }
+  ]
+ },
+ "visit-egypt/docs/assets/feature-maps.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/visit-egypt/feature-maps-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/visit-egypt/feature-maps-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/visit-egypt/feature-maps-1600.webp"
+   }
+  ]
+ },
+ "visit-egypt/docs/assets/feature-settings.png": {
+  "w": 1600,
+  "h": 900,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/visit-egypt/feature-settings-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/visit-egypt/feature-settings-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/visit-egypt/feature-settings-1600.webp"
+   }
+  ]
+ },
+ "visit-egypt/docs/assets/screens-explore.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/visit-egypt/screens-explore-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/visit-egypt/screens-explore-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/visit-egypt/screens-explore-1600.webp"
+   }
+  ]
+ },
+ "visit-egypt/docs/assets/screens-tools.png": {
+  "w": 1600,
+  "h": 804,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/visit-egypt/screens-tools-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/visit-egypt/screens-tools-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/visit-egypt/screens-tools-1600.webp"
+   }
+  ]
+ },
+ "ANaSHaker/assets/_src/photo.jpg": {
+  "w": 460,
+  "h": 460,
+  "variants": [
+   {
+    "w": 240,
+    "src": "img/profile/photo-240.webp"
+   },
+   {
+    "w": 460,
+    "src": "img/profile/photo-460.webp"
+   }
+  ]
+ }
+}

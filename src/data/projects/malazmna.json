@@ -1,0 +1,311 @@
+{
+  "slug": "malazmna",
+  "order": 19,
+  "featured": false,
+  "name": {
+    "en": "Malazmna",
+    "ar": "ملازمنا"
+  },
+  "kind": "case-study",
+  "categories": [
+    "edtech"
+  ],
+  "accent": "#6C6CF5",
+  "region": {
+    "en": "Iraq",
+    "ar": "العراق"
+  },
+  "period": "2022",
+  "platforms": [
+    "Android"
+  ],
+  "tagline": {
+    "en": "Every book and past paper, in one app",
+    "ar": "كل كتاب وكل سؤال وزاري في تطبيق واحد"
+  },
+  "summary": {
+    "en": "An Arabic education app for Iraqi students: textbooks, study booklets, ministerial past papers, a holiday countdown and a results centre, each file with two download sources.",
+    "ar": "تطبيق تعليمي عربي لطلاب العراق: الكتب المنهجية والملازم والأسئلة الوزارية وعدّاد للعطل ومركز للنتائج، وكل ملف متاح من مصدرين للتحميل."
+  },
+  "overview": {
+    "en": [
+      "Malazmna, meaning our study booklets, is an Arabic education app for intermediate and preparatory school students in Iraq. It gathers what students hunt for all year in one place: official textbooks, teacher-written booklets, ministerial past papers, schedules, holiday dates and exam results.",
+      "Mahmoud built the Android app end to end as a freelance Flutter developer, and it was released in 2022 with a public demo video. The source is not in his archive, so this case study documents only what the released app shows."
+    ],
+    "ar": [
+      "ملازمنا تطبيق تعليمي عربي لطلاب المرحلتين المتوسطة والإعدادية في العراق. يجمع في مكان واحد ما يبحث عنه الطلاب طوال العام: الكتب المنهجية، والملازم التي يكتبها المدرسون، والأسئلة الوزارية السابقة، والجداول، ومواعيد العطل، ونتائج الامتحانات.",
+      "بنى محمود تطبيق Android من أوله لآخره بصفته مطوّر Flutter مستقلًا، وأُطلق في 2022 مع فيديو عرض منشور. الكود المصدري غير موجود في أرشيفه، لذلك تعرض دراسة الحالة هذه ما يظهر في التطبيق المنشور فقط."
+    ]
+  },
+  "role": {
+    "en": [
+      "Freelance Flutter developer who built the Android app end to end.",
+      "Delivered the fully Arabic RTL interface with bottom navigation and a side menu.",
+      "Built the grade and subject content flow with direct and Telegram download sources.",
+      "Implemented light and dark themes, the live holiday countdown and the results centre."
+    ],
+    "ar": [
+      "مطوّر Flutter مستقل بنى تطبيق Android من البداية إلى النهاية.",
+      "قدّمت واجهة عربية كاملة RTL مع شريط تنقل سفلي وقائمة جانبية.",
+      "بنيت مسار المحتوى حسب الصف والمادة مع مصدرين للتحميل: مباشر وTelegram.",
+      "نفّذت الوضعين الفاتح والداكن والعدّاد التنازلي للعطل ومركز النتائج."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Study material was spread across Telegram channels and websites, so finding the right file for a grade and subject took time.",
+      "A single download link is not always reachable, so students needed more than one way to get each file.",
+      "In exam season, students check the same things daily: days left until a holiday, and whether results are out."
+    ],
+    "ar": [
+      "كانت المواد الدراسية متفرقة بين قنوات Telegram والمواقع، فكان العثور على الملف الصحيح لصف ومادة معينة يستغرق وقتًا.",
+      "رابط التحميل الواحد لا يعمل دائمًا، فاحتاج الطلاب إلى أكثر من طريقة للحصول على كل ملف.",
+      "في موسم الامتحانات يتابع الطلاب يوميًا الأمور نفسها: كم بقي على العطلة، وهل ظهرت النتائج."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Study materials",
+        "ar": "المواد الدراسية"
+      },
+      "items": {
+        "en": [
+          "Six home sections: books, booklets, schedules, ministerial exams, timings and holidays.",
+          "Content organised by grade, then by subject.",
+          "Every file offers two download sources: a direct link or a Telegram mirror.",
+          "Ministerial past papers grouped per subject, for example Arabic papers from 2011 to 2021."
+        ],
+        "ar": [
+          "ستة أقسام في الرئيسية: الكتب والملازم والجداول والوزاريات والتوقيتات والعطل.",
+          "محتوى مرتّب حسب الصف ثم حسب المادة.",
+          "كل ملف متاح من مصدرين: رابط مباشر أو نسخة على Telegram.",
+          "الأسئلة الوزارية مجمّعة حسب المادة، مثل أسئلة اللغة العربية من 2011 إلى 2021."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Exam season tools",
+        "ar": "أدوات موسم الامتحانات"
+      },
+      "items": {
+        "en": [
+          "Holidays screen with a live countdown in days, hours, minutes and seconds.",
+          "Results centre with a link for each exam round, such as Third Intermediate and Sixth Primary 2022."
+        ],
+        "ar": [
+          "شاشة العطل مع عدّاد تنازلي حي بالأيام والساعات والدقائق والثواني.",
+          "مركز النتائج برابط لكل دور امتحاني، مثل الثالث المتوسط والسادس الابتدائي 2022."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Experience",
+        "ar": "التجربة"
+      },
+      "items": {
+        "en": [
+          "Fully Arabic RTL interface with a bottom navigation bar and a side menu.",
+          "Light and dark themes, switchable from Settings.",
+          "Settings for dark mode, website, contact, about, rate and share."
+        ],
+        "ar": [
+          "واجهة عربية كاملة RTL مع شريط تنقل سفلي وقائمة جانبية.",
+          "وضعان فاتح وداكن يمكن التبديل بينهما من الإعدادات.",
+          "إعدادات للوضع الداكن والموقع والتواصل وعن التطبيق والتقييم والمشاركة."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "From category to PDF in two taps",
+      "ar": "من القسم إلى ملف PDF بلمستين"
+    },
+    "body": {
+      "en": [
+        "The app's main job is getting the student to the right PDF fast: pick a section, then a grade, then the file.",
+        "Direct opens the file straight from its host.",
+        "Telegram opens the same file in the channel where it is mirrored, which helps when the direct host is slow or blocked."
+      ],
+      "ar": [
+        "المهمة الأساسية للتطبيق إيصال الطالب إلى ملف PDF الصحيح بسرعة: يختار القسم ثم الصف ثم الملف.",
+        "زر مباشر يفتح الملف من مصدره الأصلي مباشرة.",
+        "زر تليجرام يفتح الملف نفسه في القناة التي يُنسخ عليها، وهذا مفيد عندما يكون المصدر المباشر بطيئًا أو محجوبًا."
+      ]
+    },
+    "image": "malazmna/assets/feature-downloads.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Two download sources per file",
+        "ar": "مصدران لتحميل كل ملف"
+      },
+      "body": {
+        "en": "Each file card has a direct link and a Telegram mirror, so students use whichever source works on their network.",
+        "ar": "لكل بطاقة ملف رابط مباشر ونسخة على Telegram، فيستخدم الطالب المصدر الذي يعمل على شبكته."
+      }
+    },
+    {
+      "title": {
+        "en": "RTL first",
+        "ar": "RTL أولًا"
+      },
+      "body": {
+        "en": "All screens, cards and the drawer are built for Arabic right-to-left reading, with button rows, back arrows and icons following the direction.",
+        "ar": "كل الشاشات والبطاقات والقائمة الجانبية مصممة للقراءة العربية من اليمين لليسار، وتتبع صفوف الأزرار وأسهم الرجوع والأيقونات هذا الاتجاه."
+      }
+    },
+    {
+      "title": {
+        "en": "Theme parity",
+        "ar": "تطابق الثيمات"
+      },
+      "body": {
+        "en": "The study flow, side menu and settings all have matching light and dark versions.",
+        "ar": "لمسار الدراسة والقائمة الجانبية والإعدادات نسخ فاتحة وداكنة متطابقة."
+      }
+    },
+    {
+      "title": {
+        "en": "Live countdown",
+        "ar": "عدّاد تنازلي حي"
+      },
+      "body": {
+        "en": "Each holiday card counts down to a fixed date, down to the second.",
+        "ar": "تعدّ كل بطاقة عطلة تنازليًا حتى تاريخ محدد، بدقة الثانية."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Shipped as an Android app for Iraqi students in 2022, with a public demo video on YouTube.",
+      "No public store statistics are available, so none are claimed."
+    ],
+    "ar": [
+      "أُطلق كتطبيق Android لطلاب العراق في 2022، مع فيديو عرض منشور على YouTube.",
+      "لا تتوفر إحصاءات متجر عامة، لذلك لا تُذكر أي أرقام."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "6",
+      "label": {
+        "en": "study sections",
+        "ar": "أقسام دراسية"
+      }
+    },
+    {
+      "value": "2",
+      "label": {
+        "en": "download sources per file",
+        "ar": "مصدران لكل ملف"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "Android",
+    "Material",
+    "Arabic RTL",
+    "Light / dark themes",
+    "Countdown timers",
+    "Telegram mirrors"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/malazmna"
+    },
+    {
+      "type": "video",
+      "label": {
+        "en": "Demo video on YouTube",
+        "ar": "فيديو العرض على YouTube"
+      },
+      "url": "https://youtu.be/QEL1GZai3H8"
+    }
+  ],
+  "images": [
+    {
+      "src": "malazmna/assets/banner.png",
+      "alt": {
+        "en": "Malazmna banner",
+        "ar": "بانر ملازمنا"
+      },
+      "caption": {
+        "en": "Every book, booklet and ministerial exam an Iraqi student needs",
+        "ar": "كل كتاب وملزمة وسؤال وزاري يحتاجه الطالب العراقي"
+      },
+      "role": "banner"
+    },
+    {
+      "src": "malazmna/assets/feature-downloads.png",
+      "alt": {
+        "en": "From category to PDF in two taps",
+        "ar": "من القسم إلى ملف PDF بلمستين"
+      },
+      "caption": {
+        "en": "Each file opens from a direct link or a Telegram mirror",
+        "ar": "كل ملف يُفتح من رابط مباشر أو من نسخة على Telegram"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "malazmna/assets/feature-calendar.png",
+      "alt": {
+        "en": "Holidays countdown and results centre",
+        "ar": "عدّاد العطل ومركز النتائج"
+      },
+      "caption": {
+        "en": "Live holiday countdown and the results centre",
+        "ar": "العدّاد التنازلي للعطل ومركز النتائج"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "malazmna/assets/screens-study.png",
+      "alt": {
+        "en": "Study materials screens",
+        "ar": "شاشات المواد الدراسية"
+      },
+      "caption": {
+        "en": "Home, categories, a grade's books, a book with direct and Telegram download, ministerial exams",
+        "ar": "الرئيسية، والأقسام، وكتب الصف، وكتاب بتحميل مباشر وعبر Telegram، والأسئلة الوزارية"
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "malazmna/assets/screens-dark.png",
+      "alt": {
+        "en": "Dark mode screens",
+        "ar": "شاشات الوضع الداكن"
+      },
+      "caption": {
+        "en": "The same flows in dark mode, plus the side menu and settings",
+        "ar": "المسارات نفسها في الوضع الداكن، مع القائمة الجانبية والإعدادات"
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "malazmna/assets/demo-video.png",
+      "alt": {
+        "en": "Malazmna demo video preview",
+        "ar": "معاينة فيديو العرض لملازمنا"
+      },
+      "caption": {
+        "en": "Demo video, available on YouTube",
+        "ar": "فيديو العرض، متاح على YouTube"
+      },
+      "role": "gallery"
+    }
+  ]
+}

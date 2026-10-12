@@ -1,0 +1,15 @@
+---
+interface Props {
+  kicker: string;
+  title: string;
+  id?: string;
+  class?: string;
+}
+const { kicker, title, id, class: cls = '' } = Astro.props;
+---
+
+<div class={`max-w-3xl ${cls}`} data-reveal>
+  <p class="kicker">{kicker}</p>
+  <h2 id={id} class="h-section mt-5">{title}</h2>
+  <slot />
+</div>

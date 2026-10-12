@@ -1,0 +1,356 @@
+{
+  "slug": "jahiz",
+  "order": 7,
+  "featured": false,
+  "name": {
+    "en": "Jahiz",
+    "ar": "جاهز"
+  },
+  "kind": "case-study",
+  "categories": [
+    "commerce"
+  ],
+  "accent": "#FF9106",
+  "region": {
+    "en": "Palestine",
+    "ar": "فلسطين"
+  },
+  "period": "2026",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Trusted tradespeople, transparent offers",
+    "ar": "حرفيون موثوقون وعروض واضحة"
+  },
+  "summary": {
+    "en": "A home-services marketplace with Flutter customer and worker apps: customers post jobs, workers send offers, and both sides confirm completion.",
+    "ar": "سوق خدمات منزلية بتطبيقَي Flutter للعميل والحرفي: ينشر العميل طلبه، ويرسل الحرفيون عروضهم، ويؤكد الطرفان إنجاز العمل."
+  },
+  "overview": {
+    "en": [
+      "Jahiz (\"ready\") connects households in Palestine with trusted local tradespeople across eight trades, from electricians and plumbers to AC technicians, painters and cleaners. Instead of fixed prices, it runs a reverse-auction flow.",
+      "The customer posts a job with photos and an address. Workers in that city and area send offers with an inspection fee, a repair estimate and an arrival time. The customer picks one, both sides chat in-app while the job runs, and it closes only when both confirm it is done.",
+      "Both apps were released on Google Play and the App Store in August 2026."
+    ],
+    "ar": [
+      "يربط جاهز الأسر في فلسطين بحرفيين محليين موثوقين في ثماني حرف، من الكهرباء والسباكة إلى التكييف والدهان والتنظيف. وبدلاً من الأسعار الثابتة، يعتمد آلية مزاد عكسي.",
+      "ينشر العميل طلبه بالصور والعنوان، فيرسل الحرفيون في مدينته ومنطقته عروضاً تتضمن أجرة الكشف وتقدير الإصلاح وموعد الوصول. يختار العميل عرضاً، ويتحادث الطرفان داخل التطبيق أثناء التنفيذ، ولا يُغلق الطلب إلا بتأكيد الطرفين.",
+      "نُشر التطبيقان على Google Play وApp Store في أغسطس 2026."
+    ]
+  },
+  "role": {
+    "en": [
+      "Lead Flutter developer for both mobile apps: the customer app and the worker app",
+      "Backend contributor on the Node.js API alongside another backend developer: in-app chat, two-sided completion, targeted notifications, favorites, app-version checks and the AI assistant endpoint",
+      "Hardened auth, OTP and rate limiting, added guest browsing, and let one account act as both customer and worker",
+      "Made fixes to the React admin dashboard"
+    ],
+    "ar": [
+      "مطوّر Flutter رئيسي للتطبيقين: تطبيق العميل وتطبيق الحرفي",
+      "مساهم في الـ API المبني بـ Node.js إلى جانب مطوّر backend آخر: المحادثة داخل التطبيق، والإنهاء بموافقة الطرفين، والإشعارات الموجّهة، والمفضلة، وفحص إصدار التطبيق، ونقطة المساعد الذكي",
+      "عزّزتُ أمان تسجيل الدخول وOTP وتحديد معدّل الطلبات، وأضفتُ تصفّح الزوار، وأتحتُ لحساب واحد أن يكون عميلاً وحرفياً معاً",
+      "أجريتُ إصلاحات على لوحة الإدارة المبنية بـ React"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Trust in an informal market: hiring is word of mouth, prices are opaque and nothing is recorded, so offers, profiles, portfolios and ratings had to be visible",
+      "Two sides with different incentives: no one can mark a job done alone, and cancellations and price changes need the other side's agreement",
+      "A fair model for workers: free jobs first, then commission, with statements showing what was earned, owed and paid",
+      "Real-time chat and instant offer pushes without extra cost"
+    ],
+    "ar": [
+      "الثقة في سوق غير منظّم: التوظيف يتم بالتوصية الشفهية، والأسعار غامضة، ولا سجل بعد العمل، فكان لا بد من إظهار العروض والملفات والأعمال السابقة والتقييمات",
+      "طرفان بمصالح مختلفة: لا يستطيع أحدهما إنهاء الطلب وحده، والإلغاء وتغيير السعر يحتاجان إلى موافقة الطرف الآخر",
+      "نموذج عادل للحرفيين: عدد من الطلبات المجانية ثم عمولة، مع كشوف توضّح المكتسب والمستحق والمدفوع",
+      "محادثة لحظية وإشعارات فورية بالعروض دون تكلفة إضافية"
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Customer app",
+        "ar": "تطبيق العميل"
+      },
+      "items": {
+        "en": [
+          "Home with the best-rated workers per trade, a banner carousel and a reels feed",
+          "Request a service with trade, description, photos and a map address, broadcast to matching workers",
+          "My services: a timeline per request, an offer comparison sheet and confirm-complete or confirm-cancel steps",
+          "Shareable worker profiles with portfolio, experience and reviews, plus per-request chat over Socket.IO",
+          "Arabic-first UI with English and Turkish, light and dark themes, an AI assistant chat and guest browsing"
+        ],
+        "ar": [
+          "شاشة رئيسية بأعلى الحرفيين تقييماً في كل حرفة، مع شريط إعلانات وقسم ريلز",
+          "طلب خدمة باختيار الحرفة ووصف المشكلة وإضافة الصور والعنوان من الخريطة، ويُرسَل الطلب للحرفيين المناسبين",
+          "خدماتي: خط زمني لكل طلب، ونافذة لمقارنة العروض، وخطوات تأكيد الإنهاء أو الإلغاء",
+          "ملفات حرفيين قابلة للمشاركة بالأعمال السابقة والخبرة والتقييمات، ومحادثة لكل طلب عبر Socket.IO",
+          "واجهة عربية أولاً مع الإنجليزية والتركية، وثيم فاتح وداكن، ومحادثة مع مساعد ذكي، وتصفّح للزوار"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Worker app",
+        "ar": "تطبيق الحرفي"
+      },
+      "items": {
+        "en": [
+          "Phone login, onboarding and a requests inbox filtered by status with search",
+          "Send an offer with inspection fee, repair price and arrival time, with a banner tracking free jobs left",
+          "Request details with a map link, cancel-with-reason and price-change requests",
+          "Statements with earnings, commission and paid or unpaid status per billing period",
+          "Portfolio, reviews, notifications and chat with customers"
+        ],
+        "ar": [
+          "تسجيل دخول بالهاتف، وشاشات تعريفية، وصندوق طلبات مُصفّى حسب الحالة مع بحث",
+          "إرسال عرض بأجرة الكشف وسعر الإصلاح وموعد الوصول، مع شريط يعرض الطلبات المجانية المتبقية",
+          "تفاصيل الطلب برابط الخريطة، وطلب إلغاء مع ذكر السبب، وطلب تغيير السعر",
+          "كشوف حساب بالأرباح والعمولة وحالة الدفع لكل فترة",
+          "معرض الأعمال والتقييمات والإشعارات والمحادثة مع العملاء"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Backend contributions",
+        "ar": "مساهمات في الـ backend"
+      },
+      "items": {
+        "en": [
+          "Socket.IO chat with token-authenticated handshakes and per-user rooms",
+          "Server-enforced two-sided completion and cancellation states",
+          "Targeted FCM pushes, favorites and app-version checks",
+          "Auth, OTP and rate-limit hardening, guest browsing and dual-role accounts"
+        ],
+        "ar": [
+          "محادثة عبر Socket.IO بمصافحة موثّقة بالرمز وغرفة لكل مستخدم",
+          "حالات إنهاء وإلغاء بموافقة الطرفين يفرضها الخادم",
+          "إشعارات FCM موجّهة، ومفضلة، وفحص لإصدار التطبيق",
+          "تأمين تسجيل الدخول وOTP وتحديد المعدّل، وتصفّح الزوار، وحسابات بدورين"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Request, offers, done, on both sides",
+      "ar": "طلب، فعروض، فإنجاز، بموافقة الطرفين"
+    },
+    "body": {
+      "en": [
+        "A request moves through one state machine that both apps show consistently, from pending and receiving offers to in progress, awaiting confirmation and completed.",
+        "Offers carry an inspection fee, a repair estimate and an ETA. The customer compares them side by side and accepts one, with clear terms.",
+        "The worker can only move a job to awaiting confirmation. It becomes completed when the customer confirms, and only then does the commission apply. Cancellations and repair-price changes also wait for the customer.",
+        "Chat is scoped to the request: both apps join a per-user Socket.IO room with the user's token, and messages and status changes arrive live."
+      ],
+      "ar": [
+        "يمرّ الطلب بآلة حالات واحدة يعرضها التطبيقان بالطريقة نفسها، من الانتظار واستقبال العروض إلى التنفيذ وانتظار التأكيد ثم الاكتمال.",
+        "يتضمن كل عرض أجرة الكشف وتقدير الإصلاح وموعد الوصول، ويقارن العميل العروض جنباً إلى جنب ويقبل أحدها بشروط واضحة.",
+        "لا يستطيع الحرفي سوى نقل الطلب إلى انتظار التأكيد، ولا يكتمل إلا حين يؤكده العميل، وعندها فقط تُحتسب العمولة. كما ينتظر الإلغاء وتغيير سعر الإصلاح موافقة العميل.",
+        "المحادثة مرتبطة بالطلب: ينضم التطبيقان إلى غرفة Socket.IO لكل مستخدم باستخدام رمزه، فتصل الرسائل وتغييرات الحالة لحظياً."
+      ]
+    },
+    "image": "gahez-case-study/assets/feature-offers.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "A 403 must not log the user out",
+        "ar": "رمز 403 لا يعني تسجيل الخروج"
+      },
+      "body": {
+        "en": "The old Dio interceptor cleared the session on both 401 and 403, silently signing out customers who hit worker-only endpoints with a valid token. It now ends the session only on 401, through a single-flight handler that triggers one logout, not many.",
+        "ar": "كان معترض Dio القديم ينهي الجلسة عند 401 و403 معاً، فيُخرج العملاء بصمت عند استدعاء نقاط خاصة بالحرفيين برمز صالح. أصبح الآن ينهي الجلسة عند 401 فقط، عبر معالج أحادي التنفيذ يُطلق تسجيل خروج واحداً لا عدة مرات."
+      }
+    },
+    {
+      "title": {
+        "en": "One account, two roles",
+        "ar": "حساب واحد بدورين"
+      },
+      "body": {
+        "en": "The backend was extended so a single phone number can be both a customer and a worker. Both apps handle role-specific errors without breaking the session.",
+        "ar": "وُسِّع الـ backend ليصبح رقم الهاتف الواحد عميلاً وحرفياً في آن واحد، ويتعامل التطبيقان مع أخطاء الأدوار دون إنهاء الجلسة."
+      }
+    },
+    {
+      "title": {
+        "en": "Two-sided completion and cancellation",
+        "ar": "إنهاء وإلغاء بموافقة الطرفين"
+      },
+      "body": {
+        "en": "New request states are enforced on the server and shown in both apps' timelines. The other party gets a targeted push and confirms in one tap.",
+        "ar": "حالات طلب جديدة يفرضها الخادم وتظهر في الخط الزمني للتطبيقين، ويتلقى الطرف الآخر إشعاراً موجّهاً ويؤكد بنقرة واحدة."
+      }
+    },
+    {
+      "title": {
+        "en": "Fair-usage gating",
+        "ar": "شفافية نموذج الاستخدام"
+      },
+      "body": {
+        "en": "The worker app shows remaining free jobs before each offer and the commission owed per statement period, so the business model is never a surprise.",
+        "ar": "يعرض تطبيق الحرفي الطلبات المجانية المتبقية قبل كل عرض، والعمولة المستحقة في كل فترة، فلا يكون نموذج العمل مفاجأة."
+      }
+    },
+    {
+      "title": {
+        "en": "Built on a delivery platform's foundations",
+        "ar": "مبني على أسس منصة توصيل"
+      },
+      "body": {
+        "en": "The worker app started from the Talabatek restaurant app's clean-architecture shell (`get_it`, `dartz`, feature folders), cutting setup time before being reshaped around requests, offers, statements and portfolios.",
+        "ar": "انطلق تطبيق الحرفي من هيكل Clean Architecture لتطبيق المطاعم في طلباتك (`get_it` و`dartz` ومجلدات الميزات)، ما اختصر وقت الإعداد، ثم أُعيد تشكيله حول الطلبات والعروض والكشوف ومعارض الأعمال."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "2 Flutter apps live on Google Play and the App Store since August 2026",
+      "Customer and worker apps each at 10+ installs on Google Play at the time of writing; early-stage launches, reported as-is"
+    ],
+    "ar": [
+      "تطبيقا Flutter منشوران على Google Play وApp Store منذ أغسطس 2026",
+      "تطبيقا العميل والحرفي تجاوز كل منهما 10 تثبيتات على Google Play وقت الكتابة؛ إطلاق في مرحلة مبكرة والأرقام كما هي"
+    ]
+  },
+  "metrics": [
+    {
+      "value": "2",
+      "label": {
+        "en": "apps on both stores",
+        "ar": "تطبيقان على المتجرين"
+      }
+    },
+    {
+      "value": "8",
+      "label": {
+        "en": "trades covered",
+        "ar": "حرف مغطّاة"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Bloc / Cubit",
+    "GetIt",
+    "dartz",
+    "Dio",
+    "Socket.IO",
+    "Google Maps",
+    "easy_localization",
+    "FCM",
+    "Crashlytics",
+    "Remote Config",
+    "Node.js",
+    "Express",
+    "MySQL"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/gahez-case-study"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · Customer",
+        "ar": "Google Play · تطبيق العميل"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.jahiz.userApp"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store · Customer",
+        "ar": "App Store · تطبيق العميل"
+      },
+      "url": "https://apps.apple.com/sa/app/id6797543538"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · Worker",
+        "ar": "Google Play · تطبيق الحرفي"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.jahiz.worker"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store · Worker",
+        "ar": "App Store · تطبيق الحرفي"
+      },
+      "url": "https://apps.apple.com/sa/app/id6798863864"
+    }
+  ],
+  "images": [
+    {
+      "src": "gahez-case-study/assets/banner.png",
+      "alt": {
+        "en": "Jahiz",
+        "ar": "جاهز"
+      },
+      "caption": {
+        "en": "A home-services marketplace: customers describe the job, local workers send real offers.",
+        "ar": "سوق خدمات منزلية: يصف العميل المشكلة، ويرسل الحرفيون المحليون عروضاً حقيقية."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "gahez-case-study/assets/feature-offers.png",
+      "alt": {
+        "en": "Request to offers to completion",
+        "ar": "من الطلب إلى العروض إلى الإنجاز"
+      },
+      "caption": {
+        "en": "Request, offers, done: every step confirmed on both sides.",
+        "ar": "طلب، فعروض، فإنجاز: كل خطوة بتأكيد الطرفين."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "gahez-case-study/assets/screens-customer.png",
+      "alt": {
+        "en": "Customer app",
+        "ar": "تطبيق العميل"
+      },
+      "caption": {
+        "en": "Customer app: splash, home with top workers per trade, request a service and my services with offers.",
+        "ar": "تطبيق العميل: شاشة البداية، والرئيسية بأفضل الحرفيين لكل حرفة، وطلب خدمة، وخدماتي مع العروض."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "gahez-case-study/assets/screens-worker.png",
+      "alt": {
+        "en": "Worker app",
+        "ar": "تطبيق الحرفي"
+      },
+      "caption": {
+        "en": "Worker app: phone login, requests inbox, onboarding and statements.",
+        "ar": "تطبيق الحرفي: تسجيل الدخول بالهاتف، وصندوق الطلبات، والشاشات التعريفية، وكشوف الحساب."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "gahez-case-study/assets/store-listing.png",
+      "alt": {
+        "en": "Store listing",
+        "ar": "صفحة المتجر"
+      },
+      "caption": {
+        "en": "Google Play listing artwork for the customer app.",
+        "ar": "تصاميم صفحة تطبيق العميل على Google Play."
+      },
+      "role": "gallery"
+    }
+  ]
+}

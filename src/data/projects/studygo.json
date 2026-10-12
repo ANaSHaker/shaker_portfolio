@@ -1,0 +1,392 @@
+{
+  "slug": "studygo",
+  "order": 6,
+  "featured": true,
+  "name": {
+    "en": "StudyGo",
+    "ar": "ستادي جو"
+  },
+  "kind": "case-study",
+  "categories": [
+    "edtech",
+    "ai"
+  ],
+  "accent": "#3A7BEA",
+  "region": {
+    "en": "Palestine",
+    "ar": "فلسطين"
+  },
+  "period": "2026",
+  "platforms": [
+    "Android",
+    "iOS",
+    "iPad"
+  ],
+  "tagline": {
+    "en": "Learn smarter, together",
+    "ar": "تعلّم بذكاء، معاً"
+  },
+  "summary": {
+    "en": "One Flutter app for students, teachers and parents in Palestine: book lessons, sit timed exams, pay securely and learn with 27 AI tools.",
+    "ar": "تطبيق Flutter واحد للطلاب والمعلمين وأولياء الأمور في فلسطين: حجز الحصص، وامتحانات بمؤقت، ودفع آمن، و27 أداة ذكاء اصطناعي."
+  },
+  "overview": {
+    "en": [
+      "StudyGo connects students in Jerusalem and across Palestine with specialised teachers for the Tawjihi and Bagrut (Arabic) curricula. It is one app with three roles.",
+      "Students find teachers, book private or group lessons, buy study programs, sit exams and use an AI study assistant. Teachers pass an activation wizard, then manage subjects, sessions, files, exams, grading, earnings and a wallet. Parents link their children, follow sessions and results, and get AI help to read reports and write to teachers.",
+      "The project started in April 2026 and reached the App Store in July 2026, with version 1.0.3 live on Google Play and the App Store for iPhone and iPad."
+    ],
+    "ar": [
+      "تربط ستادي جو طلاب القدس والمدن الفلسطينية بمعلمين متخصصين في منهجَي التوجيهي والبجروت (العربي)، داخل تطبيق واحد بثلاثة أدوار.",
+      "يجد الطالب معلمه، ويحجز حصصاً خاصة أو جماعية، ويشتري برامج دراسية، ويؤدي الامتحانات، ويستعين بمساعد دراسي بالذكاء الاصطناعي. ويمرّ المعلم بمعالج تفعيل، ثم يدير المواد والحصص والملفات والامتحانات والتصحيح والأرباح والمحفظة. أما ولي الأمر فيربط أبناءه، ويتابع حصصهم ونتائجهم، ويستعين بالذكاء الاصطناعي لقراءة التقارير ومراسلة المعلمين.",
+      "بدأ المشروع في أبريل 2026 ووصل إلى App Store في يوليو 2026، والإصدار 1.0.3 متاح على Google Play وApp Store لأجهزة iPhone وiPad."
+    ]
+  },
+  "role": {
+    "en": [
+      "Built the full Flutter app: architecture and every screen for all three roles",
+      "Implemented payments, push notifications and all AI features",
+      "Shipped the store releases for Android, iPhone and iPad",
+      "Integrated against the REST/OpenAPI contract built by the client's backend team"
+    ],
+    "ar": [
+      "بنيتُ تطبيق Flutter كاملاً: البنية المعمارية وكل الشاشات للأدوار الثلاثة",
+      "نفّذتُ المدفوعات والإشعارات وجميع ميزات الذكاء الاصطناعي",
+      "تولّيتُ إصدارات المتاجر لأجهزة Android وiPhone وiPad",
+      "تكاملتُ مع واجهة REST/OpenAPI التي بناها فريق الـ backend لدى العميل"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Three products in one app: different home screens, tabs and permissions per role, teachers pending review, and role switching",
+      "Real money: card payments through a hosted page, where 3-D Secure and Google Pay will not run inside a WebView and money must never be a float",
+      "Timed exams on untrusted clocks: countdowns must follow the server, not the phone",
+      "Store rules: no login wall, Sign in with Apple next to Google, in-app account deletion and guest browsing"
+    ],
+    "ar": [
+      "ثلاثة منتجات في تطبيق واحد: شاشات رئيسية وتبويبات وصلاحيات مختلفة لكل دور، ومعلمون قيد المراجعة، وإمكانية التبديل بين الأدوار",
+      "أموال حقيقية: دفع بالبطاقة عبر صفحة مستضافة، حيث لا يعمل 3-D Secure وGoogle Pay داخل WebView، ولا يجوز أن يكون المبلغ رقماً عشرياً",
+      "امتحانات بمؤقت على ساعات غير موثوقة: يجب أن يتبع العدّ التنازلي الخادم لا الهاتف",
+      "قواعد المتاجر: لا جدار لتسجيل الدخول، وتسجيل الدخول بـ Apple بجانب Google، وحذف الحساب من داخل التطبيق، وتصفّح الزوار"
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Students",
+        "ar": "الطلاب"
+      },
+      "items": {
+        "en": [
+          "Browse and filter teachers by stage, with prices, experience, location and reviews",
+          "Book private sessions or join group sessions, each online session with its own meeting link",
+          "A store of study programs with purchases and a timeline of sessions",
+          "Sit timed exams, review attempts and see published results"
+        ],
+        "ar": [
+          "تصفّح المعلمين وتصفيتهم حسب المرحلة، مع الأسعار والخبرة والموقع والتقييمات",
+          "حجز حصص خاصة أو الانضمام إلى حصص جماعية، ولكل حصة أونلاين رابط اجتماع خاص",
+          "متجر برامج دراسية مع المشتريات وخط زمني للحصص",
+          "أداء امتحانات بمؤقت ومراجعة المحاولات والاطلاع على النتائج المنشورة"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Teachers",
+        "ar": "المعلمون"
+      },
+      "items": {
+        "en": [
+          "An activation wizard with pending, awaiting-review, approved and rejected states",
+          "Subjects, sessions, files with PDF and video viewers, exams and a grading queue",
+          "Objective questions scored automatically; results stay hidden until the teacher publishes",
+          "Earnings, payout settings, a recurring subscription and a wallet for commission top-ups"
+        ],
+        "ar": [
+          "معالج تفعيل بحالات: قيد الانتظار، بانتظار المراجعة، مقبول، ومرفوض",
+          "المواد والحصص والملفات مع عارض PDF وفيديو، والامتحانات، وقائمة انتظار للتصحيح",
+          "تصحيح تلقائي للأسئلة الموضوعية، وتبقى النتائج مخفية حتى ينشرها المعلم",
+          "الأرباح وإعدادات الصرف واشتراك متجدد ومحفظة لشحن العمولات"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Parents and AI",
+        "ar": "أولياء الأمور والذكاء الاصطناعي"
+      },
+      "items": {
+        "en": [
+          "Parents link children and follow each child's sessions and progress",
+          "27 AI tools across the three roles, from a photo question solver to exam and lesson-plan generators",
+          "An educational YouTube stories row with native stream resolution, no WebView"
+        ],
+        "ar": [
+          "يربط ولي الأمر أبناءه ويتابع حصص كل منهم وتقدّمه",
+          "27 أداة ذكاء اصطناعي للأدوار الثلاثة، من حل الأسئلة بالتصوير إلى توليد الامتحانات وخطط الدروس",
+          "شريط قصص يوتيوب تعليمية يُشغَّل محلياً دون WebView"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Platform",
+        "ar": "المنصة"
+      },
+      "items": {
+        "en": [
+          "FCM push plus a REST notification feed with deep-link routing",
+          "Guest mode with contextual sign-up sheets, native Google and Apple sign-in, and in-app account deletion",
+          "Remote Config force update, Crashlytics, Analytics with 25+ events and Firestore logging of critical errors"
+        ],
+        "ar": [
+          "إشعارات FCM وسجل إشعارات عبر REST مع توجيه بالروابط العميقة",
+          "وضع الزائر مع نوافذ تسجيل سياقية، وتسجيل دخول أصلي بـ Google وApple، وحذف الحساب من داخل التطبيق",
+          "تحديث إجباري عبر Remote Config، وCrashlytics، وAnalytics بأكثر من 25 حدثاً، وتسجيل الأخطاء الحرجة في Firestore"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "An AI assistant for every role",
+      "ar": "مساعد ذكاء اصطناعي لكل دور"
+    },
+    "body": {
+      "en": [
+        "The assistant tab is one entry point for everyone, but the tools change with the role.",
+        "Students solve questions from a photo, get step-by-step solutions, summaries, flashcards, a study plan, a Tawjihi review and a writing trainer.",
+        "Teachers generate exams, quizzes and question banks, build lesson plans, grade essays and issue certificates.",
+        "Parents interpret reports, get home-support ideas and draft messages to teachers.",
+        "Each tool is its own page in the `users_ai` feature, with data, domain and presentation layers, under a StudyGo channel of in-app YouTube stories."
+      ],
+      "ar": [
+        "تبويب المساعد مدخل واحد للجميع، لكن الأدوات تتغيّر بحسب الدور.",
+        "يحلّ الطالب الأسئلة من صورة، ويحصل على حلول خطوة بخطوة وملخصات وبطاقات مراجعة وخطة دراسية ومراجعة للتوجيهي ومدرّب للكتابة.",
+        "يولّد المعلم الامتحانات والاختبارات القصيرة وبنوك الأسئلة، ويبني خطط الدروس، ويصحّح المقالات، ويصدر الشهادات.",
+        "يفسّر ولي الأمر التقارير، ويحصل على أفكار للدعم المنزلي، ويصوغ رسائل إلى المعلمين.",
+        "كل أداة صفحة مستقلة في ميزة `users_ai` بطبقات data وdomain وpresentation، وفوقها قناة StudyGo لقصص يوتيوب داخل التطبيق."
+      ]
+    },
+    "image": "studygo-case-study/assets/feature-ai-tutor.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "The exam clock never trusts the device",
+        "ar": "مؤقت الامتحان لا يثق بالجهاز"
+      },
+      "body": {
+        "en": "The countdown reads the server offset returned with the attempt and re-anchors on every save, so a phone ten minutes fast still shows the true time. The pinned header turns red in the last five minutes.",
+        "ar": "يقرأ العدّ التنازلي الفارق الذي يعيده الخادم مع المحاولة ويعيد ضبطه عند كل حفظ، فيظهر الوقت الصحيح حتى لو كانت ساعة الهاتف متقدمة عشر دقائق. ويتحوّل الشريط العلوي إلى الأحمر في آخر خمس دقائق."
+      }
+    },
+    {
+      "title": {
+        "en": "Hosted checkout in a real browser tab",
+        "ar": "دفع مستضاف في تبويب متصفح حقيقي"
+      },
+      "body": {
+        "en": "Every paid product returns the same `{ mode, redirectUrl?, purchaseId? }` shape. Checkout opens in a Custom Tab or Safari view and returns via a `studygo://` deep link, keeping card data out of the app and passing store review.",
+        "ar": "يعيد كل منتج مدفوع البنية نفسها `{ mode, redirectUrl?, purchaseId? }`. تُفتح صفحة الدفع في Custom Tab أو Safari view وتعود عبر رابط عميق `studygo://`، فتبقى بيانات البطاقة خارج التطبيق ويجتاز مراجعة المتاجر."
+      }
+    },
+    {
+      "title": {
+        "en": "Money as integers",
+        "ar": "المبالغ أعداد صحيحة"
+      },
+      "body": {
+        "en": "All amounts travel as signed integers in agorot (1/100 ILS) and are formatted only at the edge. If the user closes the payment tab, the app polls the purchase status as a fallback.",
+        "ar": "تنتقل كل المبالغ كأعداد صحيحة بالأغورة (1/100 شيكل) ولا تُنسَّق إلا عند العرض. وإن أغلق المستخدم تبويب الدفع، يستعلم التطبيق عن حالة الشراء كخطة بديلة."
+      }
+    },
+    {
+      "title": {
+        "en": "Grading that respects the teacher",
+        "ar": "تصحيح يحترم قرار المعلم"
+      },
+      "body": {
+        "en": "Objective answers arrive pre-scored, so the grading queue holds only human-marked questions and the final confirmation. Students and parents see nothing until the teacher publishes.",
+        "ar": "تصل الإجابات الموضوعية مصحّحة مسبقاً، فلا تضم قائمة التصحيح إلا الأسئلة التي يصحّحها المعلم والتأكيد النهائي. ولا يرى الطالب أو ولي الأمر شيئاً حتى ينشر المعلم النتائج."
+      }
+    },
+    {
+      "title": {
+        "en": "Guest mode by design",
+        "ar": "وضع الزائر مقصود من البداية"
+      },
+      "body": {
+        "en": "A guest is simply a logged-out app with no token and no server state. Any gated action opens a contextual Google/Apple sign-up sheet over the current screen.",
+        "ar": "الزائر ببساطة تطبيق بلا تسجيل دخول، بلا رمز ولا حالة على الخادم. وأي إجراء محمي يفتح نافذة تسجيل سياقية بـ Google أو Apple فوق الشاشة الحالية."
+      }
+    },
+    {
+      "title": {
+        "en": "Fault-tolerant startup",
+        "ar": "إقلاع يتحمّل الأعطال"
+      },
+      "body": {
+        "en": "Firebase initialisation is wrapped so a misconfigured service cannot crash launch, analytics calls go through a `_safe()` guard, and critical errors are written to Firestore for triage.",
+        "ar": "تُغلَّف تهيئة Firebase بحيث لا تُسقط خدمةٌ سيئة الإعداد التطبيقَ عند التشغيل، وتمر استدعاءات التحليلات عبر حارس `_safe()`، وتُسجَّل الأخطاء الحرجة في Firestore لفرزها."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Live on Google Play with 100+ installs",
+      "Live on the App Store in the Education category, version 1.0.3, for iPhone and iPad"
+    ],
+    "ar": [
+      "منشور على Google Play بأكثر من 100 تثبيت",
+      "منشور على App Store ضمن فئة التعليم، الإصدار 1.0.3، لأجهزة iPhone وiPad"
+    ]
+  },
+  "metrics": [
+    {
+      "value": "27",
+      "label": {
+        "en": "AI tools across three roles",
+        "ar": "أداة ذكاء اصطناعي لثلاثة أدوار"
+      }
+    },
+    {
+      "value": "3",
+      "label": {
+        "en": "roles in one app",
+        "ar": "أدوار في تطبيق واحد"
+      }
+    },
+    {
+      "value": "100+",
+      "label": {
+        "en": "installs on Google Play",
+        "ar": "تثبيت على Google Play"
+      }
+    },
+    {
+      "value": "25+",
+      "label": {
+        "en": "tracked analytics events",
+        "ar": "حدثاً تحليلياً مُتتبَّعاً"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Clean Architecture",
+    "Bloc / Cubit",
+    "GetIt",
+    "GoRouter",
+    "Dio",
+    "dartz",
+    "Custom Tabs + app_links",
+    "FCM",
+    "Crashlytics",
+    "Remote Config",
+    "Firestore",
+    "flutter_map",
+    "Google / Apple Sign-In"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/studygo-case-study"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play",
+        "ar": "Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.study.go"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store",
+        "ar": "App Store"
+      },
+      "url": "https://apps.apple.com/sa/app/study-go/id6777997182"
+    }
+  ],
+  "images": [
+    {
+      "src": "studygo-case-study/assets/banner.png",
+      "alt": {
+        "en": "StudyGo",
+        "ar": "ستادي جو"
+      },
+      "caption": {
+        "en": "One education app for students, teachers and parents in Palestine.",
+        "ar": "تطبيق تعليمي واحد للطلاب والمعلمين وأولياء الأمور في فلسطين."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "studygo-case-study/assets/feature-ai-tutor.png",
+      "alt": {
+        "en": "AI assistant",
+        "ar": "المساعد الذكي"
+      },
+      "caption": {
+        "en": "An AI assistant for every role: the tools change for students, teachers and parents.",
+        "ar": "مساعد ذكاء اصطناعي لكل دور: تتغيّر الأدوات بين الطالب والمعلم وولي الأمر."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "studygo-case-study/assets/feature-checkout.png",
+      "alt": {
+        "en": "Checkout flow",
+        "ar": "مسار الدفع"
+      },
+      "caption": {
+        "en": "Hosted checkout in a real browser tab, with a deep-link return and no card data in the app.",
+        "ar": "دفع مستضاف في تبويب متصفح حقيقي مع عودة عبر رابط عميق، دون أي بيانات بطاقة داخل التطبيق."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "studygo-case-study/assets/screens-app.png",
+      "alt": {
+        "en": "Inside the app",
+        "ar": "داخل التطبيق"
+      },
+      "caption": {
+        "en": "Welcome with Google/Apple sign-in, teacher list, teacher profile with prices, and the guest account screen.",
+        "ar": "شاشة الترحيب مع تسجيل الدخول بـ Google وApple، وقائمة المعلمين، وملف المعلم بالأسعار، وشاشة حساب الزائر."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "studygo-case-study/assets/screens-store.png",
+      "alt": {
+        "en": "Store listing",
+        "ar": "صفحة المتجر"
+      },
+      "caption": {
+        "en": "Google Play marketing screenshots: profile, daily schedule, sessions, teachers, home and splash.",
+        "ar": "لقطات Google Play التسويقية: الملف الشخصي، والجدول اليومي، والحصص، والمعلمون، والرئيسية، وشاشة البداية."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "studygo-case-study/assets/screens-ipad.png",
+      "alt": {
+        "en": "iPad",
+        "ar": "iPad"
+      },
+      "caption": {
+        "en": "The same app on iPad, from the App Store iPad screenshots.",
+        "ar": "التطبيق نفسه على iPad، من لقطات App Store الخاصة بـ iPad."
+      },
+      "role": "gallery"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+---
+import type { Project } from '../data/types';
+import { t, type Lang } from '../i18n';
+import { categories } from '../data/site';
+
+interface Props {
+  p: Project;
+  lang: Lang;
+}
+const { p, lang } = Astro.props;
+const s = t(lang);
+const cats = p.categories.map((c) => categories.find((x) => x.key === c)?.label[lang]).filter(Boolean);
+---
+
+<div class="flex flex-wrap items-center gap-2">
+  <span
+    class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold"
+    style={`border-color:color-mix(in oklab, ${p.accent} 40%, transparent);background:color-mix(in oklab, ${p.accent} 12%, transparent);color:color-mix(in oklab, ${p.accent} 70%, var(--ink))`}
+  >
+    <span class="size-1.5 rounded-full" style={`background:${p.accent}`}></span>
+    {s.kind[p.kind]}
+  </span>
+  {cats.map((c) => <span class="chip !py-1 !text-xs">{c}</span>)}
+</div>

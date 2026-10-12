@@ -1,0 +1,332 @@
+{
+  "slug": "riftech",
+  "order": 15,
+  "featured": false,
+  "name": {
+    "en": "Driftech · Rif-Tech",
+    "ar": "Driftech · Rif-Tech"
+  },
+  "kind": "case-study",
+  "categories": [],
+  "accent": "#E73201",
+  "region": {
+    "en": "Egypt",
+    "ar": "مصر"
+  },
+  "period": null,
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Pick any car, see your installment instantly",
+    "ar": "اختر أي سيارة واعرف قسطك فورًا"
+  },
+  "summary": {
+    "en": "A bilingual car-financing app for Egypt: car marketplace, live finance calculator, four financing programs, a voice-guided matching quiz and application tracking.",
+    "ar": "تطبيق ثنائي اللغة لتمويل السيارات في مصر: سوق سيارات، وحاسبة تمويل لحظية، وأربعة برامج تمويل، واختبار صوتي لاختيار السيارة، ومتابعة لطلبات التمويل."
+  },
+  "overview": {
+    "en": [
+      "Driftech, built for Rif-Tech, is an auto-finance app for the Egyptian market with a simple promise: drive today, pay your way. Customers choose any car, new or pre-owned, from a dealer or a private seller, estimate the monthly installment and apply for financing from their phone.",
+      "The app brings a car marketplace, a finance calculator, four financing programs, a guided car-matching quiz and application tracking together in one Arabic and English client with a full RTL layout. It was delivered to the client and is not on a public store listing."
+    ],
+    "ar": [
+      "Driftech، المبني لشركة Rif-Tech، تطبيق لتمويل السيارات في السوق المصري بوعد بسيط: قُد اليوم وادفع بطريقتك. يختار العميل أي سيارة، جديدة أو مستعملة، من معرض أو من بائع فرد، ويحسب القسط الشهري ويتقدّم بطلب التمويل من هاتفه.",
+      "يجمع التطبيق سوق سيارات وحاسبة تمويل وأربعة برامج تمويل واختبارًا موجّهًا لاختيار السيارة ومتابعة للطلبات، في واجهة عربية وإنجليزية تدعم RTL بالكامل. سُلِّم التطبيق للعميل وليس منشورًا على المتاجر العامة."
+    ]
+  },
+  "role": {
+    "en": [
+      "Built the full Flutter mobile client as the project's Flutter developer.",
+      "Owned the UI, Cubit state management and REST integration over Dio.",
+      "Implemented FCM push and local notifications.",
+      "Delivered dark and light theming plus Arabic and English localization with full RTL."
+    ],
+    "ar": [
+      "بنيت تطبيق الموبايل بالكامل بـ Flutter بصفتي مطوّر Flutter في المشروع.",
+      "تولّيت الواجهات وإدارة الحالة بـ Cubit والتكامل مع REST API عبر Dio.",
+      "نفّذت إشعارات FCM والإشعارات المحلية.",
+      "قدّمت الوضعين الليلي والنهاري والتعريب بالعربية والإنجليزية مع دعم كامل لـ RTL."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Car finance is intimidating: users need a clear monthly number before committing to a long application.",
+      "Financing spans several programs (instant purchase, trade-in, multi-car fleet, savings plans), each targeting a different customer and needing its own entry point.",
+      "Many users don't yet know which car fits their budget, so the app had to guide them rather than just list inventory.",
+      "The application collects personal, employment, financial and car data, which had to be split into short, reviewable steps."
+    ],
+    "ar": [
+      "تمويل السيارات مُربك، والمستخدم يحتاج رقمًا شهريًا واضحًا قبل أن يلتزم بطلب طويل.",
+      "يتوزّع التمويل على عدة برامج (شراء فوري، استبدال، أسطول متعدد السيارات، خطط ادخار)، ولكل برنامج جمهوره ويحتاج مدخلًا خاصًا به.",
+      "كثير من المستخدمين لا يعرفون بعد السيارة المناسبة لميزانيتهم، فكان على التطبيق أن يرشدهم لا أن يعرض المخزون فقط.",
+      "يجمع الطلب بيانات شخصية ووظيفية ومالية وبيانات السيارة، وكان لا بد من تقسيمها إلى خطوات قصيرة قابلة للمراجعة."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Marketplace",
+        "ar": "سوق السيارات"
+      },
+      "items": {
+        "en": [
+          "Listings with price-range tabs, popular brands, new, pre-owned, electric and imported categories, and similar cars.",
+          "Filters for price, kilometers, year, transmission, model and installment, plus sorting.",
+          "Car details with an image slider, specs, an interior, exterior and mechanical condition report, and share.",
+          "Favorites and saved searches."
+        ],
+        "ar": [
+          "قوائم سيارات بتبويبات حسب نطاق السعر، وأشهر الماركات، وفئات الجديد والمستعمل والكهربائي والمستورد، وسيارات مشابهة.",
+          "فلاتر للسعر والكيلومترات وسنة الصنع وناقل الحركة والموديل والقسط، مع خيارات للترتيب.",
+          "صفحة تفاصيل بمعرض صور ومواصفات وتقرير حالة للداخل والخارج والميكانيكا، مع إمكانية المشاركة.",
+          "المفضلة وعمليات البحث المحفوظة."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Financing",
+        "ar": "التمويل"
+      },
+      "items": {
+        "en": [
+          "Home-screen finance calculator with a custom-painted gauge that updates live.",
+          "Per-car duration and down-payment sliders showing the monthly installment.",
+          "Server-side installment plans with term, monthly amount and interest for a given price and down payment.",
+          "Four programs: Drift NOW, Drift TRADE, Drift Fleet and Drift & Save.",
+          "Multi-step application wizard with review, plus tracking and cancellation under Financing Status."
+        ],
+        "ar": [
+          "حاسبة تمويل في الشاشة الرئيسية بعدّاد مرسوم يدويًا يتحدّث لحظيًا.",
+          "شريطا تمرير للمدة والمقدّم في صفحة كل سيارة يعرضان القسط الشهري.",
+          "خطط تقسيط من الخادم تعرض المدة والقسط الشهري ونسبة الفائدة لسعر ومقدّم محددين.",
+          "أربعة برامج: Drift NOW وDrift TRADE وDrift Fleet وDrift & Save.",
+          "معالج طلب متعدد الخطوات مع مراجعة نهائية، ومتابعة الطلب وإلغاؤه من شاشة حالة التمويل."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Guided matching",
+        "ar": "الاختيار الموجّه"
+      },
+      "items": {
+        "en": [
+          "A Know your car quiz styled as a chat, with an AI-assistant intro and countdown.",
+          "Questions read aloud with text-to-speech in Arabic or English.",
+          "Previous answers stay editable, and results lead to suggested cars."
+        ],
+        "ar": [
+          "اختبار اعرف سيارتك بأسلوب المحادثة، مع مقدمة لمساعد ذكي وعدّ تنازلي.",
+          "تُقرأ الأسئلة بصوت مسموع بالعربية أو الإنجليزية عبر تحويل النص إلى كلام.",
+          "يمكن تعديل الإجابات السابقة، وتنتهي النتائج بسيارات مقترحة."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Account and app",
+        "ar": "الحساب والتطبيق"
+      },
+      "items": {
+        "en": [
+          "Phone and OTP registration, password reset, phone change and account deletion with a 90-day reactivation window.",
+          "Notifications center with FCM push, help center, support tickets and FAQs.",
+          "Dark and light themes, adjustable font size, Arabic and English switch, and a Driftech Vlogs video section."
+        ],
+        "ar": [
+          "تسجيل برقم الهاتف وOTP، واستعادة كلمة المرور، وتغيير الرقم، وحذف الحساب مع مهلة 90 يومًا لإعادة التفعيل.",
+          "مركز إشعارات مع FCM، ومركز مساعدة وتذاكر دعم وأسئلة شائعة.",
+          "وضع ليلي ونهاري، وحجم خط قابل للتعديل، وتبديل بين العربية والإنجليزية، وقسم فيديو Driftech Vlogs."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "A monthly number before anything else",
+      "ar": "القسط الشهري قبل أي شيء"
+    },
+    "body": {
+      "en": [
+        "The user enters the car price and down payment and picks a period of 12 to 84 months from a bottom sheet.",
+        "Every keystroke recalculates the installment locally: loan equals price minus down payment, with flat annual interest over the term, divided by the months.",
+        "A custom `CustomPainter` gauge with a sweep-gradient arc, ticks and a needle moves with the term from 1 to 7 years, making the term-versus-payment trade-off visible at a glance.",
+        "Apply Now leads straight into the finance flow, and exact offers come from the server's installment plans on the dedicated calculator screen."
+      ],
+      "ar": [
+        "يُدخل المستخدم سعر السيارة والمقدّم ويختار مدة من 12 إلى 84 شهرًا من قائمة سفلية.",
+        "مع كل حرف يُعاد حساب القسط محليًا: قيمة القرض تساوي السعر ناقص المقدّم، بفائدة سنوية ثابتة على المدة، مقسومة على عدد الأشهر.",
+        "عدّاد مرسوم بـ `CustomPainter` بقوس متدرّج وعلامات ومؤشر يتحرك مع المدة من سنة إلى 7 سنوات، فتظهر الموازنة بين المدة والقسط بنظرة واحدة.",
+        "زر قدّم الآن ينقل مباشرة إلى مسار التمويل، وتأتي العروض الدقيقة من خطط التقسيط على الخادم في شاشة الحاسبة المخصصة."
+      ]
+    },
+    "image": "riftech-case-study/assets/feature-calculator.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Live calculator, no round-trip",
+        "ar": "حاسبة لحظية بلا انتظار للخادم"
+      },
+      "body": {
+        "en": "The home calculator runs its math locally inside `onChanged`, so the number responds while the user is still deciding. Binding plans come from the server only on the dedicated calculator screen.",
+        "ar": "تُجري حاسبة الشاشة الرئيسية حساباتها محليًا داخل `onChanged`، فيستجيب الرقم بينما المستخدم ما زال يقرر. أما الخطط الملزمة فتأتي من الخادم في شاشة الحاسبة المخصصة فقط."
+      }
+    },
+    {
+      "title": {
+        "en": "Gauge as a painter, not a package",
+        "ar": "عدّاد مرسوم لا حزمة جاهزة"
+      },
+      "body": {
+        "en": "The finance gauge is a custom `CustomPainter` normalised to the loan term. It is lightweight, follows the theme and needs no chart dependency.",
+        "ar": "عدّاد التمويل مرسوم بـ `CustomPainter` ومضبوط على مدة القرض. خفيف ويتبع الثيم ولا يحتاج أي مكتبة رسوم بيانية."
+      }
+    },
+    {
+      "title": {
+        "en": "TTS that never blocks the UI",
+        "ar": "قراءة صوتية لا توقف الواجهة"
+      },
+      "body": {
+        "en": "Quiz prompts are spoken through `flutter_tts` with a speak-with-timeout fallback, so the chat continues on a visual timer if the engine stalls. Question marks are normalised per language for display and speech.",
+        "ar": "تُنطق أسئلة الاختبار عبر `flutter_tts` مع مهلة احتياطية، فتستمر المحادثة بمؤقت مرئي إذا تعطّل المحرك. وتُضبط علامات الاستفهام حسب اللغة في العرض والنطق."
+      }
+    },
+    {
+      "title": {
+        "en": "Guest-first startup",
+        "ar": "إقلاع يبدأ بالزائر"
+      },
+      "body": {
+        "en": "Public content such as brands, cars, banners and videos loads at launch, while user data is fetched only once a session exists. First paint stays fast for visitors.",
+        "ar": "يُحمَّل المحتوى العام مثل الماركات والسيارات والبانرات والفيديوهات عند الإقلاع، ولا تُجلب بيانات المستخدم إلا بعد وجود جلسة، فيبقى أول عرض سريعًا للزوار."
+      }
+    },
+    {
+      "title": {
+        "en": "Theme-aware brand assets",
+        "ar": "هوية تتبع الثيم"
+      },
+      "body": {
+        "en": "Program badges and home surfaces switch between light and dark artwork through the Cubit's theme flag, keeping the brand consistent in both modes.",
+        "ar": "تتبدّل شارات البرامج وأسطح الشاشة الرئيسية بين رسومات الوضعين الفاتح والداكن عبر علَم الثيم في الـ Cubit، فتبقى الهوية متسقة في الحالتين."
+      }
+    },
+    {
+      "title": {
+        "en": "RTL everywhere",
+        "ar": "RTL في كل مكان"
+      },
+      "body": {
+        "en": "Layouts use directional paddings and positioning, so Arabic mirrors correctly down to the sliders and bottom navigation.",
+        "ar": "تعتمد التخطيطات على الهوامش والمواضع الاتجاهية، فتنعكس الواجهة العربية بشكل صحيح حتى أشرطة التمرير وشريط التنقل السفلي."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "One app combining a car marketplace, finance calculator, 4 financing programs, a guided quiz and application tracking.",
+      "Fully bilingual, Arabic RTL and English, with dark and light themes.",
+      "Delivered to the client; no public store listing to cite."
+    ],
+    "ar": [
+      "تطبيق واحد يجمع سوق سيارات وحاسبة تمويل و4 برامج تمويل واختبارًا موجّهًا ومتابعة للطلبات.",
+      "ثنائي اللغة بالكامل، عربي RTL وإنجليزي، مع وضع ليلي ونهاري.",
+      "سُلِّم للعميل، ولا يوجد رابط متجر عام."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "4",
+      "label": {
+        "en": "financing programs",
+        "ar": "برامج تمويل"
+      }
+    },
+    {
+      "value": "12–84",
+      "label": {
+        "en": "month terms in the calculator",
+        "ar": "شهرًا مدى مدة الحاسبة"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "Bloc / Cubit",
+    "Dio",
+    "REST API",
+    "CustomPainter",
+    "flutter_tts",
+    "FCM",
+    "easy_localization",
+    "SharedPreferences",
+    "video_player",
+    "RTL"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/riftech-case-study"
+    }
+  ],
+  "images": [
+    {
+      "src": "riftech-case-study/assets/banner.png",
+      "alt": {
+        "en": "Driftech banner",
+        "ar": "بانر Driftech"
+      },
+      "caption": {
+        "en": "Driftech: car financing for Egypt",
+        "ar": "Driftech: تمويل السيارات في مصر"
+      },
+      "role": "banner"
+    },
+    {
+      "src": "riftech-case-study/assets/feature-calculator.png",
+      "alt": {
+        "en": "Finance calculator with a custom gauge",
+        "ar": "حاسبة التمويل مع العدّاد المرسوم"
+      },
+      "caption": {
+        "en": "Live finance calculator with a custom-painted gauge",
+        "ar": "حاسبة تمويل لحظية بعدّاد مرسوم يدويًا"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "riftech-case-study/assets/screens-journey.png",
+      "alt": {
+        "en": "Language, onboarding, Drift NOW program, 3-step journey, car details",
+        "ar": "اختيار اللغة والتعريف وبرنامج Drift NOW ورحلة الخطوات الثلاث وتفاصيل السيارة"
+      },
+      "caption": {
+        "en": "Language picker, onboarding, Drift NOW, purchase in 3 steps, car details with finance sliders",
+        "ar": "اختيار اللغة، والتعريف، وبرنامج Drift NOW، والشراء في 3 خطوات، وتفاصيل السيارة مع أشرطة التمويل"
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "riftech-case-study/assets/screens-app.png",
+      "alt": {
+        "en": "Calculator, financing status, profile, light theme, Arabic RTL",
+        "ar": "الحاسبة وحالة التمويل والملف الشخصي والوضع الفاتح والواجهة العربية"
+      },
+      "caption": {
+        "en": "Calculator (dark), financing status, profile and appearance, calculator (light), Arabic RTL",
+        "ar": "الحاسبة في الوضع الداكن، وحالة التمويل، والملف الشخصي والمظهر، والحاسبة في الوضع الفاتح، والواجهة العربية RTL"
+      },
+      "role": "gallery"
+    }
+  ]
+}

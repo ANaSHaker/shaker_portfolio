@@ -1,0 +1,317 @@
+{
+  "slug": "sim-2022",
+  "order": 17,
+  "featured": false,
+  "name": {
+    "en": "SIM 2022",
+    "ar": "SIM 2022"
+  },
+  "kind": "case-study",
+  "categories": [],
+  "accent": "#38BDF8",
+  "region": {
+    "en": "Saudi Arabia",
+    "ar": "المملكة العربية السعودية"
+  },
+  "period": "2022",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "An entire maritime forum in one pocket hub",
+    "ar": "منتدى بحري كامل في جيبك"
+  },
+  "summary": {
+    "en": "The official app for the Saudi International Maritime Forum 2022 by the Royal Saudi Naval Forces: agenda, speakers, exhibitors, live stream and offline favourites.",
+    "ar": "التطبيق الرسمي للمنتدى البحري السعودي الدولي 2022 الذي نظّمته القوات البحرية الملكية السعودية: الجدول والمتحدثون والعارضون والبث المباشر ومفضلة تعمل دون اتصال."
+  },
+  "overview": {
+    "en": [
+      "The Saudi International Maritime Forum is organised by the Royal Saudi Naval Forces and brings together naval delegations, maritime companies and industry leaders. For the 2022 edition, Mahmoud built the forum's official mobile app: a pocket guide for attendees, delegations and exhibitors before and during the three event days.",
+      "Built between August and October 2022, the app shipped on Google Play and the App Store as SIM 2022 for the forum on 15 to 17 November. The listings were retired after the event, as is common for single-edition event apps."
+    ],
+    "ar": [
+      "ينظّم المنتدى البحري السعودي الدولي القواتُ البحرية الملكية السعودية، ويجمع الوفود البحرية وشركات القطاع البحري وقادة الصناعة. وفي نسخة 2022 بنى محمود التطبيق الرسمي للمنتدى: دليل جيب للحضور والوفود والعارضين قبل أيام الحدث الثلاثة وخلالها.",
+      "بُني التطبيق بين أغسطس وأكتوبر 2022، ونُشر على Google Play وApp Store باسم SIM 2022 قبل المنتدى المنعقد من 15 إلى 17 نوفمبر. وأُزيلت صفحات المتاجر بعد الحدث، كما هو معتاد في تطبيقات الفعاليات ذات النسخة الواحدة."
+    ]
+  },
+  "role": {
+    "en": [
+      "Built the full app as the Flutter developer, from architecture to store release.",
+      "Structured feature-per-folder Cubits so screens could be built and shipped in parallel against a fixed date.",
+      "Integrated Firebase content, attendee chat, Hive offline storage, Google Maps directions and media.",
+      "Published to Google Play and the App Store before the forum opened."
+    ],
+    "ar": [
+      "بنيت التطبيق بالكامل بصفتي مطوّر Flutter، من المعمارية حتى النشر على المتاجر.",
+      "نظّمت الـ Cubits في مجلد لكل ميزة لتُبنى الشاشات وتُسلَّم بالتوازي أمام موعد ثابت.",
+      "دمجت محتوى Firebase ودردشة الحضور والتخزين دون اتصال بـ Hive والاتجاهات على Google Maps والوسائط.",
+      "نشرت التطبيق على Google Play وApp Store قبل افتتاح المنتدى."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "A hard deadline: an event app is useless one day late, so it had to be on both stores before the forum opened.",
+      "A lot of content changing until the last minute: agenda, speakers, delegations, sponsors, exhibitors, news and media.",
+      "Crowded exhibition halls meant content already seen, favourites and notes had to stay available offline.",
+      "An international audience needed Arabic and English, light and dark themes, and official protocol content."
+    ],
+    "ar": [
+      "موعد نهائي صارم: تطبيق الفعالية بلا قيمة لو تأخر يومًا، فكان لا بد من وجوده على المتجرين قبل افتتاح المنتدى.",
+      "محتوى كثير يتغيّر حتى اللحظة الأخيرة: الجدول والمتحدثون والوفود والرعاة والعارضون والأخبار والوسائط.",
+      "قاعات العرض مزدحمة، فكان يجب أن يبقى المحتوى الذي شوهد والمفضلة والملاحظات متاحة دون اتصال.",
+      "جمهور دولي يحتاج العربية والإنجليزية والوضعين الفاتح والداكن ومحتوى بروتوكوليًا رسميًا."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Programme",
+        "ar": "البرنامج"
+      },
+      "items": {
+        "en": [
+          "Three-day agenda with session times, linked speakers, Ask a question and a jump to the live stream.",
+          "Speakers and delegations with photos, titles and biographies.",
+          "Bilateral-meeting section for delegations."
+        ],
+        "ar": [
+          "جدول لثلاثة أيام بمواعيد الجلسات والمتحدثين المرتبطين بها، مع خاصية اطرح سؤالًا والانتقال إلى البث المباشر.",
+          "المتحدثون والوفود بالصور والمناصب والسير الذاتية.",
+          "قسم للاجتماعات الثنائية بين الوفود."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Exhibition",
+        "ar": "المعرض"
+      },
+      "items": {
+        "en": [
+          "Sponsors and exhibitors with profile, website and contact.",
+          "Floor plans and show guide.",
+          "Venue location with in-app directions on Google Maps with a route polyline."
+        ],
+        "ar": [
+          "الرعاة والعارضون بملفاتهم ومواقعهم وبيانات التواصل.",
+          "مخططات القاعات ودليل المعرض.",
+          "موقع الحدث مع الاتجاهات داخل التطبيق على Google Maps ورسم المسار."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Media",
+        "ar": "الإعلام"
+      },
+      "items": {
+        "en": [
+          "SIM Live stream, news, photo galleries and a YouTube-powered video centre.",
+          "About SIM, about the RSNF and about the Kingdom."
+        ],
+        "ar": [
+          "بث SIM Live المباشر والأخبار ومعارض الصور ومركز فيديو يعتمد على YouTube.",
+          "صفحات عن المنتدى وعن القوات البحرية الملكية السعودية وعن المملكة."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Personal",
+        "ar": "الحساب الشخصي"
+      },
+      "items": {
+        "en": [
+          "Sign-in, profile and a personal QR badge.",
+          "One-to-one attendee chat on Firestore.",
+          "Offline favourites for speakers, delegations, sponsors, exhibitors and news, plus personal notes.",
+          "Search, Arabic and English, light and dark mode, push notifications, help centre and FAQs."
+        ],
+        "ar": [
+          "تسجيل الدخول والملف الشخصي وبطاقة QR شخصية.",
+          "دردشة فردية بين الحضور على Firestore.",
+          "مفضلة تعمل دون اتصال للمتحدثين والوفود والرعاة والعارضين والأخبار، مع ملاحظات شخصية.",
+          "بحث، وعربي وإنجليزي، ووضع فاتح وداكن، وإشعارات، ومركز مساعدة وأسئلة شائعة."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "The whole forum in one pocket hub",
+      "ar": "المنتدى كله في دليل جيب واحد"
+    },
+    "body": {
+      "en": [
+        "The home screen is a single grid of 14 entry points, from About SIM and Agenda to Floor Plans and Location, so any content is one tap away.",
+        "Speakers, delegations, sponsors, exhibitors, banners and photos live in Cloud Firestore, so organisers could update content up to the last minute without a release, and the on-device cache keeps loaded pages readable when the hall Wi-Fi drops.",
+        "Anything the attendee stars is saved in typed Hive boxes alongside personal notes and shown in a tabbed Favourites screen.",
+        "From any session the attendee can ask a question or jump straight to the live stream."
+      ],
+      "ar": [
+        "الشاشة الرئيسية شبكة واحدة من 14 مدخلًا، من نبذة عن المنتدى والجدول حتى مخططات القاعات والموقع، فكل محتوى على بُعد لمسة.",
+        "المتحدثون والوفود والرعاة والعارضون والبانرات والصور محفوظة في Cloud Firestore، فاستطاع المنظمون تحديث المحتوى حتى اللحظة الأخيرة دون إصدار جديد، ويُبقي التخزين المؤقت على الجهاز الصفحات المحمّلة متاحة عند انقطاع شبكة القاعة.",
+        "كل ما يميّزه الزائر بنجمة يُحفظ في صناديق Hive مُنمّطة مع الملاحظات الشخصية، ويظهر في شاشة مفضلة مقسّمة بتبويبات.",
+        "من أي جلسة يستطيع الزائر طرح سؤال أو الانتقال مباشرة إلى البث المباشر."
+      ]
+    },
+    "image": "sim-2022-case-study/assets/feature-hub.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Content organisers can change live",
+        "ar": "محتوى يحدّثه المنظمون لحظيًا"
+      },
+      "body": {
+        "en": "Event data sits in Firestore collections, so late changes reached every phone without a store update. Firestore's local cache covers flaky venue connectivity, and Hive holds everything personal.",
+        "ar": "بيانات الفعالية في مجموعات Firestore، فوصلت التعديلات المتأخرة إلى كل هاتف دون تحديث من المتجر. ويغطي التخزين المؤقت لـ Firestore ضعف الاتصال في المكان، بينما يحفظ Hive كل ما هو شخصي."
+      }
+    },
+    {
+      "title": {
+        "en": "Typed favourites",
+        "ar": "مفضلة مُنمّطة"
+      },
+      "body": {
+        "en": "Favourites use separate Hive boxes with generated adapters per type, which kept the Favourites tabs simple and fast.",
+        "ar": "تستخدم المفضلة صناديق Hive منفصلة لكل نوع مع محوّلات مولّدة، فبقيت تبويبات المفضلة بسيطة وسريعة."
+      }
+    },
+    {
+      "title": {
+        "en": "Directions to the venue",
+        "ar": "الطريق إلى مكان الحدث"
+      },
+      "body": {
+        "en": "The location screen draws the route on Google Maps from the attendee's current position by decoding the directions polyline.",
+        "ar": "ترسم شاشة الموقع المسار على Google Maps من موقع الزائر الحالي عبر فك ترميز خط الاتجاهات."
+      }
+    },
+    {
+      "title": {
+        "en": "Attendee chat",
+        "ar": "دردشة الحضور"
+      },
+      "body": {
+        "en": "Messages are stored per user pair in Cloud Firestore and streamed live.",
+        "ar": "تُحفظ الرسائل لكل زوج من المستخدمين في Cloud Firestore وتُبث لحظيًا."
+      }
+    },
+    {
+      "title": {
+        "en": "Built to a fixed date",
+        "ar": "مبني على موعد ثابت"
+      },
+      "body": {
+        "en": "Feature-per-folder Cubits let screens be built and shipped in parallel; the app went from first commit to the stores in about two months.",
+        "ar": "سمحت الـ Cubits المنظمة بمجلد لكل ميزة ببناء الشاشات وتسليمها بالتوازي، فانتقل التطبيق من أول commit إلى المتاجر في نحو شهرين."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Delivered and published on Google Play and the App Store as SIM 2022 for the forum in November 2022.",
+      "Covered 14 content areas of the forum in a single app.",
+      "Listings were retired after the event, as is common for single-edition event apps."
+    ],
+    "ar": [
+      "سُلِّم ونُشر على Google Play وApp Store باسم SIM 2022 للمنتدى في نوفمبر 2022.",
+      "غطّى 14 قسمًا من محتوى المنتدى في تطبيق واحد.",
+      "أُزيلت صفحات المتاجر بعد الحدث، كما هو معتاد في تطبيقات الفعاليات ذات النسخة الواحدة."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "14",
+      "label": {
+        "en": "content areas in one hub",
+        "ar": "قسمًا في دليل واحد"
+      }
+    },
+    {
+      "value": "3",
+      "label": {
+        "en": "event days covered",
+        "ar": "أيام للفعالية"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "Bloc / Cubit",
+    "GetX",
+    "Provider",
+    "Cloud Firestore",
+    "Firebase Auth",
+    "FCM",
+    "Hive",
+    "Dio",
+    "Google Maps",
+    "YouTube Data API",
+    "qr_flutter"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/sim-2022-case-study"
+    }
+  ],
+  "images": [
+    {
+      "src": "sim-2022-case-study/assets/banner.png",
+      "alt": {
+        "en": "SIM 2022, Saudi International Maritime Forum",
+        "ar": "SIM 2022، المنتدى البحري السعودي الدولي"
+      },
+      "caption": {
+        "en": "Official event app for the Saudi International Maritime Forum",
+        "ar": "التطبيق الرسمي للمنتدى البحري السعودي الدولي"
+      },
+      "role": "banner"
+    },
+    {
+      "src": "sim-2022-case-study/assets/feature-hub.png",
+      "alt": {
+        "en": "Forum hub and agenda",
+        "ar": "دليل المنتدى والجدول"
+      },
+      "caption": {
+        "en": "The whole forum in one pocket hub",
+        "ar": "المنتدى كله في دليل جيب واحد"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "sim-2022-case-study/assets/screens-1.png",
+      "alt": {
+        "en": "Forum guide screens",
+        "ar": "شاشات دليل المنتدى"
+      },
+      "caption": {
+        "en": "Home hub, about SIM 2022, agenda, sponsor profile and video centre",
+        "ar": "الشاشة الرئيسية، ونبذة عن SIM 2022، والجدول، وملف الراعي، ومركز الفيديو"
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "sim-2022-case-study/assets/screens-2.png",
+      "alt": {
+        "en": "More SIM 2022 screens",
+        "ar": "شاشات إضافية من SIM 2022"
+      },
+      "caption": {
+        "en": "Photo galleries, RSNF page, navigation drawer in light theme, settings and personal notes",
+        "ar": "معارض الصور، وصفحة القوات البحرية، والقائمة الجانبية بالوضع الفاتح، والإعدادات، والملاحظات الشخصية"
+      },
+      "role": "gallery"
+    }
+  ]
+}

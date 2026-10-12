@@ -1,0 +1,470 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Icon from '../../../components/Icon.astro';
+import Img from '../../../components/Img.astro';
+import Meta from '../../../components/Meta.astro';
+import Lightbox from '../../../components/Lightbox.astro';
+import Contact from '../../../components/Contact.astro';
+import { projects, bannerOf, imageInfo } from '../../../data/projects';
+import type { Project, ProjectImage, LinkType } from '../../../data/types';
+import { langs, t, url, type Lang } from '../../../i18n';
+import { rich } from '../../../lib/rich';
+
+export function getStaticPaths() {
+  return langs.flatMap((lang) => projects.map((p) => ({ params: { lang, slug: p.slug }, props: { p } })));
+}
+
+const { p } = Astro.props as { p: Project };
+const lang = Astro.params.lang as Lang;
+const s = t(lang);
+const ps = s.project;
+const banner = bannerOf(p);
+const idx = projects.findIndex((x) => x.slug === p.slug);
+const prev = projects[(idx - 1 + projects.length) % projects.length];
+const next = projects[(idx + 1) % projects.length];
+
+const gallery = p.images.filter((i) => i !== banner && i.src !== p.signature?.image);
+const groups: { key: string; title?: string; items: ProjectImage[] }[] = p.parts?.length
+  ? p.parts
+      .map((part) => ({ key: part.key, title: part.name[lang], items: gallery.filter((g) => g.part === part.key) }))
+      .filter((g) => g.items.length)
+  : [{ key: 'all', items: gallery }];
+const full = (src: string) => {
+  const v = imageInfo(src)?.variants.at(-1);
+  return v ? url(v.src) : '';
+};
+
+const linkIcon: Record<LinkType, string> = {
+  github: 'github',
+  play: 'googleplay',
+  appstore: 'appstore',
+  web: 'globe',
+  pubdev: 'package',
+  video: 'youtube',
+  other: 'arrow-up-right',
+};
+const primaryLink = p.links.find((l) => l.type !== 'github') ?? p.links[0];
+const otherLinks = p.links.filter((l) => l !== primaryLink);
+const facts = [
+  { k: ps.type, v: s.kind[p.kind] },
+  p.region && { k: ps.region, v: p.region[lang] },
+  p.period && { k: ps.period, v: p.period },
+  p.platforms.length > 0 && { k: ps.platforms, v: p.platforms.join(' · ') },
+].filter(Boolean) as { k: string; v: string }[];
+// Pick black or white text on the accent for WCAG contrast.
+const onAccent = (() => {
+  const n = parseInt(p.accent.slice(1), 16);
+  const ch = [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((c) => {
+    const x = c / 255;
+    return x <= 0.03928 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4);
+  });
+  const L = 0.2126 * ch[0] + 0.7152 * ch[1] + 0.0722 * ch[2];
+  return (L + 0.05) / 0.05 > 1.05 / (L + 0.05) ? '#0a0f1f' : '#ffffff';
+})();
+const num = (i: number) => String(i + 1).padStart(2, '0');
+---
+
+<Base
+  lang={lang}
+  path={`projects/${p.slug}/`}
+  title={p.name[lang]}
+  description={p.summary[lang]}
+  ogImage={`img/og/${p.slug}.jpg`}
+  accent={p.accent}
+>
+  <article style={`--accent:${p.accent}`} data-project>
+    <!-- Hero -->
+    <header class="relative overflow-hidden pt-28 sm:pt-36">
+      <div
+        class="pointer-events-none absolute -top-40 start-1/2 -z-10 h-[40rem] w-[60rem] -translate-x-1/2 rounded-full opacity-25 blur-3xl rtl:translate-x-1/2"
+        style={`background:radial-gradient(closest-side, ${p.accent}, transparent)`}
+        aria-hidden="true"
+      >
+      </div>
+      <div class="container-x">
+        <a href={url(`${lang}/#projects`)} class="rise link-arrow group inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-ink">
+          <Icon name="arrow-left" size={16} class="flip-rtl" />
+          {ps.back}
+        </a>
+        <div class="mt-8 grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8">
+            <div class="rise" style="--d:1"><Meta p={p} lang={lang} /></div>
+            <h1
+              class:list={[
+                'rise mt-6 font-display font-bold',
+                lang === 'ar' ? 'text-[clamp(2.6rem,7vw,5.2rem)] leading-[1.15]' : 'text-[clamp(2.8rem,8vw,6.2rem)] leading-[0.95] tracking-[-0.04em]',
+              ]}
+              style="--d:2"
+            >
+              {p.name[lang]}
+            </h1>
+            <p class="rise accent-text mt-5 font-display text-xl font-medium sm:text-2xl" style="--d:3">{p.tagline[lang]}</p>
+            <p class="rise mt-5 max-w-2xl text-lg leading-relaxed text-ink-2" style="--d:4">{p.summary[lang]}</p>
+          </div>
+          <dl class="rise glass grid grid-cols-2 gap-x-6 gap-y-5 rounded-3xl p-6 lg:col-span-4 lg:grid-cols-1" style="--d:4">
+            {
+              facts.map((f) => (
+                <div>
+                  <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-muted rtl:tracking-normal">{f.k}</dt>
+                  <dd class="mt-1 font-medium">{f.v}</dd>
+                </div>
+              ))
+            }
+          </dl>
+        </div>
+        <div class="rise mt-9 flex flex-wrap gap-3" style="--d:5">
+          {
+            primaryLink && (
+              <a href={primaryLink.url} target="_blank" rel="noopener" class="btn btn-accent" style={`color:${onAccent}`}>
+                <Icon name={linkIcon[primaryLink.type]} size={17} />
+                {primaryLink.label[lang]}
+              </a>
+            )
+          }
+          {
+            otherLinks.slice(0, 3).map((l) => (
+              <a href={l.url} target="_blank" rel="noopener" class="btn btn-ghost">
+                <Icon name={linkIcon[l.type]} size={17} />
+                {l.label[lang]}
+              </a>
+            ))
+          }
+        </div>
+
+        <figure class="rise relative mt-14 sm:mt-16" style="--d:6">
+          <div
+            class="absolute inset-x-[8%] -bottom-6 top-[20%] -z-10 rounded-[3rem] opacity-50 blur-3xl"
+            style={`background:${p.accent}`}
+            aria-hidden="true"
+          >
+          </div>
+          <div class="glass overflow-hidden rounded-[1.75rem] p-2 sm:rounded-[2.25rem] sm:p-2.5">
+            <Img
+              src={banner.src}
+              alt={banner.alt[lang]}
+              eager
+              sizes="(min-width: 1280px) 1240px, 100vw"
+              class="w-full rounded-[1.35rem] sm:rounded-[1.75rem]"
+            />
+          </div>
+        </figure>
+      </div>
+    </header>
+
+    <!-- Metrics -->
+    {
+      p.metrics.length > 0 && (
+        <section class="container-x mt-16" aria-label={ps.results}>
+          <dl class:list={['glass grid overflow-hidden rounded-[1.75rem]', p.metrics.length >= 4 ? 'grid-cols-2 lg:grid-cols-4' : p.metrics.length === 3 ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2']} data-reveal>
+            {p.metrics.map((m, i) => (
+              <div class:list={['flex flex-col border-line p-6 sm:p-8', i > 0 && 'border-s', p.metrics.length >= 4 && i === 2 && 'max-lg:border-s-0', p.metrics.length >= 4 && i >= 2 && 'max-lg:border-t', p.metrics.length === 3 && i > 0 && 'max-sm:border-s-0 max-sm:border-t']}>
+                <dt class="order-2 mt-2 text-sm leading-snug text-muted">{m.label[lang]}</dt>
+                <dd class="accent-text font-display text-[clamp(2rem,4.5vw,3rem)] font-bold leading-none tracking-tight">
+                  <bdi>{m.value}</bdi>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )
+    }
+
+    <!-- Overview + role -->
+    <section class="container-x mt-24 grid gap-10 lg:grid-cols-12 lg:gap-16">
+      <div class="lg:col-span-7" data-reveal>
+        <p class="kicker">{ps.overview}</p>
+        <div class="prose-body mt-6 space-y-5 text-lg leading-relaxed text-ink-2">
+          {p.overview[lang].map((x) => <p set:html={rich(x)} />)}
+        </div>
+      </div>
+      <aside class="lg:col-span-5" data-reveal style="--d:1">
+        <div class="card p-7 sm:p-8">
+          <h2 class="font-display text-2xl font-semibold tracking-tight">{ps.role}</h2>
+          <ul class="bullet-list rich mt-6 leading-relaxed text-ink-2">
+            {p.role[lang].map((x) => <li set:html={rich(x)} />)}
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Challenge -->
+    {
+      p.challenge[lang].length > 0 && (
+        <section class="container-x mt-24" aria-labelledby="challenge">
+          <h2 id="challenge" class="h-section !text-[clamp(1.9rem,4vw,3rem)]" data-reveal>
+            {ps.challenge}
+          </h2>
+          <ol class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {p.challenge[lang].map((x, i) => (
+              <li class="card p-6" style={`--d:${i % 3}`} data-reveal>
+                <span class="accent-text font-display text-sm font-bold">{num(i)}</span>
+                <p class="rich mt-3 leading-relaxed text-ink-2" set:html={rich(x)} />
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    <!-- Parts -->
+    {
+      p.parts && p.parts.length > 0 && (
+        <section class="container-x mt-24" aria-labelledby="parts">
+          <h2 id="parts" class="h-section !text-[clamp(1.9rem,4vw,3rem)]" data-reveal>
+            {ps.parts}
+          </h2>
+          <div class="mt-10 grid gap-5 md:grid-cols-2">
+            {p.parts.map((part, i) => (
+              <a
+                href={`https://github.com/ANaSHaker/${part.repo}`}
+                target="_blank"
+                rel="noopener"
+                class="card group flex flex-col p-7 sm:p-8"
+                style={`--d:${i}`}
+                data-reveal
+              >
+                <span class="accent-text font-display text-sm font-bold">{num(i)}</span>
+                <h3 class="mt-4 font-display text-2xl font-semibold tracking-tight">{part.name[lang]}</h3>
+                <p class="mt-3 leading-relaxed text-muted">{part.summary[lang]}</p>
+                <span class="link-arrow mt-6 inline-flex items-center gap-2 text-sm font-semibold" dir="ltr">
+                  <Icon name="github" size={16} />
+                  {part.repo}
+                  <Icon name="arrow-up-right" size={16} />
+                </span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <!-- Highlights -->
+    {
+      p.highlights.length > 0 && (
+        <section class="container-x mt-24" aria-labelledby="highlights">
+          <h2 id="highlights" class="h-section !text-[clamp(1.9rem,4vw,3rem)]" data-reveal>
+            {ps.highlights}
+          </h2>
+          <div class:list={['mt-10 grid gap-5', p.highlights.length === 3 ? 'lg:grid-cols-3' : 'md:grid-cols-2']}>
+            {p.highlights.map((h, i) => (
+              <div class="card p-7 sm:p-8" style={`--d:${i % 2}`} data-reveal>
+                <h3 class="font-display text-xl font-semibold tracking-tight">{h.title[lang]}</h3>
+                <ul class="bullet-list rich mt-5 text-[0.97rem] leading-relaxed text-ink-2">
+                  {h.items[lang].map((x) => <li set:html={rich(x)} />)}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    <!-- Signature feature -->
+    {
+      p.signature && (
+        <section class="container-x mt-24" aria-labelledby="signature">
+          <div class="glass relative overflow-hidden rounded-[2rem] p-3 sm:p-4">
+            <div
+              class="pointer-events-none absolute -top-40 end-0 size-[30rem] rounded-full opacity-25 blur-3xl"
+              style={`background:${p.accent}`}
+              aria-hidden="true"
+            />
+            <div class="relative grid gap-8 lg:grid-cols-12 lg:items-center">
+              <div class="p-4 sm:p-6 lg:col-span-5" data-reveal>
+                <p class="kicker">{ps.signature}</p>
+                <h2 id="signature" class="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+                  {p.signature.title[lang]}
+                </h2>
+                <ul class="bullet-list rich mt-6 leading-relaxed text-ink-2">
+                  {p.signature.body[lang].map((x) => <li set:html={rich(x)} />)}
+                </ul>
+              </div>
+              {p.signature.image && (
+                <div class="lg:col-span-7" data-reveal style="--d:1">
+                  <button
+                    type="button"
+                    class="group block w-full overflow-hidden rounded-[1.5rem] border border-line"
+                    data-lightbox
+                    data-full={full(p.signature.image)}
+                    data-alt={p.signature.title[lang]}
+                    data-caption={p.signature.title[lang]}
+                    aria-label={`${ps.openImage}: ${p.signature.title[lang]}`}
+                  >
+                    <span class="media-zoom block">
+                      <Img src={p.signature.image} alt={p.signature.title[lang]} sizes="(min-width: 1024px) 720px, 100vw" class="w-full" />
+                    </span>
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    <!-- Gallery -->
+    {
+      gallery.length > 0 && (
+        <section class="container-x mt-24" aria-labelledby="gallery">
+          <h2 id="gallery" class="h-section !text-[clamp(1.9rem,4vw,3rem)]" data-reveal>
+            {ps.gallery}
+          </h2>
+          {groups.map((g) => (
+            <div class="mt-10">
+              {g.title && (
+                <h3 class="mb-5 flex items-center gap-3 font-display text-xl font-semibold" data-reveal>
+                  <span class="h-px w-8" style={`background:${p.accent}`} />
+                  {g.title}
+                </h3>
+              )}
+              <div class="grid gap-5 md:grid-cols-2">
+                {g.items.map((img, i) => (
+                  <figure
+                    class:list={['group', (g.items.length % 2 === 1 && i === 0) && 'md:col-span-2']}
+                    style={`--d:${i % 2}`}
+                    data-reveal
+                  >
+                    <button
+                      type="button"
+                      class="relative block w-full overflow-hidden rounded-[1.5rem] border border-line bg-bg-2 transition-[border-color,box-shadow] duration-300 hover:border-[color-mix(in_oklab,var(--accent)_50%,var(--line))] hover:shadow-[0_30px_60px_-30px_var(--accent)]"
+                      data-lightbox
+                      data-full={full(img.src)}
+                      data-alt={img.alt[lang]}
+                      data-caption={img.caption[lang]}
+                      aria-label={`${ps.openImage}: ${img.alt[lang]}`}
+                    >
+                      <span class="media-zoom block">
+                        <Img
+                          src={img.src}
+                          alt={img.alt[lang]}
+                          sizes={g.items.length % 2 === 1 && i === 0 ? '(min-width: 1280px) 1240px, 100vw' : '(min-width: 768px) 620px, 100vw'}
+                          class="w-full"
+                        />
+                      </span>
+                      <span class="absolute end-3 top-3 grid size-10 place-items-center rounded-full bg-black/50 text-white opacity-0 backdrop-blur transition-opacity group-hover:opacity-100">
+                        <Icon name="expand" size={17} />
+                      </span>
+                    </button>
+                    <figcaption class="mt-3 px-1 text-sm leading-relaxed text-muted">{img.caption[lang]}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+      )
+    }
+
+    <!-- Engineering notes -->
+    {
+      p.engineering.length > 0 && (
+        <section class="container-x mt-24" aria-labelledby="engineering">
+          <h2 id="engineering" class="h-section !text-[clamp(1.9rem,4vw,3rem)]" data-reveal>
+            {ps.engineering}
+          </h2>
+          <ol class="mt-10 grid gap-5 md:grid-cols-2">
+            {p.engineering.map((e, i) => (
+              <li class="card flex gap-5 p-6 sm:p-7" style={`--d:${i % 2}`} data-reveal>
+                <span class="accent-text font-display text-sm font-bold tabular-nums">{num(i)}</span>
+                <div>
+                  <h3 class="font-display text-lg font-semibold leading-snug tracking-tight">{e.title[lang]}</h3>
+                  <p class="rich mt-2.5 text-[0.96rem] leading-relaxed text-muted" set:html={rich(e.body[lang])} />
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+
+    <!-- Results / stack / links -->
+    <section class="container-x mt-24 grid gap-5 lg:grid-cols-3">
+      {
+        p.results[lang].length > 0 && (
+          <div class="card p-7 sm:p-8" data-reveal>
+            <h2 class="font-display text-2xl font-semibold tracking-tight">{ps.results}</h2>
+            <ul class="bullet-list rich mt-6 leading-relaxed text-ink-2">
+              {p.results[lang].map((x) => <li set:html={rich(x)} />)}
+            </ul>
+          </div>
+        )
+      }
+      <div class="card p-7 sm:p-8" data-reveal style="--d:1">
+        <h2 class="font-display text-2xl font-semibold tracking-tight">{ps.stack}</h2>
+        <ul class="mt-6 flex flex-wrap gap-2">
+          {
+            p.stack.map((x) => (
+              <li class="chip" dir="ltr">
+                {x}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="card p-7 sm:p-8" data-reveal style="--d:2">
+        <h2 class="font-display text-2xl font-semibold tracking-tight">{ps.links}</h2>
+        <ul class="mt-5 divide-y divide-line">
+          {
+            p.links.map((l) => (
+              <li>
+                <a href={l.url} target="_blank" rel="noopener" class="group flex items-center gap-3 py-3 font-medium text-ink-2 hover:text-ink">
+                  <Icon name={linkIcon[l.type]} size={18} class="shrink-0 text-muted group-hover:text-ink" />
+                  <span class="flex-1">{l.label[lang]}</span>
+                  <Icon name="arrow-up-right" size={16} class="flip-rtl text-muted" />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        {p.kind === 'case-study' && <p class="mt-5 border-t border-line pt-5 text-sm text-muted">{ps.caseNote}</p>}
+      </div>
+    </section>
+
+    <!-- Prev / next -->
+    <nav class="container-x mt-24 grid gap-4 sm:grid-cols-2" aria-label={`${ps.prev} / ${ps.next}`}>
+      {
+        [
+          { label: ps.prev, item: prev, icon: 'arrow-left', align: '' },
+          { label: ps.next, item: next, icon: 'arrow', align: 'sm:text-end sm:flex-row-reverse' },
+        ].map((n) => (
+          <a
+            href={url(`${lang}/projects/${n.item.slug}/`)}
+            class={`card group flex items-center gap-5 p-3 pe-6 ${n.align}`}
+            style={`--accent:${n.item.accent}`}
+          >
+            <span class="media-zoom block w-28 shrink-0 overflow-hidden rounded-2xl border border-line sm:w-36">
+              <Img src={bannerOf(n.item).src} alt="" sizes="150px" class="aspect-[2/1] w-full object-cover" />
+            </span>
+            <span class="min-w-0 flex-1">
+              <span class="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-muted rtl:tracking-normal">
+                {n.label}
+              </span>
+              <span class="mt-1 block truncate font-display text-xl font-semibold">{n.item.name[lang]}</span>
+            </span>
+          </a>
+        ))
+      }
+    </nav>
+  </article>
+
+  <Contact lang={lang} compact title={ps.ctaTitle} body={ps.ctaBody} />
+  <Lightbox lang={lang} />
+</Base>
+
+<style>
+  .accent-text {
+    color: color-mix(in oklab, var(--accent) 72%, var(--ink));
+  }
+  :global(.btn-accent) {
+    color: #fff;
+    background: var(--accent);
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.25) inset,
+      0 12px 30px -10px var(--accent);
+  }
+  :global(.btn-accent:hover) {
+    box-shadow:
+      0 1px 0 rgb(255 255 255 / 0.25) inset,
+      0 18px 40px -10px var(--accent);
+  }
+</style>

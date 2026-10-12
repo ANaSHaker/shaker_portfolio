@@ -1,0 +1,346 @@
+{
+  "slug": "delivery-iq",
+  "order": 13,
+  "featured": false,
+  "name": {
+    "en": "Delivery IQ · Al Barq",
+    "ar": "Delivery IQ · البرق"
+  },
+  "kind": "case-study",
+  "categories": [
+    "commerce"
+  ],
+  "accent": "#F0444E",
+  "region": {
+    "en": "Iraq",
+    "ar": "العراق"
+  },
+  "period": "2021–2024",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Last-mile logistics in your pocket",
+    "ar": "توصيل الميل الأخير في جيبك"
+  },
+  "summary": {
+    "en": "The Flutter merchant app of Al Barq, an Iraqi delivery company: Excel bulk orders, live status via Socket.IO and settlement statements.",
+    "ar": "تطبيق التجّار لشركة البرق للتوصيل في العراق، مبني بـ Flutter: رفع الطلبات بالجملة من Excel، وحالات لحظية عبر Socket.IO، وكشوفات الحساب."
+  },
+  "overview": {
+    "en": [
+      "Al Barq (lightning) delivers parcels for online shops to every governorate in Iraq, within 24 hours of pickup.",
+      "Delivery IQ is the app the company gives its merchants. Shops add orders, follow them to delivery, see what they are owed and talk to the company, instead of calling and sending spreadsheets on WhatsApp."
+    ],
+    "ar": [
+      "توصل شركة البرق طرود المتاجر الإلكترونية إلى كل محافظات العراق خلال 24 ساعة من الاستلام.",
+      "وDelivery IQ هو التطبيق الذي تقدمه الشركة لتجّارها: يضيف المتجر طلباته، ويتابعها حتى التسليم، ويعرف مستحقاته، ويتواصل مع الشركة، بدل الاتصالات وإرسال جداول البيانات عبر WhatsApp."
+    ]
+  },
+  "role": {
+    "en": [
+      "Flutter developer on the merchant app",
+      "Owned the app architecture and the order flows",
+      "Built the statistics screens and real-time updates",
+      "Shipped releases on Google Play and the App Store"
+    ],
+    "ar": [
+      "مطوّر Flutter لتطبيق التجّار",
+      "مسؤول عن معمارية التطبيق ودورة الطلبات",
+      "بناء شاشات الإحصائيات والتحديثات اللحظية",
+      "نشر الإصدارات على Google Play وApp Store"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Hundreds of thousands of orders in many states: registered, ready to ship, with the driver, delivered, replaced, partially returned, postponed or re-addressed. Merchants need all of it at a glance.",
+      "Money is the real product. Merchants care about what they are owed: delivery charges, collected amounts and which statements are paid.",
+      "Big shops create dozens of orders a day, so typing them one by one was not an option.",
+      "The app shows financial data, so sessions, devices and crashes must be handled carefully."
+    ],
+    "ar": [
+      "مئات الآلاف من الطلبات بحالات كثيرة: مسجّل، وجاهز للشحن، ومع المندوب، وتم التسليم، واستبدال، وراجع جزئي، ومؤجل، وتغيير عنوان. والتاجر يحتاج رؤيتها كلها بنظرة واحدة.",
+      "المال هو المنتج الحقيقي؛ يهتم التاجر بمستحقاته: أجور التوصيل، والمبالغ المحصّلة، والكشوفات المدفوعة.",
+      "المتاجر الكبيرة تنشئ عشرات الطلبات يوميًا، فلم يكن إدخالها واحدًا تلو الآخر خيارًا.",
+      "يعرض التطبيق بيانات مالية، فلا بد من التعامل بحرص مع الجلسات والأجهزة والأعطال."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Orders",
+        "ar": "الطلبات"
+      },
+      "items": {
+        "en": [
+          "Create orders manually, normal or replacement delivery, or import them from Excel",
+          "Search by receipt number, name or phone, and filter by store, city, branch, status and date",
+          "Order details with a tracking timeline and call or WhatsApp contacts for customer, merchant and driver",
+          "Order codes with QR and barcode generation and scanning"
+        ],
+        "ar": [
+          "إنشاء الطلبات يدويًا، بتوصيل عادي أو استبدال، أو استيرادها من Excel",
+          "البحث برقم الوصل أو الاسم أو الهاتف، والتصفية حسب المتجر والمدينة والفرع والحالة والتاريخ",
+          "تفاصيل الطلب مع خط زمني للتتبع، والتواصل بالاتصال أو WhatsApp مع الزبون والتاجر والمندوب",
+          "رموز للطلبات مع توليد ومسح QR والباركود"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Money and reports",
+        "ar": "المال والتقارير"
+      },
+      "items": {
+        "en": [
+          "Home KPIs: today's total, counts per status and net amount",
+          "Settlement statements per store: cost, Baghdad vs. other cities, paid or unpaid, and receipt confirmation",
+          "Charts per status and per month, invoices and PDF export"
+        ],
+        "ar": [
+          "مؤشرات الرئيسية: إجمالي اليوم، وعدد الطلبات لكل حالة، والصافي",
+          "كشوفات الحساب لكل متجر: التكلفة، وبغداد مقابل المحافظات، ومدفوع أو غير مدفوع، وتأكيد الاستلام",
+          "رسوم بيانية حسب الحالة والشهر، وفواتير، وتصدير PDF"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Business tools",
+        "ar": "أدوات الأعمال"
+      },
+      "items": {
+        "en": [
+          "Multi-store and branch support, with staff accounts for a merchant",
+          "In-app chat with the company and support tickets",
+          "Notifications centre with FCM push",
+          "Biometric sign-in, light and dark themes, Arabic-first RTL UI"
+        ],
+        "ar": [
+          "دعم تعدد المتاجر والفروع، وحسابات موظفين للتاجر",
+          "محادثة مع الشركة داخل التطبيق، وتذاكر دعم",
+          "مركز إشعارات مع إشعارات FCM",
+          "الدخول بالبصمة، ووضعان فاتح وداكن، وواجهة عربية من اليمين لليسار"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "The order lifecycle, end to end",
+      "ar": "دورة حياة الطلب من البداية للنهاية"
+    },
+    "body": {
+      "en": [
+        "Create: a merchant fills a form, or uploads an Excel template that is parsed on the device, matched to delivery regions, previewed and submitted as a batch.",
+        "Follow: each order moves through the company's statuses, with a counter per status on the dashboard and a history timeline per order.",
+        "Live updates: a Socket.IO connection receives `newUpdate` and `newMessage` events, so counters and chats refresh the moment the company updates an order.",
+        "Settle: delivered orders roll up into settlement statements, and the merchant confirms receipt in the app."
+      ],
+      "ar": [
+        "الإنشاء: يملأ التاجر نموذجًا، أو يرفع قالب Excel يُحلَّل على الجهاز ويُطابَق مع مناطق التوصيل ويُعرض للمعاينة ثم يُرسل دفعة واحدة.",
+        "المتابعة: ينتقل كل طلب بين حالات الشركة، مع عدّاد لكل حالة في لوحة التحكم وخط زمني لتاريخ كل طلب.",
+        "تحديثات لحظية: يستقبل اتصال Socket.IO أحداث `newUpdate` و`newMessage`، فتتحدث العدادات والمحادثات فور تحديث الشركة لأي طلب.",
+        "التسوية: تتجمع الطلبات المسلّمة في كشوفات حساب، ويؤكد التاجر الاستلام من داخل التطبيق."
+      ]
+    },
+    "image": "delivery-iq-case-study/assets/feature-orders.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Silent token refresh",
+        "ar": "تجديد صامت للتوكن"
+      },
+      "body": {
+        "en": "A Dio interceptor catches `401`, calls the refresh endpoint, saves the new access token and retries the original request, so users are never kicked out mid-task.",
+        "ar": "يلتقط Interceptor في Dio استجابة `401`، فيستدعي نقطة التجديد ويحفظ التوكن الجديد ويعيد الطلب الأصلي، فلا يُطرد المستخدم في منتصف عمله."
+      }
+    },
+    {
+      "title": {
+        "en": "Device trust check",
+        "ar": "فحص موثوقية الجهاز"
+      },
+      "body": {
+        "en": "On start-up the app asks Android for a Play Integrity verdict through a platform channel, falling back to a root check and failing safe.",
+        "ar": "عند الإقلاع يطلب التطبيق حكم Play Integrity من Android عبر platform channel، ويرجع إلى فحص الروت عند تعذّره مع الإخفاق الآمن."
+      }
+    },
+    {
+      "title": {
+        "en": "Real-time without polling",
+        "ar": "تحديث لحظي دون استطلاع"
+      },
+      "body": {
+        "en": "One socket manager handles `chatMessages`, `newMessage` and `newUpdate` events and feeds them into the cubits, keeping chat and order counters current.",
+        "ar": "يدير مدير Socket واحد أحداث `chatMessages` و`newMessage` و`newUpdate` ويمررها إلى الـ cubits، فتبقى المحادثات وعدادات الطلبات محدّثة."
+      }
+    },
+    {
+      "title": {
+        "en": "Bulk orders from Excel",
+        "ar": "طلبات بالجملة من Excel"
+      },
+      "body": {
+        "en": "The app parses a template with Arabic headers on the device, maps columns by header name rather than position, matches each area to the server's delivery regions and flags unknown rows before submitting.",
+        "ar": "يحلل التطبيق على الجهاز قالبًا بعناوين أعمدة عربية، ويطابق الأعمدة بأسمائها لا بترتيبها، ويربط كل منطقة بمناطق التوصيل على الخادم، ويُعلّم الصفوف غير المعروفة قبل الإرسال."
+      }
+    },
+    {
+      "title": {
+        "en": "Every request is measurable",
+        "ar": "كل طلب قابل للقياس"
+      },
+      "body": {
+        "en": "API calls carry an event name logged to Firebase Analytics, and Sentry wraps the app and the Dio client, so errors arrive with the request that caused them.",
+        "ar": "يحمل كل استدعاء API اسم حدث يُسجَّل في Firebase Analytics، ويغلّف Sentry التطبيق وعميل Dio، فتصل الأخطاء مقرونة بالطلب الذي سببها."
+      }
+    },
+    {
+      "title": {
+        "en": "Built-in analytics screens",
+        "ar": "شاشات تحليلات مدمجة"
+      },
+      "body": {
+        "en": "An internal dashboard tab shows Crashlytics and Performance views, helping the team watch stability release by release.",
+        "ar": "يعرض تبويب داخلي بيانات Crashlytics وPerformance، ما ساعد الفريق على متابعة الاستقرار إصدارًا بعد إصدار."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "5K+ installs on Google Play, rated 5.0 (listed as Al Barq).",
+      "Live on the App Store since June 2021 (Shopping, Utilities), store version 3.6.8.",
+      "Serving merchants shipping to all Iraqi governorates, with delivery within 24 hours."
+    ],
+    "ar": [
+      "أكثر من 5 آلاف تثبيت على Google Play بتقييم 5.0 (باسم البرق).",
+      "متاح على App Store منذ يونيو 2021 (التسوق، والأدوات)، بالإصدار 3.6.8.",
+      "يخدم تجّارًا يشحنون إلى كل محافظات العراق، مع التوصيل خلال 24 ساعة."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "5K+",
+      "label": {
+        "en": "installs on Google Play",
+        "ar": "تثبيت على Google Play"
+      }
+    },
+    {
+      "value": "5.0",
+      "label": {
+        "en": "rating on Google Play",
+        "ar": "تقييم على Google Play"
+      }
+    },
+    {
+      "value": "24h",
+      "label": {
+        "en": "delivery across all Iraqi governorates",
+        "ar": "توصيل إلى كل محافظات العراق"
+      }
+    },
+    {
+      "value": "2021",
+      "label": {
+        "en": "live on the App Store since",
+        "ar": "على App Store منذ"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Bloc / Cubit",
+    "Dio",
+    "Socket.IO",
+    "JWT refresh",
+    "Excel import",
+    "PDF export",
+    "Syncfusion Charts",
+    "QR / barcode",
+    "Play Integrity",
+    "Sentry",
+    "Firebase Crashlytics",
+    "Hive",
+    "FCM"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/delivery-iq-case-study"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play (Al Barq)",
+        "ar": "Google Play (البرق)"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.delivery.iq"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store (Delivery IQ)",
+        "ar": "App Store (Delivery IQ)"
+      },
+      "url": "https://apps.apple.com/app/id1568878714"
+    }
+  ],
+  "images": [
+    {
+      "src": "delivery-iq-case-study/assets/banner.png",
+      "alt": {
+        "en": "Delivery IQ, Al Barq",
+        "ar": "Delivery IQ، البرق"
+      },
+      "caption": {
+        "en": "Merchants create, track and settle delivery orders across all Iraqi governorates.",
+        "ar": "التجّار ينشئون طلبات التوصيل ويتابعونها ويسوّونها في كل محافظات العراق."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "delivery-iq-case-study/assets/feature-orders.png",
+      "alt": {
+        "en": "Order lifecycle",
+        "ar": "دورة حياة الطلب"
+      },
+      "caption": {
+        "en": "The order lifecycle: create, follow, live updates and settle.",
+        "ar": "دورة حياة الطلب: إنشاء، ومتابعة، وتحديثات لحظية، وتسوية."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "delivery-iq-case-study/assets/screens-play.png",
+      "alt": {
+        "en": "Google Play screenshots",
+        "ar": "لقطات من Google Play"
+      },
+      "caption": {
+        "en": "Current Android release (Al Barq): home with KPIs, statistics, orders with tracking, settlement statements, splash.",
+        "ar": "الإصدار الحالي على Android (البرق): الرئيسية بالمؤشرات، والإحصائيات، والطلبات مع التتبع، وكشوفات الحساب، وشاشة البداية."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "delivery-iq-case-study/assets/screens-ios.png",
+      "alt": {
+        "en": "iOS screenshots",
+        "ar": "لقطات من iOS"
+      },
+      "caption": {
+        "en": "Delivery IQ on iOS: dashboard by status, status filters, live counters, monthly statistics.",
+        "ar": "Delivery IQ على iOS: لوحة حسب الحالة، وتصفية الحالات، وعدادات لحظية، وإحصائيات شهرية."
+      },
+      "role": "gallery"
+    }
+  ]
+}

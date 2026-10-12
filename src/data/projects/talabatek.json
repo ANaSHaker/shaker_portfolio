@@ -1,0 +1,425 @@
+{
+  "slug": "talabatek",
+  "order": 1,
+  "featured": true,
+  "name": {
+    "en": "Talabatek",
+    "ar": "طلباتك"
+  },
+  "kind": "case-study",
+  "categories": [
+    "commerce"
+  ],
+  "accent": "#F57C00",
+  "region": {
+    "en": "Palestine",
+    "ar": "فلسطين"
+  },
+  "period": "2024–2026",
+  "platforms": [
+    "Android",
+    "iOS",
+    "Web"
+  ],
+  "tagline": {
+    "en": "Arabic-first delivery, built for real POS hardware",
+    "ar": "توصيل عربي أولًا، مصمَّم لأجهزة POS حقيقية"
+  },
+  "summary": {
+    "en": "A food and grocery delivery platform in Palestine with four Flutter clients: customer, driver, restaurant and web. 10K+ installs on Google Play.",
+    "ar": "منصة توصيل طعام وبقالة في فلسطين بأربعة تطبيقات Flutter: العميل والسائق والمطعم والويب، وأكثر من 10 آلاف تثبيت على Google Play."
+  },
+  "overview": {
+    "en": [
+      "Talabatek is a food and grocery delivery service in Palestine, covering Shu'fat Camp, Anata, Ramallah, Kafr 'Aqab, al-Ram, Nablus and the areas around them. Customers order from restaurants, cafés and grocery stores, drivers pick up and deliver, and restaurants run their menus and order boards from a dedicated app.",
+      "I was the lead Flutter engineer for every client app: customer, driver, restaurant with thermal receipt printing, and the Flutter web app. The customer app has been on the App Store since January 2024, and all four clients kept evolving through 2026, including a full dark and light redesign."
+    ],
+    "ar": [
+      "طلباتك خدمة توصيل طعام وبقالة في فلسطين، تغطي مخيم شعفاط وعناتا ورام الله وكفر عقب والرام ونابلس وما حولها. يطلب العملاء من المطاعم والمقاهي ومحلات البقالة، ويستلم السائقون الطلبات ويوصلونها، وتدير المطاعم قوائمها ولوحات طلباتها من تطبيق مخصّص.",
+      "عملت مطوّر Flutter رئيسيًا لكل تطبيقات العملاء: تطبيق العميل، وتطبيق السائق، وتطبيق المطعم مع الطباعة الحرارية للفواتير، وتطبيق الويب. تطبيق العميل متاح على App Store منذ يناير 2024، واستمر تطوير التطبيقات الأربعة حتى 2026، بما في ذلك إعادة تصميم كاملة بالوضعين الفاتح والداكن."
+    ]
+  },
+  "role": {
+    "en": [
+      "Lead Flutter engineer for all four clients: customer (Android and iOS), driver, restaurant and Flutter web.",
+      "Owned UI/UX implementation, app architecture, store releases and production fixes.",
+      "Built automatic Arabic thermal printing for Sunmi, built-in POS and Bluetooth printers.",
+      "Wrote client-side specs and hand-off documents for the backend team; the REST API and admin dashboard were built by other developers."
+    ],
+    "ar": [
+      "مطوّر Flutter رئيسي للتطبيقات الأربعة: العميل (Android وiOS) والسائق والمطعم وتطبيق الويب.",
+      "تولّيت تنفيذ الواجهات وتجربة المستخدم، ومعمارية التطبيقات، والنشر على المتاجر، وإصلاحات الإنتاج.",
+      "بنيت الطباعة الحرارية العربية التلقائية على طابعات Sunmi وطابعات POS المدمجة وطابعات البلوتوث.",
+      "كتبت مواصفات جهة العميل ووثائق التسليم لفريق الباك إند؛ أما الـ REST API ولوحة التحكم فبناهما مطوّرون آخرون."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Three audiences, three apps: customers need fast browsing and simple checkout, drivers need clear one-tap alerts on the move, and kitchen staff need a board readable from across the room.",
+      "Real hardware: restaurants run Sunmi and other Android POS terminals or Bluetooth printers, and receipts must print in Arabic with zero setup.",
+      "Flaky networks and aggressive Android task-killing: sessions, OTP flows and order alerts must survive process death.",
+      "City-based coverage: the backend models cities and areas by name, not coordinates, yet the phone still has to work out where the customer is.",
+      "Fast shipping: hot fixes go out over the air without waiting for a store review."
+    ],
+    "ar": [
+      "ثلاث فئات وثلاثة تطبيقات: العميل يحتاج تصفحًا سريعًا ودفعًا بسيطًا، والسائق يحتاج تنبيهات واضحة بلمسة واحدة أثناء التنقل، وطاقم المطبخ يحتاج لوحة تُقرأ من آخر المطبخ.",
+      "أجهزة حقيقية: المطاعم تستخدم أجهزة Sunmi وأجهزة POS أندرويد أخرى أو طابعات بلوتوث، ويجب أن تُطبع الفواتير بالعربية دون أي إعداد.",
+      "شبكات غير مستقرة وأندرويد يُنهي التطبيقات بقسوة: يجب أن تصمد الجلسات وخطوات OTP وتنبيهات الطلبات أمام إنهاء العملية.",
+      "تغطية بالمدن: الباك إند يعرّف المدن والمناطق بالاسم لا بالإحداثيات، ومع ذلك على الهاتف أن يحدد منطقة العميل.",
+      "شحن سريع: الإصلاحات العاجلة تصل عبر التحديث الهوائي دون انتظار مراجعة المتجر."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Customer app",
+        "ar": "تطبيق العميل"
+      },
+      "items": {
+        "en": [
+          "Browse restaurants by category, search with Arabic text normalisation, and discover 'new' and 'free delivery' rails.",
+          "Cart and checkout with cash on delivery, saved addresses and a map-based address picker.",
+          "Order history, ratings and reviews, plus an active-order banner that refreshes in the background.",
+          "OTP phone login, Google, Apple and Facebook sign-in, and verified App Links that open shops and orders directly.",
+          "A short-video reels feed, in-app chat, and light and dark themes."
+        ],
+        "ar": [
+          "تصفّح المطاعم حسب الفئة، وبحث يطبّع النص العربي، وأشرطة «جديد» و«توصيل مجاني».",
+          "سلة ودفع عند الاستلام، وعناوين محفوظة، واختيار العنوان من الخريطة.",
+          "سجل الطلبات والتقييمات والمراجعات، وشريط للطلب النشط يتحدّث في الخلفية.",
+          "تسجيل دخول برمز OTP، ودخول عبر Google وApple وFacebook، وروابط App Links موثّقة تفتح المتاجر والطلبات مباشرة.",
+          "خلاصة فيديوهات قصيرة (Reels)، ومحادثة داخل التطبيق، ووضعان فاتح وداكن."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Driver app",
+        "ar": "تطبيق السائق"
+      },
+      "items": {
+        "en": [
+          "An 'orders radar' home screen with online/offline status and earnings counters.",
+          "Persistent order notifications with Accept and Reject buttons, and critical alerts that ring even in silent mode.",
+          "Weekly shift booking and a ratings and reviews screen."
+        ],
+        "ar": [
+          "شاشة رئيسية «رادار الطلبات» مع حالة الاتصال وعدّادات الأرباح.",
+          "إشعارات طلبات ثابتة بزرّي قبول ورفض، وتنبيهات حرجة ترنّ حتى في الوضع الصامت.",
+          "حجز ورديات أسبوعية وشاشة للتقييمات والمراجعات."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Restaurant app",
+        "ar": "تطبيق المطعم"
+      },
+      "items": {
+        "en": [
+          "A live order board grouped by stage: new, preparing, ready, on the way, done and rejected.",
+          "Automatic thermal printing of every new order on Sunmi, built-in POS and Bluetooth printers.",
+          "Menu management with images and per-item video, availability toggles and offers.",
+          "A quick-order form to request a driver for orders the restaurant took itself, plus statements, notifications and dark mode."
+        ],
+        "ar": [
+          "لوحة طلبات حيّة مقسّمة حسب المرحلة: جديد، قيد التحضير، جاهز، في الطريق، مكتمل، مرفوض.",
+          "طباعة حرارية تلقائية لكل طلب جديد على طابعات Sunmi وطابعات POS المدمجة وطابعات البلوتوث.",
+          "إدارة القائمة بالصور وفيديو لكل صنف، ومفاتيح التوفّر، والعروض.",
+          "نموذج «طلب سريع» لاستدعاء سائق لطلبات استلمها المطعم بنفسه، مع كشوف الحساب والإشعارات والوضع الداكن."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Web app",
+        "ar": "تطبيق الويب"
+      },
+      "items": {
+        "en": [
+          "The customer experience ported to the browser with Flutter web, including a city picker, cart and OTP login.",
+          "Clean-architecture features with `go_router` and `hydrated_bloc`.",
+          "Deployed as a static build behind nginx."
+        ],
+        "ar": [
+          "تجربة العميل منقولة إلى المتصفح عبر Flutter web، مع اختيار المدينة والسلة وتسجيل الدخول بـ OTP.",
+          "ميزات مبنية بمعمارية نظيفة مع `go_router` و`hydrated_bloc`.",
+          "منشور كنسخة ثابتة خلف nginx."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Orders that print themselves",
+      "ar": "طلبات تطبع نفسها"
+    },
+    "body": {
+      "en": [
+        "Restaurants don't want to tap print for every order, so the restaurant app prints each new order automatically on whatever printer the device has.",
+        "Printer detection runs in order: a Sunmi device first, then the built-in Intelligent POS printer through a small Java `PrinterClient` that sends raw ESC/POS bytes over an Android `LocalSocket`, and finally a Bluetooth printer.",
+        "Receipts are laid out for 80 mm paper with `esc_pos_utils_plus` and UTF-8 Arabic text; on Sunmi the native right-aligned text API is used.",
+        "No order prints twice: printed IDs persist across restarts (capped at 400), existing orders are marked printed after an update, orders older than 12 hours are skipped, and an order only counts as printed once paper comes out, with up to 3 attempts per session.",
+        "It reacts fast: a 15-second refresh while the app is open, an instant refresh on a new-order push, and single-flight fetches so overlapping refreshes can't double-print."
+      ],
+      "ar": [
+        "المطاعم لا تريد الضغط على «طباعة» لكل طلب، لذلك يطبع تطبيق المطعم كل طلب جديد تلقائيًا على أي طابعة متوفرة في الجهاز.",
+        "يكتشف الطابعة بالترتيب: جهاز Sunmi أولًا، ثم طابعة Intelligent POS المدمجة عبر `PrinterClient` صغير بلغة Java يرسل بايتات ESC/POS الخام عبر `LocalSocket` في أندرويد، وأخيرًا طابعة البلوتوث.",
+        "تُنسَّق الفواتير لورق 80 مم باستخدام `esc_pos_utils_plus` مع نص عربي بترميز UTF-8، وعلى أجهزة Sunmi تُستخدم واجهة النص الأصلية المحاذاة لليمين.",
+        "لا يُطبع طلب مرتين: تُحفظ معرّفات الطلبات المطبوعة بعد إعادة التشغيل (بحد 400)، وتُعلَّم الطلبات الموجودة كمطبوعة بعد التحديث، وتُتجاهل الطلبات الأقدم من 12 ساعة، ولا يُحتسب الطلب مطبوعًا إلا بعد خروج الورق فعلًا، بثلاث محاولات كحد أقصى في الجلسة.",
+        "استجابة سريعة: تحديث كل 15 ثانية أثناء فتح التطبيق، وتحديث فوري عند وصول إشعار بطلب جديد، وجلب أحادي التنفيذ يمنع التحديثات المتداخلة من الطباعة المزدوجة."
+      ]
+    },
+    "image": "talabatek-case-study/assets/feature-printing.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Token refresh safe for rotating refresh tokens",
+        "ar": "تجديد توكن آمن مع تدوير الـ refresh token"
+      },
+      "body": {
+        "en": "All apps share one `SessionManager` with a single-flight refresh, so concurrent 401s trigger only one refresh call. The new refresh token is saved before the access token, and only a real 401 logs the user out; a 429 or 503 is treated as temporary.",
+        "ar": "تتشارك كل التطبيقات `SessionManager` واحدًا بتجديد أحادي التنفيذ، فتؤدي أخطاء 401 المتزامنة إلى طلب تجديد واحد فقط. يُحفظ الـ refresh token الجديد قبل الـ access token، ولا يُسجَّل خروج المستخدم إلا عند 401 حقيقي، أما 429 و503 فتُعامل كأعطال مؤقتة."
+      }
+    },
+    {
+      "title": {
+        "en": "Server-side OTP",
+        "ar": "تحقق OTP من جهة السيرفر"
+      },
+      "body": {
+        "en": "OTP verification moved from the device to the server, and I documented the backend contract for the API team. Only the pending phone number is persisted, never the code, so Android killing the app mid-flow doesn't lose the user's place.",
+        "ar": "نقلت التحقق من رمز OTP من الجهاز إلى السيرفر، ووثّقت عقد الباك إند لفريق الـ API. يُحفظ رقم الهاتف المعلّق فقط دون الرمز، فلا يفقد المستخدم مكانه إذا أنهى أندرويد التطبيق في منتصف الخطوات."
+      }
+    },
+    {
+      "title": {
+        "en": "City matching without coordinates",
+        "ar": "مطابقة المدينة دون إحداثيات"
+      },
+      "body": {
+        "en": "The app reverse-geocodes the customer's location and fuzzy-matches it against city and area names, normalising Arabic spellings and mapping English geocoder names to Arabic. 13 unit tests cover it, including false-match cases.",
+        "ar": "يحوّل التطبيق موقع العميل إلى عنوان ثم يطابقه تقريبيًا مع أسماء المدن والمناطق، مع توحيد الكتابة العربية وربط الأسماء الإنجليزية التي تعيدها خدمات الخرائط بمقابلها العربي. تغطيها 13 حالة اختبار، منها حالات المطابقة الخاطئة."
+      }
+    },
+    {
+      "title": {
+        "en": "Driver alerts that can't be missed",
+        "ar": "تنبيهات لا تفوت السائق"
+      },
+      "body": {
+        "en": "Order notifications stay on screen with Accept and Reject actions, an opt-in critical mode sounds through silent mode, and a heartbeat tells the backend which drivers are really online.",
+        "ar": "تبقى إشعارات الطلبات ظاهرة مع زرّي القبول والرفض، ووضع حرج اختياري يرنّ رغم الوضع الصامت، ونبضة دورية تُعلم الباك إند بالسائقين المتصلين فعلًا."
+      }
+    },
+    {
+      "title": {
+        "en": "Four apps kept in step",
+        "ar": "أربعة تطبيقات بخطوة واحدة"
+      },
+      "body": {
+        "en": "Shared Arabic UX patterns and `TkDesign` tokens let the dark v2 redesign ship across the customer, driver and restaurant apps in the same release cycle.",
+        "ar": "أتاحت أنماط تجربة الاستخدام العربية المشتركة ورموز التصميم `TkDesign` إطلاق إعادة التصميم الداكنة v2 لتطبيقات العميل والسائق والمطعم في دورة إصدار واحدة."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Customer app: 10K+ installs on Google Play, and on the App Store since January 2024.",
+      "Driver app: 100+ installs on Google Play.",
+      "Restaurant app: 100+ installs on Google Play, also on the App Store.",
+      "4 Flutter clients shipped, with about 80 unit tests and `flutter analyze` clean across all four projects.",
+      "The same platform was later redeployed for two more brands: OneWay Fast Food and Jahiz."
+    ],
+    "ar": [
+      "تطبيق العميل: أكثر من 10 آلاف تثبيت على Google Play، ومتاح على App Store منذ يناير 2024.",
+      "تطبيق السائق: أكثر من 100 تثبيت على Google Play.",
+      "تطبيق المطعم: أكثر من 100 تثبيت على Google Play، ومتاح أيضًا على App Store.",
+      "أربعة تطبيقات Flutter منشورة، مع نحو 80 اختبار وحدة ونتيجة نظيفة لـ `flutter analyze` في المشاريع الأربعة.",
+      "أُعيد نشر المنصة نفسها لاحقًا لعلامتين تجاريتين أخريين: OneWay Fast Food وجاهز."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "10K+",
+      "label": {
+        "en": "installs on Google Play",
+        "ar": "تثبيت على Google Play"
+      }
+    },
+    {
+      "value": "4",
+      "label": {
+        "en": "Flutter clients",
+        "ar": "تطبيقات Flutter"
+      }
+    },
+    {
+      "value": "~80",
+      "label": {
+        "en": "unit tests",
+        "ar": "اختبار وحدة"
+      }
+    },
+    {
+      "value": "3",
+      "label": {
+        "en": "brands on one platform",
+        "ar": "علامات تجارية على منصة واحدة"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Bloc / Cubit",
+    "Dio",
+    "Socket.IO",
+    "FCM",
+    "Crashlytics",
+    "Google Maps",
+    "flutter_map",
+    "ESC/POS",
+    "Sunmi SDK",
+    "go_router",
+    "hydrated_bloc",
+    "Shorebird",
+    "nginx"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/talabatek-case-study"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · Customer",
+        "ar": "Google Play · العميل"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.talabatek.app"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · Driver",
+        "ar": "Google Play · السائق"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.talabatek.delivery"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play · Restaurant",
+        "ar": "Google Play · المطعم"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.talabatek.restaurant"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store · Customer",
+        "ar": "App Store · العميل"
+      },
+      "url": "https://apps.apple.com/sa/app/talabatek/id6472499352"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store · Restaurant",
+        "ar": "App Store · المطعم"
+      },
+      "url": "https://apps.apple.com/sa/app/talabatek-restaurants/id6740852149"
+    }
+  ],
+  "images": [
+    {
+      "src": "talabatek-case-study/assets/banner.png",
+      "alt": {
+        "en": "Talabatek banner",
+        "ar": "الصورة الرئيسية لطلباتك"
+      },
+      "caption": {
+        "en": "Talabatek: four Flutter clients for food and grocery delivery.",
+        "ar": "طلباتك: أربعة تطبيقات Flutter لتوصيل الطعام والبقالة."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "talabatek-case-study/assets/feature-printing.png",
+      "alt": {
+        "en": "Automatic thermal printing",
+        "ar": "الطباعة الحرارية التلقائية"
+      },
+      "caption": {
+        "en": "Orders that print themselves on Sunmi, built-in POS and Bluetooth printers.",
+        "ar": "طلبات تطبع نفسها على طابعات Sunmi وطابعات POS المدمجة وطابعات البلوتوث."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "talabatek-case-study/assets/screens-customer.png",
+      "alt": {
+        "en": "Customer app in light and dark",
+        "ar": "تطبيق العميل بالوضعين الفاتح والداكن"
+      },
+      "caption": {
+        "en": "Customer app: home, cart, orders (dark) and home (dark).",
+        "ar": "تطبيق العميل: الرئيسية، والسلة، والطلبات (داكن)، والرئيسية (داكن)."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "talabatek-case-study/assets/screens-driver.png",
+      "alt": {
+        "en": "Driver app",
+        "ar": "تطبيق السائق"
+      },
+      "caption": {
+        "en": "Driver app: orders radar, shift booking, reviews and dark mode.",
+        "ar": "تطبيق السائق: رادار الطلبات، وحجز الورديات، والمراجعات، والوضع الداكن."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "talabatek-case-study/assets/screens-restaurant.png",
+      "alt": {
+        "en": "Restaurant app",
+        "ar": "تطبيق المطعم"
+      },
+      "caption": {
+        "en": "Restaurant app: order stages board, menu with availability toggles, quick driver request and notifications.",
+        "ar": "تطبيق المطعم: لوحة مراحل الطلبات، والقائمة مع مفاتيح التوفّر، وطلب السائق السريع، والإشعارات."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "talabatek-case-study/assets/web.png",
+      "alt": {
+        "en": "Flutter web app",
+        "ar": "تطبيق الويب المبني بـ Flutter"
+      },
+      "caption": {
+        "en": "Flutter web: a first-time visitor picks their city from live coverage data.",
+        "ar": "تطبيق الويب: الزائر الجديد يختار مدينته من بيانات التغطية الحيّة."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "talabatek-case-study/assets/store-listing.png",
+      "alt": {
+        "en": "Google Play listing",
+        "ar": "صفحة التطبيق على Google Play"
+      },
+      "caption": {
+        "en": "The customer app's Google Play listing.",
+        "ar": "صفحة تطبيق العميل على Google Play."
+      },
+      "role": "gallery"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+---
+import Icon from './Icon.astro';
+import { t, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const s = t(lang).project;
+---
+
+<dialog class="lightbox" aria-label={s.gallery} data-lightbox-dialog>
+  <div class="flex h-full w-full flex-col">
+    <div class="flex items-center justify-between gap-4 px-4 py-3 sm:px-6">
+      <p class="text-sm tabular-nums text-white/70" data-lb-count></p>
+      <button
+        type="button"
+        class="grid size-11 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
+        aria-label={s.close}
+        data-lb-close
+      >
+        <Icon name="close" size={20} />
+      </button>
+    </div>
+    <div class="relative flex min-h-0 flex-1 items-center justify-center px-2 sm:px-20">
+      <img data-lb-img alt="" class="max-h-full max-w-full rounded-xl object-contain shadow-2xl" />
+      <button
+        type="button"
+        class="absolute start-2 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-white backdrop-blur transition hover:bg-white/20 sm:start-5"
+        aria-label={s.prevImage}
+        data-lb-prev
+      >
+        <Icon name="chevron-left" size={22} class="flip-rtl" />
+      </button>
+      <button
+        type="button"
+        class="absolute end-2 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full bg-white/10 text-white backdrop-blur transition hover:bg-white/20 sm:end-5"
+        aria-label={s.nextImage}
+        data-lb-next
+      >
+        <Icon name="chevron" size={22} class="flip-rtl" />
+      </button>
+    </div>
+    <p class="mx-auto max-w-3xl px-6 py-5 text-center text-[0.95rem] text-white/80" data-lb-caption></p>
+  </div>
+</dialog>
+
+<script>
+  const dlg = document.querySelector<HTMLDialogElement>('[data-lightbox-dialog]');
+  const triggers = [...document.querySelectorAll<HTMLButtonElement>('[data-lightbox]')];
+  if (dlg && triggers.length) {
+    const img = dlg.querySelector<HTMLImageElement>('[data-lb-img]')!;
+    const cap = dlg.querySelector<HTMLElement>('[data-lb-caption]')!;
+    const count = dlg.querySelector<HTMLElement>('[data-lb-count]')!;
+    const rtl = document.documentElement.dir === 'rtl';
+    let i = 0;
+    let opener: HTMLElement | null = null;
+    const show = (n: number) => {
+      i = (n + triggers.length) % triggers.length;
+      const t = triggers[i];
+      img.src = t.dataset.full!;
+      img.alt = t.dataset.alt ?? '';
+      cap.textContent = t.dataset.caption ?? '';
+      count.textContent = `${i + 1} / ${triggers.length}`;
+    };
+    triggers.forEach((t, n) =>
+      t.addEventListener('click', () => {
+        opener = t;
+        show(n);
+        dlg.showModal();
+      }),
+    );
+    dlg.querySelector('[data-lb-close]')!.addEventListener('click', () => dlg.close());
+    dlg.querySelector('[data-lb-prev]')!.addEventListener('click', () => show(i - 1));
+    dlg.querySelector('[data-lb-next]')!.addEventListener('click', () => show(i + 1));
+    dlg.addEventListener('click', (e) => {
+      if (e.target === dlg || (e.target as HTMLElement).matches('.flex.min-h-0')) dlg.close();
+    });
+    dlg.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') show(rtl ? i - 1 : i + 1);
+      if (e.key === 'ArrowLeft') show(rtl ? i + 1 : i - 1);
+    });
+    dlg.addEventListener('close', () => opener?.focus());
+    // Swipe on touch
+    let x0 = 0;
+    dlg.addEventListener('touchstart', (e) => (x0 = e.touches[0].clientX), { passive: true });
+    dlg.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 50) show(i + ((dx < 0) !== rtl ? 1 : -1));
+    });
+  }
+</script>

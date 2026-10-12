@@ -1,0 +1,55 @@
+---
+import Icon from './Icon.astro';
+import { t, url, type Lang } from '../i18n';
+import { links, profile } from '../data/site';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const s = t(lang);
+const year = new Date().getFullYear();
+const social = [
+  { href: links.whatsapp, icon: 'whatsapp', label: s.contact.whatsapp },
+  { href: links.linkedin, icon: 'linkedin', label: s.contact.linkedin },
+  { href: links.github, icon: 'github', label: s.contact.github },
+  { href: links.email, icon: 'mail', label: s.contact.email },
+];
+---
+
+<footer class="relative mt-10 border-t border-line">
+  <div class="container-x flex flex-col gap-8 py-12 md:flex-row md:items-center md:justify-between">
+    <div class="space-y-2">
+      <p class="font-display text-xl font-semibold tracking-tight">{profile.name[lang]}</p>
+      <p class="text-sm text-muted">{profile.role[lang]} · {profile.city[lang]}</p>
+    </div>
+    <ul class="flex flex-wrap items-center gap-2">
+      {
+        social.map((x) => (
+          <li>
+            <a
+              href={x.href}
+              target={x.href.startsWith('http') ? '_blank' : undefined}
+              rel="noopener"
+              aria-label={x.label}
+              title={x.label}
+              class="grid size-11 place-items-center rounded-full border border-line bg-glass text-ink-2 transition-all hover:-translate-y-0.5 hover:border-line-strong hover:text-ink"
+            >
+              <Icon name={x.icon} size={18} />
+            </a>
+          </li>
+        ))
+      }
+      <li class="ms-2">
+        <a href="#main" class="link-arrow inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-ink">
+          {s.footer.top}
+          <Icon name="arrow-up" size={16} />
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container-x flex flex-col gap-2 border-t border-line py-6 text-xs text-muted sm:flex-row sm:justify-between">
+    <p>© {year} {profile.name[lang]}. {s.footer.rights}</p>
+    <p>{s.footer.built}</p>
+  </div>
+</footer>

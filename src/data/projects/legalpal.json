@@ -1,0 +1,473 @@
+{
+  "slug": "legalpal",
+  "order": 11,
+  "featured": false,
+  "name": {
+    "en": "LegalPal",
+    "ar": "LegalPal"
+  },
+  "kind": "case-study",
+  "categories": [
+    "legaltech",
+    "ai"
+  ],
+  "accent": "#1E6BFF",
+  "region": {
+    "en": "Palestine",
+    "ar": "فلسطين"
+  },
+  "period": "2026",
+  "platforms": [
+    "Android",
+    "iOS",
+    "Web"
+  ],
+  "tagline": {
+    "en": "Every legal tool in one app",
+    "ar": "كل أدوات المحامي في تطبيق واحد"
+  },
+  "summary": {
+    "en": "A legal platform for lawyers in Palestine: OpenAI legal assistant, cases, laws, court decisions and contracts, on mobile and a desktop-first web app.",
+    "ar": "منصة قانونية لمحامي فلسطين: مساعد قانوني بـ OpenAI، والقضايا، والقوانين، والقرارات التمييزية، والعقود، على الجوال وفي منصة ويب مصممة لسطح المكتب."
+  },
+  "overview": {
+    "en": [
+      "LegalPal is a legal platform built for lawyers in Palestine. One app lets a lawyer ask an AI legal assistant, manage cases and the daily agenda, look up laws and court decisions, generate contracts, read legal news and talk to colleagues and support.",
+      "It ships on Android, iOS and the web from one Flutter codebase. On the web it becomes a real desktop application with top navigation, floating chat panels and an embedded landing page, while sharing all business logic with the mobile app.",
+      "Version 1.0 reached the App Store in May 2026. The backend is a Laravel 12 API with an admin dashboard."
+    ],
+    "ar": [
+      "LegalPal منصة قانونية مبنية لمحامي فلسطين. في تطبيق واحد يسأل المحامي مساعدًا قانونيًا بالذكاء الاصطناعي، ويدير قضاياه وجدول أعماله، ويبحث في القوانين والقرارات التمييزية، وينشئ العقود، ويتابع الأخبار القانونية، ويتواصل مع زملائه والدعم.",
+      "تعمل المنصة على Android وiOS والويب من كود Flutter واحد. وعلى الويب تتحول إلى تطبيق سطح مكتب حقيقي بشريط تنقل علوي ونوافذ محادثة عائمة وصفحة تعريفية مدمجة، مع مشاركة منطق العمل كله مع تطبيق الجوال.",
+      "وصل الإصدار 1.0 إلى App Store في مايو 2026، والخادم مبني بـ Laravel 12 API مع لوحة تحكم إدارية."
+    ]
+  },
+  "role": {
+    "en": [
+      "Flutter developer for the mobile apps and the web platform",
+      "Owned the app architecture, all screens, the AI features and realtime chat",
+      "Built the dedicated desktop web layout (`WebHomeScreen`) and the embedded landing page",
+      "Shipped the store releases on Google Play and the App Store",
+      "The Laravel 12 API and admin dashboard were the backend side, not part of my scope"
+    ],
+    "ar": [
+      "مطوّر Flutter لتطبيقات الجوال ومنصة الويب",
+      "مسؤول عن معمارية التطبيق وكل الشاشات وميزات الذكاء الاصطناعي والمحادثة الفورية",
+      "بناء واجهة الويب المخصصة لسطح المكتب (`WebHomeScreen`) والصفحة التعريفية المدمجة",
+      "نشر الإصدارات على Google Play وApp Store",
+      "الـ Laravel 12 API ولوحة التحكم من جهة الخادم، وليست ضمن نطاق عملي"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Lawyers juggle five tools: a PDF of the law, a WhatsApp group, a paper agenda, Word templates and a search engine. LegalPal had to replace them with one fast Arabic app.",
+      "Legal content is long and structured. Laws, court decisions and procedures need search, categories and readable detail pages on small screens.",
+      "The AI has to help with the actual job: drafting, summarising, rewriting and proofreading in formal Arabic, not a generic chatbot.",
+      "A phone UI does not scale up to a 1440 px monitor, yet phone, tablet and desktop had to share one codebase without crashing on mobile-only plugins.",
+      "Marketing and product in one deploy: visitors land on a sales page, and one click takes them into the real app as a guest or signed in."
+    ],
+    "ar": [
+      "يتنقل المحامي بين خمس أدوات: ملف PDF للقانون، ومجموعة WhatsApp، وأجندة ورقية، وقوالب Word، ومحرك بحث. وكان على LegalPal أن يحل محلها جميعًا بتطبيق عربي سريع.",
+      "المحتوى القانوني طويل ومنظّم؛ القوانين والقرارات والإجراءات تحتاج بحثًا وتصنيفات وصفحات تفاصيل مقروءة على الشاشات الصغيرة.",
+      "يجب أن يخدم الذكاء الاصطناعي العمل الفعلي: صياغة وتلخيص وإعادة صياغة وتدقيق بالعربية الفصحى الرسمية، لا روبوت محادثة عام.",
+      "واجهة الهاتف لا تصلح لشاشة بعرض 1440 بكسل، ومع ذلك كان على الهاتف والجهاز اللوحي وسطح المكتب أن تتشارك كودًا واحدًا دون أن يتعطل الويب بسبب إضافات الجوال.",
+      "التسويق والمنتج في نشر واحد: يصل الزائر إلى صفحة تعريفية، وبنقرة واحدة يدخل التطبيق الحقيقي كزائر أو بحسابه."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "AI legal assistant (OpenAI)",
+        "ar": "المساعد القانوني الذكي (OpenAI)"
+      },
+      "items": {
+        "en": [
+          "Chat assistant with conversation history and suggested questions about Palestinian law",
+          "Smart services: consultation, contract and petition drafting, rewriting, summarising, term explanations, simplification and advanced analysis",
+          "Image analysis: photograph a document to have it read and analysed",
+          "Arabic proofreading with highlighted corrections"
+        ],
+        "ar": [
+          "مساعد محادثة يحفظ سجل الحوار ويقترح أسئلة عن القانون الفلسطيني",
+          "خدمات ذكية: استشارة، وصياغة العقود ولوائح الدعاوى، وإعادة الصياغة، والتلخيص، وشرح المصطلحات، وتبسيط النصوص، والتحليل القانوني المتقدم",
+          "تحليل الصور: صوّر مستندًا ليُقرأ ويُحلَّل",
+          "تدقيق لغوي عربي مع إبراز التصحيحات"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Knowledge base and lawyer workspace",
+        "ar": "المكتبة القانونية ومساحة عمل المحامي"
+      },
+      "items": {
+        "en": [
+          "Palestinian laws, court decisions, legal clauses, procedure steps, books and useful external sites",
+          "Case management with sessions, updates, search and password-protected sensitive files",
+          "My agenda for appointments and a notebook for notes",
+          "Contracts with fillable fields and PDF output, plus a library of legal forms"
+        ],
+        "ar": [
+          "القوانين الفلسطينية، والقرارات التمييزية، والمواد القانونية، وخطوات الإجراءات، والكتب، ومواقع خارجية مفيدة",
+          "إدارة القضايا بالجلسات والتحديثات والبحث، مع حماية الملفات الحساسة بكلمة مرور",
+          "جدول أعمالي للمواعيد، والمفكرة للملاحظات",
+          "عقود بحقول قابلة للتعبئة وتصدير PDF، ومكتبة من النماذج القانونية"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Community and services",
+        "ar": "المجتمع والخدمات"
+      },
+      "items": {
+        "en": [
+          "Lawyer directory with profiles, and a court directory on Mapbox maps",
+          "A timeline of lawyers' posts and realtime support chat on Cloud Firestore",
+          "Requests for legal services, an e-store, subscriptions and FCM push notifications"
+        ],
+        "ar": [
+          "دليل المحامين بملفاتهم الشخصية، ودليل المحاكم على خرائط Mapbox",
+          "خط زمني لمنشورات المحامين، ومحادثة دعم فورية عبر Cloud Firestore",
+          "طلبات الخدمات القانونية، ومتجر إلكتروني، واشتراكات، وإشعارات FCM"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Desktop web platform",
+        "ar": "منصة الويب لسطح المكتب"
+      },
+      "items": {
+        "en": [
+          "Top navigation with nine areas: home, lawyers, cases, posts, AI assistant, chats, support, account and subscriptions",
+          "Full-width AI assistant tab with suggested questions and image upload",
+          "Messenger-style chat panels floating at the bottom of the screen, one per conversation",
+          "Embedded RTL landing page that hands visitors into the app via `postMessage`",
+          "Guest gate on private areas, clean path URLs and deep links"
+        ],
+        "ar": [
+          "شريط تنقل علوي بتسعة أقسام: الرئيسية، والمحامون، والقضايا، والمنشورات، والمساعد الذكي، والمحادثات، والدعم، والحساب، والاشتراكات",
+          "تبويب للمساعد الذكي بعرض الشاشة مع أسئلة مقترحة ورفع صور",
+          "نوافذ محادثة عائمة أسفل الشاشة مثل Messenger، نافذة لكل محادثة",
+          "صفحة تعريفية عربية مدمجة تنقل الزائر إلى التطبيق عبر `postMessage`",
+          "بوابة للزائر على الأقسام الخاصة، وروابط نظيفة، وروابط مباشرة لكل صفحة"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "A legal assistant in the lawyer's pocket",
+      "ar": "مساعد قانوني في جيب المحامي"
+    },
+    "body": {
+      "en": [
+        "Chat first: the assistant opens with suggested questions, such as how to file a civil lawsuit or labour rights under Palestinian law, so the lawyer starts with one tap.",
+        "Context: the conversation history goes back with every message, so follow-up questions work naturally.",
+        "Specialised modes: drafting, rewriting, summarising, simplifying and analysis use dedicated system prompts, each returning formal, structured Arabic.",
+        "Vision: attach a photo of a contract or a ruling, and the assistant extracts the text and analyses it.",
+        "Proofreading: corrected text comes back with every fix highlighted, so the lawyer reviews changes instead of re-reading everything."
+      ],
+      "ar": [
+        "المحادثة أولًا: يبدأ المساعد بأسئلة مقترحة، مثل كيفية رفع دعوى مدنية أو حقوق العامل في القانون الفلسطيني، فيبدأ المحامي بنقرة واحدة.",
+        "السياق: يُرسَل سجل المحادثة مع كل رسالة، فتأتي أسئلة المتابعة بشكل طبيعي.",
+        "أوضاع متخصصة: الصياغة وإعادة الصياغة والتلخيص والتبسيط والتحليل لكلٍّ منها تعليمات نظام مخصصة، وكلها تعيد نصًا عربيًا رسميًا ومنظمًا.",
+        "الرؤية: يرفق المحامي صورة عقد أو حكم، فيستخرج المساعد النص ويحلله.",
+        "التدقيق: يعود النص المصحَّح مع إبراز كل تصحيح، فيراجع المحامي التغييرات بدل قراءة النص كاملًا من جديد."
+      ]
+    },
+    "image": "legalpal-app-case-study/assets/feature-ai-assistant.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "One router, two experiences",
+        "ar": "موجّه واحد وتجربتان"
+      },
+      "body": {
+        "en": "`AppRouter` serves the phone bottom-navigation layout on Android, iOS and iPad, and a separate `WebHomeScreen` on desktop browsers. The same `AppCubit`, `AuthCubit`, `DioHelper` and models drive both, so a data-layer fix ships everywhere.",
+        "ar": "يقدّم `AppRouter` واجهة الهاتف بالتنقل السفلي على Android وiOS وiPad، وواجهة `WebHomeScreen` مستقلة على متصفحات سطح المكتب. ويحرّك الاثنتين نفسُ `AppCubit` و`AuthCubit` و`DioHelper` والنماذج، فأي إصلاح في طبقة البيانات يصل إلى كل المنصات."
+      }
+    },
+    {
+      "title": {
+        "en": "Realtime support without a socket server",
+        "ar": "دعم فوري دون خادم Socket"
+      },
+      "body": {
+        "en": "Support chat runs on Cloud Firestore streams, so messages arrive instantly with no extra backend infrastructure. On the web, each conversation becomes an independent, collapsible floating panel.",
+        "ar": "تعمل محادثة الدعم على تدفقات Cloud Firestore، فتصل الرسائل فورًا دون بنية خادم إضافية. وعلى الويب تصبح كل محادثة نافذة عائمة مستقلة قابلة للطي."
+      }
+    },
+    {
+      "title": {
+        "en": "Iframe and Flutter handshake",
+        "ar": "تواصل بين الـ iframe وFlutter"
+      },
+      "body": {
+        "en": "The static landing page is mounted in an `HtmlElementView` iframe and sends `postMessage('legalpal-login')`. Flutter listens and routes a new visitor in as a guest, or a returning one straight into the app.",
+        "ar": "تُعرض الصفحة التعريفية الثابتة داخل iframe عبر `HtmlElementView` وترسل `postMessage('legalpal-login')`، فيلتقطها Flutter ويُدخل الزائر الجديد كضيف، أو صاحب الجلسة مباشرة إلى التطبيق."
+      }
+    },
+    {
+      "title": {
+        "en": "Conditional imports keep mobile clean",
+        "ar": "استيراد مشروط يُبقي الجوال نظيفًا"
+      },
+      "body": {
+        "en": "Web-only screens have `_stub` twins selected with `if (dart.library.io)`, so the Android and iOS builds never import `dart:html` or `dart:ui_web`. Messaging, Crashlytics and the Analytics observer start only when `!kIsWeb`.",
+        "ar": "لشاشات الويب نسخ `_stub` تُختار عبر `if (dart.library.io)`، فلا تستورد نسختا Android وiOS مكتبتي `dart:html` أو `dart:ui_web` أبدًا. ولا تبدأ خدمات الإشعارات وCrashlytics ومراقب Analytics إلا عند `!kIsWeb`."
+      }
+    },
+    {
+      "title": {
+        "en": "Force update through Remote Config",
+        "ar": "تحديث إجباري عبر Remote Config"
+      },
+      "body": {
+        "en": "An update service compares the installed version with a Remote Config value and shows a blocking force-update screen when a critical fix ships.",
+        "ar": "تقارن خدمة التحديث الإصدار المثبّت بقيمة في Remote Config، وتعرض شاشة تحديث إجباري عند صدور إصلاح حرج."
+      }
+    },
+    {
+      "title": {
+        "en": "Monitoring and Arabic-first UI",
+        "ar": "المراقبة وواجهة عربية أولًا"
+      },
+      "body": {
+        "en": "Crashlytics, Performance and Analytics are wired in at startup, with custom traces in `FirebaseMonitoringService`. Every layout is RTL by default, with Arabic fonts, Arabic dates and a guest mode.",
+        "ar": "تُفعَّل خدمات Crashlytics وPerformance وAnalytics عند الإقلاع، مع تتبعات مخصصة في `FirebaseMonitoringService`. وكل الواجهات من اليمين لليسار افتراضيًا، بخطوط وتواريخ عربية ووضع للزائر."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Live on Google Play with 100+ installs.",
+      "Live on the App Store since May 2026 (version 1.0, Business category).",
+      "Web platform and landing page ship from the same Flutter project as the store apps."
+    ],
+    "ar": [
+      "متاح على Google Play بأكثر من 100 تثبيت.",
+      "متاح على App Store منذ مايو 2026 (الإصدار 1.0، فئة الأعمال).",
+      "منصة الويب والصفحة التعريفية تُنشران من مشروع Flutter نفسه الذي تُبنى منه تطبيقات المتاجر."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "100+",
+      "label": {
+        "en": "installs on Google Play",
+        "ar": "تثبيت على Google Play"
+      }
+    },
+    {
+      "value": "3",
+      "label": {
+        "en": "platforms from one Flutter codebase",
+        "ar": "منصات من كود Flutter واحد"
+      }
+    },
+    {
+      "value": "9",
+      "label": {
+        "en": "areas in the desktop web navigation",
+        "ar": "أقسام في تنقل منصة الويب"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Flutter Web",
+    "Bloc / Cubit",
+    "Dio",
+    "OpenAI gpt-4o-mini",
+    "Cloud Firestore",
+    "Firebase",
+    "Remote Config",
+    "Mapbox",
+    "Hive",
+    "PDF",
+    "HTML / CSS landing",
+    "Laravel 12 API"
+  ],
+  "parts": [
+    {
+      "key": "app",
+      "name": {
+        "en": "Mobile app",
+        "ar": "تطبيق الجوال"
+      },
+      "summary": {
+        "en": "Android and iOS app with the AI legal assistant, case management, laws, contracts, maps and realtime chat. Live on Google Play and the App Store.",
+        "ar": "تطبيق Android وiOS يضم المساعد القانوني الذكي، وإدارة القضايا، والقوانين، والعقود، والخرائط، والمحادثة الفورية. متاح على Google Play وApp Store."
+      },
+      "repo": "legalpal-app-case-study"
+    },
+    {
+      "key": "web",
+      "name": {
+        "en": "Web platform",
+        "ar": "منصة الويب"
+      },
+      "summary": {
+        "en": "A desktop-first Flutter web UI with top navigation, a full-width AI assistant, floating chat panels and an embedded landing page.",
+        "ar": "واجهة ويب بـ Flutter مصممة لسطح المكتب، بشريط تنقل علوي، ومساعد ذكي بعرض الشاشة، ونوافذ محادثة عائمة، وصفحة تعريفية مدمجة."
+      },
+      "repo": "legalpal-web-case-study"
+    }
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "App case study",
+        "ar": "دراسة حالة التطبيق"
+      },
+      "url": "https://github.com/ANaSHaker/legalpal-app-case-study"
+    },
+    {
+      "type": "github",
+      "label": {
+        "en": "Web case study",
+        "ar": "دراسة حالة الويب"
+      },
+      "url": "https://github.com/ANaSHaker/legalpal-web-case-study"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Google Play",
+        "ar": "Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.legalapp.pal"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "App Store",
+        "ar": "App Store"
+      },
+      "url": "https://apps.apple.com/sa/app/legalpal/id6761775155"
+    }
+  ],
+  "images": [
+    {
+      "src": "legalpal-app-case-study/assets/banner.png",
+      "alt": {
+        "en": "LegalPal",
+        "ar": "LegalPal"
+      },
+      "caption": {
+        "en": "A smart legal platform for lawyers in Palestine.",
+        "ar": "منصة قانونية ذكية للمحامين في فلسطين."
+      },
+      "role": "banner",
+      "part": "app"
+    },
+    {
+      "src": "legalpal-app-case-study/assets/feature-ai-assistant.png",
+      "alt": {
+        "en": "AI legal assistant",
+        "ar": "المساعد القانوني الذكي"
+      },
+      "caption": {
+        "en": "The AI legal assistant: suggested questions, specialised modes, document vision and proofreading.",
+        "ar": "المساعد القانوني الذكي: أسئلة مقترحة، وأوضاع متخصصة، وتحليل صور المستندات، وتدقيق لغوي."
+      },
+      "role": "feature",
+      "part": "app"
+    },
+    {
+      "src": "legalpal-app-case-study/assets/screens-ios.png",
+      "alt": {
+        "en": "App Store screenshots",
+        "ar": "لقطات من App Store"
+      },
+      "caption": {
+        "en": "Sign-in, home services, AI assistant, cases and account (App Store screenshots).",
+        "ar": "تسجيل الدخول، وخدمات الرئيسية، والمساعد الذكي، والقضايا، والحساب (لقطات App Store)."
+      },
+      "role": "gallery",
+      "part": "app"
+    },
+    {
+      "src": "legalpal-app-case-study/assets/screens-play.png",
+      "alt": {
+        "en": "Google Play screenshots",
+        "ar": "لقطات من Google Play"
+      },
+      "caption": {
+        "en": "Google Play listing: home, splash, AI assistant, cases and account.",
+        "ar": "صفحة Google Play: الرئيسية، وشاشة البداية، والمساعد الذكي، والقضايا، والحساب."
+      },
+      "role": "gallery",
+      "part": "app"
+    },
+    {
+      "src": "legalpal-web-case-study/assets/banner.png",
+      "alt": {
+        "en": "LegalPal Web",
+        "ar": "LegalPal على الويب"
+      },
+      "caption": {
+        "en": "A desktop-first web platform for lawyers, built in Flutter, with a landing page embedded in the app.",
+        "ar": "منصة ويب للمحامين مصممة لسطح المكتب، مبنية بـ Flutter، مع صفحة تعريفية مدمجة في التطبيق."
+      },
+      "role": "feature",
+      "part": "web"
+    },
+    {
+      "src": "legalpal-web-case-study/assets/web-platform.png",
+      "alt": {
+        "en": "LegalPal web home",
+        "ar": "الصفحة الرئيسية لـ LegalPal على الويب"
+      },
+      "caption": {
+        "en": "A real desktop app, not a stretched phone: top navigation, quick-service cards and floating chat panels.",
+        "ar": "تطبيق سطح مكتب حقيقي لا هاتف ممدود: تنقل علوي، وبطاقات خدمات سريعة، ونوافذ محادثة عائمة."
+      },
+      "role": "feature",
+      "part": "web"
+    },
+    {
+      "src": "legalpal-web-case-study/assets/web-platform-screens.png",
+      "alt": {
+        "en": "Web platform screens",
+        "ar": "شاشات منصة الويب"
+      },
+      "caption": {
+        "en": "AI assistant, subscription plans, guest gate on private areas and the home page.",
+        "ar": "المساعد الذكي، وباقات الاشتراك، وبوابة الزائر على الأقسام الخاصة، والصفحة الرئيسية."
+      },
+      "role": "gallery",
+      "part": "web"
+    },
+    {
+      "src": "legalpal-web-case-study/assets/web-landing.png",
+      "alt": {
+        "en": "Landing page",
+        "ar": "الصفحة التعريفية"
+      },
+      "caption": {
+        "en": "Landing page on desktop and phone.",
+        "ar": "الصفحة التعريفية على سطح المكتب والهاتف."
+      },
+      "role": "gallery",
+      "part": "web"
+    },
+    {
+      "src": "legalpal-web-case-study/assets/web-landing-sections.png",
+      "alt": {
+        "en": "Landing sections",
+        "ar": "أقسام الصفحة التعريفية"
+      },
+      "caption": {
+        "en": "Landing page sections: all services in one place, why LegalPal, how it helps every day, and the app in action.",
+        "ar": "أقسام الصفحة التعريفية: كل الخدمات في مكان واحد، ولماذا LegalPal، وكيف يساعدك يوميًا، والتطبيق وهو يعمل فعليًا."
+      },
+      "role": "gallery",
+      "part": "web"
+    }
+  ]
+}

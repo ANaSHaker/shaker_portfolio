@@ -1,0 +1,33 @@
+---
+import { url } from '../i18n';
+const en = url('en/');
+const ar = url('ar/');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mahmoud Shaker · Senior Flutter Engineer</title>
+    <meta name="description" content="Senior Flutter Engineer in Cairo. Portfolio in English and Arabic." />
+    <link rel="canonical" href={Astro.site + en.slice(1)} />
+    <link rel="alternate" hreflang="en" href={Astro.site + en.slice(1)} />
+    <link rel="alternate" hreflang="ar" href={Astro.site + ar.slice(1)} />
+    <meta name="robots" content="noindex" />
+    <style>html{background:#05070f;color-scheme:dark}</style>
+    <script is:inline define:vars={{ en, ar }}>
+      var pick = null;
+      try { pick = localStorage.getItem('lang'); } catch (e) {}
+      if (pick !== 'ar' && pick !== 'en') {
+        var langs = navigator.languages || [navigator.language || 'en'];
+        pick = String(langs[0] || 'en').toLowerCase().indexOf('ar') === 0 ? 'ar' : 'en';
+      }
+      location.replace((pick === 'ar' ? ar : en) + location.search + location.hash);
+    </script>
+    <noscript><meta http-equiv="refresh" content={`0; url=${en}`} /></noscript>
+  </head>
+  <body>
+    <p style="font-family:system-ui;padding:2rem"><a href={en} style="color:#93c5fd">English</a> · <a href={ar} style="color:#93c5fd">العربية</a></p>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+{
+  "slug": "midgram",
+  "order": 16,
+  "featured": false,
+  "name": {
+    "en": "MidGram",
+    "ar": "MidGram"
+  },
+  "kind": "case-study",
+  "categories": [
+    "health",
+    "commerce"
+  ],
+  "accent": "#2196F3",
+  "region": {
+    "en": "Iraq",
+    "ar": "العراق"
+  },
+  "period": null,
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Pharmacies and medical reps in one realtime app",
+    "ar": "الصيدليات والمندوبون الطبيون في تطبيق لحظي واحد"
+  },
+  "summary": {
+    "en": "An Arabic-first B2B app linking pharmacies and medical reps in Iraq: product posts, orders, realtime chat and in-chat visit appointments on Firebase.",
+    "ar": "تطبيق B2B عربي يربط الصيدليات بالمندوبين الطبيين في العراق: منشورات منتجات وطلبات ومحادثات لحظية ومواعيد زيارة من داخل المحادثة على Firebase."
+  },
+  "overview": {
+    "en": [
+      "MidGram connects both sides of the pharmaceutical supply conversation. Medical representatives publish their products and reach pharmacies; pharmacies discover reps, post what they need, chat directly and book visits.",
+      "One app serves both audiences: the user picks a role on first launch and the app switches to a dedicated module for that role. It is Arabic-only and fully RTL, built for the Iraqi market, and was delivered to the client without a public store listing."
+    ],
+    "ar": [
+      "يربط MidGram طرفي سلسلة توريد الدواء. ينشر المندوبون الطبيون منتجاتهم ويصلون إلى الصيدليات، وتكتشف الصيدليات المندوبين وتنشر احتياجاتها وتتواصل معهم مباشرة وتحجز مواعيد الزيارات.",
+      "تطبيق واحد يخدم الجمهورين: يختار المستخدم دوره عند أول تشغيل فينتقل التطبيق إلى موديول مخصص لهذا الدور. الواجهة عربية بالكامل وتدعم RTL، وهو موجّه للسوق العراقي وسُلِّم للعميل دون نشر على المتاجر العامة."
+    ]
+  },
+  "role": {
+    "en": [
+      "Built the app end-to-end on Firebase as the project's Flutter developer.",
+      "Designed the GetX architecture and both role modules, pharmacy and representative.",
+      "Implemented realtime chat and in-chat visit appointments.",
+      "Delivered auth, FCM push notifications and remote app configuration."
+    ],
+    "ar": [
+      "بنيت التطبيق من البداية إلى النهاية على Firebase بصفتي مطوّر Flutter في المشروع.",
+      "صمّمت معمارية GetX وموديولي الدورين: الصيدلية والمندوب.",
+      "نفّذت المحادثة اللحظية ومواعيد الزيارة من داخل المحادثة.",
+      "قدّمت تسجيل الدخول وإشعارات FCM والإعدادات عن بُعد."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Pharmacies and reps coordinated over phone calls and personal messaging apps, where products, orders and visit times got lost.",
+      "The two roles need different home screens, navigation and data, yet share chat, appointments, profile and auth. Two separate apps would double maintenance.",
+      "Messages and appointments must appear in real time on both phones, with unread counters and push notifications.",
+      "The client needed to force an update or enable maintenance mode after release without shipping a build."
+    ],
+    "ar": [
+      "كانت الصيدليات والمندوبون يتنسّقون عبر المكالمات وتطبيقات المراسلة الشخصية، فتضيع المنتجات والطلبات ومواعيد الزيارات.",
+      "يحتاج الدوران شاشات رئيسية وتنقلًا وبيانات مختلفة، مع مشاركة المحادثة والمواعيد والملف الشخصي وتسجيل الدخول، وبناء تطبيقين منفصلين كان سيضاعف الصيانة.",
+      "يجب أن تظهر الرسائل والمواعيد لحظيًا على الهاتفين، مع عدّادات غير المقروء والإشعارات.",
+      "احتاج العميل إلى فرض التحديث أو تفعيل وضع الصيانة بعد الإطلاق دون إصدار نسخة جديدة."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "For pharmacies",
+        "ar": "للصيدليات"
+      },
+      "items": {
+        "en": [
+          "Home feed of representatives and their product posts, with search.",
+          "Representative directory and profiles, with the option to report a rep.",
+          "Create orders with a title, needed medicines and up to 5 images, tracked under My Orders."
+        ],
+        "ar": [
+          "صفحة رئيسية تعرض المندوبين ومنشورات منتجاتهم، مع البحث.",
+          "دليل للمندوبين وملفاتهم، مع إمكانية الإبلاغ عن مندوب.",
+          "إنشاء طلبات بعنوان وتفاصيل الأدوية المطلوبة وحتى 5 صور، ومتابعتها في صفحة طلباتي."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "For medical representatives",
+        "ar": "للمندوبين الطبيين"
+      },
+      "items": {
+        "en": [
+          "Publish product posts with title, description, price and up to 5 images, managed under My Posts.",
+          "Browse pharmacies and incoming orders.",
+          "Open a pharmacy's details and start a chat."
+        ],
+        "ar": [
+          "نشر منتجات بعنوان ووصف وسعر وحتى 5 صور، وإدارتها من صفحة منشوراتي.",
+          "تصفّح الصيدليات والطلبات الواردة.",
+          "فتح تفاصيل الصيدلية وبدء محادثة معها."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Shared and realtime",
+        "ar": "مشترك ولحظي"
+      },
+      "items": {
+        "en": [
+          "1-to-1 chat with text and images, unread counters and read receipts.",
+          "Each participant can delete a conversation on their side only.",
+          "Visit appointments sent as chat messages with date and time, shown in both users' Reminders calendar and cancellable by either side.",
+          "FCM push notifications for new messages and appointments."
+        ],
+        "ar": [
+          "محادثة فردية بالنص والصور، مع عدّادات غير المقروء وإشعارات القراءة.",
+          "يستطيع كل طرف حذف المحادثة من جهته فقط.",
+          "مواعيد زيارة تُرسل كرسائل بالتاريخ والوقت، وتظهر في تقويم التذكيرات لدى الطرفين، ويمكن لأي منهما إلغاؤها.",
+          "إشعارات FCM للرسائل والمواعيد الجديدة."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Platform",
+        "ar": "المنصة"
+      },
+      "items": {
+        "en": [
+          "Role selection, then Google sign-in or email and password, then role-specific sign-up with city lists and unique-username checks.",
+          "Remote app configuration in Firestore: minimum version with a force-update screen, maintenance mode and store URLs.",
+          "Deleted-account handling, in-app privacy policy and terms, and WhatsApp support for deactivated accounts."
+        ],
+        "ar": [
+          "اختيار الدور، ثم الدخول بحساب Google أو بالبريد وكلمة المرور، ثم تسجيل خاص بكل دور مع قوائم المدن والتحقق من تفرّد اسم المستخدم.",
+          "إعدادات عن بُعد في Firestore: حد أدنى للإصدار مع شاشة إجبار التحديث، ووضع الصيانة، وروابط المتاجر.",
+          "معالجة الحسابات المحذوفة، وسياسة الخصوصية والشروط داخل التطبيق، ودعم عبر WhatsApp للحسابات المعطّلة."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Two roles, one codebase, one conversation",
+      "ar": "دوران، كود واحد، محادثة واحدة"
+    },
+    "body": {
+      "en": [
+        "On first launch the user chooses Pharmacy or Representative. A `UserRoleService` stores the choice, and every later route resolves from it, each role with its own GetX bindings, controllers and bottom navbar.",
+        "Reps publish products and pharmacies publish orders, each with up to 5 images in Firebase Storage, and each side sees the other's content in its feed.",
+        "Either side opens a chat. `createOrGetChat` reuses an existing conversation and reactivates it if one participant had deleted it.",
+        "A visit appointment is a typed chat message that also writes an appointment document, shown in both users' Reminders; cancelling updates both sides in real time."
+      ],
+      "ar": [
+        "عند أول تشغيل يختار المستخدم صيدلية أو مندوب. تحفظ `UserRoleService` هذا الاختيار وتُحدَّد منه كل المسارات اللاحقة، ولكل دور Bindings وControllers وشريط تنقل خاص به في GetX.",
+        "ينشر المندوبون المنتجات وتنشر الصيدليات الطلبات، بحد أقصى 5 صور في Firebase Storage، ويرى كل طرف محتوى الآخر في صفحته الرئيسية.",
+        "يفتح أي طرف المحادثة، وتعيد `createOrGetChat` استخدام المحادثة الموجودة وتعيد تفعيلها إن كان أحد الطرفين قد حذفها.",
+        "موعد الزيارة رسالة من نوع خاص تُنشئ أيضًا مستند موعد يظهر في تذكيرات الطرفين، وإلغاؤه يُحدّث الجهتين لحظيًا."
+      ]
+    },
+    "image": "midgram-case-study/assets/feature-two-sided.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Fast splash, parallel init",
+        "ar": "شاشة بداية سريعة وتهيئة متوازية"
+      },
+      "body": {
+        "en": "Only Firebase, the cache and a few core services start before `runApp`. Auth, app config and app-init then run in parallel with a short minimum splash, and any failure still navigates forward.",
+        "ar": "لا يبدأ قبل `runApp` إلا Firebase والكاش وبعض الخدمات الأساسية، ثم تعمل المصادقة والإعدادات والتهيئة بالتوازي مع حد أدنى قصير لشاشة البداية، وأي فشل لا يمنع الانتقال."
+      }
+    },
+    {
+      "title": {
+        "en": "Role-aware routing",
+        "ar": "توجيه حسب الدور"
+      },
+      "body": {
+        "en": "Auto-login reads the Firebase user, loads the matching profile from `pharmacies` or `representatives` and routes to that module. A missing profile falls back to role selection; a deleted account gets its own screen.",
+        "ar": "يقرأ الدخول التلقائي مستخدم Firebase ويحمّل ملفه من `pharmacies` أو `representatives` ثم يوجّهه إلى الموديول المناسب. غياب الملف يعيده لاختيار الدور، والحساب المحذوف له شاشة مستقلة."
+      }
+    },
+    {
+      "title": {
+        "en": "Remote kill-switches",
+        "ar": "مفاتيح تحكم عن بُعد"
+      },
+      "body": {
+        "en": "`AppConfigService` compares the installed version with `app_config` in Firestore and can show a blocking force-update or maintenance screen, all without a new release.",
+        "ar": "تقارن `AppConfigService` الإصدار المثبّت بـ `app_config` في Firestore، ويمكنها عرض شاشة إجبار تحديث أو صيانة دون إصدار جديد."
+      }
+    },
+    {
+      "title": {
+        "en": "Chat that survives deletes",
+        "ar": "محادثة تصمد أمام الحذف"
+      },
+      "body": {
+        "en": "Each conversation stores a per-participant status. Deleting hides it only for that user, a new message reactivates it for the recipient, and unread counts are kept per participant.",
+        "ar": "تحفظ كل محادثة حالة لكل مشارك؛ الحذف يخفيها عن صاحبه فقط، ورسالة جديدة تعيد تفعيلها لدى المستلم، وعدّادات غير المقروء محفوظة لكل طرف."
+      }
+    },
+    {
+      "title": {
+        "en": "Appointments as first-class messages",
+        "ar": "المواعيد رسائل أساسية"
+      },
+      "body": {
+        "en": "An appointment is sent through the chat service, persisted to its own collection and synced to both users' reminder screens through a helper that maps Firestore IDs to local reminders.",
+        "ar": "يُرسل الموعد عبر خدمة المحادثة ويُحفظ في مجموعة مستقلة، ويُزامَن مع شاشات التذكير لدى الطرفين عبر أداة تربط معرّفات Firestore بالتذكيرات المحلية."
+      }
+    },
+    {
+      "title": {
+        "en": "Arabic-first UI",
+        "ar": "واجهة عربية أولًا"
+      },
+      "body": {
+        "en": "The whole app runs RTL with `Locale('ar')`, Cairo typography, Arabic validation messages and Iraqi city lists. Legal pages are built in-app.",
+        "ar": "يعمل التطبيق بالكامل RTL مع `Locale('ar')` وخط Cairo ورسائل تحقق عربية وقوائم المدن العراقية، والصفحات القانونية مبنية داخل التطبيق."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "One Flutter app serving 2 user roles, pharmacies and medical representatives, with shared realtime chat and appointments.",
+      "Fully serverless on Firebase (Auth, Firestore, Storage, FCM), with remote force-update and maintenance controls.",
+      "Delivered to the client; no public store listing to cite."
+    ],
+    "ar": [
+      "تطبيق Flutter واحد يخدم دورين، الصيدليات والمندوبين الطبيين، مع محادثة ومواعيد لحظية مشتركة.",
+      "بلا خوادم بالكامل على Firebase (Auth وFirestore وStorage وFCM)، مع تحكم عن بُعد في إجبار التحديث والصيانة.",
+      "سُلِّم للعميل، ولا يوجد رابط متجر عام."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "2",
+      "label": {
+        "en": "user roles in one app",
+        "ar": "دوران في تطبيق واحد"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "GetX",
+    "Firebase Auth",
+    "Cloud Firestore",
+    "Firebase Storage",
+    "FCM",
+    "Google Sign-In",
+    "SharedPreferences",
+    "package_info_plus",
+    "Arabic RTL"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/midgram-case-study"
+    }
+  ],
+  "images": [
+    {
+      "src": "midgram-case-study/assets/banner.png",
+      "alt": {
+        "en": "MidGram banner",
+        "ar": "بانر MidGram"
+      },
+      "caption": {
+        "en": "MidGram: pharmacies and medical reps in one realtime app",
+        "ar": "MidGram: الصيدليات والمندوبون الطبيون في تطبيق لحظي واحد"
+      },
+      "role": "banner"
+    },
+    {
+      "src": "midgram-case-study/assets/feature-two-sided.png",
+      "alt": {
+        "en": "Two-sided marketplace",
+        "ar": "منصة بطرفين"
+      },
+      "caption": {
+        "en": "Two roles, one codebase, one conversation",
+        "ar": "دوران، كود واحد، محادثة واحدة"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "midgram-case-study/assets/screens-onboarding.png",
+      "alt": {
+        "en": "Role selection, sign-up, privacy, force update",
+        "ar": "اختيار الدور والتسجيل والخصوصية وإجبار التحديث"
+      },
+      "caption": {
+        "en": "Role selection, pharmacy sign-up, privacy policy, remote-config force-update screen",
+        "ar": "اختيار الدور، وتسجيل الصيدلية، وسياسة الخصوصية، وشاشة إجبار التحديث عن بُعد"
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "midgram-case-study/assets/screens-modules.png",
+      "alt": {
+        "en": "Pharmacy home, reps list, create order, chat, add post",
+        "ar": "رئيسية الصيدلية وقائمة المندوبين وإنشاء طلب والمحادثة وإضافة منشور"
+      },
+      "caption": {
+        "en": "Pharmacy home, representatives directory, create order, chat composer, representative publish product",
+        "ar": "رئيسية الصيدلية، ودليل المندوبين، وإنشاء طلب، ومحرر المحادثة، ونشر منتج من المندوب"
+      },
+      "role": "gallery"
+    }
+  ]
+}

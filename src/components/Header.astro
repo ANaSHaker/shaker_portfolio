@@ -1,0 +1,120 @@
+---
+import Icon from './Icon.astro';
+import { t, url, type Lang } from '../i18n';
+import { links, profile } from '../data/site';
+
+interface Props {
+  lang: Lang;
+  path: string;
+}
+const { lang, path } = Astro.props;
+const s = t(lang);
+const other: Lang = lang === 'en' ? 'ar' : 'en';
+const home = url(`${lang}/`);
+const nav = [
+  { href: `${home}#work`, label: s.nav.work },
+  { href: `${home}#services`, label: s.nav.services },
+  { href: `${home}#stack`, label: s.nav.stack },
+  { href: `${home}#process`, label: s.nav.process },
+  { href: `${home}#contact`, label: s.nav.contact },
+];
+---
+
+<header class="fixed inset-x-0 top-0 z-50 pt-3 sm:pt-4" data-header>
+  <div class="container-x">
+    <nav
+      class="glass flex items-center justify-between gap-3 rounded-full py-2 ps-2 pe-2 transition-[background-color,box-shadow] duration-300 sm:ps-3"
+      aria-label="Primary"
+    >
+      <a href={home} class="group flex items-center gap-2.5 rounded-full pe-2" aria-label={profile.name[lang]}>
+        <span
+          class="relative grid size-9 place-items-center overflow-hidden rounded-full bg-[conic-gradient(from_200deg,#2563eb,#7c3aed,#06b6d4,#2563eb)] font-display text-[0.8rem] font-bold text-white shadow-[0_6px_20px_-6px_rgb(79_70_229/.8)]"
+        >
+          <span class="relative z-10" dir="ltr">MS</span>
+        </span>
+        <span class="hidden font-display text-[0.95rem] font-semibold tracking-tight sm:inline">{profile.name[lang]}</span>
+      </a>
+
+      <ul class="hidden items-center gap-1 lg:flex">
+        {
+          nav.map((n) => (
+            <li>
+              <a
+                href={n.href}
+                class="rounded-full px-3.5 py-2 text-[0.9rem] font-medium text-muted transition-colors hover:bg-glass-2 hover:text-ink"
+              >
+                {n.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class="flex items-center gap-1.5">
+        <a
+          href={url(`${other}/${path}`)}
+          hreflang={other}
+          lang={other}
+          data-lang-switch={other}
+          class="inline-flex h-10 items-center gap-1.5 rounded-full px-3 text-[0.85rem] font-semibold text-ink-2 transition-colors hover:bg-glass-2 hover:text-ink"
+          title={s.langSwitchLabel}
+        >
+          <Icon name="globe" size={17} />
+          <span>{s.langSwitch}</span>
+        </a>
+        <button
+          type="button"
+          data-theme-toggle
+          class="grid size-10 place-items-center rounded-full text-ink-2 transition-colors hover:bg-glass-2 hover:text-ink"
+          aria-label={s.themeToggle}
+          title={s.themeToggle}
+        >
+          <Icon name="sun" size={18} class="hidden dark:block" />
+          <Icon name="moon" size={18} class="block dark:hidden" />
+        </button>
+        <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary hidden !px-4 !py-2.5 text-sm sm:inline-flex">
+          <Icon name="whatsapp" size={16} />
+          <span>{s.hero.ctaPrimary}</span>
+        </a>
+        <details class="relative lg:hidden" data-menu>
+          <summary
+            class="grid size-10 cursor-pointer list-none place-items-center rounded-full text-ink-2 hover:bg-glass-2 [&::-webkit-details-marker]:hidden"
+            aria-label={s.menu}
+          >
+            <Icon name="menu" size={20} />
+          </summary>
+          <div class="glass absolute end-0 top-[calc(100%+0.6rem)] w-56 rounded-3xl !bg-bg-2/95 p-2">
+            <ul>
+              {
+                nav.map((n) => (
+                  <li>
+                    <a href={n.href} class="block rounded-2xl px-4 py-3 font-medium text-ink-2 hover:bg-glass-2 hover:text-ink">
+                      {n.label}
+                    </a>
+                  </li>
+                ))
+              }
+              <li class="sm:hidden">
+                <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary mt-1 w-full">
+                  <Icon name="whatsapp" size={16} />
+                  {s.hero.ctaPrimary}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>('[data-menu]');
+  menu?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => (menu.open = false)));
+  document.addEventListener('click', (e) => {
+    if (menu?.open && !menu.contains(e.target as Node)) menu.open = false;
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu?.open) menu.open = false;
+  });
+</script>

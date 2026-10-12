@@ -1,0 +1,337 @@
+{
+  "slug": "oneway",
+  "order": 8,
+  "featured": false,
+  "name": {
+    "en": "OneWay Fast Food",
+    "ar": "ون واي فاست فود"
+  },
+  "kind": "case-study",
+  "categories": [
+    "commerce"
+  ],
+  "accent": "#7B4BF0",
+  "region": null,
+  "period": "2026",
+  "platforms": [
+    "Android",
+    "iOS",
+    "Web"
+  ],
+  "tagline": {
+    "en": "One codebase, a new brand in one constant",
+    "ar": "كود واحد، وهوية جديدة في ثابت واحد"
+  },
+  "summary": {
+    "en": "A white-label redeployment of a Flutter delivery platform: new brand kit, adaptive live driver location, polygon coverage zones and golden tests.",
+    "ar": "إعادة إطلاق white-label لمنصة توصيل مبنية بـ Flutter: هوية بصرية جديدة، وتتبّع متكيّف لموقع السائق، ونطاقات تغطية بالمضلّعات، واختبارات golden."
+  },
+  "overview": {
+    "en": [
+      "OneWay Fast Food is a white-label redeployment of the delivery platform Mahmoud built for Talabatek. A new operator wanted the same proven customer, driver and restaurant apps under its own brand, currency and market settings, without starting from scratch.",
+      "The three Flutter apps were forked, rebranded through a single colour constant, moved to their own repositories and app IDs, and extended with features the original platform did not have yet: adaptive live driver location, courier tracking, polygon coverage zones, checkout memory and golden tests.",
+      "The work took place in September and October 2026."
+    ],
+    "ar": [
+      "ون واي فاست فود نسخة white-label من منصة التوصيل التي بناها محمود لطلباتك. أراد مشغّل جديد تطبيقات العميل والسائق والمطعم نفسها، المجرّبة في الإنتاج، بهويته وعملته وإعدادات سوقه، دون البدء من الصفر.",
+      "نُسخت تطبيقات Flutter الثلاثة، وأُعيدت هويتها عبر ثابت لوني واحد، ونُقل كل منها إلى مستودع ومعرّف تطبيق خاص به، وأُضيفت إليها مزايا لم تكن في المنصة الأصلية: تتبّع متكيّف لموقع السائق، وتتبّع المندوب على الخريطة، ونطاقات تغطية بالمضلّعات، وذاكرة للطلب، واختبارات golden.",
+      "تم العمل خلال سبتمبر وأكتوبر 2026."
+    ]
+  },
+  "role": {
+    "en": [
+      "Owned the full mobile delivery: forked the three Flutter apps and replaced the brand identity across them",
+      "Moved market-specific settings into configuration and set up new app IDs and repositories",
+      "Built new features: adaptive live location, courier tracking, polygon coverage zones and checkout memory",
+      "Added the golden and unit test suites",
+      "The backend and admin dashboard came from other developers"
+    ],
+    "ar": [
+      "تولّيتُ تسليم تطبيقات الجوال كاملاً: نسختُ تطبيقات Flutter الثلاثة واستبدلتُ الهوية البصرية فيها",
+      "نقلتُ إعدادات السوق إلى الإعدادات، وجهّزتُ معرّفات تطبيقات ومستودعات جديدة",
+      "بنيتُ مزايا جديدة: تتبّع متكيّف للموقع، وتتبّع المندوب، ونطاقات تغطية بالمضلّعات، وذاكرة للطلب",
+      "أضفتُ مجموعات اختبارات golden واختبارات الوحدة",
+      "الـ backend ولوحة الإدارة من عمل مطوّرين آخرين"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Rebrand without forking the product forever: hundreds of hard-coded `Colors.orange` shades had to change in one place",
+      "A new market, new assumptions: currency, support numbers and default city were hard-coded and had to move into configuration",
+      "Launch features the operator needed: live courier tracking, polygon delivery zones and a smoother repeat checkout",
+      "Confidence without a QA team: a restaurant app with dozens of screens needed protection against visual regressions"
+    ],
+    "ar": [
+      "إعادة الهوية دون تفريع المنتج إلى الأبد: مئات الدرجات المكتوبة يدوياً من `Colors.orange` كان يجب أن تتغيّر من مكان واحد",
+      "سوق جديد وافتراضات جديدة: العملة وأرقام الدعم والمدينة الافتراضية كانت مكتوبة في الكود وكان لا بد من نقلها إلى الإعدادات",
+      "مزايا يحتاجها المشغّل عند الإطلاق: تتبّع المندوب لحظياً، ونطاقات توصيل بالمضلّعات، وإعادة طلب أسلس",
+      "ثقة دون فريق ضمان جودة: تطبيق مطعم بعشرات الشاشات يحتاج حماية من الانحرافات البصرية"
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "White-label rebrand",
+        "ar": "إعادة الهوية white-label"
+      },
+      "items": {
+        "en": [
+          "One `brand.dart` per app defines a single `MaterialColor` swatch, `kBrand`, that every former orange reference resolves through",
+          "Python icon generators build Android adaptive and monochrome icons, iOS icons, splash images and store icons from one 1024 px master",
+          "A compile-time `AppEnv` switch selects the environment"
+        ],
+        "ar": [
+          "ملف `brand.dart` واحد لكل تطبيق يعرّف درجة لونية واحدة `kBrand` تمرّ عبرها كل مراجع البرتقالي السابقة",
+          "مولّدات أيقونات بلغة Python تبني أيقونات Android المتكيّفة وأحادية اللون وأيقونات iOS وشاشات البداية وأيقونات المتجر من شعار واحد بدقة 1024 px",
+          "مفتاح `AppEnv` وقت الترجمة لاختيار البيئة"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Customer and driver apps",
+        "ar": "تطبيقا العميل والسائق"
+      },
+      "items": {
+        "en": [
+          "Live courier tracking on the map and coverage-aware address picking",
+          "OTP login with a server-driven resend timer",
+          "Checkout memory that pre-fills repeat orders per account and per address",
+          "Free-delivery offers with correct Arabic plurals",
+          "Adaptive live driver location, order alerts, Accept and Reject actions and one-tap calling"
+        ],
+        "ar": [
+          "تتبّع المندوب لحظياً على الخريطة، واختيار العنوان مع مراعاة نطاق التغطية",
+          "تسجيل دخول بـ OTP مع مؤقت إعادة إرسال يحدّده الخادم",
+          "ذاكرة للطلب تملأ الطلبات المتكررة مسبقاً لكل حساب ولكل عنوان",
+          "عروض توصيل مجاني بصيغ جمع عربية صحيحة",
+          "تتبّع متكيّف لموقع السائق، وتنبيهات الطلبات، وأزرار القبول والرفض، والاتصال بنقرة واحدة"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Restaurant app",
+        "ar": "تطبيق المطعم"
+      },
+      "items": {
+        "en": [
+          "Feature-first structure with `get_it`, `dartz` `Either` repositories and a shared `core/`",
+          "Kitchen board, order details, menu with video, money hub and reviews",
+          "Phone and tablet layouts in light and dark",
+          "Automatic thermal printing of Arabic receipts on Sunmi, built-in POS and Bluetooth printers"
+        ],
+        "ar": [
+          "بنية مقسّمة حسب الميزات مع `get_it` ومستودعات `dartz` `Either` ومجلد `core/` مشترك",
+          "لوحة المطبخ، وتفاصيل الطلب، وقائمة طعام بالفيديو، ومركز مالي، والتقييمات",
+          "تصميمات للهاتف والتابلت بالوضعين الفاتح والداكن",
+          "طباعة حرارية تلقائية لفواتير عربية على طابعات Sunmi وطابعات POS المدمجة وطابعات Bluetooth"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "White-label in one constant, printing that just works",
+      "ar": "هوية في ثابت واحد، وطباعة تعمل ببساطة"
+    },
+    "body": {
+      "en": [
+        "The restaurant app tries printers in order: a Sunmi printer through the SDK, then a native Java `PrinterClient` writing ESC/POS bytes to the built-in printer over Android's `LocalSocket`, then a Bluetooth printer.",
+        "Receipts are formatted for 80 mm paper with the order number, line items, totals and a barcode, with Arabic sent as UTF-8.",
+        "Auto-print remembers printed order IDs and retries each order up to three times, with a 15-second heartbeat while open and catch-up on missed orders when the app reopens.",
+        "The whole palette lives in `kBrand`: changing the brand means changing one swatch and regenerating the icons, with no find-and-replace across screens."
+      ],
+      "ar": [
+        "يجرّب تطبيق المطعم الطابعات بالترتيب: طابعة Sunmi عبر الـ SDK، ثم `PrinterClient` أصلي بلغة Java يرسل بايتات ESC/POS إلى الطابعة المدمجة عبر `LocalSocket` في Android، ثم طابعة Bluetooth.",
+        "تُنسَّق الفواتير لورق 80 مم برقم الطلب والأصناف والإجماليات وباركود، مع إرسال العربية بترميز UTF-8.",
+        "تحفظ الطباعة التلقائية أرقام الطلبات المطبوعة وتعيد المحاولة حتى ثلاث مرات لكل طلب، مع نبضة كل 15 ثانية أثناء فتح التطبيق، واستدراك الطلبات الفائتة عند إعادة فتحه.",
+        "اللوحة اللونية كلها في `kBrand`: تغيير الهوية يعني تغيير درجة واحدة وإعادة توليد الأيقونات، دون بحث واستبدال عبر الشاشات."
+      ]
+    },
+    "image": "oneway-case-study/assets/feature-printing.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Adaptive live location",
+        "ar": "تتبّع متكيّف للموقع"
+      },
+      "body": {
+        "en": "`LiveLocationService` sends nothing offline, every 60 s at medium accuracy while idle, and every 10 s at high accuracy while carrying an order. Customers get fresh positions without draining batteries on idle shifts.",
+        "ar": "لا يرسل `LiveLocationService` شيئاً حين يكون السائق غير متصل، ويرسل كل 60 ثانية بدقة متوسطة أثناء الانتظار، وكل 10 ثوانٍ بدقة عالية أثناء حمل طلب. يحصل العملاء على مواقع حديثة دون استنزاف البطارية في فترات الخمول."
+      }
+    },
+    {
+      "title": {
+        "en": "Smooth courier tracking",
+        "ar": "تتبّع سلس للمندوب"
+      },
+      "body": {
+        "en": "The tracking screen polls every 5 s and animates the courier marker between readings over 4.5 s, so it glides instead of jumping, with guards against NaN and out-of-range coordinates.",
+        "ar": "تستعلم شاشة التتبّع كل 5 ثوانٍ وتحرّك علامة المندوب بين القراءات خلال 4.5 ثانية فتنزلق بدل أن تقفز، مع حماية من الإحداثيات غير الصالحة أو الخارجة عن النطاق."
+      }
+    },
+    {
+      "title": {
+        "en": "Polygon coverage zones",
+        "ar": "نطاقات تغطية بالمضلّعات"
+      },
+      "body": {
+        "en": "City and district polygons are cached on the device and refreshed in the background. A local point-in-polygon check answers \"we deliver here\" instantly while the user drags the pin, and the server confirms.",
+        "ar": "تُخزَّن مضلّعات المدن والأحياء على الجهاز وتُحدَّث في الخلفية. يجيب فحص محلي لوقوع النقطة داخل المضلّع عن سؤال \"هل نوصل هنا؟\" فوراً أثناء سحب الدبوس، ثم يؤكد الخادم."
+      }
+    },
+    {
+      "title": {
+        "en": "Offline-safe checkout memory",
+        "ar": "ذاكرة طلب آمنة"
+      },
+      "body": {
+        "en": "Details are saved per account and per address only after an order succeeds, so a failed order never overwrites good data. Notes are never saved, everything clears on logout, and unit tests cover it all.",
+        "ar": "تُحفظ البيانات لكل حساب ولكل عنوان بعد نجاح الطلب فقط، فلا يطمس طلب فاشل بيانات صحيحة. لا تُحفظ الملاحظات أبداً، ويُمسح كل شيء عند تسجيل الخروج، وتغطي اختبارات الوحدة ذلك كله."
+      }
+    },
+    {
+      "title": {
+        "en": "Rotation-safe token refresh",
+        "ar": "تحديث رمز آمن مع التدوير"
+      },
+      "body": {
+        "en": "Parallel 401s share one in-flight refresh, because reusing a refresh token revokes the whole token family. Only a 401 ends the session; a 429, 503 or network error keeps it.",
+        "ar": "تتشارك استجابات 401 المتزامنة عملية تحديث واحدة، لأن إعادة استخدام رمز التحديث تُبطل عائلة الرموز كلها. ولا ينهي الجلسة إلا 401، أما 429 أو 503 أو خطأ الشبكة فتُبقيها."
+      }
+    },
+    {
+      "title": {
+        "en": "OTP done right",
+        "ar": "OTP كما يجب"
+      },
+      "body": {
+        "en": "The server verifies the code and drives the resend countdown via `resendAfter`. Code fields stay left-to-right inside the RTL layout, and the screen survives Android killing the app.",
+        "ar": "يتحقق الخادم من الرمز ويحدّد عدّاد إعادة الإرسال عبر `resendAfter`. تبقى خانات الرمز من اليسار إلى اليمين داخل الواجهة العربية، وتصمد الشاشة حين يُنهي Android التطبيق."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "3 Flutter mobile apps rebranded and moved to their own repositories and app IDs, sharing one brand kit",
+      "About 62 golden tests and 62 reference screenshots protecting the restaurant UI on phone and tablet, in light and dark",
+      "New platform capabilities built for this deployment: adaptive live location, courier tracking, polygon coverage and checkout memory"
+    ],
+    "ar": [
+      "3 تطبيقات Flutter أُعيدت هويتها ونُقلت إلى مستودعات ومعرّفات تطبيقات مستقلة، تتشارك هوية بصرية واحدة",
+      "نحو 62 اختبار golden و62 لقطة مرجعية تحمي واجهة تطبيق المطعم على الهاتف والتابلت بالوضعين الفاتح والداكن",
+      "قدرات جديدة للمنصة بُنيت لهذا الإطلاق: تتبّع متكيّف للموقع، وتتبّع المندوب، ونطاقات تغطية بالمضلّعات، وذاكرة للطلب"
+    ]
+  },
+  "metrics": [
+    {
+      "value": "3",
+      "label": {
+        "en": "Flutter apps rebranded",
+        "ar": "تطبيقات Flutter بهوية جديدة"
+      }
+    },
+    {
+      "value": "~62",
+      "label": {
+        "en": "golden tests",
+        "ar": "اختبار golden"
+      }
+    },
+    {
+      "value": "9",
+      "label": {
+        "en": "golden suites, phone and tablet",
+        "ar": "مجموعات golden للهاتف والتابلت"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Bloc / Cubit",
+    "GetIt",
+    "dartz",
+    "Dio",
+    "flutter_map",
+    "Google Maps",
+    "geolocator",
+    "Sunmi / ESC/POS",
+    "FCM",
+    "Golden tests",
+    "Python tooling"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/oneway-case-study"
+    }
+  ],
+  "images": [
+    {
+      "src": "oneway-case-study/assets/banner.png",
+      "alt": {
+        "en": "OneWay",
+        "ar": "ون واي"
+      },
+      "caption": {
+        "en": "A production delivery platform rebranded and hardened for a new operator.",
+        "ar": "منصة توصيل إنتاجية بهوية جديدة وتحسينات لمشغّل جديد."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "oneway-case-study/assets/feature-printing.png",
+      "alt": {
+        "en": "Arabic thermal receipt",
+        "ar": "فاتورة حرارية عربية"
+      },
+      "caption": {
+        "en": "Automatic Arabic receipt printing through a Sunmi, LocalSocket and Bluetooth printer cascade.",
+        "ar": "طباعة تلقائية للفواتير العربية عبر تسلسل طابعات Sunmi وLocalSocket وBluetooth."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "oneway-case-study/assets/brand-kit.png",
+      "alt": {
+        "en": "OneWay brand kit",
+        "ar": "الهوية البصرية لون واي"
+      },
+      "caption": {
+        "en": "Shared brand kit: logo, per-app icons and the color tokens used in every app.",
+        "ar": "هوية بصرية مشتركة: الشعار وأيقونات كل تطبيق والرموز اللونية المستخدمة في جميع التطبيقات."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "oneway-case-study/assets/screens-restaurant.png",
+      "alt": {
+        "en": "Restaurant app",
+        "ar": "تطبيق المطعم"
+      },
+      "caption": {
+        "en": "Restaurant app: kitchen dashboard, order details (dark), menu and money hub (dark), rendered by golden tests.",
+        "ar": "تطبيق المطعم: لوحة المطبخ، وتفاصيل الطلب (داكن)، وقائمة الطعام، والمركز المالي (داكن)، من مخرجات اختبارات golden."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "oneway-case-study/assets/tablet-board.png",
+      "alt": {
+        "en": "Tablet ticket board",
+        "ar": "لوحة الطلبات على التابلت"
+      },
+      "caption": {
+        "en": "Tablet layout: a three-column ticket board (new, in the kitchen, ready) with countdown rings.",
+        "ar": "تصميم التابلت: لوحة طلبات بثلاثة أعمدة (جديد، في المطبخ، جاهز) مع حلقات عدّ تنازلي."
+      },
+      "role": "gallery"
+    }
+  ]
+}

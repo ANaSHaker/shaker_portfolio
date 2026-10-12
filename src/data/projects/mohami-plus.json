@@ -1,0 +1,506 @@
+{
+  "slug": "mohami-plus",
+  "order": 4,
+  "featured": true,
+  "name": {
+    "en": "Mohami Plus",
+    "ar": "محامي بلس"
+  },
+  "kind": "case-study",
+  "categories": [
+    "legaltech",
+    "ai"
+  ],
+  "accent": "#D4AF37",
+  "region": {
+    "en": "Iraq",
+    "ar": "العراق"
+  },
+  "period": "2026",
+  "platforms": [
+    "Android",
+    "iOS",
+    "Web"
+  ],
+  "tagline": {
+    "en": "Your legal counsel, ready in a moment",
+    "ar": "مستشارك القانوني، جاهز في لحظة"
+  },
+  "summary": {
+    "en": "An AI legal assistant for Iraq: 18 AI legal services, provider fallback, Arabic PDF contracts and a Flutter web platform with a real desktop shell.",
+    "ar": "مساعد قانوني بالذكاء الاصطناعي للعراق: 18 خدمة قانونية ذكية، وانتقال تلقائي بين المزوّدين، وعقود PDF بالعربية، ومنصة ويب بـ Flutter بواجهة سطح مكتب حقيقية."
+  },
+  "overview": {
+    "en": [
+      "Mohami Plus is a legal-services product for Iraq. It puts an AI legal assistant, lawyer search, case files, official contract templates and everyday legal tools into one Arabic and English app that runs on Android, iOS and the web from a single Flutter codebase.",
+      "It shares its engine with LegalPal, a sister app for lawyers in Palestine, but is built for Iraq: Iraqi law, courts and governorates, IQD pricing, its own navy-and-gold brand and features LegalPal does not have.",
+      "I delivered the October 2026 relaunch end to end: the redesigned app, the Laravel backend with a new AI gateway, the admin dashboard, a bilingual landing site and a Flutter web platform built from the mobile codebase."
+    ],
+    "ar": [
+      "محامي بلس منتج للخدمات القانونية في العراق. يجمع مساعدًا قانونيًا بالذكاء الاصطناعي، والبحث عن المحامين، وملفات القضايا، ونماذج العقود الرسمية، وأدوات قانونية يومية في تطبيق واحد بالعربية والإنجليزية، يعمل على Android وiOS والويب من كود Flutter واحد.",
+      "يتشارك المحرك مع LegalPal، التطبيق الشقيق للمحامين في فلسطين، لكنه مبني للعراق: القانون العراقي والمحاكم والمحافظات العراقية، والتسعير بالدينار، وهوية بالكحلي والذهبي، وميزات لا يملكها LegalPal.",
+      "تولّيت إعادة الإطلاق في أكتوبر 2026 من البداية للنهاية: التطبيق بتصميمه الجديد، والباك إند بـ Laravel مع بوابة ذكاء اصطناعي جديدة، ولوحة التحكم، وموقعًا تعريفيًا ثنائي اللغة، ومنصة ويب بـ Flutter مبنية من كود تطبيق الجوال."
+    ]
+  },
+  "role": {
+    "en": [
+      "Flutter app: a premium redesign, a design system, Arabic and English, and light and dark modes across about 70 screens.",
+      "New features: the AI services hub, emergency help, legal tools, reminders and the library.",
+      "The Laravel 12 backend, adapted to Iraq, with a new AI gateway and an app-config API.",
+      "The admin dashboard redesign.",
+      "Both web surfaces: a hand-written bilingual landing site and the Flutter web platform with a desktop shell."
+    ],
+    "ar": [
+      "تطبيق Flutter: إعادة تصميم فاخرة، ونظام تصميم، والعربية والإنجليزية، والوضعان الفاتح والداكن عبر نحو 70 شاشة.",
+      "ميزات جديدة: مركز الخدمات الذكية، والمساعدة العاجلة، والأدوات القانونية، والتذكيرات، والمكتبة.",
+      "الباك إند بـ Laravel 12 بعد تكييفه للعراق، مع بوابة ذكاء اصطناعي جديدة وواجهة API لإعدادات التطبيق.",
+      "إعادة تصميم لوحة التحكم.",
+      "واجهتا الويب: موقع تعريفي ثنائي اللغة مكتوب يدويًا، ومنصة ويب بـ Flutter بواجهة سطح مكتب."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "AI that writes like a lawyer: a lawsuit petition must follow the structure of the Iraqi Civil Procedure Law (No. 83 of 1969), with placeholders for missing facts and no made-up article numbers.",
+      "AI that keeps working: free tiers run out and providers go down, and one provider was out of credits during the build. A dead provider must never mean a dead feature.",
+      "A dated app that had to feel premium: about 70 screens with hard-coded colors and Arabic-only strings, redesigned and translated without breaking a flow.",
+      "Shared hosting: no daemons, queue workers or socket server, so everything runs synchronously with timeouts.",
+      "One codebase, two form factors: on a 1440 px monitor the phone app had to feel like a real desktop product, without forking screens."
+    ],
+    "ar": [
+      "ذكاء اصطناعي يكتب كالمحامي: يجب أن تتبع لائحة الدعوى بنية قانون المرافعات المدنية العراقي (رقم 83 لسنة 1969)، مع فراغات للوقائع الناقصة ودون أرقام مواد مختلَقة.",
+      "ذكاء اصطناعي لا يتوقف: الباقات المجانية تنفد والمزوّدون يتعطّلون، وقد نفد رصيد أحدهم أثناء البناء. تعطّل المزوّد يجب ألا يعني تعطّل الميزة.",
+      "تطبيق قديم كان يجب أن يبدو فاخرًا: نحو 70 شاشة بألوان ثابتة في الكود ونصوص عربية فقط، أُعيد تصميمها وترجمتها دون كسر أي مسار.",
+      "استضافة مشتركة: بلا خدمات خلفية ولا queue workers ولا سيرفر sockets، فكل شيء يعمل بشكل متزامن مع مهل زمنية.",
+      "كود واحد وشكلان: على شاشة بعرض 1440 بكسل كان على تطبيق الجوال أن يبدو منتجًا مكتبيًا حقيقيًا دون نسخ الشاشات."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "AI legal assistant",
+        "ar": "المساعد القانوني الذكي"
+      },
+      "items": {
+        "en": [
+          "A chat assistant tuned for Iraqi law that reads photos of documents and remembers the conversation.",
+          "18 specialised AI services managed from the dashboard, from lawsuit petitions and contract drafting to contract review, power of attorney, appeals and legal translation.",
+          "Results export as a formatted Arabic PDF."
+        ],
+        "ar": [
+          "مساعد محادثة مضبوط على القانون العراقي، يقرأ صور المستندات ويتذكر سياق المحادثة.",
+          "18 خدمة ذكية متخصصة تُدار من لوحة التحكم، من لوائح الدعوى وصياغة العقود إلى مراجعة العقود والوكالات والطعون والترجمة القانونية.",
+          "تُصدَّر النتائج كملف PDF عربي منسّق."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Legal tools and emergency help",
+        "ar": "الأدوات القانونية والمساعدة العاجلة"
+      },
+      "items": {
+        "en": [
+          "Official contract templates with fill-in fields, merged on the server into Arabic PDFs.",
+          "A dictionary of Iraqi legal terms, a deadline calculator for appeal periods, an inheritance helper and procedure guides.",
+          "A library of Iraqi laws, court decisions and books.",
+          "An SOS screen that opens WhatsApp to support, optionally with live location, plus know-your-rights cards for arrest, summons, search and interrogation."
+        ],
+        "ar": [
+          "نماذج عقود رسمية بحقول للتعبئة، يدمجها السيرفر في ملفات PDF عربية.",
+          "قاموس للمصطلحات القانونية العراقية، وحاسبة لمهل الطعن، ومساعد للمواريث، وأدلة للإجراءات الرسمية.",
+          "مكتبة للقوانين العراقية وقرارات المحاكم والكتب.",
+          "شاشة SOS تفتح WhatsApp مع فريق الدعم، مع الموقع المباشر اختياريًا، وبطاقات «اعرف حقوقك» للقبض والاستدعاء والتفتيش والاستجواب."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Practice and product quality",
+        "ar": "إدارة العمل وجودة المنتج"
+      },
+      "items": {
+        "en": [
+          "Case files with sessions and updates, a lawyer agenda, notes and local reminders for sessions and deadlines.",
+          "A lawyer directory, paid legal services, a community timeline, support chat and ZainCash subscriptions.",
+          "A design system with tokens derived from the brand color and a 'Midnight Aurora' dark mode.",
+          "Runtime RTL/LTR switching, server-side feature flags and update control, and remote error logging."
+        ],
+        "ar": [
+          "ملفات قضايا بالجلسات والتحديثات، وأجندة للمحامي، وملاحظات، وتذكيرات محلية بالجلسات والمهل.",
+          "دليل المحامين، وخدمات قانونية مدفوعة، وخط زمني للمجتمع، ومحادثة دعم، واشتراكات عبر ZainCash.",
+          "نظام تصميم بألوان مشتقة من لون الهوية، ووضع داكن باسم «Midnight Aurora».",
+          "تبديل RTL/LTR أثناء التشغيل، ومفاتيح ميزات والتحكم في التحديثات من السيرفر، وتسجيل الأخطاء عن بُعد."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Web platform and landing site",
+        "ar": "منصة الويب والموقع التعريفي"
+      },
+      "items": {
+        "en": [
+          "A desktop shell around the whole Flutter app: collapsible sidebar, top bar with Ctrl/⌘ K search, language and theme toggles, and content in a card up to 1280 px wide.",
+          "Guest mode: public screens open freely, and protected routes show a sign-in sheet only when the visitor acts.",
+          "Path URLs, browser back and forward, and short aliases such as /faq, /privacy and /terms.",
+          "A hand-written HTML, CSS and vanilla JS landing site in Arabic and English, light and dark, with live counters from the API and SEO basics."
+        ],
+        "ar": [
+          "واجهة سطح مكتب تحيط بتطبيق Flutter كله: قائمة جانبية قابلة للطي، وشريط علوي ببحث Ctrl/⌘ K، ومبدّلا اللغة والثيم، ومحتوى في بطاقة بعرض أقصى 1280 بكسل.",
+          "وضع الضيف: الشاشات العامة مفتوحة، والمسارات المحمية تعرض نافذة تسجيل الدخول فقط عندما ينفّذ الزائر إجراءً.",
+          "روابط بمسارات حقيقية، ودعم زرّي الرجوع والتقدم في المتصفح، واختصارات مثل /faq و/privacy و/terms.",
+          "موقع تعريفي مكتوب يدويًا بـ HTML وCSS وJS خالص، بالعربية والإنجليزية، فاتح وداكن، بعدّادات حيّة من الـ API وأساسيات SEO."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "An AI assistant that knows Iraqi law",
+      "ar": "مساعد ذكي يعرف القانون العراقي"
+    },
+    "body": {
+      "en": [
+        "The user chats freely or picks a service such as Lawsuit petition. Each service has its own system prompt, editable by the admin in the dashboard.",
+        "Text and up to four images go to `POST /ai/services/{slug}/run` on the backend. The app never holds an AI key.",
+        "The AI gateway tries the primary provider first and, on 401/402/403/429/5xx errors, timeouts or quota messages, falls through to the next enabled provider (Gemini or Grok). Every attempt is logged with latency.",
+        "Prompts force formal, structured Arabic. A petition follows the statutory structure: court header, parties, facts, legal grounds, requests and signature lines, with `[....]` placeholders for missing details.",
+        "The result is shown as Markdown, and one tap renders it as a PDF on the server. Guests are rate-limited by IP; signed-in users have a daily limit."
+      ],
+      "ar": [
+        "يتحدث المستخدم بحرية أو يختار خدمة مثل «لائحة دعوى». لكل خدمة موجّه نظام خاص يمكن للمشرف تعديله من لوحة التحكم.",
+        "يُرسل النص وما يصل إلى أربع صور إلى `POST /ai/services/{slug}/run` في الباك إند، ولا يحمل التطبيق أي مفتاح ذكاء اصطناعي.",
+        "تجرّب بوابة الذكاء الاصطناعي المزوّد الأساسي أولًا، وعند أخطاء 401/402/403/429/5xx أو انتهاء المهلة أو رسائل نفاد الحصة تنتقل إلى المزوّد المفعّل التالي (Gemini أو Grok). وتُسجَّل كل محاولة مع زمن الاستجابة.",
+        "تفرض الموجّهات عربية رسمية منظّمة. تتبع لائحة الدعوى البنية القانونية: ترويسة المحكمة، والأطراف، والوقائع، والأسانيد القانونية، والطلبات، وخانات التوقيع، مع فراغات `[....]` للتفاصيل الناقصة.",
+        "تُعرض النتيجة بصيغة Markdown، وبلمسة واحدة يحوّلها السيرفر إلى PDF. الضيوف محدودون حسب عنوان IP، والمستخدمون المسجّلون بحد يومي."
+      ]
+    },
+    "image": "mohami-plus-app-case-study/assets/feature-ai-assistant.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Prompts as data, not code",
+        "ar": "الموجّهات بيانات لا كود"
+      },
+      "body": {
+        "en": "The 18 AI services live in an `ai_services` table with slug, bilingual titles, icon, color, category and system prompt. The app builds its AI hub from `GET /ai/services`, so a new service needs no app release.",
+        "ar": "تعيش الخدمات الذكية الـ 18 في جدول `ai_services` بالمعرّف والعناوين باللغتين والأيقونة واللون والفئة وموجّه النظام. ويبني التطبيق مركز الخدمات من `GET /ai/services`، فلا تحتاج الخدمة الجديدة إلى إصدار جديد للتطبيق."
+      }
+    },
+    {
+      "title": {
+        "en": "Provider fallback",
+        "ar": "الانتقال التلقائي بين المزوّدين"
+      },
+      "body": {
+        "en": "The gateway sorts enabled providers by priority and treats auth, quota, rate-limit, server and timeout failures as 'try the next one', logging provider, model, status and latency. When a slow model once took 93 seconds, the primary model became editable in the dashboard.",
+        "ar": "ترتّب البوابة المزوّدين المفعّلين حسب الأولوية، وتعامل أخطاء المصادقة والحصة وحد الطلبات والسيرفر وانتهاء المهلة كإشارة للانتقال إلى التالي، مع تسجيل المزوّد والنموذج والحالة وزمن الاستجابة. وحين استغرق نموذج بطيء 93 ثانية، أصبح النموذج الأساسي قابلًا للتعديل من لوحة التحكم."
+      }
+    },
+    {
+      "title": {
+        "en": "Arabic PDFs on shared hosting",
+        "ar": "ملفات PDF عربية على استضافة مشتركة"
+      },
+      "body": {
+        "en": "Contract templates hold `##$$label##$$` placeholders that the server extracts as form fields, escaping user input before merging. mPDF renders the result with bundled Arabic fonts.",
+        "ar": "تحتوي نماذج العقود على فراغات `##$$label##$$` يستخرجها السيرفر كحقول نموذج، ويهرّب مدخلات المستخدم قبل الدمج. ثم يرسم mPDF النتيجة بخطوط عربية مضمّنة."
+      }
+    },
+    {
+      "title": {
+        "en": "A redesign without regressions",
+        "ar": "إعادة تصميم بلا تراجعات"
+      },
+      "body": {
+        "en": "A shared brief kept every cubit call, route name and cache key and changed only visuals. About 70 UI files moved to `context.colors` tokens and shared components, and every left/right inset became directional, so English is real LTR, not mirrored Arabic.",
+        "ar": "حافظ دليل مشترك على كل استدعاءات الـ cubit وأسماء المسارات ومفاتيح التخزين المؤقت، ولم يغيّر إلا الشكل. انتقل نحو 70 ملف واجهة إلى رموز `context.colors` ومكوّنات مشتركة، وصارت كل الهوامش اتجاهية، فالإنجليزية LTR حقيقية لا عربية معكوسة."
+      }
+    },
+    {
+      "title": {
+        "en": "A desktop shell installed once",
+        "ar": "واجهة سطح مكتب تُركَّب مرة واحدة"
+      },
+      "body": {
+        "en": "The web shell lives in `MaterialApp.builder`, so every existing route renders inside it and no screen was rewritten. The content card gets its own `MediaQuery`, and below 1000 px the shell returns its child untouched.",
+        "ar": "تعيش واجهة الويب داخل `MaterialApp.builder`، فيُعرض كل مسار موجود بداخلها دون إعادة كتابة أي شاشة. تحصل بطاقة المحتوى على `MediaQuery` خاص بها، وتحت 1000 بكسل تعيد الواجهة محتواها كما هو."
+      }
+    },
+    {
+      "title": {
+        "en": "Observability and honest numbers",
+        "ar": "المراقبة والأرقام الصادقة"
+      },
+      "body": {
+        "en": "A remote logger batches de-duplicated errors without ever logging headers, tokens or bodies. The landing page only shows counters the API returns and degrades quietly if the request fails.",
+        "ar": "يجمّع مسجّل الأخطاء عن بُعد الأخطاء بعد إزالة التكرار، ولا يسجّل أبدًا الترويسات أو التوكنات أو محتوى الطلبات. ولا يعرض الموقع التعريفي إلا العدّادات التي يعيدها الـ API، ويتراجع بهدوء إذا فشل الطلب."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Live on the web: the landing site at mohami.plus and the Flutter web platform at mohami.plus/home.",
+      "At the time of writing the landing page showed 18 AI services, 28 contract templates, 59 courts and 233 dictionary terms, all read live from the API.",
+      "About 70 screens redesigned with `flutter analyze` at 0 errors.",
+      "Store listings for Google Play and the App Store were marked 'coming soon'. The same engine powers LegalPal, live in Palestine."
+    ],
+    "ar": [
+      "متاح على الويب: الموقع التعريفي على mohami.plus، ومنصة الويب بـ Flutter على mohami.plus/home.",
+      "وقت الكتابة كان الموقع التعريفي يعرض 18 خدمة ذكية و28 نموذج عقد و59 محكمة و233 مصطلحًا قانونيًا، كلها تُقرأ مباشرة من الـ API.",
+      "أُعيد تصميم نحو 70 شاشة مع صفر أخطاء في `flutter analyze`.",
+      "صفحتا Google Play وApp Store معلّمتان بـ «قريبًا». والمحرك نفسه يشغّل LegalPal المتاح في فلسطين."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "18",
+      "label": {
+        "en": "AI legal services",
+        "ar": "خدمة قانونية ذكية"
+      }
+    },
+    {
+      "value": "28",
+      "label": {
+        "en": "contract templates",
+        "ar": "نموذج عقد"
+      }
+    },
+    {
+      "value": "59",
+      "label": {
+        "en": "courts in the directory",
+        "ar": "محكمة في الدليل"
+      }
+    },
+    {
+      "value": "233",
+      "label": {
+        "en": "legal dictionary terms",
+        "ar": "مصطلحًا في القاموس القانوني"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Flutter Web",
+    "Bloc / Cubit",
+    "Dio",
+    "Hive",
+    "easy_localization",
+    "Firebase",
+    "Laravel 12",
+    "MySQL",
+    "Gemini",
+    "Grok",
+    "mPDF",
+    "HTML / CSS / JS"
+  ],
+  "parts": [
+    {
+      "key": "app",
+      "name": {
+        "en": "Mobile app",
+        "ar": "تطبيق الجوال"
+      },
+      "summary": {
+        "en": "The Flutter app for Android, iOS and web: 18 AI legal services, provider fallback, Arabic PDF contracts, legal tools and emergency help.",
+        "ar": "تطبيق Flutter لـ Android وiOS والويب: 18 خدمة قانونية ذكية، وانتقال تلقائي بين المزوّدين، وعقود PDF بالعربية، وأدوات قانونية، ومساعدة عاجلة."
+      },
+      "repo": "mohami-plus-app-case-study"
+    },
+    {
+      "key": "web",
+      "name": {
+        "en": "Web surfaces",
+        "ar": "واجهات الويب"
+      },
+      "summary": {
+        "en": "A bilingual landing site and a Flutter web platform with a desktop shell, guest mode and deep links, built from the mobile codebase.",
+        "ar": "موقع تعريفي ثنائي اللغة ومنصة ويب بـ Flutter بواجهة سطح مكتب ووضع ضيف وروابط مباشرة، مبنية من كود تطبيق الجوال."
+      },
+      "repo": "mohami-plus-web-case-study"
+    }
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "App case study",
+        "ar": "دراسة حالة التطبيق"
+      },
+      "url": "https://github.com/ANaSHaker/mohami-plus-app-case-study"
+    },
+    {
+      "type": "github",
+      "label": {
+        "en": "Web case study",
+        "ar": "دراسة حالة الويب"
+      },
+      "url": "https://github.com/ANaSHaker/mohami-plus-web-case-study"
+    },
+    {
+      "type": "web",
+      "label": {
+        "en": "Website",
+        "ar": "الموقع التعريفي"
+      },
+      "url": "https://mohami.plus"
+    },
+    {
+      "type": "web",
+      "label": {
+        "en": "Web platform",
+        "ar": "منصة الويب"
+      },
+      "url": "https://mohami.plus/home/"
+    }
+  ],
+  "images": [
+    {
+      "src": "mohami-plus-app-case-study/assets/banner.png",
+      "alt": {
+        "en": "Mohami Plus banner",
+        "ar": "الصورة الرئيسية لمحامي بلس"
+      },
+      "caption": {
+        "en": "Mohami Plus: an AI legal assistant for Iraq.",
+        "ar": "محامي بلس: مساعد قانوني بالذكاء الاصطناعي للعراق."
+      },
+      "role": "banner",
+      "part": "app"
+    },
+    {
+      "src": "mohami-plus-app-case-study/assets/feature-ai-assistant.png",
+      "alt": {
+        "en": "AI legal assistant",
+        "ar": "المساعد القانوني الذكي"
+      },
+      "caption": {
+        "en": "An AI assistant that knows Iraqi law.",
+        "ar": "مساعد ذكي يعرف القانون العراقي."
+      },
+      "role": "feature",
+      "part": "app"
+    },
+    {
+      "src": "mohami-plus-app-case-study/assets/feature-emergency.png",
+      "alt": {
+        "en": "Emergency legal help",
+        "ar": "المساعدة القانونية العاجلة"
+      },
+      "caption": {
+        "en": "Emergency legal help with SOS and know-your-rights cards.",
+        "ar": "مساعدة قانونية عاجلة مع زر SOS وبطاقات «اعرف حقوقك»."
+      },
+      "role": "feature",
+      "part": "app"
+    },
+    {
+      "src": "mohami-plus-app-case-study/assets/screens-legal-tools.png",
+      "alt": {
+        "en": "Legal tools",
+        "ar": "الأدوات القانونية"
+      },
+      "caption": {
+        "en": "Iraqi legal Q&A, legal dictionary, deadline calculator, inheritance helper and official procedure guides.",
+        "ar": "أسئلة وأجوبة قانونية عراقية، والقاموس القانوني، وحاسبة المهل، ومساعد المواريث، وأدلة الإجراءات الرسمية."
+      },
+      "role": "gallery",
+      "part": "app"
+    },
+    {
+      "src": "mohami-plus-app-case-study/assets/screens-services.png",
+      "alt": {
+        "en": "Lawyers, services and courts",
+        "ar": "المحامون والخدمات والمحاكم"
+      },
+      "caption": {
+        "en": "Lawyer directory, paid legal services, court guide, reminders and sign-in.",
+        "ar": "دليل المحامين، والخدمات القانونية المدفوعة، ودليل المحاكم، والتذكيرات، وتسجيل الدخول."
+      },
+      "role": "gallery",
+      "part": "app"
+    },
+    {
+      "src": "mohami-plus-web-case-study/assets/banner.png",
+      "alt": {
+        "en": "Mohami Plus web",
+        "ar": "محامي بلس على الويب"
+      },
+      "caption": {
+        "en": "A bilingual landing site and a full Flutter web platform from the same codebase.",
+        "ar": "موقع تعريفي ثنائي اللغة ومنصة ويب كاملة بـ Flutter من الكود نفسه."
+      },
+      "role": "feature",
+      "part": "web"
+    },
+    {
+      "src": "mohami-plus-web-case-study/assets/web-platform.png",
+      "alt": {
+        "en": "Flutter web desktop shell",
+        "ar": "واجهة سطح المكتب في منصة الويب"
+      },
+      "caption": {
+        "en": "One Flutter app, a real desktop shell.",
+        "ar": "تطبيق Flutter واحد بواجهة سطح مكتب حقيقية."
+      },
+      "role": "feature",
+      "part": "web"
+    },
+    {
+      "src": "mohami-plus-web-case-study/assets/web-landing.png",
+      "alt": {
+        "en": "Landing site",
+        "ar": "الموقع التعريفي"
+      },
+      "caption": {
+        "en": "Landing site, desktop and phone.",
+        "ar": "الموقع التعريفي على سطح المكتب والهاتف."
+      },
+      "role": "gallery",
+      "part": "web"
+    },
+    {
+      "src": "mohami-plus-web-case-study/assets/web-landing-sections.png",
+      "alt": {
+        "en": "Landing sections",
+        "ar": "أقسام الموقع التعريفي"
+      },
+      "caption": {
+        "en": "Landing sections: features, audience, how it works and the AI assistant.",
+        "ar": "أقسام الموقع التعريفي: الميزات، والجمهور، وطريقة العمل، والمساعد الذكي."
+      },
+      "role": "gallery",
+      "part": "web"
+    },
+    {
+      "src": "mohami-plus-web-case-study/assets/web-mobile.png",
+      "alt": {
+        "en": "Landing on a phone",
+        "ar": "الموقع التعريفي على الهاتف"
+      },
+      "caption": {
+        "en": "The landing site on a phone.",
+        "ar": "الموقع التعريفي على الهاتف."
+      },
+      "role": "gallery",
+      "part": "web"
+    },
+    {
+      "src": "mohami-plus-web-case-study/assets/web-platform-screens.png",
+      "alt": {
+        "en": "Flutter web screens",
+        "ar": "شاشات منصة الويب"
+      },
+      "caption": {
+        "en": "Flutter web platform: emergency help, procedure guides, Iraqi legal Q&A and the split-screen sign-in.",
+        "ar": "منصة الويب: المساعدة العاجلة، وأدلة الإجراءات، والأسئلة والأجوبة القانونية العراقية، وصفحة تسجيل الدخول المقسومة."
+      },
+      "role": "gallery",
+      "part": "web"
+    }
+  ]
+}

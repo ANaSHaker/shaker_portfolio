@@ -1,0 +1,278 @@
+{
+  "slug": "elmwafer",
+  "order": 21,
+  "featured": false,
+  "name": {
+    "en": "ElMwafer",
+    "ar": "وفر قريشاتك"
+  },
+  "kind": "source",
+  "categories": [
+    "commerce",
+    "opensource"
+  ],
+  "accent": "#02AB94",
+  "region": {
+    "en": "Saudi Arabia and the Gulf",
+    "ar": "السعودية والخليج"
+  },
+  "period": "2021",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Save on every order, one tap at a time",
+    "ar": "وفّر في كل طلب بلمسة واحدة"
+  },
+  "summary": {
+    "en": "An Arabic coupon and deals app on Flutter and Firebase: copy a discount code in one tap, open the store, browse offers, and get new deals by push.",
+    "ar": "تطبيق كوبونات وعروض عربي مبني بـ Flutter وFirebase: انسخ كود الخصم بلمسة، وافتح المتجر، وتصفّح العروض، واستقبل الصفقات الجديدة بالإشعارات."
+  },
+  "overview": {
+    "en": [
+      "ElMwafer, known in Arabic as وفر قريشاتك or save your money, is a coupon and deals app for Arabic-speaking shoppers in Saudi Arabia and the Gulf. It lists discount codes for well-known online stores across fashion, home, travel, restaurants, kids and more.",
+      "Users copy a code in one tap and jump to the store, browse store-wide offers and read shopping articles. Content is managed from a separate Firebase admin app, and this repository includes the full source of the user app."
+    ],
+    "ar": [
+      "وفر قريشاتك (ElMwafer) تطبيق كوبونات وعروض للمتسوقين العرب في السعودية والخليج. يعرض أكواد خصم لأشهر المتاجر الإلكترونية في الأزياء والمنزل والسفر والمطاعم والأطفال وغيرها.",
+      "ينسخ المستخدم الكود بلمسة واحدة وينتقل إلى المتجر، ويتصفح عروض المتاجر ويقرأ مقالات التسوق. يُدار المحتوى من تطبيق إدارة منفصل على Firebase، ويضم هذا المستودع الكود المصدري الكامل لتطبيق المستخدم."
+    ]
+  },
+  "role": {
+    "en": [
+      "Built and shipped the Flutter user app for Android and iOS.",
+      "Designed the Firestore-backed coupons, offers and categories flows with live search.",
+      "Wired FCM topic push so new deals reach every user instantly.",
+      "Adapted the admin app for coupons, stores, articles and push notifications; the admin app itself is based on another developer's open-source template and is not included."
+    ],
+    "ar": [
+      "بنيت تطبيق المستخدم بـ Flutter ونشرته على Android وiOS.",
+      "صمّمت مسارات الكوبونات والعروض والأقسام المعتمدة على Firestore مع البحث الفوري.",
+      "ربطت إشعارات FCM عبر topic لتصل الصفقات الجديدة إلى كل المستخدمين فورًا.",
+      "كيّفت تطبيق الإدارة للكوبونات والمتاجر والمقالات والإشعارات، وهو مبني على قالب مفتوح المصدر لمطوّر آخر ولذلك غير مُضمَّن."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Coupon codes were scattered across social media posts, and many had expired by the time shoppers found them.",
+      "The operator needed to add stores, coupons and offers without shipping an update, and announce new deals right away.",
+      "The audience reads Arabic, so the whole experience had to be RTL first with an Arabic typeface."
+    ],
+    "ar": [
+      "كانت أكواد الخصم متفرقة في منشورات مواقع التواصل، وكثير منها ينتهي قبل أن يصل إليه المتسوق.",
+      "احتاج المشغّل إلى إضافة المتاجر والكوبونات والعروض دون إصدار تحديث، وإبلاغ المستخدمين بالصفقات الجديدة فورًا.",
+      "الجمهور يقرأ العربية، فكان لا بد أن تكون التجربة كلها RTL أولًا بخط عربي."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Coupons",
+        "ar": "الكوبونات"
+      },
+      "items": {
+        "en": [
+          "Category strip for restaurants, travel, kids, home and more, each with its own coupon list.",
+          "Live type-ahead store search backed by Firestore range queries.",
+          "Coupon cards with store logo, discount, code and a use counter.",
+          "Copy code copies to the clipboard and increments the store's click counter.",
+          "Shop now opens the store; Share sends the deal with an app download link."
+        ],
+        "ar": [
+          "شريط أقسام للمطاعم والسفر والأطفال والمنزل وغيرها، ولكل قسم قائمة كوبونات.",
+          "بحث فوري عن المتاجر يعتمد على استعلامات النطاق في Firestore.",
+          "بطاقة كوبون بشعار المتجر والخصم والكود وعدّاد الاستخدام.",
+          "زر نسخ الكود ينسخه إلى الحافظة ويزيد عدّاد النقرات للمتجر.",
+          "زر تسوّق الآن يفتح المتجر، وزر المشاركة يرسل العرض مع رابط تحميل التطبيق."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Offers and engagement",
+        "ar": "العروض والتفاعل"
+      },
+      "items": {
+        "en": [
+          "Store offers for Amazon, H&M, AliExpress and more, loaded from Firestore with their own search.",
+          "Each offer opens the store page in the browser.",
+          "Every device subscribes to the FCM `all` topic so the admin can push new deals to everyone.",
+          "Vibration feedback when a push arrives in the foreground."
+        ],
+        "ar": [
+          "عروض متاجر مثل Amazon وH&M وAliExpress تُحمَّل من Firestore مع بحث خاص بها.",
+          "كل عرض يفتح صفحة المتجر في المتصفح.",
+          "كل جهاز مشترك في topic باسم `all` على FCM ليرسل المشرف الصفقات الجديدة للجميع.",
+          "اهتزاز عند وصول إشعار والتطبيق مفتوح."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "App shell",
+        "ar": "هيكل التطبيق"
+      },
+      "items": {
+        "en": [
+          "One-time onboarding using a flag stored in `shared_preferences`.",
+          "Side drawer with a light and dark theme switch, WhatsApp contact, rate and share.",
+          "Arabic UI in Google Fonts Cairo with a custom curved app bar."
+        ],
+        "ar": [
+          "شاشات تعريف تظهر مرة واحدة عبر علَم محفوظ في `shared_preferences`.",
+          "قائمة جانبية للتبديل بين الوضعين الفاتح والداكن والتواصل عبر WhatsApp والتقييم والمشاركة.",
+          "واجهة عربية بخط Cairo من Google Fonts مع شريط علوي منحنٍ مخصص."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Copy the code, open the store",
+      "ar": "انسخ الكود وافتح المتجر"
+    },
+    "body": {
+      "en": [
+        "The coupon list is a Firestore query on `coupons` filtered by the selected category.",
+        "Copy code first updates the store's `click` field, then copies the code and shows a snackbar, so the use counter on each card comes from real taps.",
+        "Shop now checks `canLaunch` before opening the store URL and shows a snackbar if the link is broken.",
+        "Share builds an Arabic message with the store name, the discount and a link to download the app."
+      ],
+      "ar": [
+        "قائمة الكوبونات استعلام Firestore على `coupons` مفلتر حسب القسم المختار.",
+        "زر نسخ الكود يحدّث حقل `click` للمتجر أولًا ثم ينسخ الكود ويعرض رسالة تأكيد، فيعكس عدّاد الاستخدام في كل بطاقة نقرات حقيقية.",
+        "زر تسوّق الآن يتحقق عبر `canLaunch` قبل فتح رابط المتجر، ويعرض رسالة إذا كان الرابط معطّلًا.",
+        "زر المشاركة يكوّن رسالة عربية باسم المتجر وقيمة الخصم ورابط تحميل التطبيق."
+      ]
+    },
+    "image": "elmwafer/assets/feature-coupons.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Prefix search on Firestore",
+        "ar": "بحث بالبادئة على Firestore"
+      },
+      "body": {
+        "en": "Firestore has no `LIKE`, so store search uses a range query from the typed text up to the text plus the last Arabic letter `ي`, matching every Arabic store name that starts with the query.",
+        "ar": "لا يدعم Firestore استعلام `LIKE`، فيعتمد البحث على استعلام نطاق من النص المكتوب حتى النص مضافًا إليه آخر حرف عربي `ي`، فيطابق كل اسم متجر عربي يبدأ بما كُتب."
+      }
+    },
+    {
+      "title": {
+        "en": "Counting real usage",
+        "ar": "عدّ الاستخدام الحقيقي"
+      },
+      "body": {
+        "en": "The copy action writes the click counter first and copies the code in `whenComplete`, so the counter reflects real taps.",
+        "ar": "يكتب إجراء النسخ عدّاد النقرات أولًا ثم ينسخ الكود داخل `whenComplete`، فيعكس العدّاد نقرات حقيقية."
+      }
+    },
+    {
+      "title": {
+        "en": "Content without releases",
+        "ar": "محتوى بلا إصدارات جديدة"
+      },
+      "body": {
+        "en": "Stores, coupons, offers and articles live in Firestore and are edited from the admin app, so new deals appear without a store update.",
+        "ar": "المتاجر والكوبونات والعروض والمقالات محفوظة في Firestore وتُعدَّل من تطبيق الإدارة، فتظهر الصفقات الجديدة دون تحديث من المتجر."
+      }
+    },
+    {
+      "title": {
+        "en": "One-time onboarding",
+        "ar": "تعريف لمرة واحدة"
+      },
+      "body": {
+        "en": "`main()` reads an `initScreen` flag before `runApp` and picks the first route: onboarding or splash.",
+        "ar": "تقرأ `main()` علَم `initScreen` قبل `runApp` وتختار المسار الأول: شاشات التعريف أو شاشة البداية."
+      }
+    },
+    {
+      "title": {
+        "en": "Theme persistence",
+        "ar": "حفظ اختيار الثيم"
+      },
+      "body": {
+        "en": "`ThemePreference` stores the dark-mode choice and `ThemeProvider` notifies `GetMaterialApp` to rebuild with the right `ThemeData`.",
+        "ar": "يحفظ `ThemePreference` اختيار الوضع الداكن، ويُبلغ `ThemeProvider` تطبيق `GetMaterialApp` لإعادة البناء بالـ `ThemeData` المناسب."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Published on Google Play as `com.wafer.qrushatak`; the listing is no longer live, so no install numbers are claimed.",
+      "With Flutter 2.10.5, `flutter analyze` reports 0 errors and 0 warnings on the 2021 codebase.",
+      "Full user-app source is included in the repository."
+    ],
+    "ar": [
+      "نُشر على Google Play باسم الحزمة `com.wafer.qrushatak`، وصفحته لم تعد متاحة، لذلك لا تُذكر أرقام تثبيت.",
+      "مع Flutter 2.10.5 يعطي `flutter analyze` صفر أخطاء وصفر تحذيرات على كود 2021.",
+      "الكود المصدري الكامل لتطبيق المستخدم موجود في المستودع."
+    ]
+  },
+  "metrics": [],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "Cloud Firestore",
+    "Firebase Storage",
+    "FCM",
+    "Provider",
+    "GetX navigation",
+    "flutter_typeahead",
+    "SharedPreferences",
+    "url_launcher",
+    "Google Fonts",
+    "Arabic RTL"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/elmwafer"
+    }
+  ],
+  "images": [
+    {
+      "src": "elmwafer/assets/banner.png",
+      "alt": {
+        "en": "ElMwafer banner",
+        "ar": "بانر وفر قريشاتك"
+      },
+      "caption": {
+        "en": "Discount codes and online-store offers, copied in one tap",
+        "ar": "أكواد خصم وعروض متاجر إلكترونية تُنسخ بلمسة واحدة"
+      },
+      "role": "banner"
+    },
+    {
+      "src": "elmwafer/assets/feature-coupons.png",
+      "alt": {
+        "en": "Copy the code, open the store",
+        "ar": "انسخ الكود وافتح المتجر"
+      },
+      "caption": {
+        "en": "The coupon card: copy, shop and share",
+        "ar": "بطاقة الكوبون: نسخ وتسوّق ومشاركة"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "elmwafer/assets/screens.png",
+      "alt": {
+        "en": "ElMwafer screens",
+        "ar": "شاشات وفر قريشاتك"
+      },
+      "caption": {
+        "en": "Splash, coupons, offers, articles, settings and the drawer, from the released build",
+        "ar": "شاشة البداية والكوبونات والعروض والمقالات والإعدادات والقائمة الجانبية من النسخة المنشورة"
+      },
+      "role": "gallery"
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "slug": "duat",
+  "order": 12,
+  "featured": false,
+  "name": {
+    "en": "DUAT",
+    "ar": "دوات"
+  },
+  "kind": "case-study",
+  "categories": [
+    "own",
+    "ai"
+  ],
+  "accent": "#C3A26A",
+  "region": {
+    "en": "Egypt",
+    "ar": "مصر"
+  },
+  "period": "2026",
+  "platforms": [
+    "Web",
+    "Mobile web"
+  ],
+  "tagline": {
+    "en": "Two games of ancient Egypt, one box",
+    "ar": "لعبتان من مصر القديمة في علبة واحدة"
+  },
+  "summary": {
+    "en": "My own ancient-Egyptian board-game product and its Next.js platform: sales site, playable Senet and Tjau demo with a card-playing AI, and online matches.",
+    "ar": "منتجي الخاص من ألعاب الطاولة المصرية القديمة ومنصته بـ Next.js: موقع للبيع، وديمو قابل للعب لسينيت وتجاو بذكاء اصطناعي يلعب الكروت، ومباريات أونلاين."
+  },
+  "overview": {
+    "en": [
+      "DUAT is a physical board-game box sold in Egypt. It holds Senet, played by Egyptians since the First Dynasty, and Tjau, the twenty squares, plus 8 Heka cards: a modern, optional twist that can turn a match.",
+      "Its web platform has three jobs: sell the box through an Arabic-first landing page with cash-on-delivery orders, let people play both games before they buy against a 3-level computer, on one device or online, and run the business through an owner dashboard."
+    ],
+    "ar": [
+      "دوات علبة ألعاب طاولة تُباع في مصر، تضم سينيت التي لعبها المصريون منذ الأسرة الأولى، وتجاو أو لعبة المربعات العشرين، ومعهما 8 كروت حِكا: إضافة حديثة اختيارية قادرة على قلب المباراة.",
+      "ولمنصة الويب ثلاث مهام: بيع العلبة عبر صفحة عربية أولًا بطلبات الدفع عند الاستلام، وإتاحة تجربة اللعبتين قبل الشراء ضد كمبيوتر بثلاثة مستويات أو على جهاز واحد أو أونلاين، وإدارة المشروع من لوحة تحكم لصاحبه."
+    ]
+  },
+  "role": {
+    "en": [
+      "Founder and the only engineer",
+      "Made every product decision, logged in a decision log before it was built",
+      "Built the full-stack platform: rules engines, game AI, online play, orders and dashboard",
+      "Produced the print and factory files the physical set is made from"
+    ],
+    "ar": [
+      "المؤسس والمهندس الوحيد",
+      "اتخاذ كل قرارات المنتج وتوثيقها في سجل قرارات قبل التنفيذ",
+      "بناء المنصة كاملة: محركات القواعد، وذكاء اللعبة، واللعب أونلاين، والطلبات، ولوحة التحكم",
+      "إعداد ملفات الطباعة والمصنع التي تُصنع منها اللعبة الفعلية"
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Few people know these games, so the site has to teach and convince before it can sell. Hence a playable demo, not just photos.",
+      "The ancient rules survive only in part. Each rule set needed a clear, testable reading, and the 8 printed cards one exact meaning on screen.",
+      "A computer that plays cards at random feels dumb. It has to know when a card actually matters.",
+      "Online play must be fair: hidden cards and dice throws can't be visible to, or changeable by, the browser.",
+      "Most visitors are on phones, so long boards must fit like a game app and the order form must stay usable with the keyboard open."
+    ],
+    "ar": [
+      "قليلون يعرفون هاتين اللعبتين، فعلى الموقع أن يُعلّم ويُقنع قبل أن يبيع؛ ولهذا جاء الديمو القابل للعب لا مجرد صور.",
+      "لم يصلنا من القواعد القديمة إلا جزء، فاحتاجت كل مجموعة قواعد إلى قراءة واضحة قابلة للاختبار، واحتاج كل كارت من الكروت الثمانية إلى معنى واحد دقيق على الشاشة.",
+      "الكمبيوتر الذي يلعب الكروت عشوائيًا يبدو غبيًا؛ عليه أن يعرف متى يكون للكارت أثر فعلي.",
+      "اللعب أونلاين يجب أن يكون عادلًا: لا يرى المتصفح الكروت المخفية ورميات العصي ولا يستطيع تغييرها.",
+      "معظم الزوار على الهواتف، فلا بد أن تتسع الألواح الطويلة كتطبيق ألعاب، وأن يبقى نموذج الطلب سهل الاستخدام ولوحة المفاتيح مفتوحة."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Games and AI",
+        "ar": "الألعاب والذكاء الاصطناعي"
+      },
+      "items": {
+        "en": [
+          "Senet with 4 rule sets, from basic to the full challenge",
+          "Tjau on the Egyptian board and the Board of Ur, with Babylon-tablet and extra-throw variants",
+          "Computer opponent at 3 levels; Medium and Hard decide on cards with full-match rollouts",
+          "Heka cards: none, one or two per player, applied exactly as printed"
+        ],
+        "ar": [
+          "سينيت بأربع مجموعات قواعد، من الأساسية حتى التحدي الكامل",
+          "تجاو على اللوح المصري ولوح أور، مع تنويعات لوح بابل والرمية الإضافية",
+          "خصم كمبيوتر بثلاثة مستويات؛ المتوسط والصعب يقرران استخدام الكروت بمحاكاة المباراة حتى نهايتها",
+          "كروت حِكا: بلا كروت أو كارت أو اثنان لكل لاعب، تُطبَّق كما هي مطبوعة تمامًا"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Play modes",
+        "ar": "أنماط اللعب"
+      },
+      "items": {
+        "en": [
+          "Against the computer, two players on one device, or online",
+          "Online by invite link shared on WhatsApp, or a random opponent with a fallback to the computer after 30 s",
+          "Free trials per device, counted on the server; more unlock after a 6-digit e-mail code"
+        ],
+        "ar": [
+          "ضد الكمبيوتر، أو لاعبان على جهاز واحد، أو أونلاين",
+          "أونلاين برابط دعوة يُشارك على WhatsApp، أو خصم عشوائي مع التحويل إلى الكمبيوتر بعد 30 ثانية",
+          "تجارب مجانية لكل جهاز تُحتسب على الخادم، وتُفتح تجارب إضافية برمز من 6 أرقام عبر البريد"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Commerce and dashboard",
+        "ar": "البيع ولوحة التحكم"
+      },
+      "items": {
+        "en": [
+          "Cash-on-delivery orders with a shipping fee per governorate and prices copied onto each order",
+          "Branded order-alert and invoice e-mails, readable on a phone",
+          "Prices, trial limits, shipping table, content and tracker IDs editable without a deploy",
+          "GA4, Clarity and ad pixels load only after cookie consent, plus a built-in funnel: visits, demo starts, form opens, orders"
+        ],
+        "ar": [
+          "طلبات بالدفع عند الاستلام برسوم شحن لكل محافظة، مع تثبيت الأسعار على الطلب لحظة إنشائه",
+          "رسائل بريد لتنبيه الطلب والفاتورة بهوية دوات، مقروءة على الهاتف",
+          "الأسعار وحدود التجارب وجدول الشحن والمحتوى ومعرّفات التتبع قابلة للتعديل دون نشر جديد",
+          "لا يُحمَّل GA4 وClarity وبكسلات الإعلانات إلا بعد موافقة الكوكيز، مع قمع مبيعات داخلي: زيارات، وبدء الديمو، وفتح النموذج، والطلبات"
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Mobile-first",
+        "ar": "الهاتف أولًا"
+      },
+      "items": {
+        "en": [
+          "On phones the game table is a full-screen landscape screen however the phone is held",
+          "An app-style tab bar replaces floating buttons on the landing page and hides while typing",
+          "Fully bilingual: Arabic RTL and English across site, demo and e-mails"
+        ],
+        "ar": [
+          "على الهاتف تصبح طاولة اللعب شاشة عرضية كاملة مهما كان وضع الهاتف",
+          "شريط تبويبات بأسلوب التطبيقات يحل محل الأزرار العائمة في الصفحة الرئيسية ويختفي أثناء الكتابة",
+          "ثنائي اللغة بالكامل: العربية من اليمين لليسار والإنجليزية في الموقع والديمو والبريد"
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "A computer that knows when a card matters",
+      "ar": "كمبيوتر يعرف متى يكون للكارت قيمة"
+    },
+    "body": {
+      "en": [
+        "Each Heka card has a power and a price. The first version revealed its cards on turn one, when they did nothing.",
+        "Easy tries the card on a copy of the table, scoring the best targets, the board left behind and the turns gained or lost, and stays patient in the opening.",
+        "Medium and Hard play the match to the end 40 or 100 times, once with the card and once without. Both branches get the same dice, so the difference comes from that decision alone.",
+        "Against the old always-reveal computer it won 64% of 160 matches, with each decision taking about half a second in the browser.",
+        "At the table, a spotlight shows the revealed card's power, price and result for 5 seconds."
+      ],
+      "ar": [
+        "لكل كارت من كروت حِكا قوة وثمن. وكانت النسخة الأولى تكشف كروتها في الدور الأول حيث لا أثر لها.",
+        "المستوى السهل يجرّب الكارت على نسخة من الطاولة، فيقيّم أفضل الأهداف والوضع الذي يتركه الكارت والأدوار المكتسبة أو المفقودة، ويتريّث في الافتتاح.",
+        "المتوسط والصعب يلعبان المباراة حتى نهايتها 40 أو 100 مرة، مرة بالكارت ومرة دونه، وبرميات العصي نفسها في الفرعين، فيكون الفرق ناتجًا عن هذا القرار وحده.",
+        "أمام الكمبيوتر القديم الذي يكشف دائمًا، فاز في 64% من 160 مباراة، ويستغرق كل قرار نحو نصف ثانية في المتصفح.",
+        "وعلى الطاولة يُبرز ضوء كاشف قوة الكارت المكشوف وثمنه ونتيجته لمدة 5 ثوانٍ."
+      ]
+    },
+    "image": "duat-case-study/assets/feature-heka-ai.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "One reducer, two runtimes",
+        "ar": "Reducer واحد في بيئتين"
+      },
+      "body": {
+        "en": "A whole match, both games and all 8 cards, is one pure `reduce(state, action)` in `@duat/match`. The browser runs it offline; the server runs the same code online, throws the sticks and keeps face-down cards, so fair play comes from the design, not from trusting the client.",
+        "ar": "المباراة كاملة، باللعبتين والكروت الثمانية، دالة نقية واحدة `reduce(state, action)` في `@duat/match`. يشغّلها المتصفح في اللعب المحلي، ويشغّل الخادم الكود نفسه أونلاين فيرمي العصي ويحتفظ بالكروت المقلوبة؛ فالعدالة نابعة من التصميم لا من الثقة بالمتصفح."
+      }
+    },
+    {
+      "title": {
+        "en": "Printed cards as the single source of truth",
+        "ar": "الكروت المطبوعة مرجع وحيد"
+      },
+      "body": {
+        "en": "The 8 Heka cards are generated from the print source in Arabic and English, so the box and the screen always say the same thing. Edge-case readings are recorded as decisions and covered by tests.",
+        "ar": "تُولَّد كروت حِكا الثمانية بالعربية والإنجليزية من ملف الطباعة نفسه، فتقول العلبة والشاشة الشيء ذاته دائمًا، وتُوثَّق قراءات الحالات الخاصة قرارات مغطاة بالاختبارات."
+      }
+    },
+    {
+      "title": {
+        "en": "Rollouts with common random numbers",
+        "ar": "محاكاة بأرقام عشوائية مشتركة"
+      },
+      "body": {
+        "en": "Paired playouts with and without the card share the same dice sequence. That cuts the noise enough for 40 to 100 playouts to give a stable decision in about 0.5 s on the main thread.",
+        "ar": "تتشارك كل محاكاتين، بالكارت ودونه، تسلسل الرميات نفسه، فينخفض التشويش بما يكفي لأن تعطي 40 إلى 100 محاكاة قرارًا مستقرًا في نحو 0.5 ثانية على الخيط الرئيسي."
+      }
+    },
+    {
+      "title": {
+        "en": "The phone table as a landscape screen",
+        "ar": "طاولة الهاتف شاشة عرضية"
+      },
+      "body": {
+        "en": "Browsers can't lock orientation reliably, so on an upright phone the whole table rotates a quarter turn in CSS, and zoomed cards open inside the rotated screen. Checked from 320 px to 1440 px in both languages with no sideways overflow.",
+        "ar": "لا تستطيع المتصفحات تثبيت اتجاه الشاشة بشكل موثوق، لذا تدور الطاولة كاملة ربع دورة عبر CSS على الهاتف العمودي، وتُفتح الكروت المكبّرة داخل الشاشة المدارة. اختُبرت من 320 حتى 1440 بكسل باللغتين دون أي فيض أفقي."
+      }
+    },
+    {
+      "title": {
+        "en": "Trials without accounts",
+        "ar": "تجارب دون حسابات"
+      },
+      "body": {
+        "en": "Visitors get a random device ID in a signed cookie, and trials are counted on the server. E-mail codes are hashed, expire in 15 minutes, allow 5 attempts and are rate-limited.",
+        "ar": "يحصل الزائر على معرّف جهاز عشوائي في كوكي موقّع، وتُحتسب التجارب على الخادم. ورموز البريد مُجزّأة، وتنتهي خلال 15 دقيقة، وتسمح بخمس محاولات، ومحدودة المعدل."
+      }
+    },
+    {
+      "title": {
+        "en": "Settings, not deploys",
+        "ar": "إعدادات لا عمليات نشر"
+      },
+      "body": {
+        "en": "Prices, trial counts, the shipping table, the WhatsApp number and tracker IDs live in a zod-validated settings store that the owner edits from the dashboard.",
+        "ar": "الأسعار وعدد التجارب وجدول الشحن ورقم WhatsApp ومعرّفات التتبع محفوظة في مخزن إعدادات مُتحقَّق منه بـ zod، يعدّله صاحب المشروع من لوحة التحكم."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "2 complete games (Senet with 4 rule sets, Tjau on 2 boards) and 8 Heka cards, playable against a 3-level computer, on one device or online.",
+      "222 automated tests in 18 files, all passing.",
+      "Fully bilingual Arabic (RTL) and English across the site, the demo and the e-mails.",
+      "A complete physical product: box, two boards, pieces, throw sticks, cards and three bilingual rule sheets, with print-ready and factory files.",
+      "Live public demo."
+    ],
+    "ar": [
+      "لعبتان كاملتان (سينيت بأربع مجموعات قواعد، وتجاو على لوحين) و8 كروت حِكا، قابلة للعب ضد كمبيوتر بثلاثة مستويات أو على جهاز واحد أو أونلاين.",
+      "222 اختبارًا آليًا في 18 ملفًا، كلها ناجحة.",
+      "ثنائي اللغة بالكامل، العربية من اليمين لليسار والإنجليزية، في الموقع والديمو والبريد.",
+      "منتج مادي متكامل: علبة ولوحان وقطع وعصي رمي وكروت وثلاث أوراق قواعد ثنائية اللغة، مع ملفات جاهزة للطباعة والمصنع.",
+      "ديمو عام متاح مباشرة."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "222",
+      "label": {
+        "en": "automated tests, all passing",
+        "ar": "اختبارًا آليًا ناجحًا"
+      }
+    },
+    {
+      "value": "64%",
+      "label": {
+        "en": "win rate over 160 matches vs. the old AI",
+        "ar": "نسبة فوز في 160 مباراة أمام الذكاء القديم"
+      }
+    },
+    {
+      "value": "~0.5 s",
+      "label": {
+        "en": "per card decision in the browser",
+        "ar": "لكل قرار كارت في المتصفح"
+      }
+    },
+    {
+      "value": "2 + 8",
+      "label": {
+        "en": "games and Heka cards in one box",
+        "ar": "لعبتان و8 كروت حِكا في علبة واحدة"
+      }
+    }
+  ],
+  "stack": [
+    "Next.js 15",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS 4",
+    "next-intl",
+    "zod",
+    "Prisma",
+    "MySQL / TiDB",
+    "pnpm workspaces",
+    "Nodemailer",
+    "three.js",
+    "WebAudio",
+    "Vitest",
+    "Vercel"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/duat-case-study"
+    },
+    {
+      "type": "web",
+      "label": {
+        "en": "Live demo",
+        "ar": "الديمو المباشر"
+      },
+      "url": "https://duat-egypt.vercel.app"
+    }
+  ],
+  "images": [
+    {
+      "src": "duat-case-study/assets/banner.png",
+      "alt": {
+        "en": "DUAT",
+        "ar": "دوات"
+      },
+      "caption": {
+        "en": "Two board games of ancient Egypt in one box, and a website where you can play them before you buy.",
+        "ar": "لعبتا طاولة من مصر القديمة في علبة واحدة، وموقع تلعبهما فيه قبل الشراء."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "duat-case-study/assets/feature-heka-ai.png",
+      "alt": {
+        "en": "The computer reveals a Heka card mid-match",
+        "ar": "الكمبيوتر يكشف كارت حِكا أثناء المباراة"
+      },
+      "caption": {
+        "en": "The computer reveals a Heka card, with a spotlight on its power, price and result.",
+        "ar": "الكمبيوتر يكشف كارت حِكا، مع ضوء كاشف على قوته وثمنه ونتيجته."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "duat-case-study/assets/architecture.png",
+      "alt": {
+        "en": "DUAT architecture",
+        "ar": "معمارية دوات"
+      },
+      "caption": {
+        "en": "A Next.js app on top of pure TypeScript game-engine packages, shared by the browser and the server.",
+        "ar": "تطبيق Next.js فوق حزم محركات ألعاب بـ TypeScript نقي، يتشاركها المتصفح والخادم."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "duat-case-study/assets/web-landing.png",
+      "alt": {
+        "en": "DUAT landing page on desktop with the Arabic order form on a phone",
+        "ar": "الصفحة الرئيسية لدوات على سطح المكتب ونموذج الطلب العربي على الهاتف"
+      },
+      "caption": {
+        "en": "The landing page (English, desktop) and the order form (Arabic, phone). The hero background is a 3D film of the real product.",
+        "ar": "الصفحة الرئيسية (بالإنجليزية على سطح المكتب) ونموذج الطلب (بالعربية على الهاتف). خلفية الواجهة فيلم ثلاثي الأبعاد للمنتج الحقيقي."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "duat-case-study/assets/web-tour.png",
+      "alt": {
+        "en": "Four sections of the DUAT landing page",
+        "ar": "أربعة أقسام من صفحة دوات الرئيسية"
+      },
+      "caption": {
+        "en": "What's in the box, the two games, the 8 Heka cards and the cash-on-delivery form.",
+        "ar": "محتويات العلبة، واللعبتان، وكروت حِكا الثمانية، ونموذج الدفع عند الاستلام."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "duat-case-study/assets/mobile.png",
+      "alt": {
+        "en": "DUAT on a phone in Arabic",
+        "ar": "دوات على الهاتف بالعربية"
+      },
+      "caption": {
+        "en": "On a phone: RTL Arabic with an app-style tab bar that highlights the current section and hides while you type.",
+        "ar": "على الهاتف: عربية من اليمين لليسار مع شريط تبويبات بأسلوب التطبيقات يُبرز القسم الحالي ويختفي أثناء الكتابة."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "duat-case-study/assets/play-senet.png",
+      "alt": {
+        "en": "Senet demo against the computer",
+        "ar": "ديمو سينيت ضد الكمبيوتر"
+      },
+      "caption": {
+        "en": "Senet against the computer. On an upright phone the whole table is turned a quarter by CSS, so it plays like a landscape game.",
+        "ar": "سينيت ضد الكمبيوتر. على الهاتف العمودي تدور الطاولة كاملة ربع دورة عبر CSS، فتُلعب كلعبة عرضية."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "duat-case-study/assets/play-tjau.png",
+      "alt": {
+        "en": "Tjau demo on desktop and a phone in landscape",
+        "ar": "ديمو تجاو على سطح المكتب وهاتف بالوضع العرضي"
+      },
+      "caption": {
+        "en": "Tjau, the twenty squares: pieces in hand, borne off, throw sticks, and the cards each side holds.",
+        "ar": "تجاو، لعبة المربعات العشرين: القطع في اليد والخارجة من اللوح، وعصي الرمي، والكروت التي يملكها كل طرف."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "duat-case-study/assets/product.png",
+      "alt": {
+        "en": "3D renders of the DUAT box, boards and cards",
+        "ar": "صور ثلاثية الأبعاد لعلبة دوات وألواحها وكروتها"
+      },
+      "caption": {
+        "en": "The physical set, rendered in 3D from the same print and factory files used to make it. Renders, not photos.",
+        "ar": "اللعبة الفعلية مجسّمة ثلاثيًا من ملفات الطباعة والمصنع نفسها التي صُنعت منها. صور مولَّدة لا فوتوغرافية."
+      },
+      "role": "gallery"
+    }
+  ]
+}

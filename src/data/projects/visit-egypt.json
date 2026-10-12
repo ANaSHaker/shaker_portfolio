@@ -1,0 +1,333 @@
+{
+  "slug": "visit-egypt",
+  "order": 20,
+  "featured": false,
+  "name": {
+    "en": "Visit Egypt",
+    "ar": "Visit Egypt"
+  },
+  "kind": "source",
+  "categories": [
+    "opensource"
+  ],
+  "accent": "#5B8DEF",
+  "region": {
+    "en": "Egypt",
+    "ar": "مصر"
+  },
+  "period": "2021–2022",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Your guide to Egypt in one app",
+    "ar": "دليلك إلى مصر في تطبيق واحد"
+  },
+  "summary": {
+    "en": "A bilingual Arabic and English tourism guide for Egypt: places by city, events, culture, transport reviews, maps with directions, weather, currency, QR and chat.",
+    "ar": "دليل سياحي لمصر بالعربية والإنجليزية: الأماكن في كل مدينة والفعاليات والثقافة وتقييمات النقل وخرائط بالاتجاهات والطقس والعملات وقارئ QR والمحادثة."
+  },
+  "overview": {
+    "en": [
+      "Visit Egypt answers the questions a tourist has inside Egypt: what is in this city, what is happening this week, how do I get there, and who do I call if something goes wrong.",
+      "It lists places in every city, events, Egyptian culture, transport and tourism companies with reviews, embassy and emergency numbers, a map with place search and directions, weather, a currency converter, a QR reader and chat between users, all in Arabic and English.",
+      "It was a 2021–2022 team graduation project, published on Google Play and now shared with full source as a Flutter 2.x codebase."
+    ],
+    "ar": [
+      "يجيب Visit Egypt عن أسئلة السائح داخل مصر: ماذا يوجد في هذه المدينة، وما الذي يحدث هذا الأسبوع، وكيف أصل إلى هناك، وبمن أتصل إذا حدثت مشكلة.",
+      "يعرض الأماكن في كل مدينة، والفعاليات، والثقافة المصرية، وشركات النقل والسياحة مع تقييماتها، وأرقام الطوارئ والسفارات، وخريطة للبحث عن الأماكن والاتجاهات، والطقس، ومحوّل العملات، وقارئ QR، والمحادثة بين المستخدمين، وكل ذلك بالعربية والإنجليزية.",
+      "كان مشروع تخرج جماعيًا في 2021–2022، ونُشر على Google Play، ومتاح الآن بالكود المصدري الكامل كمشروع Flutter 2.x."
+    ]
+  },
+  "role": {
+    "en": [
+      "Lead Flutter developer on a team graduation project.",
+      "Owned the app architecture and built most screens and features.",
+      "Integrated Firebase for auth, chat, storage and push notifications.",
+      "Handled the release to Google Play.",
+      "Teammate @mrezk319 contributed to the map, weather, culture, events and chat screens and the translations."
+    ],
+    "ar": [
+      "مطوّر Flutter رئيسي في مشروع تخرج جماعي.",
+      "تولّيت معمارية التطبيق وبنيت أغلب الشاشات والمزايا.",
+      "دمجت Firebase لتسجيل الدخول والمحادثة والتخزين والإشعارات.",
+      "تولّيت النشر على Google Play.",
+      "ساهم زميلي @mrezk319 في شاشات الخريطة والطقس والثقافة والفعاليات والمحادثة وفي الترجمة."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Tourist information about Egypt is spread across many sites and apps, and much of it exists in only one language.",
+      "Events, places and companies change constantly, so content had to come from a backend the team can update, not be hard-coded.",
+      "Tourists need practical tools that keep working on bad connectivity: offline favourites, emergency numbers and directions."
+    ],
+    "ar": [
+      "المعلومات السياحية عن مصر متفرقة بين مواقع وتطبيقات كثيرة، وكثير منها متاح بلغة واحدة فقط.",
+      "الفعاليات والأماكن والشركات تتغير باستمرار، فكان لا بد أن يأتي المحتوى من خادم يستطيع الفريق تحديثه بدل كتابته داخل الكود.",
+      "يحتاج السائح أدوات عملية تعمل مع ضعف الاتصال: مفضلة دون اتصال، وأرقام طوارئ، واتجاهات."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Discover",
+        "ar": "استكشف"
+      },
+      "items": {
+        "en": [
+          "Every city, from Sharm El-Sheikh to Luxor and Cairo, with hotels, restaurants and beaches.",
+          "Conferences, exhibitions and festivals with category and price tags.",
+          "Egyptian culture: movies, novels, books and songs with details and links.",
+          "Users can add places, events and cultural works, and comment on and rate every item."
+        ],
+        "ar": [
+          "كل المدن، من شرم الشيخ إلى الأقصر والقاهرة، بالفنادق والمطاعم والشواطئ.",
+          "مؤتمرات ومعارض ومهرجانات مع تصنيفاتها وأسعارها.",
+          "الثقافة المصرية: أفلام وروايات وكتب وأغانٍ بالتفاصيل والروابط.",
+          "يستطيع المستخدمون إضافة أماكن وفعاليات وأعمال ثقافية، والتعليق على كل عنصر وتقييمه."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Get around",
+        "ar": "تنقّل بسهولة"
+      },
+      "items": {
+        "en": [
+          "Map with Google Places search and autocomplete, category shortcuts and routes from the Directions API.",
+          "Transport and tourism companies with contacts, links and user reviews.",
+          "Weather and forecast for any Egyptian city, with charts.",
+          "Currency converter and QR code reader."
+        ],
+        "ar": [
+          "خريطة مع البحث والإكمال التلقائي من Google Places، واختصارات للفئات، ومسارات من Directions API.",
+          "شركات النقل والسياحة ببيانات التواصل والروابط وتقييمات المستخدمين.",
+          "الطقس والتوقعات لأي مدينة مصرية مع رسوم بيانية.",
+          "محوّل عملات وقارئ رموز QR."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Stay safe",
+        "ar": "ابقَ آمنًا"
+      },
+      "items": {
+        "en": [
+          "Emergency numbers including police, ambulance, tourism police and fire.",
+          "Embassy numbers for many countries.",
+          "Tap to call, long-press to copy."
+        ],
+        "ar": [
+          "أرقام الطوارئ، ومنها الشرطة والإسعاف وشرطة السياحة والمطافئ.",
+          "أرقام السفارات لدول كثيرة.",
+          "لمسة للاتصال، وضغطة مطوّلة للنسخ."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Account and experience",
+        "ar": "الحساب والتجربة"
+      },
+      "items": {
+        "en": [
+          "Sign in with email, Google or Facebook through Firebase Auth, with full profile editing.",
+          "Chat with other users and with the admin on Cloud Firestore.",
+          "Offline favourites per section with Hive.",
+          "Arabic and English, dark mode, FCM push with a toggle and a video-background onboarding."
+        ],
+        "ar": [
+          "الدخول بالبريد أو Google أو Facebook عبر Firebase Auth، مع تعديل كامل للملف الشخصي.",
+          "محادثة مع المستخدمين ومع المشرف على Cloud Firestore.",
+          "مفضلة دون اتصال لكل قسم باستخدام Hive.",
+          "العربية والإنجليزية، والوضع الداكن، وإشعارات FCM قابلة للإيقاف، وشاشات تعريف فوق فيديو خلفية."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Find any place, then get there",
+      "ar": "ابحث عن أي مكان ثم اذهب إليه"
+    },
+    "body": {
+      "en": [
+        "The map module runs on a `MapCubit` and a small `DioHelper` client for Google Maps web services.",
+        "Search: typing calls Places Autocomplete, selecting a result calls Place Details, and category tiles run a Places Text Search such as pharmacy in Cairo.",
+        "Show: results become markers on `GoogleMap`, with the user's position from `geolocator`.",
+        "Route: the track screen calls the Directions API, decodes the polyline with `flutter_polyline_points` and draws the route."
+      ],
+      "ar": [
+        "تعمل وحدة الخريطة على `MapCubit` وعميل `DioHelper` صغير لخدمات Google Maps.",
+        "البحث: الكتابة تستدعي Places Autocomplete، واختيار نتيجة يستدعي Place Details، وبطاقات الفئات تنفّذ Places Text Search مثل صيدلية في القاهرة.",
+        "العرض: تتحول النتائج إلى علامات على `GoogleMap`، ويأتي موقع المستخدم من `geolocator`.",
+        "المسار: تستدعي شاشة التتبع Directions API وتفك ترميز الخط بـ `flutter_polyline_points` وترسم المسار."
+      ]
+    },
+    "image": "visit-egypt/docs/assets/feature-maps.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Bilingual content from one API",
+        "ar": "محتوى بلغتين من API واحد"
+      },
+      "body": {
+        "en": "Each content type has `/en` and `/ar` endpoints. Cubits pick the endpoint from the current GetX locale while UI strings come from GetX `Translations`, so content and chrome switch language together.",
+        "ar": "لكل نوع محتوى نقطتا `/en` و`/ar`. تختار الـ Cubits النقطة حسب لغة GetX الحالية، بينما تأتي نصوص الواجهة من `Translations` في GetX، فيتبدّل المحتوى والواجهة معًا."
+      }
+    },
+    {
+      "title": {
+        "en": "Offline favourites",
+        "ar": "مفضلة دون اتصال"
+      },
+      "body": {
+        "en": "Favourites are Hive objects with generated `TypeAdapter`s, one box per section, opened once in `main()` before `runApp`.",
+        "ar": "المفضلة كائنات Hive مع `TypeAdapter` مولّدة، وصندوق لكل قسم، تُفتح مرة واحدة في `main()` قبل `runApp`."
+      }
+    },
+    {
+      "title": {
+        "en": "Feature-scoped Cubits",
+        "ar": "Cubit لكل ميزة"
+      },
+      "body": {
+        "en": "Every feature has its own cubit and states, provided once at the root with `MultiBlocProvider`, with a `BlocObserver` logging transitions while debugging.",
+        "ar": "لكل ميزة Cubit وحالات خاصة بها، تُوفَّر مرة واحدة في الجذر عبر `MultiBlocProvider`، مع `BlocObserver` يسجّل الانتقالات أثناء التطوير."
+      }
+    },
+    {
+      "title": {
+        "en": "Secrets out of the repo",
+        "ar": "الأسرار خارج المستودع"
+      },
+      "body": {
+        "en": "API keys and the backend URL are read from `--dart-define`. The Android Maps key is injected through a manifest placeholder and the iOS key from `Info.plist`.",
+        "ar": "تُقرأ مفاتيح API ورابط الخادم من `--dart-define`، ويُحقن مفتاح الخرائط في Android عبر placeholder في الـ manifest، وفي iOS من `Info.plist`."
+      }
+    },
+    {
+      "title": {
+        "en": "First-run flow",
+        "ar": "مسار التشغيل الأول"
+      },
+      "body": {
+        "en": "A cached `firstOpen` flag sends new users to the video-background onboarding and returning users straight to splash and home.",
+        "ar": "يوجّه علَم `firstOpen` المحفوظ المستخدمين الجدد إلى شاشات التعريف فوق الفيديو، والعائدين مباشرة إلى شاشة البداية والرئيسية."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Published on Google Play as `com.visit_egypt` and presented as a graduation project in 2022.",
+      "With Flutter 2.10.5, `flutter analyze` reports 0 errors and 0 warnings.",
+      "The listing and demo website are no longer live, so no usage numbers are claimed."
+    ],
+    "ar": [
+      "نُشر على Google Play باسم الحزمة `com.visit_egypt` وقُدِّم كمشروع تخرج في 2022.",
+      "مع Flutter 2.10.5 يعطي `flutter analyze` صفر أخطاء وصفر تحذيرات.",
+      "صفحة المتجر وموقع العرض لم يعودا متاحين، لذلك لا تُذكر أرقام استخدام."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "2",
+      "label": {
+        "en": "Languages, Arabic and English",
+        "ar": "لغتان: العربية والإنجليزية"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "Bloc / Cubit",
+    "GetX",
+    "Provider",
+    "Firebase Auth",
+    "Cloud Firestore",
+    "FCM",
+    "Google Maps",
+    "Places & Directions API",
+    "Hive",
+    "Dio",
+    "OpenWeatherMap",
+    "Syncfusion Charts"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/visit-egypt"
+    }
+  ],
+  "images": [
+    {
+      "src": "visit-egypt/docs/assets/banner.png",
+      "alt": {
+        "en": "Visit Egypt banner",
+        "ar": "بانر Visit Egypt"
+      },
+      "caption": {
+        "en": "Cities, places, events, culture, transport and emergency numbers in one Arabic and English app",
+        "ar": "المدن والأماكن والفعاليات والثقافة والنقل وأرقام الطوارئ في تطبيق واحد بالعربية والإنجليزية"
+      },
+      "role": "banner"
+    },
+    {
+      "src": "visit-egypt/docs/assets/feature-maps.png",
+      "alt": {
+        "en": "Find any place, then get there",
+        "ar": "ابحث عن أي مكان ثم اذهب إليه"
+      },
+      "caption": {
+        "en": "Places search, markers and routes on Google Maps",
+        "ar": "البحث عن الأماكن والعلامات والمسارات على Google Maps"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "visit-egypt/docs/assets/feature-settings.png",
+      "alt": {
+        "en": "Arabic or English, light or dark",
+        "ar": "عربي أو إنجليزي، فاتح أو داكن"
+      },
+      "caption": {
+        "en": "Arabic or English, light or dark",
+        "ar": "عربي أو إنجليزي، فاتح أو داكن"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "visit-egypt/docs/assets/screens-explore.png",
+      "alt": {
+        "en": "Explore screens",
+        "ar": "شاشات الاستكشاف"
+      },
+      "caption": {
+        "en": "Store-listing images from the released app: explore",
+        "ar": "صور صفحة المتجر من التطبيق المنشور: الاستكشاف"
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "visit-egypt/docs/assets/screens-tools.png",
+      "alt": {
+        "en": "Travel tools screens",
+        "ar": "شاشات أدوات السفر"
+      },
+      "caption": {
+        "en": "Store-listing images from the released app: travel tools",
+        "ar": "صور صفحة المتجر من التطبيق المنشور: أدوات السفر"
+      },
+      "role": "gallery"
+    }
+  ]
+}

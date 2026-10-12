@@ -1,0 +1,260 @@
+{
+  "slug": "muslim",
+  "order": 22,
+  "featured": false,
+  "name": {
+    "en": "Muslim",
+    "ar": "مسلم"
+  },
+  "kind": "source",
+  "categories": [
+    "opensource",
+    "own"
+  ],
+  "accent": "#E3B64C",
+  "region": null,
+  "period": "2020",
+  "platforms": [
+    "Android",
+    "iOS"
+  ],
+  "tagline": {
+    "en": "Your daily Islamic essentials, offline",
+    "ar": "احتياجاتك الإسلامية اليومية، دون إنترنت"
+  },
+  "summary": {
+    "en": "An offline Islamic companion in Flutter: Quran reader with bookmarks, azkar, duas, hadiths, prophets' stories, tasbeeh, Hijri calendar, prayer times and Qibla.",
+    "ar": "رفيق إسلامي يعمل دون إنترنت مبني بـ Flutter: قارئ مصحف بالعلامات، وأذكار وأدعية وأحاديث وقصص الأنبياء، وسبحة وتقويم هجري ومواقيت الصلاة واتجاه القبلة."
+  },
+  "overview": {
+    "en": [
+      "Muslim puts the daily essentials in one place: the Holy Quran, the Prophet's hadiths, morning and evening azkar, duas, stories of the prophets and companions, an electronic tasbeeh, a Hijri calendar, prayer times and a Qibla compass.",
+      "It works without an internet connection, with every text and the Mushaf shipped inside the app. Built solo in 2020 as one of Mahmoud's first published Flutter apps, it was released on Google Play and is now shared with full source."
+    ],
+    "ar": [
+      "يجمع تطبيق مسلم الاحتياجات اليومية في مكان واحد: القرآن الكريم، وأحاديث النبي، وأذكار الصباح والمساء، والأدعية، وقصص الأنبياء والصحابة، والسبحة الإلكترونية، والتقويم الهجري، ومواقيت الصلاة، واتجاه القبلة.",
+      "يعمل التطبيق دون اتصال بالإنترنت، فكل النصوص والمصحف مضمّنة بداخله. بناه محمود منفردًا في 2020 كأحد أوائل تطبيقات Flutter التي نشرها، وأُطلق على Google Play، ومتاح الآن بالكود المصدري الكامل."
+    ]
+  },
+  "role": {
+    "en": [
+      "Solo developer: idea, UI design and Flutter implementation.",
+      "Built the offline Quran reader flow, content screens, tasbeeh and Hijri calendar.",
+      "Integrated and themed adapted open-source modules for prayer times, the Qibla compass and the PDF reader.",
+      "Released the app on Google Play."
+    ],
+    "ar": [
+      "مطوّر منفرد: الفكرة وتصميم الواجهة والتنفيذ بـ Flutter.",
+      "بنيت مسار قراءة المصحف دون إنترنت وشاشات المحتوى والسبحة والتقويم الهجري.",
+      "دمجت وحدات مفتوحة المصدر مُكيَّفة لمواقيت الصلاة وبوصلة القبلة وقارئ PDF، وطبّقت عليها هوية التطبيق.",
+      "نشرت التطبيق على Google Play."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "Users kept several single-purpose apps for Quran, azkar, prayer times and Qibla on their phones.",
+      "Many of those apps needed internet or were full of ads; the goal was a simple, offline, ad-free app.",
+      "Arabic religious text needs right-aligned layout and clean typography to stay readable."
+    ],
+    "ar": [
+      "كان المستخدمون يحتفظون بعدة تطبيقات أحادية الغرض للقرآن والأذكار ومواقيت الصلاة والقبلة.",
+      "كثير من هذه التطبيقات يحتاج إنترنت أو مليء بالإعلانات، فكان الهدف تطبيقًا بسيطًا يعمل دون اتصال وبلا إعلانات.",
+      "النص الديني العربي يحتاج محاذاة لليمين وخطوطًا واضحة ليبقى مقروءًا."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Quran",
+        "ar": "القرآن الكريم"
+      },
+      "items": {
+        "en": [
+          "Full Mushaf bundled as a PDF with a surah index loaded from JSON.",
+          "Search by surah name.",
+          "Resumes at the last page read, with a bookmark to jump back to.",
+          "Keeps the screen awake and remembers the reading brightness."
+        ],
+        "ar": [
+          "المصحف كاملًا كملف PDF مضمّن مع فهرس سور يُحمَّل من JSON.",
+          "البحث باسم السورة.",
+          "يستأنف من آخر صفحة مقروءة، مع علامة للرجوع إليها.",
+          "يُبقي الشاشة مضاءة ويتذكر سطوع القراءة."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Azkar, duas and stories",
+        "ar": "الأذكار والأدعية والقصص"
+      },
+      "items": {
+        "en": [
+          "Morning, evening and general azkar.",
+          "Prophets' duas, assorted duas and duas for the deceased.",
+          "Tasbeeh phrases and a list of the Prophet's hadiths.",
+          "Prophets' stories from Adam to Muhammad, plus the companions and caliphs."
+        ],
+        "ar": [
+          "أذكار الصباح والمساء وأذكار عامة.",
+          "أدعية الأنبياء وأدعية متفرقة وأدعية للمتوفى.",
+          "صيغ التسبيح وقائمة بأحاديث النبي.",
+          "قصص الأنبياء من آدم إلى محمد، وقصص الصحابة والخلفاء."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Tools",
+        "ar": "الأدوات"
+      },
+      "items": {
+        "en": [
+          "Prayer times calculated on the device with the PrayTimes algorithm, no API.",
+          "Qibla compass with a location-error state and a map fallback on devices without a compass sensor.",
+          "Hijri calendar with an Umm al-Qura date picker.",
+          "Electronic tasbeeh counter with haptic feedback."
+        ],
+        "ar": [
+          "مواقيت الصلاة تُحسب على الجهاز بخوارزمية PrayTimes دون أي API.",
+          "بوصلة القبلة مع حالة لأخطاء الموقع، وخريطة بديلة للأجهزة التي لا تملك حساس بوصلة.",
+          "تقويم هجري مع منتقي تاريخ أم القرى.",
+          "سبحة إلكترونية مع اهتزاز عند كل تسبيحة."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "Works with no internet",
+      "ar": "يعمل دون إنترنت"
+    },
+    "body": {
+      "en": [
+        "Quran: the Mushaf is a bundled PDF. `SurahListBuilder` maps each surah to its page, `SurahViewBuilder` opens it there, and the last viewed and bookmarked pages persist in `SharedPreferences`.",
+        "Prayer times: a pure Dart PrayTimes implementation handles calculation method, Asr juristic method, high-latitude adjustment and per-prayer offsets, using only coordinates and a time zone.",
+        "Texts: azkar, duas, hadiths and stories are Dart lists, so they load instantly with no database."
+      ],
+      "ar": [
+        "القرآن: المصحف ملف PDF مضمّن، يربط `SurahListBuilder` كل سورة بصفحتها، ويفتحها `SurahViewBuilder` عندها، وتُحفظ آخر صفحة والعلامة في `SharedPreferences`.",
+        "مواقيت الصلاة: تنفيذ PrayTimes بلغة Dart يدعم طريقة الحساب ومذهب العصر وتعديل خطوط العرض العليا وفروق كل صلاة، ولا يحتاج إلا الإحداثيات والمنطقة الزمنية.",
+        "النصوص: الأذكار والأدعية والأحاديث والقصص قوائم Dart، فتظهر فورًا دون قاعدة بيانات."
+      ]
+    },
+    "image": "muslim-app/docs/assets/feature-offline.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "Offline by design",
+        "ar": "بلا إنترنت من الأساس"
+      },
+      "body": {
+        "en": "No backend and no API keys: the Mushaf, the surah index and all texts are bundled assets, so the app opens instantly and works anywhere.",
+        "ar": "لا خادم ولا مفاتيح API: المصحف وفهرس السور وكل النصوص أصول مضمّنة، فيفتح التطبيق فورًا ويعمل في أي مكان."
+      }
+    },
+    {
+      "title": {
+        "en": "Reading continuity",
+        "ar": "استمرارية القراءة"
+      },
+      "body": {
+        "en": "The Quran reader saves the last viewed page and the bookmark, and a floating button on the index jumps straight to the bookmark.",
+        "ar": "يحفظ قارئ المصحف آخر صفحة والعلامة، وزر عائم في الفهرس ينقل مباشرة إلى العلامة."
+      }
+    },
+    {
+      "title": {
+        "en": "Sensor-driven Qibla",
+        "ar": "قبلة تعتمد على الحساسات"
+      },
+      "body": {
+        "en": "The app checks for a compass sensor and falls back to a map without one. Location status flows through a `StreamController<LocationStatus>`, showing a retry widget instead of a broken compass.",
+        "ar": "يتحقق التطبيق من وجود حساس البوصلة ويعرض خريطة بديلة عند غيابه، وتمر حالة الموقع عبر `StreamController<LocationStatus>` فتظهر واجهة إعادة المحاولة بدل بوصلة معطّلة."
+      }
+    },
+    {
+      "title": {
+        "en": "Configurable prayer location",
+        "ar": "موقع صلاة قابل للضبط"
+      },
+      "body": {
+        "en": "Prayer location is a build-time setting via `--dart-define`, defaulting to Cairo, so a version for any city builds without code changes.",
+        "ar": "موقع حساب المواقيت إعداد وقت البناء عبر `--dart-define` وافتراضيه القاهرة، فيمكن بناء نسخة لأي مدينة دون تعديل الكود."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Published on Google Play as `com.anashaker.islam`; the listing is no longer live, so no install numbers are claimed.",
+      "With Flutter 2.10.5, `flutter analyze` reports 0 errors and 0 warnings on the 2020 codebase."
+    ],
+    "ar": [
+      "نُشر على Google Play باسم الحزمة `com.anashaker.islam`، وصفحته لم تعد متاحة، لذلك لا تُذكر أرقام تثبيت.",
+      "مع Flutter 2.10.5 يعطي `flutter analyze` صفر أخطاء وصفر تحذيرات على كود 2020."
+    ]
+  },
+  "metrics": [],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "native_pdf_view",
+    "SharedPreferences",
+    "PrayTimes",
+    "flutter_qiblah",
+    "geolocator",
+    "Google Maps",
+    "hijri_picker",
+    "vibration",
+    "flutter_svg"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/muslim-app"
+    }
+  ],
+  "images": [
+    {
+      "src": "muslim-app/docs/assets/banner.png",
+      "alt": {
+        "en": "Muslim app banner",
+        "ar": "بانر تطبيق مسلم"
+      },
+      "caption": {
+        "en": "Quran, azkar, duas, prophets' stories, prayer times and a Qibla compass in one Arabic app",
+        "ar": "القرآن والأذكار والأدعية وقصص الأنبياء ومواقيت الصلاة وبوصلة القبلة في تطبيق عربي واحد"
+      },
+      "role": "banner"
+    },
+    {
+      "src": "muslim-app/docs/assets/feature-offline.png",
+      "alt": {
+        "en": "Works with no internet",
+        "ar": "يعمل دون إنترنت"
+      },
+      "caption": {
+        "en": "Bundled Mushaf, on-device prayer times and texts that load instantly",
+        "ar": "مصحف مضمّن ومواقيت تُحسب على الجهاز ونصوص تظهر فورًا"
+      },
+      "role": "feature"
+    },
+    {
+      "src": "muslim-app/docs/assets/screens.png",
+      "alt": {
+        "en": "Muslim app screens",
+        "ar": "شاشات تطبيق مسلم"
+      },
+      "caption": {
+        "en": "Home, Quran index, duas, prayer times, prophets' stories and the companions, from the released app",
+        "ar": "الرئيسية وفهرس القرآن والأدعية ومواقيت الصلاة وقصص الأنبياء والصحابة من النسخة المنشورة"
+      },
+      "role": "gallery"
+    }
+  ]
+}

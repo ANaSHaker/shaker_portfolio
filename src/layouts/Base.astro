@@ -1,0 +1,165 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/bricolage-grotesque';
+import '@fontsource-variable/readex-pro';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { dir, t, url, type Lang } from '../i18n';
+import { links, profile } from '../data/site';
+
+interface Props {
+  lang: Lang;
+  title?: string;
+  description?: string;
+  /** Path after /<lang>/ for this page, e.g. "" or "projects/talabatek/". Used for hreflang + language switch. */
+  path: string;
+  ogImage?: string;
+  accent?: string;
+}
+const { lang, title, description, path, ogImage = 'img/og/home.jpg', accent } = Astro.props;
+const s = t(lang);
+const pageTitle = title ? `${title} · ${profile.name[lang]}` : s.meta.title;
+const desc = description ?? s.meta.description;
+const site = Astro.site!.toString().replace(/\/$/, '');
+const abs = (p: string) => site + url(p);
+const canonical = abs(`${lang}/${path}`);
+const other: Lang = lang === 'en' ? 'ar' : 'en';
+
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profile.name.en,
+  alternateName: profile.name.ar,
+  jobTitle: profile.role.en,
+  address: { '@type': 'PostalAddress', addressLocality: 'Cairo', addressCountry: 'EG' },
+  url: abs(''),
+  image: abs('img/profile/photo-460.webp'),
+  sameAs: [links.linkedin, links.github, links.khamsat, links.mostaql],
+  knowsAbout: ['Flutter', 'Dart', 'Android', 'Kotlin', 'Laravel', 'Next.js', 'Python', 'AI'],
+};
+---
+
+<!doctype html>
+<html lang={lang} dir={dir(lang)} data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={lang} href={canonical} />
+    <link rel="alternate" hreflang={other} href={abs(`${other}/${path}`)} />
+    <link rel="alternate" hreflang="x-default" href={abs(`en/${path}`)} />
+    <meta name="author" content={profile.name.en} />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#05070f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f4f5fa" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={url('apple-touch-icon.png')} />
+
+    <meta property="og:type" content={path ? 'article' : 'website'} />
+    <meta property="og:site_name" content={profile.name[lang]} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={abs(ogImage)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content={lang === 'ar' ? 'ar_EG' : 'en_US'} />
+    <meta property="og:locale:alternate" content={lang === 'ar' ? 'en_US' : 'ar_EG'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={desc} />
+    <meta name="twitter:image" content={abs(ogImage)} />
+    <script type="application/ld+json" set:html={JSON.stringify(personLd)} />
+
+    <!-- Theme: stored choice > system preference. Runs before paint to avoid a flash. -->
+    <script is:inline>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        if (/[?&]shot/.test(location.search)) d.classList.add('shot');
+        var stored = null;
+        try { stored = localStorage.getItem('theme'); } catch (e) {}
+        var forced = (location.search.match(/[?&]theme=(dark|light)/) || [])[1];
+        var theme = forced || stored || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        d.dataset.theme = theme;
+        try { localStorage.setItem('lang', d.lang); } catch (e) {}
+      })();
+    </script>
+    <slot name="head" />
+  </head>
+  <body class="bg-bg text-ink antialiased" style={accent ? `--accent:${accent}` : undefined}>
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-[100] focus:rounded-full focus:bg-brand focus:px-4 focus:py-2 focus:text-white"
+      >{s.skip}</a
+    >
+    <div class="backdrop" aria-hidden="true"><div class="grid-lines"></div></div>
+    <Header lang={lang} path={path} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+
+    <script>
+      // Scroll reveal
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const els = document.querySelectorAll<HTMLElement>('[data-reveal]');
+      if (reduce || !('IntersectionObserver' in window)) {
+        els.forEach((el) => el.classList.add('is-in'));
+      } else {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-in');
+                io.unobserve(e.target);
+              }
+            }
+          },
+          { rootMargin: '0px 0px -8% 0px', threshold: 0.08 },
+        );
+        els.forEach((el) => io.observe(el));
+      }
+
+      // Cursor spotlight on cards
+      if (!reduce && matchMedia('(hover: hover)').matches) {
+        document.addEventListener('pointermove', (ev) => {
+          const card = (ev.target as HTMLElement)?.closest?.<HTMLElement>('.card');
+          if (!card) return;
+          const r = card.getBoundingClientRect();
+          card.style.setProperty('--mx', `${ev.clientX - r.left}px`);
+          card.style.setProperty('--my', `${ev.clientY - r.top}px`);
+        });
+      }
+
+      // Theme toggle
+      document.querySelectorAll('[data-theme-toggle]').forEach((btn) =>
+        btn.addEventListener('click', () => {
+          const d = document.documentElement;
+          const next = d.dataset.theme === 'dark' ? 'light' : 'dark';
+          const apply = () => {
+            d.dataset.theme = next;
+            try {
+              localStorage.setItem('theme', next);
+            } catch {}
+          };
+          const doc = document as Document & { startViewTransition?: (cb: () => void) => unknown };
+          if (doc.startViewTransition && !reduce) doc.startViewTransition(apply);
+          else apply();
+        }),
+      );
+
+      // Language switch: persist explicit choice
+      document.querySelectorAll<HTMLAnchorElement>('[data-lang-switch]').forEach((a) =>
+        a.addEventListener('click', () => {
+          try {
+            localStorage.setItem('lang', a.dataset.langSwitch!);
+          } catch {}
+        }),
+      );
+    </script>
+  </body>
+</html>

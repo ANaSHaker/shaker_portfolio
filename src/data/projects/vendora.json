@@ -1,0 +1,433 @@
+{
+  "slug": "vendora",
+  "order": 3,
+  "featured": true,
+  "name": {
+    "en": "Vendora",
+    "ar": "Vendora"
+  },
+  "kind": "code-case-study",
+  "categories": [
+    "commerce",
+    "opensource"
+  ],
+  "accent": "#3B7BFF",
+  "region": null,
+  "period": null,
+  "platforms": [
+    "Windows",
+    "Android",
+    "iOS",
+    "Web"
+  ],
+  "tagline": {
+    "en": "POS, inventory, menu and store in one codebase",
+    "ar": "نقطة بيع ومخزون ومنيو ومتجر من كود واحد"
+  },
+  "summary": {
+    "en": "A multi-tenant POS and commerce SaaS in Flutter: keyboard-first POS, multi-branch inventory, reports, QR menu and online store on desktop, mobile and web.",
+    "ar": "منصة SaaS متعددة التجار لنقاط البيع والتجارة بـ Flutter: نقطة بيع بالكيبورد، ومخزون متعدد الفروع، وتقارير، ومنيو QR، ومتجر أونلاين على الديسكتوب والجوال والويب."
+  },
+  "overview": {
+    "en": [
+      "Vendora is a SaaS for shops, cafés and restaurants. A vendor signs up, picks a plan and runs the business from one app: a keyboard-first POS on the counter PC, inventory across branches and warehouses, purchasing, reports and staff permissions, plus a public QR digital menu and online storefront built from the same catalog. A super-admin portal manages vendors, plans, billing and subscriptions.",
+      "The repository holds the full Flutter client: about 123k lines of Dart across 29 feature modules. The UI switches layout by width, a desktop shell with a sidebar at 1024 px and up and a mobile shell with bottom navigation below, while both share the same Cubits, use cases and repositories."
+    ],
+    "ar": [
+      "Vendora منصة SaaS للمحلات والمقاهي والمطاعم. يسجّل التاجر ويختار باقته ثم يدير عمله كله من تطبيق واحد: نقطة بيع تعمل بالكيبورد على جهاز الكاشير، ومخزون عبر الفروع والمخازن، ومشتريات وتقارير وصلاحيات للموظفين، ومنيو رقمي بـ QR ومتجر أونلاين من الكتالوج نفسه. وتدير بوابة السوبر أدمن التجار والباقات والفواتير والاشتراكات.",
+      "يحتوي المستودع على تطبيق Flutter كاملًا: نحو 123 ألف سطر Dart موزّعة على 29 وحدة ميزات. تتبدّل الواجهة حسب العرض، بواجهة ديسكتوب بقائمة جانبية من 1024 بكسل فأكثر وواجهة جوال بشريط تنقّل سفلي لما دون ذلك، وكلتاهما تشتركان في الـ Cubits وحالات الاستخدام والمستودعات نفسها."
+    ]
+  },
+  "role": {
+    "en": [
+      "Product owner and lead Flutter engineer.",
+      "Designed the clean architecture and the full design system.",
+      "Built every feature module, from POS and inventory to the digital menu and admin portal.",
+      "Delivered localization in five languages and the web, desktop and mobile builds."
+    ],
+    "ar": [
+      "مالك المنتج ومطوّر Flutter الرئيسي.",
+      "صمّمت المعمارية النظيفة ونظام التصميم الكامل.",
+      "بنيت كل وحدات الميزات، من نقطة البيع والمخزون إلى المنيو الرقمي وبوابة الإدارة.",
+      "نفّذت الترجمة لخمس لغات ونسخ الويب والديسكتوب والجوال."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "One product, three form factors: a dense desktop POS with hotkeys and barcode scanning, a phone app for owners, and a no-login link for diners, all sharing one catalog and one order stream.",
+      "Multi-branch stock: every sale must decrement the right warehouse, and transfers, counts, adjustments and goods receipts must all be auditable.",
+      "White-label per vendor: each vendor brings its own colors, logo, menu design and storefront theme.",
+      "An Arabic-first market: full RTL, Arabic numerals and dates, and EGP/SAR currency formatting without breaking LTR layouts."
+    ],
+    "ar": [
+      "منتج واحد وثلاثة أشكال: نقطة بيع ديسكتوب كثيفة باختصارات وقارئ باركود، وتطبيق جوال للمالك، ورابط للزبائن بلا تسجيل دخول، وكلها تشترك في كتالوج واحد وتدفق طلبات واحد.",
+      "مخزون متعدد الفروع: كل عملية بيع يجب أن تخصم من المخزن الصحيح، وكل تحويل وجرد وتسوية واستلام بضاعة يجب أن يكون قابلًا للتدقيق.",
+      "هوية خاصة لكل تاجر: لكل تاجر ألوانه وشعاره وتصميم منيو وثيم متجر.",
+      "سوق عربي أولًا: RTL كامل، وأرقام وتواريخ عربية، وتنسيق عملات EGP وSAR دون كسر تخطيطات LTR."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Sales",
+        "ar": "المبيعات"
+      },
+      "items": {
+        "en": [
+          "Desktop POS with branch and warehouse sessions, F1–F5 category tabs, barcode input, discounts, Ctrl+Z undo and change calculation.",
+          "Cash, card or transfer payments with PDF receipts, auto-print and sound feedback.",
+          "Mobile POS with a cart bottom sheet driven by the same `PosCubit` and `CartCubit`.",
+          "Orders from POS, online and menu channels, with refunds, fulfillment status and public tracking.",
+          "Reservations with a public booking page, schedules, time slots and closed dates."
+        ],
+        "ar": [
+          "نقطة بيع ديسكتوب بجلسات فرع ومخزن، وتبويبات فئات بـ F1–F5، وإدخال الباركود، والخصومات، والتراجع بـ Ctrl+Z، وحساب الباقي.",
+          "دفع نقدي أو بالبطاقة أو بالتحويل، مع إيصالات PDF وطباعة تلقائية وتنبيه صوتي.",
+          "نقطة بيع للجوال بسلة في لوحة سفلية تعمل بـ `PosCubit` و`CartCubit` نفسيهما.",
+          "طلبات من نقطة البيع والمتجر والمنيو، مع الاسترجاع وحالة التنفيذ وتتبّع عام للطلب.",
+          "حجوزات بصفحة حجز عامة، ومواعيد، وفترات زمنية، وأيام إغلاق."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Inventory and insights",
+        "ar": "المخزون والتقارير"
+      },
+      "items": {
+        "en": [
+          "Stock by warehouse, stock movements and FIFO cost layers.",
+          "Transfers (approve, post, receive), stock counts, adjustments and goods receipts.",
+          "Suppliers with a ledger and aging report.",
+          "A KPI dashboard with a 30-day sales chart, top products and top customers.",
+          "P&L, sales, inventory valuation and FIFO profit reports, exported to Excel and PDF."
+        ],
+        "ar": [
+          "المخزون حسب المخزن، وحركات المخزون، وطبقات تكلفة FIFO.",
+          "التحويلات (اعتماد وترحيل واستلام)، والجرد، والتسويات، واستلام البضاعة.",
+          "الموردون مع كشف حساب وتقرير أعمار الديون.",
+          "لوحة مؤشرات أداء مع رسم مبيعات لآخر 30 يومًا وأفضل المنتجات والعملاء.",
+          "تقارير الأرباح والخسائر والمبيعات وتقييم المخزون وأرباح FIFO، مع التصدير إلى Excel وPDF."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Online presence and platform",
+        "ar": "الحضور الرقمي والمنصة"
+      },
+      "items": {
+        "en": [
+          "A QR digital menu with 8 designs, live preview, QR code, PDF export and a public URL.",
+          "An online storefront with 12 themes in light and dark, cart, checkout and order tracking (still in progress).",
+          "Roles and permissions, branches, device security and an activity log.",
+          "FCM push, analytics and remote error reporting, plus a super-admin portal for vendors, plans, billing and subscriptions."
+        ],
+        "ar": [
+          "منيو رقمي بـ QR بثمانية تصميمات، مع معاينة حيّة ورمز QR وتصدير PDF ورابط عام.",
+          "متجر أونلاين بـ 12 ثيمًا فاتحًا وداكنًا، مع سلة ودفع وتتبّع للطلب (ما زال قيد التطوير).",
+          "أدوار وصلاحيات، وفروع، وأمان للأجهزة، وسجل نشاط.",
+          "إشعارات FCM وتحليلات وتقارير أخطاء عن بُعد، وبوابة سوبر أدمن للتجار والباقات والفواتير والاشتراكات."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "The QR digital menu",
+      "ar": "المنيو الرقمي بـ QR"
+    },
+    "body": {
+      "en": [
+        "The vendor picks one of 8 designs (Modern Grid, Classic List, Dark Luxury, Minimal, Magazine, Promo Flyer, Billboard, Elegant Cards), sets primary and background colors and uploads a logo. Products, prices and visibility come straight from the catalog, and a menu-only price can override the POS price.",
+        "On save, settings go to Cloud Firestore under `menus/{vendorId}`, a `slugIndex/{slug}` document maps the public slug to the vendor, and the logo goes to Firebase Storage.",
+        "The public route `/menu/:slug` skips the auth guard, resolves the slug and renders the chosen theme. A diner only needs a phone browser.",
+        "The builder generates a QR code with `qr_flutter` and a printable PDF for the tables."
+      ],
+      "ar": [
+        "يختار التاجر واحدًا من 8 تصميمات (Modern Grid وClassic List وDark Luxury وMinimal وMagazine وPromo Flyer وBillboard وElegant Cards)، ويحدد اللون الأساسي ولون الخلفية ويرفع شعاره. تأتي المنتجات والأسعار والظهور من الكتالوج مباشرة، ويمكن لسعر خاص بالمنيو أن يتجاوز سعر نقطة البيع.",
+        "عند الحفظ تُكتب الإعدادات في Cloud Firestore تحت `menus/{vendorId}`، ويربط مستند `slugIndex/{slug}` الرابط العام بالتاجر، ويُرفع الشعار إلى Firebase Storage.",
+        "يتجاوز المسار العام `/menu/:slug` حارس تسجيل الدخول، فيحدد التاجر ويعرض الثيم المختار. كل ما يحتاجه الزبون متصفح على هاتفه.",
+        "يولّد المحرر رمز QR عبر `qr_flutter` وملف PDF قابلًا للطباعة للطاولات."
+      ]
+    },
+    "image": "vendora/assets/feature-digital-menu.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "One codebase, two layouts",
+        "ar": "كود واحد وتخطيطان"
+      },
+      "body": {
+        "en": "Routes pick a desktop or mobile page by `MediaQuery` width (1024 px and up). Both share the same Cubit instance and data layer, so a fix in a use case reaches both.",
+        "ar": "تختار المسارات صفحة الديسكتوب أو الجوال حسب عرض `MediaQuery` (من 1024 بكسل فأكثر). وتتشارك الصفحتان الـ Cubit وطبقة البيانات نفسها، فيصل أي إصلاح في حالة استخدام إلى الاثنتين."
+      }
+    },
+    {
+      "title": {
+        "en": "Keyboard-first POS",
+        "ar": "نقطة بيع بالكيبورد أولًا"
+      },
+      "body": {
+        "en": "A `HardwareKeyboard` handler buffers fast key bursts to tell a barcode scanner from typing, and maps F1–F5 to categories, Enter to charge, D to discount, / to search and Ctrl+Z to undo.",
+        "ar": "يجمّع معالج `HardwareKeyboard` نقرات المفاتيح السريعة ليميّز قارئ الباركود عن الكتابة، ويربط F1–F5 بالفئات، وEnter بالدفع، وD بالخصم، و/ بالبحث، وCtrl+Z بالتراجع."
+      }
+    },
+    {
+      "title": {
+        "en": "Clean architecture with typed failures",
+        "ar": "معمارية نظيفة بأخطاء مُنمّطة"
+      },
+      "body": {
+        "en": "Cubits call use cases only, and repositories return `Either<Failure, T>`, so the UI never sees an exception. Dependencies are wired with `get_it` and `injectable`.",
+        "ar": "لا تستدعي الـ Cubits إلا حالات الاستخدام، وتعيد المستودعات `Either<Failure, T>`، فلا ترى الواجهة أي استثناء. والاعتماديات مربوطة عبر `get_it` و`injectable`."
+      }
+    },
+    {
+      "title": {
+        "en": "Public routes beside a guarded app",
+        "ar": "مسارات عامة بجوار تطبيق محمي"
+      },
+      "body": {
+        "en": "`/menu/:slug`, `/track/:token` and `/book/:slug` are whitelisted in the router's redirect, so customers use them without an account while the staff app and admin-only `/admin/*` stay guarded.",
+        "ar": "المسارات `/menu/:slug` و`/track/:token` و`/book/:slug` مستثناة في إعادة التوجيه، فيستخدمها الزبائن بلا حساب، بينما يبقى تطبيق الموظفين ومسارات `/admin/*` الخاصة بالإدارة محميّة."
+      }
+    },
+    {
+      "title": {
+        "en": "RTL and five languages",
+        "ar": "RTL وخمس لغات"
+      },
+      "body": {
+        "en": "Strings live in JSON dictionaries of about 1,700 keys each, loaded by a custom `AppLocalizations`. Directional padding and alignment mirror the whole app in Arabic, charts and tables included.",
+        "ar": "النصوص في قواميس JSON بنحو 1,700 مفتاح لكل لغة، يحمّلها `AppLocalizations` مخصّص. ويعكس الحشو والمحاذاة الاتجاهية التطبيق كله بالعربية، بما فيه الرسوم والجداول."
+      }
+    },
+    {
+      "title": {
+        "en": "Resilient sessions",
+        "ar": "جلسات صامدة"
+      },
+      "body": {
+        "en": "An auth interceptor attaches the Bearer token, an error interceptor maps 401/402/403/5xx to typed failures, and on network errors `AuthCubit` restores the cached user instead of logging out.",
+        "ar": "يضيف معترض المصادقة الـ Bearer token، ويحوّل معترض الأخطاء رموز 401/402/403/5xx إلى أخطاء مُنمّطة، وعند انقطاع الشبكة يستعيد `AuthCubit` المستخدم المخزّن بدل تسجيل خروجه."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "About 123k lines of Dart across 29 feature modules, 100 pages, 45 Cubits and 68 routes.",
+      "One width-adaptive codebase running on Windows desktop, Android, iOS and the web.",
+      "Five languages, including full Arabic RTL, with about 1,700 keys each.",
+      "Released as open source under the MIT license."
+    ],
+    "ar": [
+      "نحو 123 ألف سطر Dart في 29 وحدة ميزات و100 صفحة و45 Cubit و68 مسارًا.",
+      "كود واحد متكيّف مع العرض يعمل على Windows وAndroid وiOS والويب.",
+      "خمس لغات منها العربية بـ RTL كامل، بنحو 1,700 مفتاح لكل لغة.",
+      "منشور كمصدر مفتوح بترخيص MIT."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "~123k",
+      "label": {
+        "en": "lines of Dart",
+        "ar": "سطر Dart"
+      }
+    },
+    {
+      "value": "29",
+      "label": {
+        "en": "feature modules",
+        "ar": "وحدة ميزات"
+      }
+    },
+    {
+      "value": "4",
+      "label": {
+        "en": "platforms, one codebase",
+        "ar": "منصات بكود واحد"
+      }
+    },
+    {
+      "value": "5",
+      "label": {
+        "en": "languages with RTL",
+        "ar": "لغات مع RTL"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Cubit",
+    "Clean Architecture",
+    "go_router",
+    "get_it / injectable",
+    "dartz",
+    "Dio",
+    "Firestore",
+    "FCM",
+    "fl_chart",
+    "pdf / printing",
+    "excel",
+    "qr_flutter"
+  ],
+  "links": [
+    {
+      "type": "github",
+      "label": {
+        "en": "GitHub repo",
+        "ar": "المستودع على GitHub"
+      },
+      "url": "https://github.com/ANaSHaker/vendora"
+    }
+  ],
+  "images": [
+    {
+      "src": "vendora/assets/banner.png",
+      "alt": {
+        "en": "Vendora banner",
+        "ar": "الصورة الرئيسية لـ Vendora"
+      },
+      "caption": {
+        "en": "POS, inventory, digital menu and online store in one Flutter codebase.",
+        "ar": "نقطة بيع ومخزون ومنيو رقمي ومتجر أونلاين في كود Flutter واحد."
+      },
+      "role": "banner"
+    },
+    {
+      "src": "vendora/assets/feature-digital-menu.png",
+      "alt": {
+        "en": "QR digital menu",
+        "ar": "المنيو الرقمي بـ QR"
+      },
+      "caption": {
+        "en": "The QR digital menu, built from the live catalog.",
+        "ar": "المنيو الرقمي بـ QR، مبني من الكتالوج مباشرة."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "vendora/assets/menu-themes.png",
+      "alt": {
+        "en": "Menu themes",
+        "ar": "ثيمات المنيو"
+      },
+      "caption": {
+        "en": "Eight menu designs for every vendor's brand.",
+        "ar": "ثمانية تصميمات للمنيو تناسب هوية كل تاجر."
+      },
+      "role": "feature"
+    },
+    {
+      "src": "vendora/assets/pos-desktop.png",
+      "alt": {
+        "en": "Desktop POS",
+        "ar": "نقطة البيع على الديسكتوب"
+      },
+      "caption": {
+        "en": "Keyboard-first desktop POS.",
+        "ar": "نقطة بيع ديسكتوب تعمل بالكيبورد أولًا."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vendora/assets/dashboard-desktop.png",
+      "alt": {
+        "en": "Dashboard",
+        "ar": "لوحة المؤشرات"
+      },
+      "caption": {
+        "en": "Dashboard with KPIs, sales chart and top products.",
+        "ar": "لوحة المؤشرات مع رسم المبيعات وأفضل المنتجات."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vendora/assets/mobile-screens.png",
+      "alt": {
+        "en": "Mobile screens",
+        "ar": "شاشات الجوال"
+      },
+      "caption": {
+        "en": "The same features in the mobile shell.",
+        "ar": "الميزات نفسها في واجهة الجوال."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vendora/assets/orders-desktop.png",
+      "alt": {
+        "en": "Orders",
+        "ar": "الطلبات"
+      },
+      "caption": {
+        "en": "Orders across channels.",
+        "ar": "الطلبات من كل القنوات."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vendora/assets/products-desktop.png",
+      "alt": {
+        "en": "Products",
+        "ar": "المنتجات"
+      },
+      "caption": {
+        "en": "Catalog with import and export.",
+        "ar": "الكتالوج مع الاستيراد والتصدير."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vendora/assets/payment-desktop.png",
+      "alt": {
+        "en": "Payment",
+        "ar": "الدفع"
+      },
+      "caption": {
+        "en": "Checkout and change.",
+        "ar": "الدفع وحساب الباقي."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vendora/assets/dashboard-dark-blue.png",
+      "alt": {
+        "en": "Dark mode",
+        "ar": "الوضع الداكن"
+      },
+      "caption": {
+        "en": "Dark mode with a vendor brand color.",
+        "ar": "الوضع الداكن بلون هوية التاجر."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vendora/assets/dashboard-rtl.png",
+      "alt": {
+        "en": "Arabic RTL",
+        "ar": "العربية من اليمين لليسار"
+      },
+      "caption": {
+        "en": "Full Arabic RTL.",
+        "ar": "دعم كامل للعربية من اليمين لليسار."
+      },
+      "role": "gallery"
+    },
+    {
+      "src": "vendora/assets/menu-builder-desktop.png",
+      "alt": {
+        "en": "Menu builder",
+        "ar": "محرر المنيو"
+      },
+      "caption": {
+        "en": "Digital-menu builder with live preview.",
+        "ar": "محرر المنيو الرقمي مع معاينة حيّة."
+      },
+      "role": "gallery"
+    }
+  ]
+}
