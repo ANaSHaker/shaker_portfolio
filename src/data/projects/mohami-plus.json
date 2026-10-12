@@ -341,6 +341,14 @@
       "url": "https://github.com/ANaSHaker/mohami-plus-web-case-study"
     },
     {
+      "type": "play",
+      "label": {
+        "en": "Mohami Plus on Google Play",
+        "ar": "محامي بلس على Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.mohami.plus"
+    },
+    {
       "type": "web",
       "label": {
         "en": "Website",

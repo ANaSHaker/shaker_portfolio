@@ -92,7 +92,7 @@ export const ui = {
     meta: {
       title: 'Mahmoud Shaker · Senior Flutter & Android Engineer',
       description:
-        'Senior Flutter & Android Engineer in Cairo with 7+ years shipping native Android and Flutter apps: delivery platforms, e-commerce, POS, legal-tech and education, across Egypt, Saudi Arabia, Iraq and Palestine.',
+        'Senior Flutter & Android Engineer in Cairo with 6+ years shipping native Android and Flutter apps: delivery platforms, e-commerce, POS, legal-tech and education, across Egypt, Saudi Arabia, Iraq and Palestine.',
     },
   },
   ar: {
@@ -176,7 +176,7 @@ export const ui = {
     meta: {
       title: 'محمود شاكر · مهندس Flutter و Android أول',
       description:
-        'مهندس Flutter و Android أول في القاهرة بخبرة تزيد على 7 سنوات في بناء تطبيقات Android الأصلية و Flutter: منصات التوصيل والمتاجر الإلكترونية ونقاط البيع والتقنيات القانونية والتعليم في مصر والسعودية والعراق وفلسطين.',
+        'مهندس Flutter و Android أول في القاهرة بخبرة تزيد على 6 سنوات في بناء تطبيقات Android الأصلية و Flutter: منصات التوصيل والمتاجر الإلكترونية ونقاط البيع والتقنيات القانونية والتعليم في مصر والسعودية والعراق وفلسطين.',
     },
   },
 } as const;

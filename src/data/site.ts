@@ -10,11 +10,11 @@ export const profile = {
   } as L,
   bio: {
     en: [
-      "I'm a mobile developer specialising in Flutter and native Android (Java and Kotlin) with 7+ years of professional experience. I've worked part-time and full-time inside product companies and remotely with clients as a freelancer, delivering large multi-app platforms end-to-end and leading small teams to ship them on time and to a high bar.",
+      "I'm a mobile developer specialising in Flutter and native Android (Java and Kotlin) with 6+ years of professional experience. I've worked part-time and full-time inside product companies and remotely with clients as a freelancer, delivering large multi-app platforms end-to-end and leading small teams to ship them on time and to a high bar. Today I'm Tech Lead at 1Way World in Saudi Arabia.",
       'Today I build complete products for businesses across Egypt, Saudi Arabia, Iraq and Palestine: the customer app, the driver app, the merchant or restaurant app, the web app and the admin side, then publish them on Google Play and the App Store. I care about clean architecture, smooth Arabic-first UX, and code that keeps working after launch.',
     ],
     ar: [
-      'أنا مطوّر تطبيقات متخصص في Flutter وفي تطوير Android الأصلي بلغتي Java و Kotlin، بخبرة احترافية تزيد على 7 سنوات. عملت بدوام جزئي وكامل داخل شركات منتجات، وعن بُعد مع عملاء كمستقل، وسلّمت منصات كبيرة متعددة التطبيقات من البداية للنهاية، وقُدت فرقًا صغيرة لتسليمها في موعدها وبجودة عالية.',
+      'أنا مطوّر تطبيقات متخصص في Flutter وفي تطوير Android الأصلي بلغتي Java و Kotlin، بخبرة احترافية تزيد على 6 سنوات. عملت بدوام جزئي وكامل داخل شركات منتجات، وعن بُعد مع عملاء كمستقل، وسلّمت منصات كبيرة متعددة التطبيقات من البداية للنهاية، وقُدت فرقًا صغيرة لتسليمها في موعدها وبجودة عالية. وأعمل حاليًا Tech Lead في 1Way World بالسعودية.',
       'اليوم أبني منتجات كاملة لعملاء في مصر والسعودية والعراق وفلسطين: تطبيق العميل، وتطبيق المندوب، وتطبيق التاجر أو المطعم، وتطبيق الويب ولوحة التحكم، ثم أنشرها على Google Play و App Store. يهمني المعمار النظيف، وتجربة عربية سلسة أولًا، وكود يستمر في العمل بعد الإطلاق.',
     ],
   },
@@ -32,7 +32,7 @@ export const links = {
 };
 
 export const stats: { value: number; suffix: string; label: L }[] = [
-  { value: 7, suffix: '+', label: { en: 'years shipping', ar: 'سنوات خبرة' } },
+  { value: 6, suffix: '+', label: { en: 'years shipping', ar: 'سنوات خبرة' } },
   { value: 40, suffix: '+', label: { en: 'apps delivered', ar: 'تطبيق تم تسليمه' } },
   { value: 100, suffix: 'K+', label: { en: 'installs on one app', ar: 'تثبيت لتطبيق واحد' } },
   { value: 4, suffix: '', label: { en: 'countries served', ar: 'دول خدمت عملاءها' } },
