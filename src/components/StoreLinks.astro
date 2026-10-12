@@ -22,9 +22,9 @@ const compact = (type: LinkType) => type === 'github' && items.some((l) => l.typ
 
 {
   items.length > 0 && (
-    <ul class:list={['store-links relative z-10 flex gap-2', cls]}>
+    <ul class:list={['store-links relative z-10 flex flex-wrap gap-2', cls]}>
       {items.map((l) => (
-        <li class:list={[compact(l.type) ? 'shrink-0' : 'min-w-0 flex-1']}>
+        <li class:list={[compact(l.type) ? 'shrink-0' : 'flex-1 basis-[8.25rem]']}>
           <a
             href={l.url}
             target="_blank"
@@ -35,7 +35,7 @@ const compact = (type: LinkType) => type === 'github' && items.some((l) => l.typ
             aria-label={s.stores.openOn(p.name[lang], l.label[lang])}
           >
             <Icon name={icon[l.type] ?? 'arrow-up-right'} size={17} class="store-ic shrink-0" />
-            <span class:list={['truncate', compact(l.type) && 'sr-only']}>{label(l.type)}</span>
+            <span class:list={['whitespace-nowrap', compact(l.type) && 'sr-only']}>{label(l.type)}</span>
           </a>
         </li>
       ))}

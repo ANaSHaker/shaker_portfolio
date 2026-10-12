@@ -1,4 +1,5 @@
 ---
+import ProjectMarquee from './ProjectMarquee.astro';
 import Icon from './Icon.astro';
 import Img from './Img.astro';
 import { t, type Lang } from '../i18n';
@@ -136,6 +137,7 @@ const fmt = (n: number) => String(n);
       }
     </dl>
   </div>
+  <ProjectMarquee lang={lang} />
 </section>
 
 <script>
