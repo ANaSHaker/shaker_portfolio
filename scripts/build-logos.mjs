@@ -21,6 +21,7 @@ const sources = {
   talabatek: { src: '_store/com.talabatek.app/icon.png' },
   riza: { src: '_store/com.riza.store/icon.png' },
   vanilla: { src: '_store/com.vanilia.vanilia/icon.png' },
+  bargello: { src: '_store/com.oneway.bargello/icon.png' },
   'sim-2022': { src: '_store/com.app.sim.sim/logo_crop.png', bg: '#0b1d36', pad: 0.08 },
   insurify: { src: '_store/ios_insurify/ios_icon.jpg' },
   'delivery-iq': { src: '_store/com.delivery.iq/icon.png' },
@@ -33,7 +34,6 @@ const sources = {
   oneway: { src: 'repos/oneway-case-study/assets/_src/oneway_tile.png', zoom: 1.16 },
   midgram: { src: '_work/midgram/web/icons/Icon-512.png', bg: '#ffffff' },
   riftech: { src: '_work/riftech/assets/images/identity/icon.png', bg: '#2a2622' },
-  duat: { src: 'repos/duat-case-study/assets/_src/icon.svg', bg: '#2a1c12' },
   elmwafer: { src: 'repos/elmwafer/assets/_src/logo.png', bg: '#ffffff' },
   malazmna: { src: 'repos/malazmna/assets/_src/logo.png', bg: '#7d84ee', pad: 0.07 },
   muslim: { src: 'repos/muslim-app/docs/assets/_src/logo.png', zoom: 1.16 },
@@ -43,10 +43,6 @@ const sources = {
 
 /** Marks for projects with no icon of their own. */
 const marks = {
-  sawah: `<rect width="192" height="192" fill="#16110a"/><rect x="10" y="10" width="172" height="172" rx="34" fill="none" stroke="#C9A04A" stroke-opacity=".35" stroke-width="2"/>
-    <path d="M96 38c-14 0-24 10-24 23 0 12 9 21 24 30v63" fill="none" stroke="#C9A04A" stroke-width="12" stroke-linecap="round"/>
-    <path d="M60 104h72" stroke="#C9A04A" stroke-width="12" stroke-linecap="round"/>
-    <path d="M96 38c14 0 24 10 24 23 0 12-9 21-24 30" fill="none" stroke="#C9A04A" stroke-width="12" stroke-linecap="round"/>`,
   'video-walkthrough': `<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A855F7"/><stop offset="1" stop-color="#6D28D9"/></linearGradient></defs>
     <rect width="192" height="192" fill="url(#g)"/><rect x="40" y="52" width="112" height="88" rx="18" fill="#fff" fill-opacity=".16"/>
     <path d="M84 74v44l36-22z" fill="#fff"/><circle cx="80" cy="152" r="5" fill="#fff"/><circle cx="96" cy="152" r="5" fill="#fff" fill-opacity=".5"/><circle cx="112" cy="152" r="5" fill="#fff" fill-opacity=".5"/>`,

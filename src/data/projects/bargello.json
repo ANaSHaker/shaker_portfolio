@@ -1,0 +1,256 @@
+{
+  "slug": "bargello",
+  "order": 4,
+  "featured": true,
+  "name": {
+    "en": "Bargello",
+    "ar": "بارجيلو"
+  },
+  "kind": "client",
+  "categories": [
+    "commerce"
+  ],
+  "accent": "#9BB04A",
+  "region": {
+    "en": "Saudi Arabia",
+    "ar": "السعودية"
+  },
+  "period": "2026",
+  "platforms": [
+    "Android",
+    "iOS",
+    "Web"
+  ],
+  "logo": "img/logos/bargello.webp",
+  "tagline": {
+    "en": "A leading Turkish perfume brand, launched in Saudi Arabia",
+    "ar": "علامة عطور تركية كبرى، بإطلاقها في السعودية"
+  },
+  "summary": {
+    "en": "The Saudi store app of Bargello, one of Turkey’s best-known fragrance brands, brought to the Gulf by One Way Trading: an Arabic-first Flutter app on WooCommerce with Tabby and Tamara installments, MyFatoorah, wallet and search by photo.",
+    "ar": "تطبيق متجر بارجيلو في السعودية، إحدى أشهر علامات العطور التركية، تطلقه ون واي للتجارة في الخليج: تطبيق Flutter عربي أولًا على WooCommerce، مع التقسيط عبر تابي وتمارا، والدفع عبر ماي فاتورة، والمحفظة، والبحث بالصورة."
+  },
+  "overview": {
+    "en": [
+      "Bargello is a large Turkish fragrance house with hundreds of perfumes for women and men. One Way Trading, its authorised distributor in the Gulf, launched the brand in Saudi Arabia with its own online store and mobile app.",
+      "I led the mobile side as Tech Lead at 1Way World: the Flutter app for Android and iOS, its integration with the Bargello WooCommerce store, Saudi payment and shipping options, and the release on Google Play. The same platform also powers the web store and an installable web app."
+    ],
+    "ar": [
+      "بارجيلو دار عطور تركية كبيرة تضم مئات العطور للنساء والرجال. وأطلقتها ون واي للتجارة، موزّعها المعتمد في الخليج، في السعودية بمتجر إلكتروني وتطبيق خاصّين بها.",
+      "قدت جانب الموبايل بصفتي Tech Lead في 1Way World: تطبيق Flutter على Android و iOS، وربطه بمتجر بارجيلو على WooCommerce، وخيارات الدفع والشحن السعودية، والنشر على Google Play. والمنصة نفسها تشغّل المتجر على الويب وتطبيق ويب قابلًا للتثبيت."
+    ]
+  },
+  "role": {
+    "en": [
+      "Tech Lead for the mobile app: architecture, code reviews and releases.",
+      "Arabic-only storefront tuned for Saudi shoppers, with prices in Saudi riyal.",
+      "Payments: Tabby and Tamara installments, MyFatoorah, cash on delivery and wallet.",
+      "Banner and campaign destinations the owner controls from the dashboard: category, product or in-app page.",
+      "Stability work on startup: removed a race that left a blank screen on iOS and covered it with a regression test."
+    ],
+    "ar": [
+      "Tech Lead لتطبيق الموبايل: المعمارية ومراجعة الكود والإصدارات.",
+      "واجهة متجر بالعربية فقط تناسب المتسوّق السعودي، والأسعار بالريال السعودي.",
+      "الدفع: التقسيط عبر تابي وتمارا، وماي فاتورة، والدفع عند الاستلام، والمحفظة.",
+      "وجهات للبانرات والحملات يتحكم فيها المالك من لوحة التحكم: قسم أو منتج أو صفحة داخل التطبيق.",
+      "استقرار التشغيل: أزلت سباقًا كان يترك شاشة فارغة على iOS، وغطّيته باختبار يمنع رجوعه."
+    ]
+  },
+  "challenge": {
+    "en": [
+      "A premium brand in a new market: the app had to feel like Bargello and speak to Saudi shoppers from day one.",
+      "Saudi payments: shoppers expect to split payments with Tabby or Tamara, and the store also needs MyFatoorah and cash on delivery.",
+      "One catalogue for web and app: products, stock, prices, coupons and banners live in WooCommerce and must stay in sync.",
+      "Fast first launch on every device, without blank screens on slower or faster phones."
+    ],
+    "ar": [
+      "علامة فاخرة في سوق جديد: يجب أن يعبّر التطبيق عن بارجيلو ويخاطب المتسوّق السعودي من اليوم الأول.",
+      "الدفع في السعودية: المتسوّق يتوقع التقسيط عبر تابي أو تمارا، والمتجر يحتاج أيضًا ماي فاتورة والدفع عند الاستلام.",
+      "كتالوج واحد للويب والتطبيق: المنتجات والمخزون والأسعار والكوبونات والبانرات في WooCommerce ويجب أن تبقى متزامنة.",
+      "تشغيل أول سريع على كل جهاز، دون شاشات فارغة على الهواتف الأبطأ أو الأسرع."
+    ]
+  },
+  "highlights": [
+    {
+      "title": {
+        "en": "Shopping",
+        "ar": "التسوّق"
+      },
+      "items": {
+        "en": [
+          "The full Bargello collection by category, with new arrivals and offers on the home screen.",
+          "Search by photo: snap or upload a bottle and get the closest perfumes.",
+          "Product pages with several photos, a clear price and one-tap ordering."
+        ],
+        "ar": [
+          "تشكيلة بارجيلو كاملة حسب الأقسام، مع الجديد والعروض في الصفحة الرئيسية.",
+          "البحث بالصورة: صوّر العطر أو ارفع صورة وتصلك أقرب العطور.",
+          "صفحات منتجات بصور متعددة وسعر واضح وطلب بضغطة."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "Checkout",
+        "ar": "الدفع"
+      },
+      "items": {
+        "en": [
+          "Tabby and Tamara installments, MyFatoorah, cash on delivery and wallet.",
+          "Coupons, a free-shipping progress bar and saved addresses.",
+          "Guest checkout plus sign-in with WhatsApp or Google."
+        ],
+        "ar": [
+          "التقسيط عبر تابي وتمارا، وماي فاتورة، والدفع عند الاستلام، والمحفظة.",
+          "كوبونات، وشريط يوضح المتبقي للشحن المجاني، وعناوين محفوظة.",
+          "الشراء كضيف، والدخول عبر واتساب أو Google."
+        ]
+      }
+    },
+    {
+      "title": {
+        "en": "For the owner",
+        "ar": "لصاحب المتجر"
+      },
+      "items": {
+        "en": [
+          "Banners and campaigns managed from the dashboard, each with its own destination.",
+          "Wishlist synced with the account, order tracking and push notifications.",
+          "Over-the-air fixes with Shorebird between store releases."
+        ],
+        "ar": [
+          "البانرات والحملات تُدار من لوحة التحكم، ولكل منها وجهتها.",
+          "قائمة مفضلة متزامنة مع الحساب، وتتبّع الطلبات، والإشعارات.",
+          "تحديثات فورية عبر Shorebird بين إصدارات المتاجر."
+        ]
+      }
+    }
+  ],
+  "signature": {
+    "title": {
+      "en": "A Turkish brand, built for Saudi shoppers",
+      "ar": "علامة تركية، مبنية للمتسوّق السعودي"
+    },
+    "body": {
+      "en": [
+        "Arabic-only UI, prices in riyal, the payment methods Saudi shoppers already use, and campaigns the brand can launch on its own."
+      ],
+      "ar": [
+        "واجهة بالعربية فقط، وأسعار بالريال، وطرق الدفع التي يستخدمها المتسوّق السعودي، وحملات تطلقها العلامة بنفسها."
+      ]
+    },
+    "image": "bargello-perfumes/assets/store-listing.png"
+  },
+  "engineering": [
+    {
+      "title": {
+        "en": "No more blank screen on iOS",
+        "ar": "لا شاشة فارغة على iOS بعد الآن"
+      },
+      "body": {
+        "en": "The first frame read a cache that opened in the background, and a silent error widget hid the failure. The cache readers now handle “not ready yet”, and a test guards it.",
+        "ar": "كان أول إطار يقرأ من كاش يُفتح في الخلفية، وكان ودجت خطأ صامت يخفي العطل. صارت قراءات الكاش تتعامل مع حالة «ليس جاهزًا بعد»، ويحرسها اختبار."
+      }
+    },
+    {
+      "title": {
+        "en": "Campaign destinations that work",
+        "ar": "وجهات حملات تعمل فعلًا"
+      },
+      "body": {
+        "en": "Banner rows lacked an action and value, so destinations never opened. Saving became a merge and the app routes each banner to a category, product or in-app page.",
+        "ar": "كانت صفوف البانرات بلا إجراء ولا قيمة فلا تفتح أي وجهة. صار الحفظ دمجًا، والتطبيق يوجّه كل بانر إلى قسم أو منتج أو صفحة داخل التطبيق."
+      }
+    }
+  ],
+  "results": {
+    "en": [
+      "Live on Google Play for Saudi Arabia, with the web store at bargello.onewaytrading.sa."
+    ],
+    "ar": [
+      "متاح على Google Play في السعودية، مع المتجر على الويب في bargello.onewaytrading.sa."
+    ]
+  },
+  "metrics": [
+    {
+      "value": "5",
+      "label": {
+        "en": "payment options",
+        "ar": "خيارات دفع"
+      }
+    },
+    {
+      "value": "SAR",
+      "label": {
+        "en": "Saudi riyal pricing",
+        "ar": "أسعار بالريال السعودي"
+      }
+    }
+  ],
+  "stack": [
+    "Flutter",
+    "Dart",
+    "WooCommerce",
+    "Firebase",
+    "Shorebird",
+    "Tabby",
+    "Tamara",
+    "MyFatoorah"
+  ],
+  "links": [
+    {
+      "type": "play",
+      "label": {
+        "en": "Bargello on Google Play",
+        "ar": "بارجيلو على Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.oneway.bargello"
+    },
+    {
+      "type": "web",
+      "label": {
+        "en": "Bargello web store",
+        "ar": "متجر بارجيلو على الويب"
+      },
+      "url": "https://bargello.onewaytrading.sa/"
+    }
+  ],
+  "images": [
+    {
+      "src": "bargello-perfumes/assets/banner.png",
+      "role": "banner",
+      "alt": {
+        "en": "Bargello app on three Android phones",
+        "ar": "تطبيق بارجيلو على ثلاثة هواتف Android"
+      },
+      "caption": {
+        "en": "Bargello, the Saudi store app",
+        "ar": "بارجيلو، تطبيق المتجر في السعودية"
+      }
+    },
+    {
+      "src": "bargello-perfumes/assets/store-listing.png",
+      "role": "gallery",
+      "alt": {
+        "en": "Bargello Google Play screenshots: home, product, cart and wishlist",
+        "ar": "لقطات بارجيلو على Google Play: الرئيسية والمنتج والسلة والمفضلة"
+      },
+      "caption": {
+        "en": "Home, product, cart and wishlist",
+        "ar": "الرئيسية والمنتج والسلة والمفضلة"
+      }
+    },
+    {
+      "src": "bargello-perfumes/assets/store-listing-2.png",
+      "role": "gallery",
+      "alt": {
+        "en": "Bargello Google Play screenshots: brand, sign-in and account",
+        "ar": "لقطات بارجيلو على Google Play: العلامة وتسجيل الدخول والحساب"
+      },
+      "caption": {
+        "en": "Sign-in with WhatsApp or Google, and the account area",
+        "ar": "الدخول عبر واتساب أو Google، وصفحة الحساب"
+      }
+    }
+  ]
+}

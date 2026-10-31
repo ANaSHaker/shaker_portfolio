@@ -1,4 +1,58 @@
 {
+ "bargello-perfumes/assets/banner.png": {
+  "w": 1280,
+  "h": 640,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/bargello/banner-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/bargello/banner-1024.webp"
+   },
+   {
+    "w": 1280,
+    "src": "img/bargello/banner-1280.webp"
+   }
+  ]
+ },
+ "bargello-perfumes/assets/store-listing.png": {
+  "w": 1600,
+  "h": 839,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/bargello/store-listing-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/bargello/store-listing-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/bargello/store-listing-1600.webp"
+   }
+  ]
+ },
+ "bargello-perfumes/assets/store-listing-2.png": {
+  "w": 1600,
+  "h": 759,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/bargello/store-listing-2-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/bargello/store-listing-2-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/bargello/store-listing-2-1600.webp"
+   }
+  ]
+ },
  "delivery-iq-case-study/assets/banner.png": {
   "w": 1280,
   "h": 640,
@@ -176,168 +230,6 @@
    {
     "w": 1472,
     "src": "img/devora/irtaah-screens-1472.webp"
-   }
-  ]
- },
- "duat-case-study/assets/banner.png": {
-  "w": 1280,
-  "h": 640,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/banner-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/banner-1024.webp"
-   },
-   {
-    "w": 1280,
-    "src": "img/duat/banner-1280.webp"
-   }
-  ]
- },
- "duat-case-study/assets/feature-heka-ai.png": {
-  "w": 1600,
-  "h": 900,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/feature-heka-ai-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/feature-heka-ai-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/duat/feature-heka-ai-1600.webp"
-   }
-  ]
- },
- "duat-case-study/assets/architecture.png": {
-  "w": 1600,
-  "h": 790,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/architecture-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/architecture-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/duat/architecture-1600.webp"
-   }
-  ]
- },
- "duat-case-study/assets/web-landing.png": {
-  "w": 1600,
-  "h": 1000,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/web-landing-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/web-landing-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/duat/web-landing-1600.webp"
-   }
-  ]
- },
- "duat-case-study/assets/web-tour.png": {
-  "w": 1600,
-  "h": 1230,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/web-tour-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/web-tour-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/duat/web-tour-1600.webp"
-   }
-  ]
- },
- "duat-case-study/assets/mobile.png": {
-  "w": 1600,
-  "h": 804,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/mobile-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/mobile-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/duat/mobile-1600.webp"
-   }
-  ]
- },
- "duat-case-study/assets/play-senet.png": {
-  "w": 1600,
-  "h": 1000,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/play-senet-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/play-senet-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/duat/play-senet-1600.webp"
-   }
-  ]
- },
- "duat-case-study/assets/play-tjau.png": {
-  "w": 1600,
-  "h": 1000,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/play-tjau-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/play-tjau-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/duat/play-tjau-1600.webp"
-   }
-  ]
- },
- "duat-case-study/assets/product.png": {
-  "w": 1600,
-  "h": 980,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/duat/product-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/duat/product-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/duat/product-1600.webp"
    }
   ]
  },
@@ -1241,6 +1133,42 @@
    }
   ]
  },
+ "oneway-case-study/assets/store-driver-restaurant.png": {
+  "w": 1600,
+  "h": 839,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/oneway/store-driver-restaurant-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/oneway/store-driver-restaurant-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/oneway/store-driver-restaurant-1600.webp"
+   }
+  ]
+ },
+ "oneway-case-study/assets/store-customer.png": {
+  "w": 1600,
+  "h": 839,
+  "variants": [
+   {
+    "w": 640,
+    "src": "img/oneway/store-customer-640.webp"
+   },
+   {
+    "w": 1024,
+    "src": "img/oneway/store-customer-1024.webp"
+   },
+   {
+    "w": 1600,
+    "src": "img/oneway/store-customer-1600.webp"
+   }
+  ]
+ },
  "oneway-case-study/assets/feature-printing.png": {
   "w": 1600,
   "h": 1000,
@@ -1436,204 +1364,6 @@
    {
     "w": 1600,
     "src": "img/riza/how-visual-search-works-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/banner.png": {
-  "w": 1280,
-  "h": 640,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/banner-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/banner-1024.webp"
-   },
-   {
-    "w": 1280,
-    "src": "img/sawah/banner-1280.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/web-arabic.png": {
-  "w": 1600,
-  "h": 1000,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/web-arabic-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/web-arabic-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/web-arabic-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/screens-web.png": {
-  "w": 1600,
-  "h": 960,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/screens-web-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/screens-web-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/screens-web-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/screens-mobile.png": {
-  "w": 1600,
-  "h": 804,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/screens-mobile-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/screens-mobile-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/screens-mobile-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/feature-cartouche.png": {
-  "w": 1600,
-  "h": 900,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/feature-cartouche-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/feature-cartouche-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/feature-cartouche-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/feature-calendar.png": {
-  "w": 1600,
-  "h": 900,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/feature-calendar-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/feature-calendar-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/feature-calendar-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/feature-games.png": {
-  "w": 1600,
-  "h": 900,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/feature-games-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/feature-games-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/feature-games-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/feature-learn.png": {
-  "w": 1600,
-  "h": 900,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/feature-learn-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/feature-learn-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/feature-learn-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/feature-flags.png": {
-  "w": 1600,
-  "h": 1000,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/feature-flags-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/feature-flags-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/feature-flags-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/architecture.png": {
-  "w": 1600,
-  "h": 900,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/architecture-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/architecture-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/architecture-1600.webp"
-   }
-  ]
- },
- "sawah-case-study/assets/engineering-principles.png": {
-  "w": 1600,
-  "h": 760,
-  "variants": [
-   {
-    "w": 640,
-    "src": "img/sawah/engineering-principles-640.webp"
-   },
-   {
-    "w": 1024,
-    "src": "img/sawah/engineering-principles-1024.webp"
-   },
-   {
-    "w": 1600,
-    "src": "img/sawah/engineering-principles-1600.webp"
    }
   ]
  },

@@ -1,6 +1,6 @@
 {
   "slug": "oneway",
-  "order": 12,
+  "order": 10,
   "featured": false,
   "name": {
     "en": "OneWay Fast Food",
@@ -22,12 +22,12 @@
     "Web"
   ],
   "tagline": {
-    "en": "One codebase, a new brand in one constant",
-    "ar": "كود واحد، وهوية جديدة في ثابت واحد"
+    "en": "Customer, driver and restaurant apps under one brand",
+    "ar": "تطبيقات العميل والمندوب والمطعم تحت علامة واحدة"
   },
   "summary": {
-    "en": "A white-label redeployment of a Flutter delivery platform: new brand kit, adaptive live driver location, polygon coverage zones and golden tests.",
-    "ar": "إعادة إطلاق white-label لمنصة توصيل مبنية بـ Flutter: هوية بصرية جديدة، وتتبّع متكيّف لموقع السائق، ونطاقات تغطية بالمضلّعات، واختبارات golden."
+    "en": "A food delivery platform in three Flutter apps (customer, driver and restaurant), live on Google Play with the restaurant app also on the App Store: live driver location, coverage zones and order printing.",
+    "ar": "منصة توصيل طعام في ثلاثة تطبيقات Flutter (العميل والمندوب والمطعم)، متاحة على Google Play، وتطبيق المطعم متاح أيضًا على App Store: تتبّع حيّ للمندوب، ونطاقات تغطية، وطباعة الطلبات."
   },
   "overview": {
     "en": [
@@ -267,10 +267,50 @@
   ],
   "links": [
     {
+      "type": "play",
+      "label": {
+        "en": "Customer app on Google Play",
+        "ar": "تطبيق العميل على Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.oneway.userapp"
+    },
+    {
+      "type": "appstore",
+      "label": {
+        "en": "Restaurant app on the App Store",
+        "ar": "تطبيق المطعم على App Store"
+      },
+      "url": "https://apps.apple.com/kw/app/one-way-for-restaurants/id6817169973"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Driver app on Google Play",
+        "ar": "تطبيق المندوب على Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.oneway.delivery"
+    },
+    {
+      "type": "play",
+      "label": {
+        "en": "Restaurant app on Google Play",
+        "ar": "تطبيق المطعم على Google Play"
+      },
+      "url": "https://play.google.com/store/apps/details?id=com.oneway.restaurant"
+    },
+    {
+      "type": "web",
+      "label": {
+        "en": "OneWay website",
+        "ar": "موقع ون واي"
+      },
+      "url": "https://1way.world/"
+    },
+    {
       "type": "github",
       "label": {
-        "en": "GitHub repo",
-        "ar": "المستودع على GitHub"
+        "en": "Project on GitHub",
+        "ar": "المشروع على GitHub"
       },
       "url": "https://github.com/ANaSHaker/oneway-case-study"
     }
@@ -287,6 +327,30 @@
         "ar": "منصة توصيل إنتاجية بهوية جديدة وتحسينات لمشغّل جديد."
       },
       "role": "banner"
+    },
+    {
+      "src": "oneway-case-study/assets/store-driver-restaurant.png",
+      "role": "gallery",
+      "alt": {
+        "en": "Driver and restaurant apps",
+        "ar": "تطبيقا المندوب والمطعم"
+      },
+      "caption": {
+        "en": "Driver and restaurant apps",
+        "ar": "تطبيقا المندوب والمطعم"
+      }
+    },
+    {
+      "src": "oneway-case-study/assets/store-customer.png",
+      "role": "gallery",
+      "alt": {
+        "en": "Customer app on Google Play",
+        "ar": "تطبيق العميل على Google Play"
+      },
+      "caption": {
+        "en": "Customer app on Google Play",
+        "ar": "تطبيق العميل على Google Play"
+      }
     },
     {
       "src": "oneway-case-study/assets/feature-printing.png",
