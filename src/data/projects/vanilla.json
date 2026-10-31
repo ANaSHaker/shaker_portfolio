@@ -1,6 +1,6 @@
 {
   "slug": "vanilla",
-  "order": 3,
+  "order": 1,
   "featured": true,
   "name": {
     "en": "Vanilla",
@@ -25,8 +25,8 @@
     "ar": "تسوّق مستحضرات التجميل بالعربية أولًا في العراق"
   },
   "summary": {
-    "en": "A cosmetics and beauty shopping app for Iraq, built with Flutter on the client's WooCommerce store. 100K+ installs on Google Play, rated 4.4.",
-    "ar": "تطبيق لتسوّق مستحضرات التجميل والعناية في العراق، مبني بـ Flutter على متجر WooCommerce الخاص بالعميل، وتجاوز 100 ألف تثبيت على Google Play بتقييم 4.4."
+    "en": "A cosmetics and beauty shopping app for Iraq, built with Flutter on the client's WooCommerce store. 100K+ downloads on Google Play, rated 4.4.",
+    "ar": "تطبيق لتسوّق مستحضرات التجميل والعناية في العراق، مبني بـ Flutter على متجر WooCommerce الخاص بالعميل، وتجاوز 100 ألف تحميل على Google Play بتقييم 4.4."
   },
   "overview": {
     "en": [
@@ -231,8 +231,8 @@
     {
       "value": "100K+",
       "label": {
-        "en": "installs on Google Play",
-        "ar": "تثبيت على Google Play"
+        "en": "downloads on Google Play",
+        "ar": "تحميل على Google Play"
       }
     },
     {
