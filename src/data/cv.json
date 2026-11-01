@@ -1,0 +1,16 @@
+{
+  "pdf": "cv/Mahmoud_Shaker_Flutter_CV.pdf",
+  "sizeKb": 89,
+  "pages": [
+    {
+      "src": "cv/page-1.webp",
+      "width": 1406,
+      "height": 1988
+    },
+    {
+      "src": "cv/page-2.webp",
+      "width": 1406,
+      "height": 1988
+    }
+  ]
+}

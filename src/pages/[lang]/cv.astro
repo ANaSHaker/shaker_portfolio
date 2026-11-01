@@ -1,0 +1,89 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Contact from '../../components/Contact.astro';
+import cv from '../../data/cv.json';
+import { langs, t, url, type Lang } from '../../i18n';
+
+export function getStaticPaths() {
+  return langs.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const s = t(lang);
+const pdf = url(cv.pdf);
+const fileName = cv.pdf.split('/').pop();
+---
+
+<Base lang={lang} path="cv/" title={s.cv.title} description={s.cv.meta}>
+  <section class="relative overflow-hidden pt-[calc(4.75rem+env(safe-area-inset-top))] pb-16 lg:pt-36 lg:pb-24">
+    <div
+      class="pointer-events-none absolute -top-40 start-1/2 -z-10 h-[40rem] w-[60rem] -translate-x-1/2 rounded-full opacity-20 blur-3xl rtl:translate-x-1/2"
+      style="background:radial-gradient(closest-side, var(--brand, #3b82f6), transparent)"
+      aria-hidden="true"
+    >
+    </div>
+    <div class="container-x">
+      <a href={url(`${lang}/`)} class="rise link-arrow group inline-flex items-center gap-2 text-sm font-medium text-muted hover:text-ink">
+        <Icon name="arrow-left" size={16} class="flip-rtl" />
+        {s.nav.home}
+      </a>
+
+      <div class="mt-6 flex flex-col gap-6 sm:mt-8 lg:flex-row lg:items-end lg:justify-between">
+        <div class="rise max-w-2xl" style="--d:1">
+          <p class="kicker">{s.cv.kicker}</p>
+          <h1 class="h-section mt-4">{s.cv.title}</h1>
+          <p class="mt-4 text-[1.05rem] leading-relaxed text-ink-2 sm:text-lg">{s.cv.body}</p>
+        </div>
+        <div class="rise grid gap-2.5 sm:flex sm:gap-3" style="--d:2">
+          <a href={pdf} download={fileName} class="btn btn-primary min-h-12 whitespace-nowrap">
+            <Icon name="download" size={18} />
+            {s.cv.download}
+            <span class="text-sm opacity-75" dir="ltr">({cv.sizeKb} KB)</span>
+          </a>
+          <a href={pdf} target="_blank" rel="noopener" class="btn btn-ghost min-h-12 whitespace-nowrap">
+            <Icon name="expand" size={17} />
+            {s.cv.open}
+          </a>
+        </div>
+      </div>
+
+      <div class="rise mx-auto mt-10 grid max-w-[56rem] gap-5 sm:mt-12 sm:gap-8" style="--d:3" dir="ltr">
+        {
+          cv.pages.map((p, i) => (
+            <a href={pdf} target="_blank" rel="noopener" class="cv-page block overflow-hidden rounded-xl bg-white sm:rounded-2xl" aria-label={`${s.cv.page(i + 1)} · ${s.cv.open}`}>
+              <img
+                src={url(p.src)}
+                alt={s.cv.page(i + 1)}
+                width={p.width}
+                height={p.height}
+                loading={i === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+                class="block h-auto w-full"
+              />
+            </a>
+          ))
+        }
+      </div>
+
+      <div class="mt-8 flex justify-center sm:mt-10">
+        <a href={pdf} download={fileName} class="btn btn-primary min-h-12">
+          <Icon name="download" size={18} />
+          {s.cv.download}
+        </a>
+      </div>
+    </div>
+  </section>
+  <Contact lang={lang} compact />
+</Base>
+
+<style>
+  .cv-page {
+    box-shadow:
+      0 0 0 1px var(--line-strong),
+      0 24px 60px -24px rgb(0 0 0 / 0.45);
+    transition: transform 0.3s ease;
+  }
+  .cv-page:hover {
+    transform: translateY(-2px);
+  }
+</style>

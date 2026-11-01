@@ -2,7 +2,7 @@
 import ProjectMarquee from './ProjectMarquee.astro';
 import Icon from './Icon.astro';
 import Img from './Img.astro';
-import { t, type Lang } from '../i18n';
+import { t, url, type Lang } from '../i18n';
 import { links, profile, stats } from '../data/site';
 
 interface Props {
@@ -57,14 +57,19 @@ const fmt = (n: number) => String(n);
       <p class="rise mt-4 max-w-xl text-[1.05rem] leading-relaxed text-ink-2 sm:mt-6 sm:text-xl" style="--d:2">
         {profile.tagline[lang]}
       </p>
-      <div class="rise mt-6 flex items-center gap-2.5 sm:mt-9 sm:flex-wrap sm:gap-3" style="--d:3">
-        <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary min-h-12 flex-1 sm:flex-none">
+      <div class="rise mt-6 flex flex-wrap items-center gap-2.5 sm:mt-9 sm:gap-3" style="--d:3">
+        <a href={links.whatsapp} target="_blank" rel="noopener" class="btn btn-primary min-h-12 basis-full whitespace-nowrap sm:basis-auto">
           <Icon name="whatsapp" size={18} />
           {s.hero.ctaPrimary}
         </a>
-        <a href={links.linkedin} target="_blank" rel="noopener" class="btn btn-ghost min-h-12 max-sm:!px-4" aria-label={s.hero.ctaSecondary}>
+        <a href={links.linkedin} target="_blank" rel="noopener" class="btn btn-ghost min-h-12 flex-1 whitespace-nowrap sm:flex-none" aria-label={s.hero.ctaSecondary}>
           <Icon name="linkedin" size={17} />
-          <span class="max-sm:sr-only">{s.hero.ctaSecondary}</span>
+          <span class="sm:hidden">LinkedIn</span>
+          <span class="max-sm:hidden">{s.hero.ctaSecondary}</span>
+        </a>
+        <a href={url(`${lang}/cv/`)} class="btn btn-ghost min-h-12 flex-1 whitespace-nowrap sm:flex-none">
+          <Icon name="file" size={17} />
+          {s.nav.cv}
         </a>
         <a href="#work" class="link-arrow hidden items-center gap-2 px-3 py-3 font-semibold text-ink-2 hover:text-ink sm:inline-flex">
           {s.hero.ctaWork}

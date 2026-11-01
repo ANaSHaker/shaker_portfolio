@@ -4,7 +4,7 @@ import { langs, url } from '../i18n';
 
 export const GET: APIRoute = ({ site }) => {
   const origin = site!.toString().replace(/\/$/, '');
-  const paths = langs.flatMap((l) => [`${l}/`, ...projects.map((p) => `${l}/projects/${p.slug}/`)]);
+  const paths = langs.flatMap((l) => [`${l}/`, `${l}/cv/`, ...projects.map((p) => `${l}/projects/${p.slug}/`)]);
   const body = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${paths
